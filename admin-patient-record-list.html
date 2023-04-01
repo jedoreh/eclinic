@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>medical</title>
+    <link rel="icon" href="img/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- themify CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <!-- flaticon CSS -->
+    <link rel="stylesheet" href="css/flaticon.css">
+    <!-- magnific popup CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- nice select CSS -->
+    <!-- <link rel="stylesheet" href="css/nice-select.css"> -->
+    <link rel="stylesheet" href="css/select2.min.css">
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="css/slick.css">
+    <!-- style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        thead, tbody, tr { display: block; }
+
+        tr:after {
+            content: ' ';
+            display: block;
+            visibility: hidden;
+            clear: both;
+        }
+
+        
+
+        tbody {
+            height: 250px;
+            overflow-y: auto;
+        }
+
+        thead {
+            /* fallback */
+        }
+
+        thead th {
+            height: 30px;
+
+            /*text-align: left;*/
+        }
+
+        tbody td, thead th {
+            width: 12.2%;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <!--::header part start::-->
+    <header class="main_menu">
+            
+        </header>
+        <!-- Header part end-->
+       
+    <!-- breadcrumb start-->
+    <section class="breadcrumb breadcrumb_bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb_iner">
+                        <div class="form-row">
+                            <div class="form-group col-md-2">
+                                <span id="username" style="color:#F1F1F1;font-size: 17px;"></span>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <span id="pagetitle" style="color:#F1F1F1;font-size: 20px;font-weight: bolder;">Patient Record List</span>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <span id="sysdate" style="color:#F1F1F1"></span>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <span id="systime" style="color:#F1F1F1"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- breadcrumb start-->
+
+    
+
+    <!--::regervation_part start::-->
+    <section class="regervation_part padding_bottom" style="margin-top:30px;">
+        <div class="container">
+            <div class="row align-items-center regervation_content">
+                <div class="col-md-12">
+                    <div class="regervation_part_iner">
+                        <br>
+                        <form action="controllers/add-staff.php" class="frmaddperson">
+                            <!-- <h2>Patient Record List</h2> -->
+                            <div class="label label-success" id="errorlogin"></div>
+                            <div class="form-row">
+                                
+                            </div>
+                            
+                        </form>
+                    </div>
+                    <div class="card-box">
+                        <ul class="nav nav-tabs nav-tabs-solid nav-tabs-rounded nav-justified">
+                            <!-- <li class="nav-item"><a class="nav-link btn-primary active" href="#solid-rounded-justified-tab6" data-toggle="tab">Sex</a></li> -->
+                            <!-- <li class="nav-item"><a class="nav-link btn-primary" href="#solid-rounded-justified-tab3" data-toggle="tab">Age Range</a></li> 
+                            <li class="nav-item"><a class="nav-link btn-primary" href="#solid-rounded-justified-tab7" data-toggle="tab">Weight</a></li> -->
+                            <!-- <li class="nav-item"><a class="nav-link btn-primary active" href="#solid-rounded-justified-tab8" data-toggle="tab">Patient Card Registration</a></li> -->
+                            <!-- <li class="nav-item"><a class="nav-link btn-primary" href="#solid-rounded-justified-tab4" data-toggle="tab">Duration</a></li>
+                            
+                            <li class="nav-item"><a class="nav-link btn-primary" href="#solid-rounded-justified-tab9" data-toggle="tab">Dosage Unit</a></li>
+                             <li class="nav-item dropdown"> 
+                                <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Stocking Setup</a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item" href="#solid-rounded-justified-tab2" data-toggle="tab">Route of Administration</a>
+                                    <a class="dropdown-item" href="#solid-rounded-justified-tab3" data-toggle="tab">Category of Importance</a>
+                                    <a class="dropdown-item" href="#solid-rounded-justified-tab4" data-toggle="tab">Stock Location</a>
+                                    <a class="dropdown-item" href="#solid-rounded-justified-tab5" data-toggle="tab">Physical Position</a> 
+                                </div>
+                            </li> 
+                            <li class="nav-item"><a class="nav-link" href="#solid-rounded-justified-tab3" data-toggle="tab">Department Item Group</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#solid-rounded-justified-tab4" data-toggle="tab">Generic Name</a></li> -->
+                            <!-- <li class="nav-item"><a class="nav-link" href="#solid-rounded-justified-tab5" data-toggle="tab">State</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#solid-rounded-justified-tab6" data-toggle="tab">Default Strength</a></li> -->
+                        </ul>
+                        <div class="tab-content">
+                           
+                            <div class="tab-pane show active" id="solid-rounded-justified-tab8">
+                                <!-- <br> -->
+                                <!-- <h3>Patient Card Registration</h3> -->
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            
+                                            <form action="controllers/index.php" class="form-signin">
+                                                <!-- <h2>Add Patient</h2> -->
+                                                <div class="label label-success" id="patient-status"></div>
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-6">
+                                                        Search Patient:<br>
+                                                        <input type="text" name="patientname" class="form-control" id="patientname" placeholder="Enter Name or Patient Number" required>
+                                                        
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                        <br>
+                                                        <button type="submit" class="genric-btn primary" id="search-patient-button" style="font-size: 24px;border-radius: 8px;">Search Patient</button>
+                                                    </div>
+                                                   
+                                                    
+                                                    <div class="form-edit-patient"></div>
+                                                    <div class="form-view-patientstatus"></div>
+                                                    <div class="form-view-patient"></div>
+                                                    
+                                                </div>
+                                                <div class="regerv_btn">
+                                                    
+                                                    <!-- <button type="submit" class="genric-btn primary" id="cancel-patient-button" style="font-size: 24px;border-radius: 8px;">Cancel</button>
+                                                    <button type="submit" class="genric-btn success" id="edit-patient-button" style="font-size: 24px;border-radius: 8px;">Edit Patient</button>
+                                                    <button type="submit" class="genric-btn danger" id="delete-patient-button" style="font-size: 24px;border-radius: 8px;">Confirm Deletion</button> -->
+                                                </div>
+                                            </form>
+                                            
+                                        </div>
+                                        <div class="col-12">
+                                            
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    <h4 class="card-title d-inline-block">View Patients</h4>  <p class="btn btn-primary float-right" id="view-patient-count"></p>
+                                                    <p class="float-right"><input type="text" id="searchpatient" name="searchpatient" placeholder="Search Patient" style="font-size: 18px;"></p>
+                                                </div>
+                                                <div class="card-body p-0">
+                                                    <div class="table-responsive scrollable">
+                                                        <table class="table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Card No.</th>
+                                                                    <th>Patient</th>
+                                                                    <th>Age</th>
+                                                                    <th>Sex</th>
+                                                                    <th>Weight</th>
+                                                                    <th>Comments</th>
+                                                                    <th>Action</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody id="view-patient-list">
+                                                                
+                                                                
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-5 col-md-6">
+                    <div class="reservation_img">
+                        <img src="img/loginphoto.jpg" alt="">
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <!--::regervation_part end::-->
+
+    
+    <!-- footer part start-->
+    <footer class="footer-area">
+
+        <div class="copyright_part">
+            
+        </div>
+    </footer>
+
+    <!-- footer part end-->
+
+    <!-- jquery plugins here-->
+
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <!-- popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- easing js -->
+    <script src="js/jquery.magnific-popup.js"></script>
+    <!-- swiper js -->
+    <script src="js/swiper.min.js"></script>
+    <!-- swiper js -->
+    <script src="js/masonry.pkgd.js"></script>
+    <!-- particles js -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- <script src="js/jquery.nice-select.min.js"></script> -->
+    <!-- swiper js -->
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <!-- contact js -->
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <script src="js/contact.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+    <script src="views/masterpage.js"></script>
+    <script src="views/patient-registration.js"></script>
+    <script>
+        $(document).ready(function(){
+            function GetPatientFormFunction(){
+                $("#edit-patient-button").hide()
+                $("#delete-patient-button").hide()
+                $("#cancel-patient-button").hide()
+                $("#add-patient-button").show()
+                $(".form-edit-patient").html("")
+                // $("#patientname").val("")
+                
+                let getPatient = "getPatient"
+                
+                let searchpatient = $("#patientname").val()
+                // console.log(searchformItem)
+                $.post("controllers/patient-record.php",{"searchformItem":searchpatient,getPatient: getPatient},function(formdata){
+                    //console.log(data)
+                    if(formdata=="No Record Found"){
+                        $("#view-patient-count").html(formdata)
+                    }else{
+                        console.log(formdata)
+                        let data=JSON.parse(formdata)
+                        console.log(data)
+                        let count = 0
+                            
+                        let totalrecord = ``
+                        $.each(data.records, function(key, val) {
+                            count++
+                          totalrecord += `
+                            <tr>
+                                <td>
+                                    
+                                    <a href="#" data-id="` + val.personid + `" style="" class="btn btn-outline-default take-btn patientname"><h3 style="color:blue;">` + val.cardnumber + `</h3></a>
+                                </td>   
+                                <td>
+                                    
+                                    <p style="font-size:18px;font-weight:bold;">` + val.person + `/` + val.patientnumber + `</p>
+                                </td>              
+                                <td>
+                                    
+                                    <p style="font-size:18px;font-weight:bold;">` + val.age + `</p>
+                                </td>
+                                <td>
+                                    <p style="font-size:18px;font-weight:bold;">` + val.gender + `</p>
+                                </td>
+                                <td>
+                                    <p style="font-size:18px;font-weight:bold;">` + val.weight + ` Kg</p>
+                                </td>
+                                <td>
+                                    <p style="font-size:18px;font-weight:bold;">` + val.phonenumber + `<br>` + val.comments + `</p>
+                                </td>
+                                <td>
+                                    <a href="#" data-id="` + val.personid + `" class="btn btn-outline-primary take-btn consultation-patient">Consultation</a>
+                                    <a href="patient-vital-signs-entry.html?search=` + val.patientnumber + `" data-id="` + val.personid + `" class="btn btn-outline-success take-btn vital-signs-patient">Vital Signs</a>
+                                    <a href="#" data-id="` + val.personid + `" class="btn btn-outline-success take-btn note-patient">Notes</a>
+                                    <a href="#" data-id="` + val.personid + `" class="btn btn-outline-danger take-btn admit-patient">Admit</a>
+                                </td>
+                            </tr>
+                          `
+                        })
+                        $("#view-patient-count").html(count + " Record(s) Found")
+                        $("#view-patient-list").html(totalrecord)
+                    }
+                    $(".consultation-patient").on("click", function(evt){
+                            evt.preventDefault()
+                            let id = $(this).attr("data-id")
+
+                            let getPatientConsultationById = "getPatientConsultationById"
+                            $.post("controllers/patient-record.php", {id:id, getPatientConsultationById: getPatientConsultationById}, function(data){
+                                console.log(data)
+                                window.open("patient-consultation.html",'_blank')
+                                
+                            })
+                            
+                           
+                        })
+
+                        $(".patientname").on("click", function(evt){
+                            evt.preventDefault()
+                            let id = $(this).attr("data-id")
+                            let getPatientById = "getPatientById"
+                            $.post("controllers/patient-record.php", {id:id, getPatientById: getPatientById}, function(data){
+                                console.log(data)
+                                formdata=JSON.parse(data)
+                                $("#patientname").val(formdata.firstname)
+                                $("#selectitem").html(`<option value='` + val.cardtype + `'>` + val.cardtype + `</option>` + recorditemlist)
+                                
+                                //itemgrouplist = selectitemgroup + itemgrouplist
+                                $("#form-view-patientstatus").html(formdata.comments)
+                                $("#form-view-patient").html(formdata.patientnumber)
+                                $(".form-edit-patient").html(`<input type="hidden" name="patientid" id="patientid" value="` + id + `">`)
+                            
+                                $("#edit-patient-button").show()
+                                $("#cancel-patient-button").show()
+                                $("#delete-patient-button").show()
+                                $("#add-patient-button").hide()
+                            })
+                            
+                    })
+
+                    $(".delete-patient").on("click", function(evt){
+                        evt.preventDefault()
+                            let id = $(this).attr("data-id")
+                            let getPatientById = "getPatientById"
+                            $.post("controllers/patient-record.php", {id:id, getPatientById: getPatientById}, function(data){
+                                console.log(data)
+                                formdata=JSON.parse(data)
+                                $("#patientname").val(formdata.firstname)
+                                $("#selectitem").html(`<option value='` + formdata.cardtype + `'>` + formdata.cardtype + `</option>` + recorditemlist)
+                                
+                                //itemgrouplist = selectitemgroup + itemgrouplist
+                                $("#form-view-patientstatus").html(formdata.comments)
+                                $("#form-view-patient").html(formdata.patientnumber)
+                                $(".form-edit-patient").html(`<input type="hidden" name="patientid" id="patientid" value="` + id + `">`)
+                            
+                                $("#delete-patient-button").show()
+                                $("#cancel-patient-button").show()
+                                $("#add-patient-button").hide()
+                            })
+                            
+                           
+                    })
+                })
+
+               
+            }
+
+            GetPatientFormFunction()
+            
+            $("#patientname").on('change keyup paste', function () {
+                ApplyFilterForm();
+            });
+
+            function ApplyFilterForm() {
+                var searchString = $("#searchpatient").val();
+                console.log("GetPatientFormFunction")
+                GetPatientFormFunction()
+            }
+
+            $("#search-patient-button").on("click", function(evt){
+                evt.preventDefault()
+                GetPatientFormFunction()
+            })
+        })
+    </script>
+</body>
+
+</html>

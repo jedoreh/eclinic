@@ -1,0 +1,2015 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Ordering/Prescription Setup</title>
+    <link rel="icon" href="img/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- themify CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <!-- flaticon CSS -->
+    <link rel="stylesheet" href="css/flaticon.css">
+    <!-- magnific popup CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- nice select CSS -->
+    <!-- <link rel="stylesheet" href="css/nice-select.css"> -->
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="css/slick.css">
+    <!-- style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        thead, tbody, tr { display: block; }
+
+        tr:after {
+            content: ' ';
+            display: block;
+            visibility: hidden;
+            clear: both;
+        }
+
+        
+
+        tbody {
+            height: 250px;
+            overflow-y: auto;
+        }
+
+        thead {
+            /* fallback */
+        }
+
+        thead th {
+            height: 30px;
+
+            /*text-align: left;*/
+        }
+
+        tbody td, thead th {
+            width: 12.2%;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <!--::header part start::-->
+    <header class="main_menu">
+            
+        </header>
+        <!-- Header part end-->
+       
+    <!-- breadcrumb start-->
+    <section class="breadcrumb breadcrumb_bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb_iner">
+                        <!-- <div class="breadcrumb_iner_item">
+                            <h2>SUYI HOSPITAL </h2>
+                            <p style="padding-bottom: 70px;"><a href="#" style="color:#F1F1F1">Setup</a>: Combo Setup</p><br><br><br> 
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- breadcrumb start-->
+
+    
+
+    <!--::regervation_part start::-->
+    <section class="regervation_part padding_bottom" style="margin-top:30px;">
+        <div class="container">
+            <div class="row align-items-center regervation_content">
+                <div class="col-md-12">
+                    <div class="regervation_part_iner">
+                        <br>
+                        <form>
+                            <h2>Prescription</h2>
+                            <div class="label label-success" id="errorlogin"></div>
+                            <div class="form-row">
+                                
+                            </div>
+                            
+                        </form>
+                    </div>
+                    <div class="card-box">
+                        <ul class="nav nav-tabs nav-tabs-solid nav-tabs-rounded nav-justified">
+                            <!-- <li class="nav-item"><a class="nav-link btn-primary active" href="#solid-rounded-justified-tab6" data-toggle="tab">Sex</a></li> -->
+                            <li class="nav-item"><a class="nav-link btn-primary active" href="#solid-rounded-justified-tab3" data-toggle="tab">Age Range</a></li> 
+                            <li class="nav-item"><a class="nav-link btn-primary" href="#solid-rounded-justified-tab7" data-toggle="tab">Weight</a></li>
+                            <li class="nav-item"><a class="nav-link btn-primary" href="#solid-rounded-justified-tab8" data-toggle="tab">Frequency</a></li>
+                            <li class="nav-item"><a class="nav-link btn-primary" href="#solid-rounded-justified-tab4" data-toggle="tab">Duration</a></li>
+                            <li class="nav-item"><a class="nav-link btn-primary" href="#solid-rounded-justified-tab23" data-toggle="tab">Routes</a></li>
+                            <li class="nav-item"><a class="nav-link btn-primary" href="#solid-rounded-justified-tab9" data-toggle="tab">Dosage Unit</a></li>
+                            <!-- <li class="nav-item dropdown">
+                                <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Stocking Setup</a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item" href="#solid-rounded-justified-tab2" data-toggle="tab">Route of Administration</a>
+                                    <a class="dropdown-item" href="#solid-rounded-justified-tab3" data-toggle="tab">Category of Importance</a>
+                                    <a class="dropdown-item" href="#solid-rounded-justified-tab4" data-toggle="tab">Stock Location</a>
+                                    <a class="dropdown-item" href="#solid-rounded-justified-tab5" data-toggle="tab">Physical Position</a> 
+                                </div>
+                            </li> -->
+                            <!-- <li class="nav-item"><a class="nav-link" href="#solid-rounded-justified-tab3" data-toggle="tab">Department Item Group</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#solid-rounded-justified-tab4" data-toggle="tab">Generic Name</a></li> -->
+                            <!-- <li class="nav-item"><a class="nav-link" href="#solid-rounded-justified-tab5" data-toggle="tab">State</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#solid-rounded-justified-tab6" data-toggle="tab">Default Strength</a></li> -->
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane" id="solid-rounded-justified-tab6">
+                                <br>
+                                <h3>Sex</h3>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            
+                                            <form action="controllers/index.php" class="form-signin">
+                                                <h2>Add Sex</h2>
+                                                <div class="label label-success" id="sex-status"></div>
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-6">
+                                                        <input type="text" name="sex" class="form-control" id="sex" placeholder="Sex" required>
+                                                    </div>
+                                                    <!-- <div class="form-group col-md-6">
+                                                        <input type="text" name="manufacturercode" class="form-control" id="manufacturercode"
+                                                            placeholder="Manufacturer Code">
+                                                    </div> -->
+                                                    
+                                                    <div class="form-edit-sex"></div>
+                                                    
+                                                </div>
+                                                <div class="regerv_btn">
+                                                    <button type="submit" class="genric-btn primary" id="add-sex-button" style="font-size: 24px;border-radius: 8px;">Add Sex</button>
+                                                    <button type="submit" class="genric-btn primary" id="cancel-sex-button" style="font-size: 24px;border-radius: 8px;">Cancel</button>
+                                                    <button type="submit" class="genric-btn success" id="edit-sex-button" style="font-size: 24px;border-radius: 8px;">Edit Sex</button>
+                                                    <button type="submit" class="genric-btn danger" id="delete-sex-button" style="font-size: 24px;border-radius: 8px;">Confirm Deletion</button>
+                                                </div>
+                                            </form>
+                                            
+                                        </div>
+                                        <div class="col-12">
+                                            
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    <h4 class="card-title d-inline-block">View Sex</h4>  <p class="btn btn-primary float-right" id="view-sex-count"></p>
+                                                    <p class="float-right"><input type="text" id="searchsex" name="searchsex" placeholder="Search Sex" style="font-size: 18px;"></p>
+                                                </div>
+                                                <div class="card-body p-0">
+                                                    <div class="table-responsive scrollable">
+                                                        <table class="table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Manufacturer</th>
+                                                                    <th>Code</th>
+                                                                    
+                                                                    <th>Action</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody id="view-sex-list">
+                                                                
+                                                                
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+  
+                            <div class="tab-pane" id="solid-rounded-justified-tab7">
+                                <br>
+                                <h3>Weight Range</h3>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            
+                                            <form action="controllers/index.php" class="form-signin">
+                                                <h2>Add Weight Range</h2>
+                                                <div class="label label-success" id="weight-status"></div>
+                                                <div class="form-row">
+                                                    
+                                                    <div class="form-group col-md-6">
+                                                        <input type="number" max="500" min="1" name="lowerweightlimit" class="form-control" id="lowerweightlimit"
+                                                            placeholder="Lower Weight Limit">
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                        <input type="number" max="500" min="1" name="upperweightlimit" class="form-control" id="upperweightlimit"
+                                                            placeholder="Upper Weight Limit">
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+
+                                                        <select name="selectage" class="form-control" id="selectage">
+                                                            </select>
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+
+                                                        <select name="selectsex" class="form-control" id="selectsex">
+                                                            <option value="Female">Female</option>
+                                                            <option value="Male">Male</option>
+                                                        </select>
+                                                    </div>
+                                                    
+                                                    <div class="form-edit-weight"></div>
+                                                    
+                                                </div>
+                                                <div class="regerv_btn">
+                                                    <button type="submit" class="genric-btn primary" id="add-weight-button" style="font-size: 24px;border-radius: 8px;">Add Weight Range</button>
+                                                    <button type="submit" class="genric-btn primary" id="cancel-weight-button" style="font-size: 24px;border-radius: 8px;">Cancel</button>
+                                                    <button type="submit" class="genric-btn success" id="edit-weight-button" style="font-size: 24px;border-radius: 8px;">Edit Weight Range</button>
+                                                    <button type="submit" class="genric-btn danger" id="delete-weight-button" style="font-size: 24px;border-radius: 8px;">Confirm Deletion</button>
+                                                </div>
+                                            </form>
+                                            
+                                        </div>
+                                        <div class="col-12">
+                                            
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    <h4 class="card-title d-inline-block">View Weight Range</h4>  <p class="btn btn-primary float-right" id="view-weight-count"></p>
+                                                    <p class="float-right"><input type="text" id="searchweight" name="searchweight" placeholder="Search Weight" style="font-size: 18px;"></p>
+                                                </div>
+                                                <div class="card-body p-0">
+                                                    <div class="table-responsive scrollable">
+                                                        <table class="table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Weight Range</th>
+                                                                    <th>Sex</th>
+                                                                    <th>Age Range</th>
+                                                                    
+                                                                    <th>Action</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody id="view-weight-list">
+                                                                
+                                                                
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane show active" id="solid-rounded-justified-tab3">
+                                <br>
+                                <h3>Age Range</h3>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            
+                                            <form action="controllers/index.php" class="form-signin">
+                                                <h2>Add Age Range</h2>
+                                                <div class="label label-success" id="age-status"></div>
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-6">
+                                                        <input type="text" name="agegroup" class="form-control" id="agegroup" placeholder="Age Group" required>
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        <input type="text" name="loweragelimit" class="form-control" id="loweragelimit"
+                                                            placeholder="Lower Age Limit">
+                                                    </div>
+                                                    <div class="form-group col-md-2">
+
+                                                        <select name="lowerdatetype" class="form-control" id="lowerdatetype">
+                                                            <option value="Days">Days</option>
+                                                            <option value="Weeks">Weeks</option>
+                                                            <option value="Months">Months</option>
+                                                            <option value="Years">Years</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        <input type="text" name="upperagelimit" class="form-control" id="upperagelimit"
+                                                            placeholder="Upper Age Limit">
+                                                    </div>
+                                                    <div class="form-group col-md-2">
+
+                                                        <select name="upperdatetype" class="form-control" id="upperdatetype">
+                                                            <option value="Dys">Days</option>
+                                                            <option value="Wks">Weeks</option>
+                                                            <option value="Mths">Months</option>
+                                                            <option value="Yrs">Years</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-edit-age"></div>
+                                                    
+                                                </div>
+                                                <div class="regerv_btn">
+                                                    <button type="submit" class="genric-btn primary" id="add-age-button" style="font-size: 24px;border-radius: 8px;">Add Age Range</button>
+                                                    <button type="submit" class="genric-btn primary" id="cancel-age-button" style="font-size: 24px;border-radius: 8px;">Cancel</button>
+                                                    <button type="submit" class="genric-btn success" id="edit-age-button" style="font-size: 24px;border-radius: 8px;">Edit Age Range</button>
+                                                    <button type="submit" class="genric-btn danger" id="delete-age-button" style="font-size: 24px;border-radius: 8px;">Confirm Deletion</button>
+                                                </div>
+                                            </form>
+                                            
+                                        </div>
+                                        <div class="col-12">
+                                            
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    <h4 class="card-title d-inline-block">View Age Range</h4>  <p class="btn btn-primary float-right" id="view-age-count"></p>
+                                                    <p class="float-right"><input type="text" id="searchage" name="searchage" placeholder="Search Age" style="font-size: 18px;"></p>
+                                                </div>
+                                                <div class="card-body p-0">
+                                                    <div class="table-responsive scrollable">
+                                                        <table class="table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Age Group</th>
+                                                                    <th>Lower Limit</th>
+                                                                    <th>Upper Limit</th>
+                                                                    <th>Action</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody id="view-age-list">
+                                                                
+                                                                
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="solid-rounded-justified-tab8">
+                                <br>
+                                <h3>Frequency</h3>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            
+                                            <form action="controllers/index.php" class="form-signin">
+                                                <h2>Add Frequency</h2>
+                                                <div class="label label-success" id="frequency-status"></div>
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-6">
+                                                        Department Item Grouping:<br>
+                                                        <select name="selectdepartmentitemgroupfrequency" class="form-control" id="selectdepartmentitemgroupfrequency" required>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        Frequency:<br>
+                                                        <input type="text" name="frequency" class="form-control" id="frequency" placeholder="Frequency" required>
+                                                    </div>
+                                                    <div class="form-group col-md-2">
+                                                        Abbreviation:<br>
+                                                        <input type="text" name="frequencyabbreviation" class="form-control" id="frequencyabbreviation"
+                                                            placeholder="Abbreviation">
+                                                    </div>
+                                                   
+                                                    
+                                                    <div class="form-edit-frequency"></div>
+                                                    
+                                                </div>
+                                                <div class="regerv_btn">
+                                                    <button type="submit" class="genric-btn primary" id="add-frequency-button" style="font-size: 24px;border-radius: 8px;">Add Frequency Range</button>
+                                                    <button type="submit" class="genric-btn primary" id="cancel-frequency-button" style="font-size: 24px;border-radius: 8px;">Cancel</button>
+                                                    <button type="submit" class="genric-btn success" id="edit-frequency-button" style="font-size: 24px;border-radius: 8px;">Edit Frequency Range</button>
+                                                    <button type="submit" class="genric-btn danger" id="delete-frequency-button" style="font-size: 24px;border-radius: 8px;">Confirm Deletion</button>
+                                                </div>
+                                            </form>
+                                            
+                                        </div>
+                                        <div class="col-12">
+                                            
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    <h4 class="card-title d-inline-block">View Frequency</h4>  <p class="btn btn-primary float-right" id="view-frequency-count"></p>
+                                                    <p class="float-right"><input type="text" id="searchfrequency" name="searchfrequency" placeholder="Search Frequency" style="font-size: 18px;"></p>
+                                                </div>
+                                                <div class="card-body p-0">
+                                                    <div class="table-responsive scrollable">
+                                                        <table class="table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Frequency</th>
+                                                                    <th>Abbreviation</th>
+                                                                    <th>Action</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody id="view-frequency-list">
+                                                                
+                                                                
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="solid-rounded-justified-tab23">
+                                <br>
+                                            <h3>Usage Route</h3>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        
+                                                        <form action="controllers/index.php" class="form-signin">
+                                                            <h2>Add Usage Route</h2>
+                                                            <div class="label label-success" id="usageroute-status"></div>
+                                                            <div class="form-row">
+                                                                <div class="form-group col-md-6">
+                                                                    Department Item Grouping:<br>
+                                                                    <select name="selectdepartmentitemgrouproute" class="form-control" id="selectdepartmentitemgrouproute" required>
+                                                                    </select>
+                                                                </div>
+                                                                <!-- <div class="form-group col-md-6">
+                                                                    Select Usage Route Type:<br>
+                                                                    <select name="selectusageroutetype" class="form-control" id="selectusageroutetype" required>
+                                                                    </select>
+                                                                </div> -->
+                                                                <div class="form-group col-md-4">
+                                                                    Enter Usage Route:<br>
+                                                                    <input type="text" name="usageroute" class="form-control" id="usageroute" placeholder="Usage Route" required>
+                                                                </div>
+                                                                <div class="form-group col-md-2">
+                                                                    Abbreviation:<br>
+                                                                    <input type="text" name="usagerouteabbreviation" class="form-control" id="usagerouteabbreviation" placeholder="Abbreviation" required>
+                                                                    
+                                                                </div>
+                                                                <div class="form-edit-usageroute"></div>
+                                                            </div>
+                                                            <div class="regerv_btn">
+                                                                <button type="submit" class="genric-btn primary" id="add-usageroute-button" style="font-size: 24px;border-radius: 8px;">Add Usage Route</button>
+                                                                <button type="submit" class="genric-btn primary" style="font-size: 24px;border-radius: 8px;" id="cancel-usageroute-button">Cancel</button>
+                                                                <button type="submit" class="genric-btn success" id="edit-usageroute-button" style="font-size: 24px;border-radius: 8px;">Edit Usage Route</button>
+                                                                <button type="submit" class="genric-btn danger" id="delete-usageroute-button" style="font-size: 24px;border-radius: 8px;">Confirm Deletion</button>
+                                                            </div>
+                                                        </form>
+                                                        
+                                                    </div>
+                                                    <div class="col-12">
+                                                        
+                                                        <div class="card">
+                                                            <div class="card-header">
+                                                                <h4 class="card-title d-inline-block">View Usage Route</h4>  <p class="btn btn-primary float-right" id="view-usageroute-count"></p>
+                                                                <p class="float-right"><input type="text" id="searchusageroute" name="searchusageroute" placeholder="Search Usage Route" style="font-size: 18px;"></p>
+                                                            </div>
+                                                            <div class="card-body p-0">
+                                                                <div class="table-responsive scrollable">
+                                                                    <table class="table">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>Usage Route</th>
+                                                                                <!-- <th>Usage Route Type</th> -->
+                                                                                <th>Abbreviation</th>
+                                                                                
+                                                                                <th>Action</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody id="view-usageroute-list">
+                                                                            
+                                                                            
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                <!-- <br>
+                                <div class="card-box">
+                                    <ul class="nav nav-tabs nav-tabs-solid nav-tabs-rounded nav-justified">
+                                        <li class="nav-item"><a class="nav-link active btn-success" href="#solid-rounded-justified-tab14" data-toggle="tab">Usage Route Type</a></li>
+                                        <li class="nav-item"><a class="nav-link btn-success" href="#solid-rounded-justified-tab17" data-toggle="tab">Usage Route</a></li>
+                                        
+                                        
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div class="tab-pane show active" id="solid-rounded-justified-tab14">
+                                            <br>
+                                            <h3>Usage Route Type</h3>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        
+                                                        <form action="controllers/index.php" class="form-signin">
+                                                            <h2>Add Usage Route Type</h2>
+                                                            <div class="label label-success" id="usageroutetype-status"></div>
+                                                            <div class="form-row">
+                                                                <div class="form-group col-md-6">
+                                                                    Department Item Grouping:<br>
+                                                                    <select name="selectdepartmentitemgrouproutetype" class="form-control" id="selectdepartmentitemgrouproutetype" required>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="form-group col-md-6">
+                                                                    Usage Route Type:
+                                                                    <input type="text" name="usageroutetype" class="form-control" id="usageroutetype"
+                                                                        placeholder="Usage Route Type">
+                                                                </div>-->
+                                                                <!-- <div class="form-group col-md-6">
+                                                                    <input type="text" name="gasusagerouteabbreviation" class="form-control" id="gasusagerouteabbreviation"
+                                                                        placeholder="Abbreviation">
+                                                                </div> -->
+                                                                <!--<div class="form-edit-usageroutetype"></div>
+                                                                
+                                                            </div>
+                                                            <div class="regerv_btn">
+                                                                <button type="submit" class="genric-btn primary" id="add-usageroutetype-button" style="font-size: 24px;border-radius: 8px;">Add Usage Route Type</button>
+                                                                <button type="submit" class="genric-btn primary" id="cancel-usageroutetype-button" style="font-size: 24px;border-radius: 8px;">Cancel</button>
+                                                                <button type="submit" class="genric-btn success" id="edit-usageroutetype-button" style="font-size: 24px;border-radius: 8px;">Edit Usage Route Type</button>
+                                                                <button type="submit" class="genric-btn danger" id="delete-usageroutetype-button" style="font-size: 24px;border-radius: 8px;">Confirm Deletion</button>
+                                                            </div>
+                                                        </form>
+                                                        
+                                                    </div>
+                                                    <div class="col-12">
+                                                        
+                                                        <div class="card">
+                                                            <div class="card-header">
+                                                                <h4 class="card-title d-inline-block">View Usage Route Type</h4>  <p class="btn btn-primary float-right" id="view-usageroutetype-count"></p>
+                                                                <p class="float-right"><input type="text" id="searchusageroutetype" name="searchusageroutetype" placeholder="Search Usage Route Type" style="font-size: 18px;"></p>
+                                                            </div>
+                                                            <div class="card-body p-0">
+                                                                <div class="table-responsive scrollable">
+                                                                    <table class="table">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>Usage Route Type</th>-->
+                                                                               
+                                                                                <!-- <th>Abbreviation</th> 
+                                                                                <th>Action</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody id="view-usageroutetype-list">
+                                                                            
+                                                                            
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="solid-rounded-justified-tab17">
+                                            
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+                            <div class="tab-pane" id="solid-rounded-justified-tab4">
+                                <br>
+                                <h3>Duration</h3>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            
+                                            <form action="controllers/index.php" class="form-signin">
+                                                <h2>Add Duration</h2>
+                                                <div class="label label-success" id="duration-status"></div>
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-6">
+                                                        Department Item Grouping:<br>
+                                                        <select name="selectdepartmentitemgroupduration" class="form-control" id="selectdepartmentitemgroupduration" required>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        Duration:<br>
+                                                        <input type="text" name="duration" class="form-control" id="duration" placeholder="Duration" required>
+                                                    </div>
+                                                    <div class="form-group col-md-2">
+                                                        Abbreviation:<br>
+                                                        <input type="text" name="durationabbreviation" class="form-control" id="durationabbreviation"
+                                                            placeholder="Abbreviation">
+                                                    </div>
+                                                    <div class="form-group col-md-12">
+                                                        Interpretation:<br>
+                                                        <input type="text" name="interpretation" class="form-control" id="interpretation"
+                                                            placeholder="Interpretation">
+                                                    </div>
+                                                    
+                                                    <div class="form-edit-duration"></div>
+                                                    
+                                                </div>
+                                                <div class="regerv_btn">
+                                                    <button type="submit" class="genric-btn primary" id="add-duration-button" style="font-size: 24px;border-radius: 8px;">Add Duration Range</button>
+                                                    <button type="submit" class="genric-btn primary" id="cancel-duration-button" style="font-size: 24px;border-radius: 8px;">Cancel</button>
+                                                    <button type="submit" class="genric-btn success" id="edit-duration-button" style="font-size: 24px;border-radius: 8px;">Edit Duration Range</button>
+                                                    <button type="submit" class="genric-btn danger" id="delete-duration-button" style="font-size: 24px;border-radius: 8px;">Confirm Deletion</button>
+                                                </div>
+                                            </form>
+                                            
+                                        </div>
+                                        <div class="col-12">
+                                            
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    <h4 class="card-title d-inline-block">View Duration</h4>  <p class="btn btn-primary float-right" id="view-duration-count"></p>
+                                                    <p class="float-right"><input type="text" id="searchduration" name="searchduration" placeholder="Search Duration" style="font-size: 18px;"></p>
+                                                </div>
+                                                <div class="card-body p-0">
+                                                    <div class="table-responsive scrollable">
+                                                        <table class="table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Duration</th>
+                                                                    <th>Abbreviation</th>
+                                                                    <th>Interpretation</th>
+                                                                    <th>Action</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody id="view-duration-list">
+                                                                
+                                                                
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="solid-rounded-justified-tab9">
+                                <br>
+                                <h3>Dosage Units</h3>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            
+                                            <form action="controllers/index.php" class="form-signin">
+                                                <h2>Add Dosage Units</h2>
+                                                <div class="label label-success" id="dosage-status"></div>
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-6">
+                                                        Department Item Grouping:<br>
+                                                        <select name="selectdepartmentitemgroupdosage" class="form-control" id="selectdepartmentitemgroupdosage" required>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        Dosage:<br>
+                                                        <input type="text" name="dosage" class="form-control" id="dosage" placeholder="Dosage Unit" required>
+                                                    </div>
+                                                    <div class="form-group col-md-2">
+                                                        Abbreviation:<br>
+                                                        <input type="text" name="dosageabbreviation" class="form-control" id="dosageabbreviation"
+                                                            placeholder="Abbreviation">
+                                                    </div>
+                                                   
+                                                    
+                                                    <div class="form-edit-dosage"></div>
+                                                    
+                                                </div>
+                                                <div class="regerv_btn">
+                                                    <button type="submit" class="genric-btn primary" id="add-dosage-button" style="font-size: 24px;border-radius: 8px;">Add Dosage  </button>
+                                                    <button type="submit" class="genric-btn primary" id="cancel-dosage-button" style="font-size: 24px;border-radius: 8px;">Cancel</button>
+                                                    <button type="submit" class="genric-btn success" id="edit-dosage-button" style="font-size: 24px;border-radius: 8px;">Edit Dosage Range</button>
+                                                    <button type="submit" class="genric-btn danger" id="delete-dosage-button" style="font-size: 24px;border-radius: 8px;">Confirm Deletion</button>
+                                                </div>
+                                            </form>
+                                            
+                                        </div>
+                                        <div class="col-12">
+                                            
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    <h4 class="card-title d-inline-block">View Dosage Unit</h4>  <p class="btn btn-primary float-right" id="view-dosage-count"></p>
+                                                    <p class="float-right"><input type="text" id="searchdosage" name="searchdosage" placeholder="Search Dosage" style="font-size: 18px;"></p>
+                                                </div>
+                                                <div class="card-body p-0">
+                                                    <div class="table-responsive scrollable">
+                                                        <table class="table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Dosage Unit</th>
+                                                                    <th>Abbreviation</th>
+                                                                   
+                                                                    <th>Action</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody id="view-dosage-list">
+                                                                
+                                                                
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-5 col-md-6">
+                    <div class="reservation_img">
+                        <img src="img/loginphoto.jpg" alt="">
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <!--::regervation_part end::-->
+
+    
+    <!-- footer part start-->
+    <footer class="footer-area">
+
+        <div class="copyright_part">
+            
+        </div>
+    </footer>
+
+    <!-- footer part end-->
+
+    <!-- jquery plugins here-->
+
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <!-- popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- easing js -->
+    <script src="js/jquery.magnific-popup.js"></script>
+    <!-- swiper js -->
+    <script src="js/swiper.min.js"></script>
+    <!-- swiper js -->
+    <script src="js/masonry.pkgd.js"></script>
+    <!-- particles js -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- <script src="js/jquery.nice-select.min.js"></script> -->
+    <!-- swiper js -->
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <!-- contact js -->
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <script src="js/contact.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+    <script src="views/masterpage.js"></script>
+    <script src="views/combo-setup.js"></script>
+    <!--<script src="views/corpse-list.js"></script> -->
+    <script>
+        $(document).ready(function(){
+            //Age
+            function GetAgeGroupFunction(){
+                $("#edit-age-button").hide()
+                $("#delete-age-button").hide()
+                $("#cancel-age-button").hide()
+                $("#add-age-button").show()
+                $(".form-edit-age").html("")
+                $("#agegroup").val("")
+                $("#loweragelimit").val("")
+                $("#upperagelimit").val("")
+                let ageunit = `
+                <option value="Dys">Days</option>
+                <option value="Wks">Weeks</option>
+                <option value="Mths">Months</option>
+                <option value="Yrs">Years</option>
+                `
+                let searchItem = $("#searchage").val()
+                let getAgeGroup = "getAgeGroup"
+                $.post("controllers/combo-setup.php",{searchItem:searchItem,getAgeGroup: getAgeGroup},function(formdata){
+                    //console.log("itemGroup: ",data)
+                    if(formdata=="No Record Found"){
+                        $("#view-age-count").html(formdata)
+                    }else{
+                        console.log(formdata)
+                        console.log(typeof(formdata))
+                        let data=JSON.parse(formdata)
+                        console.log(data)
+                        let count = 0
+                            
+                        let totalrecord = ``
+                        $.each(data.records, function(key, val) {
+                            count++
+                          totalrecord += `
+                            <tr>
+                                <td>
+                                    
+                                    <a href="#" data-id="` + val.id + `" class="btn btn-outline-default take-btn agename"><h3 style="color:blue;">` + val.age + `</h3></a>
+                                </td>                 
+                                
+                                <td>
+                                        <p style="font-size:18px;font-weight:bold;">` + val.lower + `</p>
+                                </td> 
+                                <td>
+                                        <p style="font-size:18px;font-weight:bold;">` + val.upper + `</p>
+                                </td> 
+                                <td>
+                                    <a href="#" data-id="` + val.id + `" class="btn btn-outline-success take-btn edit-age">Edit</a>
+                                    <a href="#" data-id="` + val.id + `" class="btn btn-outline-danger take-btn delete-age">Delete</a>
+                                </td>
+                            </tr>
+                          `
+                        })
+                        $("#view-age-count").html(count + " Record(s) Found")
+                        $("#view-age-list").html(totalrecord)
+                    }
+                    $(".edit-age").on("click", function(evt){
+                            evt.preventDefault()
+                            let id = $(this).attr("data-id")
+                            let getAgeById = "getAgeById"
+                            $.post("controllers/combo-setup.php", {id:id, getAgeById: getAgeById}, function(data){
+                                console.log(data)
+                                formdata=JSON.parse(data)
+                                $("#agegroup").val(formdata.age)
+                                $("#loweragelimit").val(formdata.lower)
+                                $("#upperagelimit").val(formdata.upper)
+                                $("lowerdatetype").html("<option value='" + formdata.lowerunit + "'>" + formdata.lowerunit + "</option>" + ageunit)
+                                $("upperdatetype").html("<option value='" + formdata.upperunit + "'>" + formdata.upperunit + "</option>" + ageunit)
+                              // $("#gasusagerouteabbreviation").val(formdata.abbreviation)
+                              
+                                $(".form-edit-age").html(`<input type="hidden" name="ageid" id="ageid" value="` + id + `">`)
+                            
+                                $("#edit-age-button").show()
+                                $("#add-age-button").hide()
+                                $("#cancel-age-button").show()
+                            })
+                            
+                           
+                        })
+
+                        $(".agename").on("click", function(evt){
+                            evt.preventDefault()
+                            let id = $(this).attr("data-id")
+                            let getAgeById = "getAgeById"
+                            $.post("controllers/combo-setup.php", {id:id, getAgeById: getAgeById}, function(data){
+                                console.log(data)
+                                formdata=JSON.parse(data)
+                                $("#agegroup").val(formdata.age)
+                                $("#loweragelimit").val(formdata.lower)
+                                $("#upperagelimit").val(formdata.upper)
+                                $("lowerdatetype").html("<option value='" + formdata.lowerunit + "'>" + formdata.lowerunit + "</option>" + ageunit)
+                                $("upperdatetype").html("<option value='" + formdata.upperunit + "'>" + formdata.upperunit + "</option>" + ageunit)
+                                // $("#gasusagerouteabbreviation").val(formdata.abbreviation)
+                              
+                                $(".form-edit-age").html(`<input type="hidden" name="ageid" id="ageid" value="` + id + `">`)
+                                
+                                $("#delete-age-button").show()
+                                $("#edit-age-button").show()
+                                $("#add-age-button").hide()
+                                $("#cancel-age-button").show()
+                            })
+                            
+                        })
+
+                    $(".delete-age").on("click", function(evt){
+                        evt.preventDefault()
+                            let id = $(this).attr("data-id")
+                            let getAgeById = "getAgeById"
+                            $.post("controllers/combo-setup.php", {id:id, getAgeById: getAgeById}, function(data){
+                                console.log(data)
+                                formdata=JSON.parse(data)
+                                $("#agegroup").val(formdata.age)
+                                $("#loweragelimit").val(formdata.lower)
+                                $("#upperagelimit").val(formdata.upper)
+                                $("#lowerdatetype").html("<option value='" + formdata.lowerunit + "'>" + formdata.lowerunit + "</option>" + ageunit)
+                                $("#upperdatetype").html("<option value='" + formdata.upperunit + "'>" + formdata.upperunit + "</option>" + ageunit)
+                                //$("#gasusagerouteabbreviation").val(formdata.abbreviation)
+                              
+                                $(".form-edit-age").html(`<input type="hidden" name="ageid" id="ageid" value="` + id + `">`)
+                            
+                                $("#delete-age-button").show()
+                                $("#add-age-button").hide()
+                                $("#cancel-age-button").show()
+                            })
+                            
+                    })
+                })
+            }
+
+            GetAgeGroupFunction()
+            $("#searchage").on('change keyup paste', function () {
+                ApplyFilterAge();
+            });
+
+            function ApplyFilterAge() {
+                var searchage = $("#searchage").val();
+                console.log("GetAgeGroupFunction")
+                GetAgeGroupFunction()
+            }
+
+            $("#add-age-button").on("click", function(evt){
+                evt.preventDefault();
+                console.log("click")
+                let agegroup = $("#agegroup").val()
+                let loweragelimit = $("#loweragelimit").val()
+                let lowerdatetype = $("#lowerdatetype").val()
+                let upperagelimit = $("#upperagelimit").val()
+                let upperdatetype = $("#upperdatetype").val()
+                let agerange = loweragelimit + " " + lowerdatetype + "-" + upperagelimit + " " + upperdatetype
+
+                if(agegroup!=""){
+                    //let abbreviation = $("#gasusagerouteabbreviation").val()
+                
+                    let insertAge = "insertAge"
+                    $.post("controllers/combo-setup.php", {agerange:agerange,agegroup:agegroup,loweragelimit:loweragelimit,lowerdatetype:lowerdatetype,upperagelimit:upperagelimit,upperdatetype:upperdatetype,insertAge:insertAge},function(data){
+                        $("#age-status").html(data)
+                        GetAgeGroupFunction()
+                    })
+                } else{
+                    $("#age-status").html("Please enter a value for age group")
+                }
+                
+               
+            })
+
+            $("#edit-age-button").on("click", function(evt){
+                evt.preventDefault();
+                let id = $("#ageid").val()
+                let agegroup = $("#agegroup").val()
+                let loweragelimit = $("#loweragelimit").val()
+                let lowerdatetype = $("#lowerdatetype").val()
+                let upperagelimit = $("#upperagelimit").val()
+                let upperdatetype = $("#upperdatetype").val()
+                let agerange = loweragelimit + " " + lowerdatetype + "-" + upperagelimit + " " + upperdatetype
+
+                //let abbreviation = $("#gasusagerouteabbreviation").val()
+                
+                let editAge = "editAge"
+                $.post("controllers/combo-setup.php", {id:id, agerange:agerange, agegroup:agegroup,loweragelimit:loweragelimit,lowerdatetype:lowerdatetype,upperagelimit:upperagelimit,upperdatetype:upperdatetype,editAge:editAge},function(data){
+                    $("#age-status").html(data)
+                    GetAgeGroupFunction()
+                })
+            })
+
+            $("#delete-age-button").on("click",function(evt){
+                evt.preventDefault();
+                let id = $("#ageid").val()
+                console.log(id)
+                let deleteAge = "deleteAge"
+                $.post("controllers/combo-setup.php", {id:id, deleteAge:deleteAge},function(data){
+                    $("#age-status").html(data)
+                    GetAgeGroupFunction()
+                })
+            })
+
+            $("#cancel-age-button").on("click", function(evt){
+                evt.preventDefault()
+                GetAgeGroupFunction()
+            })
+
+            // Weight
+            function GetWeightFunction(){
+                $("#edit-weight-button").hide()
+                $("#delete-weight-button").hide()
+                $("#cancel-weight-button").hide()
+                $("#add-weight-button").show()
+                $(".form-edit-weight").html("")
+                $("#lowerweightlimit").val("")
+                $("#upperweightlimit").val("")
+                $("#upperagelimit").val("")
+                
+                
+                let agelist = ``
+                let getAgeGroup= "getAgeGroup"
+                let searchItem = ""
+                $.post("controllers/combo-setup.php",{searchItem:searchItem,getAgeGroup: getAgeGroup},function(formdata){
+                //console.log("itemGroup: ",data)
+                if(formdata!="No Record Found"){
+                    console.log(formdata)
+                    let data=JSON.parse(formdata)
+                    let classoptions = ``
+                    $.each(data.records, function(key, val) {
+                        
+                        classoptions += `
+                        <option value="` + val.age + ` (` + val.agerange + `)">` + val.age + ` (` + val.agerange + `)</option>
+                        `
+                    })
+                    agelist = classoptions
+                    $("#selectage").html(classoptions)
+                }
+
+                let sexlist = `
+
+                    <option value="Female">Female</option>
+                    <option value="Male">Male</option>
+                `
+                let searchItem = $("#searchweight").val()
+                let getWeight = "getWeight"
+                $.post("controllers/combo-setup.php",{searchItem:searchItem,getWeight: getWeight},function(formdata){
+                    //console.log("itemGroup: ",data)
+                    if(formdata=="No Record Found"){
+                        $("#view-weight-count").html(formdata)
+                    }else{
+                        console.log(formdata)
+                        console.log(typeof(formdata))
+                        let data=JSON.parse(formdata)
+                        console.log(data)
+                        let count = 0
+                            
+                        let totalrecord = ``
+                        $.each(data.records, function(key, val) {
+                            count++
+                          totalrecord += `
+                            <tr>
+                                <td>
+                                    
+                                    <a href="#" data-id="` + val.id + `" class="btn btn-outline-default take-btn weightname"><h3 style="color:blue;">` + val.weight + `</h3></a>
+                                </td>                 
+                                
+                                <td>
+                                        <p style="font-size:18px;font-weight:bold;">` + val.sex + `</p>
+                                </td> 
+                                <td>
+                                        <p style="font-size:18px;font-weight:bold;">` + val.age + `</p>
+                                </td> 
+                                <td>
+                                    <a href="#" data-id="` + val.id + `" class="btn btn-outline-success take-btn edit-weight">Edit</a>
+                                    <a href="#" data-id="` + val.id + `" class="btn btn-outline-danger take-btn delete-weight">Delete</a>
+                                </td>
+                            </tr>
+                          `
+                        })
+                        $("#view-weight-count").html(count + " Record(s) Found")
+                        $("#view-weight-list").html(totalrecord)
+                    }
+                    $(".edit-weight").on("click", function(evt){
+                            evt.preventDefault()
+                            let id = $(this).attr("data-id")
+                            let getWeightById = "getWeightById"
+                            $.post("controllers/combo-setup.php", {id:id, getWeightById: getWeightById}, function(data){
+                                console.log(data)
+                                formdata=JSON.parse(data)
+                                $("#lowerweightlimit").val(formdata.lower)
+                                $("#upperweightlimit").val(formdata.upper)
+                                $("#selectage").html("<option value='" + formdata.age + "'>" + formdata.age + "</option" + agelist)
+                                $("#selectsex").html("<option value='" + formdata.sex + "'>" + formdata.sex + "</option>" + sexlist)
+                                // $("#gasusagerouteabbreviation").val(formdata.abbreviation)
+                              
+                                $(".form-edit-weight").html(`<input type="hidden" name="weightid" id="weightid" value="` + id + `">`)
+                            
+                                $("#edit-weight-button").show()
+                                $("#add-weight-button").hide()
+                                $("#cancel-weight-button").show()
+                            })
+                            
+                           
+                        })
+
+                        $(".weightname").on("click", function(evt){
+                            evt.preventDefault()
+                            let id = $(this).attr("data-id")
+                            let getWeightById = "getWeightById"
+                            $.post("controllers/combo-setup.php", {id:id, getWeightById: getWeightById}, function(data){
+                                console.log(data)
+                                formdata=JSON.parse(data)
+                                $("#lowerweightlimit").val(formdata.lower)
+                                $("#upperweightlimit").val(formdata.upper)
+                                $("#selectage").html("<option value='" + formdata.age + "'>" + formdata.age + "</option" + agelist)
+                                $("#selectsex").html("<option value='" + formdata.sex + "'>" + formdata.sex + "</option>" + sexlist)
+                                // $("#gasusagerouteabbreviation").val(formdata.abbreviation)
+                              
+                                $(".form-edit-weight").html(`<input type="hidden" name="weightid" id="weightid" value="` + id + `">`)
+                                
+                                $("#delete-weight-button").show()
+                                $("#edit-weight-button").show()
+                                $("#add-weight-button").hide()
+                                $("#cancel-weight-button").show()
+                            })
+                            
+                        })
+
+                    $(".delete-weight").on("click", function(evt){
+                        evt.preventDefault()
+                            let id = $(this).attr("data-id")
+                            let getWeightById = "getWeightById"
+                            $.post("controllers/combo-setup.php", {id:id, getWeightById: getWeightById}, function(data){
+                                console.log(data)
+                                formdata=JSON.parse(data)
+                                $("#lowerweightlimit").val(formdata.lower)
+                                $("#upperweightlimit").val(formdata.upper)
+                                $("#selectage").html("<option value='" + formdata.age + "'>" + formdata.age + "</option" + agelist)
+                                $("#selectsex").html("<option value='" + formdata.sex + "'>" + formdata.sex + "</option>" + sexlist)
+                                //$("#gasusagerouteabbreviation").val(formdata.abbreviation)
+                              
+                                $(".form-edit-weight").html(`<input type="hidden" name="weightid" id="weightid" value="` + id + `">`)
+                            
+                                $("#delete-weight-button").show()
+                                $("#add-weight-button").hide()
+                                $("#cancel-weight-button").show()
+                            })
+                            
+                    })
+                })
+                })
+            }
+
+            GetWeightFunction()
+            $("#searchweight").on('change keyup paste', function () {
+                ApplyFilterWeight();
+            });
+
+            function ApplyFilterWeight() {
+                var searchweight = $("#searchweight").val();
+                console.log("GetWeightFunction")
+                GetWeightFunction()
+            }
+
+            $("#add-weight-button").on("click", function(evt){
+                evt.preventDefault();
+                console.log("click")
+                let weight = $("#lowerweightlimit").val() + "Kg" + "-" +  $("#upperweightlimit").val() + "Kg"
+                let upper = $("#upperweightlimit").val()
+                let lower = $("#lowerweightlimit").val()
+                let age = $("#selectage").val()
+                let sex = $("#selectsex").val()
+                
+                if(lower!=""){
+                    //let abbreviation = $("#gasusagerouteabbreviation").val()
+                
+                    let insertWeight = "insertWeight"
+                    $.post("controllers/combo-setup.php", {weight:weight,upper:upper,lower:lower,age:age,sex:sex,insertWeight:insertWeight},function(data){
+                        $("#weight-status").html(data)
+                        GetWeightFunction()
+                    })
+                } else{
+                    $("#weight-status").html("Please enter a value for weight")
+                }
+                
+               
+            })
+
+            $("#edit-weight-button").on("click", function(evt){
+                evt.preventDefault();
+                let id = $("#weightid").val()
+                let weight = $("#lowerweightlimit").val() + "Kg" + "-" +  $("#upperweightlimit").val() + "Kg"
+                let upper = $("#upperweightlimit").val()
+                let lower = $("#lowerweightlimit").val()
+                let age = $("#selectage").val()
+                let sex = $("#selectsex").val()
+                //let abbreviation = $("#gasusagerouteabbreviation").val()
+                
+                let editweight = "editweight"
+                $.post("controllers/combo-setup.php", {id:id,weight:weight,upper:upper,lower:lower,age:age,sex:sex, usageroutetype:usageroutetype,editweight:editweight},function(data){
+                    $("#weight-status").html(data)
+                    GetWeightFunction()
+                })
+            })
+
+            $("#delete-weight-button").on("click",function(evt){
+                evt.preventDefault();
+                let id = $("#weightid").val()
+                console.log(id)
+                let deleteWeight = "deleteWeight"
+                $.post("controllers/combo-setup.php", {id:id, deleteWeight:deleteWeight},function(data){
+                    $("#weight-status").html(data)
+                    GetWeightFunction()
+                })
+            })
+
+            $("#cancel-weight-button").on("click", function(evt){
+                evt.preventDefault()
+                GetWeightFunction()
+            })
+
+
+            //Frequency
+            function GetFrequencyFunction(){
+                $("#edit-frequency-button").hide()
+                $("#delete-frequency-button").hide()
+                $("#cancel-frequency-button").hide()
+                $("#add-frequency-button").show()
+                $(".form-edit-frequency").html("")
+                $("#frequency").val("")
+                $("#frequencyabbreviation").val("")
+               
+                let searchItem = $("#searchfrequency").val()
+                let getFrequency = "getFrequency"
+                $.post("controllers/combo-setup.php",{searchItem:searchItem,getFrequency: getFrequency},function(formdata){
+                    //console.log("itemGroup: ",data)
+                    if(formdata=="No Record Found"){
+                        $("#view-frequency-count").html(formdata)
+                    }else{
+                        console.log(formdata)
+                        console.log(typeof(formdata))
+                        let data=JSON.parse(formdata)
+                        console.log(data)
+                        let count = 0
+                            
+                        let totalrecord = ``
+                        $.each(data.records, function(key, val) {
+                            count++
+                          totalrecord += `
+                            <tr>
+                                <td>
+                                    
+                                    <a href="#" data-id="` + val.id + `" class="btn btn-outline-default take-btn frequencyname"><h3 style="color:blue;">` + val.frequency + `</h3></a>
+                                </td>                 
+                                
+                                <td>
+                                        <p style="font-size:18px;font-weight:bold;">` + val.abbreviation + `</p>
+                                </td> 
+                                
+                                <td>
+                                    <a href="#" data-id="` + val.id + `" class="btn btn-outline-success take-btn edit-frequency">Edit</a>
+                                    <a href="#" data-id="` + val.id + `" class="btn btn-outline-danger take-btn delete-frequency">Delete</a>
+                                </td>
+                            </tr>
+                          `
+                        })
+                        $("#view-frequency-count").html(count + " Record(s) Found")
+                        $("#view-frequency-list").html(totalrecord)
+                    }
+                    $(".edit-frequency").on("click", function(evt){
+                            evt.preventDefault()
+                            let id = $(this).attr("data-id")
+                            let getFrequencyById = "getFrequencyById"
+                            $.post("controllers/combo-setup.php", {id:id, getFrequencyById: getFrequencyById}, function(data){
+                                console.log(data)
+                                formdata=JSON.parse(data)
+                                $("#frequency").val(formdata.frequency)
+                                $("#frequencyabbreviation").val(formdata.abbreviation)
+                                let selectdeptitemgroup  = `<option value="` + formdata.departmentitemgroup + `" selected>` + formdata.departmentitemgroup +`</option>`
+                                //itemgrouplist = selectitemgroup + itemgrouplist
+                                $("#selectdepartmentitemgroupfrequency").html(selectdeptitemgroup + setupdepartmentitemgrouplist)
+                              
+                             // $("#gasusagerouteabbreviation").val(formdata.abbreviation)
+                              
+                                $(".form-edit-frequency").html(`<input type="hidden" name="frequencyid" id="frequencyid" value="` + id + `">`)
+                            
+                                $("#edit-frequency-button").show()
+                                $("#add-frequency-button").hide()
+                                $("#cancel-frequency-button").show()
+                            })
+                            
+                           
+                        })
+
+                        $(".frequencyname").on("click", function(evt){
+                            evt.preventDefault()
+                            let id = $(this).attr("data-id")
+                            let getFrequencyById = "getFrequencyById"
+                            $.post("controllers/combo-setup.php", {id:id, getFrequencyById: getFrequencyById}, function(data){
+                                console.log(data)
+                                formdata=JSON.parse(data)
+                                $("#frequency").val(formdata.frequency)
+                                $("#frequencyabbreviation").val(formdata.abbreviation)
+                                // $("#selectdepartmentitemgroupfrequency").val(formdata.departmentitemgroup)
+                                let selectdeptitemgroup  = `<option value="` + formdata.departmentitemgroup + `" selected>` + formdata.departmentitemgroup +`</option>`
+                                //itemgrouplist = selectitemgroup + itemgrouplist
+                                $("#selectdepartmentitemgroupfrequency").html(selectdeptitemgroup + setupdepartmentitemgrouplist)
+                              
+                                $(".form-edit-frequency").html(`<input type="hidden" name="frequencyid" id="frequencyid" value="` + id + `">`)
+                             
+                                $("#delete-frequency-button").show()
+                                $("#edit-frequency-button").show()
+                                $("#add-frequency-button").hide()
+                                $("#cancel-frequency-button").show()
+                            })
+                            
+                        })
+
+                    $(".delete-frequency").on("click", function(evt){
+                        evt.preventDefault()
+                            let id = $(this).attr("data-id")
+                            let getFrequencyById = "getFrequencyById"
+                            $.post("controllers/combo-setup.php", {id:id, getFrequencyById: getFrequencyById}, function(data){
+                                console.log(data)
+                                formdata=JSON.parse(data)
+                                $("#frequency").val(formdata.frequency)
+                                $("#frequencyabbreviation").val(formdata.abbreviation)
+                                let selectdeptitemgroup  = `<option value="` + formdata.departmentitemgroup + `" selected>` + formdata.departmentitemgroup +`</option>`
+                                //itemgrouplist = selectitemgroup + itemgrouplist
+                                $("#selectdepartmentitemgroupfrequency").html(selectdeptitemgroup + setupdepartmentitemgrouplist)
+                              
+                             // $("#gasusagerouteabbreviation").val(formdata.abbreviation)
+                              
+                                $(".form-edit-frequency").html(`<input type="hidden" name="frequencyid" id="frequencyid" value="` + id + `">`)
+                            
+                                $("#edit-frequency-button").show()
+                                $("#add-frequency-button").hide()
+                                $("#cancel-frequency-button").show()
+                            })
+                            
+                    })
+                })
+            }
+
+            GetFrequencyFunction()
+            $("#searchfrequency").on('change keyup paste', function () {
+                ApplyFilterFrequency();
+            });
+
+            function ApplyFilterFrequency() {
+                var searchfrequency = $("#searchfrequency").val();
+                console.log("GetFrequencyFunction")
+                GetFrequencyFunction()
+            }
+
+            $("#add-frequency-button").on("click", function(evt){
+                evt.preventDefault();
+                console.log("click")
+                let frequency = $("#frequency").val()
+                let abbreviation = $("#frequencyabbreviation").val()
+                let departmentitemgroup = $("#selectdepartmentitemgroupfrequency").val()
+                if(frequency!=""){
+                    //let abbreviation = $("#gasusagerouteabbreviation").val()
+                
+                    let insertFrequency = "insertFrequency"
+                    $.post("controllers/combo-setup.php", {departmentitemgroup:departmentitemgroup,frequency:frequency,abbreviation:abbreviation,insertFrequency:insertFrequency},function(data){
+                        $("#frequency-status").html(data)
+                        GetFrequencyFunction()
+                    })
+                } else{
+                    $("#frequency-status").html("Please enter a value for Frequency")
+                }
+                
+               
+            })
+
+            $("#edit-frequency-button").on("click", function(evt){
+                evt.preventDefault();
+                let id = $("#frequencyid").val()
+                let frequency = $("#frequency").val()
+                let abbreviation = $("#frequencyabbreviation").val()
+                let departmentitemgroup = $("#selectdepartmentitemgroupfrequency").val()
+                
+                let editFrequency = "editFrequency"
+                $.post("controllers/combo-setup.php", {id:id, departmentitemgroup:departmentitemgroup,frequency:frequency,abbreviation:abbreviation,editFrequency:editFrequency},function(data){
+                    $("#frequency-status").html(data)
+                    GetFrequencyFunction()
+                })
+            })
+
+            $("#delete-frequency-button").on("click",function(evt){
+                evt.preventDefault();
+                let id = $("#frequencyid").val()
+                console.log(id)
+                let deleteFrequency= "deleteFrequency"
+                $.post("controllers/combo-setup.php", {id:id, deleteFrequency:deleteFrequency},function(data){
+                    $("#frequency-status").html(data)
+                    GetFrequencyFunction()
+                })
+            })
+
+            $("#cancel-frequency-button").on("click", function(evt){
+                evt.preventDefault()
+                GetFrequencyFunction()
+            })
+
+            //Get Department Item Grouping for all Setup
+            let setupdepartmentitemgrouplist = ``
+            let searchDeptItemGroup = "searchDeptItemGroup"
+            let getDepartmentItemGroupSetup = "getDepartmentItemGroupSetup"
+            $.post("controllers/combo-setup.php",{searchDeptItemGroup:searchDeptItemGroup, getDepartmentItemGroupSetup:getDepartmentItemGroupSetup},function(formdata){
+                let data = JSON.parse(formdata)
+                let deptitemgroupoptions = ``
+                $.each(data.records, function(key, val) {
+                   
+                    deptitemgroupoptions += `
+                    <option value="` + val.departmentitemgroup + `">` + val.departmentitemgroup + `</option>
+                    `
+                })
+                setupdepartmentitemgrouplist = deptitemgroupoptions
+                $("#selectdepartmentitemgroupfrequency").html(deptitemgroupoptions)
+                $("#selectdepartmentitemgroupdosage").html(deptitemgroupoptions)
+                $("#selectdepartmentitemgrouproute").html(deptitemgroupoptions)
+                $("#selectdepartmentitemgroupduration").html(deptitemgroupoptions)
+                // $("#selectextraunitdeptitemgroup").html(deptitemgroupoptions)
+                // $("#selectcontainerdepartmentitemgroup").html(deptitemgroupoptions)
+                // $("#selectformdepartmentitemgroup").html(deptitemgroupoptions)
+                // $("#selectgroupdepartmentitemgroup").html(deptitemgroupoptions)
+                // $("#selectdepartmentitemgrouproutetype").html(deptitemgroupoptions)
+                // $("#selectdepartmentitemgrouproute").html(deptitemgroupoptions)
+                // let deptgroupingroute =  $("#selectdepartmentitemgrouproute").val()
+                // // console.log(deptgroupinggroup)
+                // let getDeptItemGrpRoute = "getDeptItemGrpRoute"
+                // $.post("controllers/combo-setup.php",{searchItem:deptgroupingroute,getDeptItemGrpRoute:getDeptItemGrpRoute},function(formdata){
+                //     console.log(formdata)
+                //     let data = JSON.parse(formdata)
+                //     let usagerouteoptions = ``
+                //     $.each(data.records, function(key, val) {
+                    
+                //         usagerouteoptions += `
+                //         <option value="` + val.usageroutetype + `">` + val.usageroutetype + `</option>
+                //         `
+                //     })
+                //     $("#selectusageroutetype").html(usagerouteoptions)
+                // })
+            })
+
+            //Usage Route
+            function GetUsageRouteFunction(){
+                $("#edit-usageroute-button").hide()
+                $("#delete-usageroute-button").hide()
+                $("#add-usageroute-button").show()
+                $("#cancel-usageroute-button").hide()
+
+
+               
+
+                let itemusageroutelist = ``
+                let getUsageRouteType = "getUsageRouteType"
+                let searchItem = ""
+                $.post("controllers/combo-setup.php",{searchItem:searchItem,getUsageRouteType: getUsageRouteType},function(formdata){
+                //console.log("itemGroup: ",data)
+                if(formdata!="No Record Found"){
+                    console.log(formdata)
+                    let data=JSON.parse(formdata)
+                    let classoptions = ``
+                    $.each(data.records, function(key, val) {
+                        
+                        classoptions += `
+                        <option value="` + val.usageroutetype + `">` + val.usageroutetype + `</option>
+                        `
+                    })
+                    itemusageroutelist = classoptions
+                    $("#selectusageroutetype").html(classoptions)
+
+                   
+                }
+
+                $(".form-edit-usageroute").html("")
+                $("#usageroute").val("")
+                $("#usagerouteabbreviation").val("")
+                let getUsageRoute = "getUsageRoute"
+                let searchItem = $("#searchusageroute").val()
+                $.post("controllers/combo-setup.php",{searchItem:searchItem,getUsageRoute: getUsageRoute},function(formdata){
+                    //console.log("itemGroup: ",data)
+                    if(formdata=="No Record Found"){
+                        $("#view-usageroute-count").html(formdata)
+                    }else{
+                        console.log(formdata)
+                        console.log(typeof(formdata))
+                        let data=JSON.parse(formdata)
+                        console.log(data)
+                        let count = 0
+                            
+                        let totalrecord = ``
+                        $.each(data.records, function(key, val) {
+                            count++
+                          totalrecord += `
+                            <tr>
+                                <td>
+                                    
+                                    <a href="#" data-id="` + val.id + `" style="" class="btn btn-outline-default take-btn usageroutename"><h3 style="color:blue;">` + val.usageroute + `</h3></a>
+                                </td>  
+                                
+                                <td>
+                                        <p style="font-size:18px;font-weight:bold;">` + val.abbreviation + `</p>
+                                </td> 
+                                         
+                                
+                                
+                                <td>
+                                    <a href="#" data-id="` + val.id + `" class="btn btn-outline-success take-btn edit-usageroute">Edit</a>
+                                    <a href="#" data-id="` + val.id + `" class="btn btn-outline-danger take-btn delete-usageroute">Delete</a>
+                                </td>
+                            </tr>
+                          `
+                        })
+                        $("#view-usageroute-count").html(count + " Record(s) Found")
+                        $("#view-usageroute-list").html(totalrecord)
+                    }
+                    $(".edit-usageroute").on("click", function(evt){
+                            evt.preventDefault()
+                            let id = $(this).attr("data-id")
+                            let getUsageRouteById = "getUsageRouteById"
+                            $.post("controllers/combo-setup.php", {id:id, getUsageRouteById: getUsageRouteById}, function(data){
+                                console.log(data)
+                                formdata=JSON.parse(data)
+                                $("#usageroute").val(formdata.usageroute)
+                                // $("#selectusageroutetype").html(`<option value="` + formdata.usageroutetype + `">` + formdata.usageroutetype + `</option>` + itemusageroutelist)
+                                let selectdeptitemgroup  = `<option value="` + formdata.departmentitemgroup + `" selected>` + formdata.departmentitemgroup +`</option>`
+                                //itemgrouplist = selectitemgroup + itemgrouplist
+                                $("#selectdepartmentitemgrouproute").html(selectdeptitemgroup + setupdepartmentitemgrouplist)
+                              
+                                $("#usagerouteabbreviation").val(formdata.abbreviation)
+                                $(".form-edit-usageroute").html(`<input type="hidden" name="usagerouteid" id="usagerouteid" value="` + id + `">`)
+                            
+                                $("#edit-usageroute-button").show()
+                                $("#add-usageroute-button").hide()
+                                $("#cancel-usageroute-button").show()
+                            })
+                            
+                           
+                        })
+
+                    $(".usageroutename").on("click", function(evt){
+                        evt.preventDefault()
+                            let id = $(this).attr("data-id")
+                            let getUsageRouteById = "getUsageRouteById"
+                            $.post("controllers/combo-setup.php", {id:id, getUsageRouteById: getUsageRouteById}, function(data){
+                                console.log(data)
+                                formdata=JSON.parse(data)
+                                $("#usageroute").val(formdata.usageroute)
+                                // $("#selectusageroutetype").html(`<option value="` + formdata.usageroutetype + `">` + formdata.usageroutetype + `</option>` + itemusageroutelist)
+                                let selectdeptitemgroup  = `<option value="` + formdata.departmentitemgroup + `" selected>` + formdata.departmentitemgroup +`</option>`
+                                //itemgrouplist = selectitemgroup + itemgrouplist
+                                $("#selectdepartmentitemgrouproute").html(selectdeptitemgroup + setupdepartmentitemgrouplist)
+                              
+                                $("#usagerouteabbreviation").val(formdata.abbreviation)
+                                $(".form-edit-usageroute").html(`<input type="hidden" name="usagerouteid" id="usagerouteid" value="` + id + `">`)
+                            
+                                $("#edit-usageroute-button").show()
+                                $("#add-usageroute-button").hide()
+                                $("#delete-usageroute-button").show()
+                                $("#cancel-usageroute-button").show()
+                            })
+                            
+                    })
+                    $(".delete-usageroute").on("click", function(evt){
+                        evt.preventDefault()
+                            let id = $(this).attr("data-id")
+                            let getUsageRouteById = "getUsageRouteById"
+                            $.post("controllers/combo-setup.php", {id:id, getUsageRouteById: getUsageRouteById}, function(data){
+                                console.log(data)
+                                formdata=JSON.parse(data)
+                                $("#usageroute").val(formdata.usageroute)
+                                // $("#selectusageroutetype").html(`<option value="` + formdata.usageroutetype + `">` + formdata.usageroutetype + `</option>` + itemusageroutelist)
+                                let selectdeptitemgroup  = `<option value="` + formdata.departmentitemgroup + `" selected>` + formdata.departmentitemgroup +`</option>`
+                                //itemgrouplist = selectitemgroup + itemgrouplist
+                                $("#selectdepartmentitemgrouproute").html(selectdeptitemgroup + setupdepartmentitemgrouplist)
+                              
+                                $("#usagerouteabbreviation").val(formdata.abbreviation)
+                                $(".form-edit-usageroute").html(`<input type="hidden" name="usagerouteid" id="usagerouteid" value="` + id + `">`)
+                            
+                                $("#delete-usageroute-button").show()
+                                $("#add-usageroute-button").hide()
+                                $("#cancel-usageroute-button").show()
+                            })
+                            
+                    })
+                })
+
+                })
+            }
+
+            $("#selectdeptitemgrpusageroutetype").on("change", function(evt){
+                evt.preventDefault()
+                let getDeptItemGrpUsageRoute = "getDeptItemGrpUsageRoute"
+                let searchItem = $("#selectdeptitemgrpusageroutetype").val()
+                $.post("controllers/combo-setup.php",{searchItem:searchItem,getDeptItemGrpUsageRoute: getDeptItemGrpUsageRoute},function(formdata){
+                //console.log("itemGroup: ",data)
+                if(formdata!="No Record Found"){
+                    console.log(formdata)
+                    let data=JSON.parse(formdata)
+                    let routeoptions = ``
+                    $.each(data.records, function(key, val) {
+                        
+                        routeoptions += `
+                        <option value="` + val.usageroute + `">` + val.usageroute + `</option>
+                        `
+                    })
+                    //itemusageroutelist = routeoptions
+                    $("#selectdeptitemgrpusageroute").html(routeoptions)
+                    // $("#selectdeptitemgrpusageroutetype").html(classoptions)
+
+                }
+                })
+            })
+
+            GetUsageRouteFunction()
+            $("#searchusageroute").on('change keyup paste', function () {
+                ApplyFilterUsageRoute();
+            });
+
+            function ApplyFilterUsageRoute() {
+                var searchString = $("#searchusageroute").val();
+                console.log("GetUsageRouteFunction")
+                GetUsageRouteFunction()
+            }
+
+            $("#add-usageroute-button").on("click", function(evt){
+                evt.preventDefault();
+                console.log("click")
+                let usageroute = $("#usageroute").val()
+                let usagerouteabbreviation = $("#usagerouteabbreviation").val()
+                let departmentitemgroup = $("#selectdepartmentitemgrouproute").val()
+                let selectusageroutetype = ""
+                if(usageroute!=""){
+                    let insertUsageRoute = "insertUsageRoute"
+                    $.post("controllers/combo-setup.php", {abbreviation:usagerouteabbreviation,departmentitemgroup:departmentitemgroup,selectusageroutetype:selectusageroutetype, usageroute:usageroute, insertUsageRoute:insertUsageRoute},function(data){
+                        $("#usageroute-status").html(data)
+                        GetUsageRouteFunction()
+                    })
+                } else{
+                    $("#usageroute-status").html("Please enter Usage Route Value")
+                }
+
+               
+            })
+
+            $("#edit-usageroute-button").on("click", function(evt){
+                evt.preventDefault();
+                let id = $("#usagerouteid").val()
+                let usageroute = $("#usageroute").val()
+                let usagerouteabbreviation = $("#usagerouteabbreviation").val()
+                let departmentitemgroup = $("#selectdepartmentitemgrouproute").val()
+                let selectusageroutetype = ""
+               let editUsageRoute = "editUsageRoute"
+                $.post("controllers/combo-setup.php", {id:id, departmentitemgroup:departmentitemgroup, usageroute:usageroute,usagerouteabbreviation:usagerouteabbreviation,selectusageroutetype:selectusageroutetype,editUsageRoute:editUsageRoute},function(data){
+                    $("#usageroute-status").html(data)
+                    GetUsageRouteFunction()
+                })
+            })
+
+            $("#delete-usageroute-button").on("click",function(evt){
+                evt.preventDefault();
+                let id = $("#usagerouteid").val()
+                
+                let deleteUsageRoute = "deleteUsageRoute"
+                $.post("controllers/combo-setup.php", {id:id, deleteUsageRoute:deleteUsageRoute},function(data){
+                    $("#usageroute-status").html(data)
+                    GetUsageRouteFunction()
+                })
+            })
+
+            $("#cancel-usageroute-button").on("click", function(evt){
+                evt.preventDefault()
+                GetUsageRouteFunction()
+            })
+
+             //Duration
+             function GetDurationFunction(){
+                $("#edit-duration-button").hide()
+                $("#delete-duration-button").hide()
+                $("#cancel-duration-button").hide()
+                $("#add-duration-button").show()
+                $(".form-edit-duration").html("")
+                $("#duration").val("")
+                $("#interpretation").val("")
+                $("#durationabbreviation").val("")
+               
+                let searchItem = $("#searchduration").val()
+                let getDuration = "getDuration"
+                $.post("controllers/combo-setup.php",{searchItem:searchItem,getDuration: getDuration},function(formdata){
+                    //console.log("itemGroup: ",data)
+                    if(formdata=="No Record Found"){
+                        $("#view-duration-count").html(formdata)
+                    }else{
+                        console.log(formdata)
+                        console.log(typeof(formdata))
+                        let data=JSON.parse(formdata)
+                        console.log(data)
+                        let count = 0
+                            
+                        let totalrecord = ``
+                        $.each(data.records, function(key, val) {
+                            count++
+                          totalrecord += `
+                            <tr>
+                                <td>
+                                    
+                                    <a href="#" data-id="` + val.id + `" class="btn btn-outline-default take-btn durationname"><h3 style="color:blue;">` + val.duration + `</h3></a>
+                                </td>                 
+                                
+                                <td>
+                                        <p style="font-size:18px;font-weight:bold;">` + val.abbreviation + `</p>
+                                </td> 
+                                <td>
+                                        <p style="font-size:18px;font-weight:bold;">` + val.interpretation + `</p>
+                                </td> 
+                                <td>
+                                    <a href="#" data-id="` + val.id + `" class="btn btn-outline-success take-btn edit-duration">Edit</a>
+                                    <a href="#" data-id="` + val.id + `" class="btn btn-outline-danger take-btn delete-duration">Delete</a>
+                                </td>
+                            </tr>
+                          `
+                        })
+                        $("#view-duration-count").html(count + " Record(s) Found")
+                        $("#view-duration-list").html(totalrecord)
+                    }
+                    $(".edit-duration").on("click", function(evt){
+                            evt.preventDefault()
+                            let id = $(this).attr("data-id")
+                            let getDurationById = "getDurationById"
+                            $.post("controllers/combo-setup.php", {id:id, getDurationById: getDurationById}, function(data){
+                                console.log(data)
+                                formdata=JSON.parse(data)
+                                $("#duration").val(formdata.duration)
+                                $("#durationabbreviation").val(formdata.abbreviation)
+                                $("#interpretation").val(formdata.interpretation)
+                             // $("#gasusagerouteabbreviation").val(formdata.abbreviation)
+                                let selectdeptitemgroup  = `<option value="` + formdata.departmentitemgroup + `" selected>` + formdata.departmentitemgroup +`</option>`
+                                    //itemgrouplist = selectitemgroup + itemgrouplist
+                                    $("#selectdepartmentitemgroupduration").html(selectdeptitemgroup + setupdepartmentitemgrouplist)
+                                
+                                $(".form-edit-duration").html(`<input type="hidden" name="durationid" id="durationid" value="` + id + `">`)
+                            
+                                $("#edit-duration-button").show()
+                                $("#add-duration-button").hide()
+                                $("#cancel-duration-button").show()
+                            })
+                            
+                           
+                        })
+
+                        $(".durationname").on("click", function(evt){
+                            evt.preventDefault()
+                            let id = $(this).attr("data-id")
+                            let getDurationById = "getDurationById"
+                            $.post("controllers/combo-setup.php", {id:id, getDurationById: getDurationById}, function(data){
+                                console.log(data)
+                                formdata=JSON.parse(data)
+                                $("#duration").val(formdata.duration)
+                                $("#durationabbreviation").val(formdata.abbreviation)
+                                $("#interpretation").val(formdata.interpretation)
+                             // $("#gasusagerouteabbreviation").val(formdata.abbreviation)
+                                let selectdeptitemgroup  = `<option value="` + formdata.departmentitemgroup + `" selected>` + formdata.departmentitemgroup +`</option>`
+                                        //itemgrouplist = selectitemgroup + itemgrouplist
+                                        $("#selectdepartmentitemgroupduration").html(selectdeptitemgroup + setupdepartmentitemgrouplist)
+                                    
+                                $(".form-edit-duration").html(`<input type="hidden" name="durationid" id="durationid" value="` + id + `">`)
+                             
+                                $("#delete-duration-button").show()
+                                $("#edit-duration-button").show()
+                                $("#add-duration-button").hide()
+                                $("#cancel-duration-button").show()
+                            })
+                            
+                        })
+
+                    $(".delete-duration").on("click", function(evt){
+                        evt.preventDefault()
+                            let id = $(this).attr("data-id")
+                            let getDurationById = "getDurationById"
+                            $.post("controllers/combo-setup.php", {id:id, getDurationById: getDurationById}, function(data){
+                                console.log(data)
+                                formdata=JSON.parse(data)
+                                $("#duration").val(formdata.duration)
+                                $("#durationabbreviation").val(formdata.abbreviation)
+                                $("#interpretation").val(formdata.interpretation)
+                             // $("#gasusagerouteabbreviation").val(formdata.abbreviation)
+                                let selectdeptitemgroup  = `<option value="` + formdata.departmentitemgroup + `" selected>` + formdata.departmentitemgroup +`</option>`
+                                        //itemgrouplist = selectitemgroup + itemgrouplist
+                                        $("#selectdepartmentitemgroupduration").html(selectdeptitemgroup + setupdepartmentitemgrouplist)
+                                    
+                                $(".form-edit-duration").html(`<input type="hidden" name="durationid" id="durationid" value="` + id + `">`)
+                            
+                                $("#edit-duration-button").show()
+                                $("#add-duration-button").hide()
+                                $("#cancel-duration-button").show()
+                            })
+                            
+                    })
+                })
+            }
+
+            GetDurationFunction()
+            $("#searchduration").on('change keyup paste', function () {
+                ApplyFilterDuration();
+            });
+
+            function ApplyFilterDuration() {
+                var searchduration = $("#searchduration").val();
+                console.log("GetDurationFunction")
+                GetDurationFunction()
+            }
+
+            $("#add-duration-button").on("click", function(evt){
+                evt.preventDefault();
+                console.log("click")
+                let duration = $("#duration").val()
+                let abbreviation = $("#durationabbreviation").val()
+                let interpretation = $("#interpretation").val()
+                let departmentitemgroup = $("#selectdepartmentitemgroupduration").val()
+                if(duration!=""){
+                    //let abbreviation = $("#gasusagerouteabbreviation").val()
+                
+                    let insertDuration = "insertDuration"
+                    $.post("controllers/combo-setup.php", {departmentitemgroup:departmentitemgroup,duration:duration,abbreviation:abbreviation,interpretation:interpretation,insertDuration:insertDuration},function(data){
+                        $("#duration-status").html(data)
+                        GetDurationFunction()
+                    })
+                } else{
+                    $("#duration-status").html("Please enter a value for Duration")
+                }
+                
+               
+            })
+
+            $("#edit-duration-button").on("click", function(evt){
+                evt.preventDefault();
+                let id = $("#durationid").val()
+                let duration = $("#duration").val()
+                let abbreviation = $("#durationabbreviation").val()
+                let interpretation = $("#interpretation").val()
+                let departmentitemgroup = $("#selectdepartmentitemgroupduration").val()
+                let editDuration = "editDuration"
+                $.post("controllers/combo-setup.php", {id:id, departmentitemgroup:departmentitemgroup,duration:duration,abbreviation:abbreviation,interpretation:interpretation,editDuration:editDuration},function(data){
+                    $("#duration-status").html(data)
+                    GetDurationFunction()
+                })
+            })
+
+            $("#delete-duration-button").on("click",function(evt){
+                evt.preventDefault();
+                let id = $("#durationid").val()
+                console.log(id)
+                let deleteDuration= "deleteDuration"
+                $.post("controllers/combo-setup.php", {id:id, deleteDuration:deleteDuration},function(data){
+                    $("#duration-status").html(data)
+                    GetDurationFunction()
+                })
+            })
+
+            $("#cancel-duration-button").on("click", function(evt){
+                evt.preventDefault()
+                GetDurationFunction()
+            })
+
+            //Dosage
+            function GetDosageFunction(){
+                $("#edit-dosage-button").hide()
+                $("#delete-dosage-button").hide()
+                $("#cancel-dosage-button").hide()
+                $("#add-dosage-button").show()
+                $(".form-edit-dosage").html("")
+                $("#dosage").val("")
+                $("#dosageabbreviation").val("")
+               
+                let searchItem = $("#searchdosage").val()
+                let getDosage = "getDosage"
+                $.post("controllers/combo-setup.php",{searchItem:searchItem,getDosage: getDosage},function(formdata){
+                    //console.log("itemGroup: ",data)
+                    if(formdata=="No Record Found"){
+                        $("#view-dosage-count").html(formdata)
+                    }else{
+                        console.log(formdata)
+                        console.log(typeof(formdata))
+                        let data=JSON.parse(formdata)
+                        console.log(data)
+                        let count = 0
+                            
+                        let totalrecord = ``
+                        $.each(data.records, function(key, val) {
+                            count++
+                          totalrecord += `
+                            <tr>
+                                <td>
+                                    
+                                    <a href="#" data-id="` + val.id + `" class="btn btn-outline-default take-btn dosagename"><h3 style="color:blue;">` + val.dosage + `</h3></a>
+                                </td>                 
+                                
+                                <td>
+                                        <p style="font-size:18px;font-weight:bold;">` + val.abbreviation + `</p>
+                                </td> 
+                                
+                                <td>
+                                    <a href="#" data-id="` + val.id + `" class="btn btn-outline-success take-btn edit-dosage">Edit</a>
+                                    <a href="#" data-id="` + val.id + `" class="btn btn-outline-danger take-btn delete-dosage">Delete</a>
+                                </td>
+                            </tr>
+                          `
+                        })
+                        $("#view-dosage-count").html(count + " Record(s) Found")
+                        $("#view-dosage-list").html(totalrecord)
+                    }
+                    $(".edit-dosage").on("click", function(evt){
+                            evt.preventDefault()
+                            let id = $(this).attr("data-id")
+                            let getDosageById = "getDosageById"
+                            $.post("controllers/combo-setup.php", {id:id, getDosageById: getDosageById}, function(data){
+                                console.log(data)
+                                formdata=JSON.parse(data)
+                                $("#dosage").val(formdata.dosage)
+                                $("#dosageabbreviation").val(formdata.abbreviation)
+                             // $("#gasusagerouteabbreviation").val(formdata.abbreviation)
+                                let selectdeptitemgroup  = `<option value="` + formdata.departmentitemgroup + `" selected>` + formdata.departmentitemgroup +`</option>`
+                                            //itemgrouplist = selectitemgroup + itemgrouplist
+                                            $("#selectdepartmentitemgroupdosage").html(selectdeptitemgroup + setupdepartmentitemgrouplist)
+                                        
+                                $(".form-edit-dosage").html(`<input type="hidden" name="dosageid" id="dosageid" value="` + id + `">`)
+                            
+                                $("#edit-dosage-button").show()
+                                $("#add-dosage-button").hide()
+                                $("#cancel-dosage-button").show()
+                            })
+                            
+                           
+                        })
+
+                        $(".fequencyname").on("click", function(evt){
+                            evt.preventDefault()
+                            let id = $(this).attr("data-id")
+                            let getDosageById = "getDosageById"
+                            $.post("controllers/combo-setup.php", {id:id, getDosageById: getDosageById}, function(data){
+                                console.log(data)
+                                formdata=JSON.parse(data)
+                                $("#dosage").val(formdata.dosage)
+                                $("#dosageabbreviation").val(formdata.abbreviation)
+                             // $("#gasusagerouteabbreviation").val(formdata.abbreviation)
+                                let selectdeptitemgroup  = `<option value="` + formdata.departmentitemgroup + `" selected>` + formdata.departmentitemgroup +`</option>`
+                                                //itemgrouplist = selectitemgroup + itemgrouplist
+                                                $("#selectdepartmentitemgroupdosage").html(selectdeptitemgroup + setupdepartmentitemgrouplist)
+                                            
+                                $(".form-edit-dosage").html(`<input type="hidden" name="dosageid" id="dosageid" value="` + id + `">`)
+                             
+                                $("#delete-dosage-button").show()
+                                $("#edit-dosage-button").show()
+                                $("#add-dosage-button").hide()
+                                $("#cancel-dosage-button").show()
+                            })
+                            
+                        })
+
+                    $(".delete-dosage").on("click", function(evt){
+                        evt.preventDefault()
+                            let id = $(this).attr("data-id")
+                            let getDosageById = "getDosageById"
+                            $.post("controllers/combo-setup.php", {id:id, getDosageById: getDosageById}, function(data){
+                                console.log(data)
+                                formdata=JSON.parse(data)
+                                $("#dosage").val(formdata.dosage)
+                                $("#dosageabbreviation").val(formdata.abbreviation)
+                             // $("#gasusagerouteabbreviation").val(formdata.abbreviation)
+                                let selectdeptitemgroup  = `<option value="` + formdata.departmentitemgroup + `" selected>` + formdata.departmentitemgroup +`</option>`
+                                                //itemgrouplist = selectitemgroup + itemgrouplist
+                                                $("#selectdepartmentitemgroupdosage").html(selectdeptitemgroup + setupdepartmentitemgrouplist)
+                                            
+                                $(".form-edit-dosage").html(`<input type="hidden" name="dosageid" id="dosageid" value="` + id + `">`)
+                            
+                                $("#edit-dosage-button").show()
+                                $("#add-dosage-button").hide()
+                                $("#cancel-dosage-button").show()
+                            })
+                            
+                    })
+                })
+            }
+
+            GetDosageFunction()
+            $("#searchdosage").on('change keyup paste', function () {
+                ApplyFilterDosage();
+            });
+
+            function ApplyFilterDosage() {
+                var searchdosage = $("#searchdosage").val();
+                console.log("GetDosageFunction")
+                GetDosageFunction()
+            }
+
+            $("#add-dosage-button").on("click", function(evt){
+                evt.preventDefault();
+                console.log("click")
+                let dosage = $("#dosage").val()
+                let abbreviation = $("#dosageabbreviation").val()
+                let departmentitemgroup = $("#selectdepartmentitemgroupdosage").val()
+                if(dosage!=""){
+                    //let abbreviation = $("#gasusagerouteabbreviation").val()
+                
+                    let insertDosage = "insertDosage"
+                    $.post("controllers/combo-setup.php", {departmentitemgroup:departmentitemgroup,dosage:dosage,abbreviation:abbreviation,insertDosage:insertDosage},function(data){
+                        $("#dosage-status").html(data)
+                        GetDosageFunction()
+                    })
+                } else{
+                    $("#dosage-status").html("Please enter a value for Dosage")
+                }
+                
+               
+            })
+
+            $("#edit-dosage-button").on("click", function(evt){
+                evt.preventDefault();
+                let id = $("#dosageid").val()
+                let dosage = $("#dosage").val()
+                let abbreviation = $("#dosageabbreviation").val()
+                let departmentitemgroup = $("#selectdepartmentitemgroupdosage").val()
+                
+                let editDosage = "editDosage"
+                $.post("controllers/combo-setup.php", {id:id, departmentitemgroup:departmentitemgroup,dosage:dosage,abbreviation:abbreviation,editDosage:editDosage},function(data){
+                    $("#dosage-status").html(data)
+                    GetDosageFunction()
+                })
+            })
+
+            $("#delete-dosage-button").on("click",function(evt){
+                evt.preventDefault();
+                let id = $("#dosageid").val()
+                console.log(id)
+                let deleteDosage= "deleteDosage"
+                $.post("controllers/combo-setup.php", {id:id, deleteDosage:deleteDosage},function(data){
+                    $("#dosage-status").html(data)
+                    GetDosageFunction()
+                })
+            })
+
+            $("#cancel-dosage-button").on("click", function(evt){
+                evt.preventDefault()
+                GetDosageFunction()
+            })
+
+        })
+    </script>
+</body>
+
+</html>

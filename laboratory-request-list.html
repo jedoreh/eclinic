@@ -1,0 +1,686 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>medical</title>
+    <link rel="icon" href="img/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- themify CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <!-- flaticon CSS -->
+    <link rel="stylesheet" href="css/flaticon.css">
+    <!-- magnific popup CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- nice select CSS -->
+    <!-- <link rel="stylesheet" href="css/nice-select.css"> -->
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="css/slick.css">
+    <!-- style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        thead, tbody, tr { display: block; }
+
+        tr:after {
+            content: ' ';
+            display: block;
+            visibility: hidden;
+            clear: both;
+        }
+
+        
+
+        tbody {
+            height: 250px;
+            overflow-y: auto;
+        }
+
+        thead {
+            /* fallback */
+        }
+
+        thead th {
+            height: 30px;
+
+            /*text-align: left;*/
+        }
+
+        tbody td, thead th {
+            width: 12.2%;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <!--::header part start::-->
+    <header class="main_menu">
+            
+        </header>
+        <!-- Header part end-->
+       
+    <!-- breadcrumb start-->
+    <section class="breadcrumb breadcrumb_bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb_iner">
+                        <div class="form-row">
+                            <div class="form-group col-md-2">
+                                <span id="username" style="color:#F1F1F1;font-size: 17px;"></span>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <span id="pagetitle" style="color:#F1F1F1;font-size: 20px;font-weight: bolder;">Lab Sample Collection</span>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <span id="sysdate" style="color:#F1F1F1"></span>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <span id="systime" style="color:#F1F1F1"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- breadcrumb start-->
+
+    
+
+    <!--::regervation_part start::-->
+    <section class="regervation_part padding_bottom" style="margin-top:30px;">
+        <div class="container">
+            <div class="row align-items-center regervation_content">
+                <div class="col-md-12">
+                    <div class="regervation_part_iner">
+                        <br>
+                        <form action="controllers/add-staff.php" class="frmaddperson">
+                            <!-- <h2>Laboratory Request List</h2> -->
+                            <div class="label label-success" id="errorlogin"></div>
+                            <div class="form-row">
+                                
+                            </div>
+                            
+                        </form>
+                    </div>
+                    <div class="card-box">
+                        <ul class="nav nav-tabs nav-tabs-solid nav-tabs-rounded nav-justified">
+                            <!-- <li class="nav-item"><a class="nav-link btn-primary active" href="#solid-rounded-justified-tab6" data-toggle="tab">Sex</a></li> -->
+                            <!-- <li class="nav-item"><a class="nav-link btn-primary" href="#solid-rounded-justified-tab3" data-toggle="tab">Age Range</a></li> 
+                            <li class="nav-item"><a class="nav-link btn-primary" href="#solid-rounded-justified-tab7" data-toggle="tab">Weight</a></li> -->
+                            <!-- <li class="nav-item"><a class="nav-link btn-primary active" href="#solid-rounded-justified-tab8" data-toggle="tab">Patient Card Update</a></li> -->
+                            <!-- <li class="nav-item"><a class="nav-link btn-primary" href="#solid-rounded-justified-tab4" data-toggle="tab">Duration</a></li>
+                            
+                            <li class="nav-item"><a class="nav-link btn-primary" href="#solid-rounded-justified-tab9" data-toggle="tab">Dosage Unit</a></li>
+                             <li class="nav-item dropdown"> 
+                                <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Stocking Setup</a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item" href="#solid-rounded-justified-tab2" data-toggle="tab">Route of Administration</a>
+                                    <a class="dropdown-item" href="#solid-rounded-justified-tab3" data-toggle="tab">Category of Importance</a>
+                                    <a class="dropdown-item" href="#solid-rounded-justified-tab4" data-toggle="tab">Stock Location</a>
+                                    <a class="dropdown-item" href="#solid-rounded-justified-tab5" data-toggle="tab">Physical Position</a> 
+                                </div>
+                            </li> 
+                            <li class="nav-item"><a class="nav-link" href="#solid-rounded-justified-tab3" data-toggle="tab">Department Item Group</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#solid-rounded-justified-tab4" data-toggle="tab">Generic Name</a></li> -->
+                            <!-- <li class="nav-item"><a class="nav-link" href="#solid-rounded-justified-tab5" data-toggle="tab">State</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#solid-rounded-justified-tab6" data-toggle="tab">Default Strength</a></li> -->
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane show active" id="solid-rounded-justified-tab8">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <form action="controllers/index.php" class="form-signin">
+                                                <div class="label label-success" id="patient-status"></div>
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-12">
+                                                        <div id="patientcardtotal"></div>
+                                                    </div>
+                                                    <div class="form-group col-md-3">
+                                                        Search for Patient:<br>
+                                                        <input type="text" name="searchpatient" class="form-control" id="searchpatient" placeholder="Name or Number" required>
+                                                    </div>
+                                                    <div class="form-group col-md-9">
+                                                        Select Patient:<br>
+                                                        <select name="selectpatient" id="selectpatient" class="form-control" required>
+    
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group col-md-4" id="form-edit-patient"></div>
+                                                    <div class="form-group col-md-4" id="form-view-patientstatus"></div>
+                                                    <div class="form-group col-md-4" id="form-view-patient"></div>
+    
+                                                    <div class="form-group col-md-4" id="form-view-patientname"></div>
+                                                    <div class="form-group col-md-4" id="form-view-patientdetails"></div>
+                                                    <div class="form-group col-md-4" id="form-view-patientinformation"></div>
+    
+                                                    <input type="hidden" id="personid" value="0"> 
+                                                    <input type="hidden" id="patientid" value="0"> 
+                                                    <input type="hidden" id="person" value="0"> 
+                                                    <input type="hidden" id="agegroup" value="0"> 
+                                                    <input type="hidden" id="paid" value="">
+                                                    <input type="hidden" id="selectpatientnumber" value="">
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="col-12">
+                                                        <div class="card">
+                                                            <div class="page-status"></div>
+                                                            <div class="card-header">
+                                                                <h4 class="card-title d-inline-block">View Item Orders</h4>  <p class="btn btn-primary float-right" id="view-item-order-count"></p>
+                                                                <p class="float-right"><input type="text" id="searchrevenueorder" name="searchrevenueorder" placeholder="Search Revenue Order" style="font-size: 18px;"></p>
+                                                            </div>
+                                                            <div class="card-body p-0">
+                                                                <div class="table-responsive scrollable">
+                                                                    <table class="table">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                
+                                                                                <th>Number</th>
+                                                                                <th>Person</th>
+                                                                                <!-- <th>Comments</th> -->
+                                                                                <th>Date</th>
+                                                                                <th>Total Price</th>
+                                                                                <th>Paid</th>
+                                                                                <th>Staff</th>
+                                                                                
+                                                                                <th>Action</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody id="view-all-revenue-order-list">
+                                                                            
+                                                                            
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-5 col-md-6">
+                    <div class="reservation_img">
+                        <img src="img/loginphoto.jpg" alt="">
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <!--::regervation_part end::-->
+
+    
+    <!-- footer part start-->
+    <footer class="footer-area">
+
+        <div class="copyright_part">
+            
+        </div>
+    </footer>
+
+    <!-- footer part end-->
+
+    <!-- jquery plugins here-->
+
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <!-- popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- easing js -->
+    <script src="js/jquery.magnific-popup.js"></script>
+    <!-- swiper js -->
+    <script src="js/swiper.min.js"></script>
+    <!-- swiper js -->
+    <script src="js/masonry.pkgd.js"></script>
+    <!-- particles js -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- <script src="js/jquery.nice-select.min.js"></script> -->
+    <!-- swiper js -->
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <!-- contact js -->
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <script src="js/contact.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+    <script src="views/masterpage.js"></script>
+    <script src="views/records.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/bootstrap-datetimepicker.min.js"></script>
+    <script>
+        $(function () {
+            $('#dateofbirth1').datetimepicker({
+                format: 'LT'
+            });
+            // $('#datetimepicker4').datetimepicker({
+            //     format: 'LT'
+            // });
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+
+            function loadPatientCards(){
+                let loadRegisteredPatientPards = "loadRegisteredPatientPards"
+                $.post("controllers/patient-record.php",{loadRegisteredPatientPards: loadRegisteredPatientPards},function(formdata){
+                        console.log("prescription: ",formdata)
+                        if(formdata=="No Record Found"){
+                            $("#view-item-order-count").html(formdata)
+                        }else{
+                            data = JSON.parse(formdata)
+                            allpatientcards = data.records
+                            totalnumbercards = allpatientcards.length
+                            totalfoundcards = totalnumbercards
+                            let patientcardlist = `<option value='0'>Select Patient</option>`
+                            let count = 0
+                            console.log()
+                            for(i=0;i<allpatientcards.length;i++){
+                            
+                                    count++
+                                    patientcardlist += `
+                                        <option value="` + allpatientcards[i].patientnumber + `">` + allpatientcards[i].person + ` [` + allpatientcards[i].status + `: ` + allpatientcards[i].cardnumber + `]</option>
+                                    `
+
+                                    // $("#paid").val(allpatientcards[i].status)
+                            }
+                                
+                            totalfoundcards = count
+                            $("#selectpatient").html(patientcardlist)
+                            $("#patientcardtotal").html("Found " + totalfoundcards + " Cards Out of " + totalnumbercards + " Cards")
+                            
+                        }
+
+                    })
+            }
+
+
+            let allpatientcards = []
+                let totalnumbercards = 0
+                let totalfoundcards = 0
+                loadPatientCards()
+                
+                $("#searchpatient").on('change keyup paste', function () {
+                    ApplyFilterGetItem();
+                });
+
+                function ApplyFilterGetItem() {
+                    var searchitemservice = $("#searchpatient").val();
+                    console.log("getPatientCards")
+                    getPatientCards()
+                }
+
+
+                function getPatientCards(){
+                    
+                    // $("#viewrevenueordernumber").html("New Prescription Order")
+                    let searchItem = $("#searchpatient").val()
+                    
+                    let count = 0
+                    $("#selectpatient").html("")
+                    $("#form-edit-patient").html("")
+                    $("#form-view-patientstatus").html("")
+                    $("#form-view-patient").html("")
+
+                    let patientcardlist = `<option value='0'>Select Patient</option>`
+                    for(i=0;i<allpatientcards.length;i++){
+                        console.log(allpatientcards[i].person, allpatientcards[i].status)
+                        
+                        if(allpatientcards[i].person.includes(searchItem) || allpatientcards[i].cardnumber.includes(searchItem) || allpatientcards[i].patientnumber.includes(searchItem)){
+                            count++
+                            patientcardlist += `
+                                <option value="` + allpatientcards[i].patientnumber + `" selected>` + allpatientcards[i].person + ` [` + allpatientcards[i].status + `: ` + allpatientcards[i].cardnumber + `]</option>
+                            `
+                            $("#paid").val(allpatientcards[i].status)
+
+                        }
+                    }
+                    
+                    totalfoundcards = count
+                    $("#selectpatient").html(patientcardlist)
+                    $("#patientcardtotal").html("Found " + totalfoundcards + " Cards Out of " + totalnumbercards + " Cards")
+                    let id = $("#selectpatient").val()
+                    getPatientCardId(id)
+                    GetPatientFormFunction(id)
+                }
+
+                $("#selectpatient").on("change", function(evt){
+                    evt.preventDefault()
+                    let id = $(this).val()
+                    console.log(id)
+                    
+                    
+                    getPatientCardId(id)
+                    // GetPatientFormFunction(id)
+                })
+
+                function getPatientCardId(id){
+                    
+                    let getPatientInfoByPatientNumber = "getPatientInfoByPatientNumber"
+                    $.post("controllers/patient-record.php",{id:id,getPatientInfoByPatientNumber: getPatientInfoByPatientNumber},function(formdata){
+                        console.log(formdata)
+                    
+                    
+                        let data = JSON.parse(formdata)
+                        let status = data.status
+                        if(status=="PAID"){
+                            $("#paid").val("PAID")
+                        } else {
+                            $("#paid").val("NOT PAID")
+                        }
+                        $("#form-edit-patient").html("Patient Number: " + id + "<br>Card Number: " + data.cardnumber + "<br>Card Type: " + data.cardtype)
+                        $("#form-view-patientstatus").html("Patient Type: " + data.patienttype + "<br>Patient Status: " + data.patientstatus)
+                        $("#form-view-patient").html("Registered: " + data.entereddate + "<br>By: " + data.enteredby + "<br>Updated: " + data.updateddate)
+                        
+                        $("#form-view-patientname").html("Patient Name: " + data.lastname + " " + data.firstname + " " + data.middlename + "<br>Gender: " + data.gender + "<br>Marital Status: " + data.maritalstatus)
+                        $("#form-view-patientdetails").html("Date of Birth: " + data.dateofbirth + " (" + data.age + " " + data.agevalue + " - " + data.agegroup + ")<br>Weight: " + data.weight + " KG,  Height: " + data.height + " Metres<br>Blood Group: " + data.bloodgroup)
+                        $("#form-view-patientinformation").html("Phone Number: " + data.phonenumber + "<br>Occupation: " + data.occupation + "<br>Religion: " + data.religion)
+                        let personid = data.personid
+                        $("#selectpatientnumber").val(id)
+                        $("#personid").val(personid)
+                        $("#patientid").val(data.patientid)
+                        $("#person").val(data.person)
+
+                    
+                        getRevenueOrders()
+                    })
+                }
+
+                getRevenueOrders()
+                $("#searchrevenueorder").on('change keyup paste', function () {
+                    ApplyFilterGetItem();
+                });
+
+                function ApplyFilterGetItem() {
+                    var searchitemservice = $("#searchrevenueorder").val();
+                    console.log("getRevenueOrders")
+                    getRevenueOrders()
+                }
+                function getRevenueOrders(){
+                    $("#dispense-item-order-button").show()
+                    $("#discard-revenue-order-button").hide()
+                    $("#update-revenue-order-button").hide()
+                    $("#print-reciept-revenue-order-button").hide()
+                    $("#viewrevenueordernumber").html("New Item Order")
+                    let searchItem = $("#searchrevenueorder").val()
+                    let hospitalnumber = $("#selectpatientnumber").val()
+                    console.log(hospitalnumber)
+                    getLaboratoryOrderDept = "getLaboratoryOrderDept"
+                    $.post("controllers/finance-record.php",{hospitalnumber:hospitalnumber,searchItem:searchItem,getLaboratoryOrderDept: getLaboratoryOrderDept},function(formdata){
+                        console.log(formdata)
+                        if(formdata=="No Record Found"){
+                            $("#view-item-order-count").html(formdata)
+                            $("#view-all-revenue-order-list").html("")
+                        }else{
+                            // console.log(formdata)
+                            console.log(typeof(formdata))
+                            let data=JSON.parse(formdata)
+                            console.log(data)
+                            let count = 0
+                                
+                            let totalrecord = ``
+                            $.each(data.records, function(key, val) {
+                                count++
+                                
+                            totalrecord += `
+                                <tr>
+                                
+                                    <td>
+                                        
+                                        <a href="#" data-id="` + val.id + `" class="btn btn-outline-default take-btn itemordername"><h3 style="color:blue;">` + val.revenueordernumber + `</h3></a>
+                                    </td>                 
+                                    <td>
+                                            <p style="font-size:18px;font-weight:bold;">` + val.patientname + ` [` + val.hospitalnumber + `]</p>
+                                    </td> 
+                                
+                                    <td>
+                                            <p style="font-size:18px;font-weight:bold;">` + val.itemorderdate + `</p>
+                                    </td> 
+                                    <td>
+                                            <p style="font-size:18px;font-weight:bold;">&#8358;` + val.totalamount + ` [` + val.items + ` items]</p>
+                                    </td> 
+                                    <td>
+                                            <p style="font-size:18px;font-weight:bold;">&#8358;` + val.paid + ` [` + val.paiditems + ` items]</p>
+                                    </td> 
+                                    <td>
+                                            <p style="font-size:18px;font-weight:bold;">` + val.enteredby + ` (Updated ` + val.updateddate + `)</p>
+                                    </td> 
+                                    
+                                </tr>
+                            `
+                            })
+                            $("#view-item-order-count").html(count + " Record(s) Found")
+                            $("#view-all-revenue-order-list").html(totalrecord)
+                            totalpaiditems = 0
+                            totalpaid = 0
+                        }
+                        
+
+                            $(".itemordername").on("click", function(evt){
+                                evt.preventDefault()
+                                let id = $(this).attr("data-id")
+                                let getRevenueOrderById = "getRevenueOrderById"
+                                $.post("controllers/finance-record.php", {id:id, getRevenueOrderById: getRevenueOrderById}, function(data){
+                                    console.log(data)
+                                    formdata=JSON.parse(data)
+                                    let itemorder = formdata.itemorder
+                                    revenueorderlist = JSON.parse(itemorder)
+                                    $("#revenue-order-id").val(formdata.id)
+                                    $("#revenue-order-number").val(formdata.revenueordernumber)
+                                    displayrevenueorder(revenueorderlist)
+                                    $("#viewrevenueordernumber").html(formdata.revenueordernumber)
+                                    
+                                    $("#discard-revenue-order-button").show()
+                                    $("#update-revenue-order-button").show()
+                                    $("#print-reciept-revenue-order-button").show()
+                                    $("#cancel-revenue-order-button").hide()
+                
+                                })
+                                
+                            })
+
+                        $(".delete-revenue-order").on("click", function(evt){
+                            evt.preventDefault()
+                                let id = $(this).attr("data-id")
+                                let DeleteRevenueOrderById = "DeleteRevenueOrderById"
+                                $.post("controllers/finance-record.php", {id:id, DeleteRevenueOrderById: DeleteRevenueOrderById}, function(data){
+                                    console.log(data)
+                                    $("#revenue-order-status").html(data)
+                                    getRevenueOrders()
+                                })
+                                
+                        })
+                    })
+                    
+
+                }
+
+                function displayrevenueorder(revenueorderlist){
+                    console.log(revenueorderlist)
+                    if(revenueorderlist.length>0){
+                        let count = 0
+                        let totalprice = 0
+                        let totalitems = 0
+                        let pricinglist = ``
+                        
+                        totalpaiditems = 0
+                        totalpaid = 0
+                        revenueorderlist.forEach(element => {
+                            console.log(element)
+                            let item = element.genericname
+                            let status = "NOT PAID"
+                            if(item.includes(",")){
+                                console.log(item)
+                                itemgroup = item.split(",")
+                                item = itemgroup[0]
+                                status = itemgroup[1]
+                                
+                            } 
+                            let department = element.department
+                            let departmentitemgroup = element.departmentitemgroup
+                            let price = parseFloat(element.sellingprice)
+                            let quantity = element.quantity
+                            
+                            let total = parseFloat(price) * parseFloat(quantity)
+                            totalitems++
+                            totalprice += total
+                        
+                            if(status=="PAID"){
+                                totalpaiditems++
+                                totalpaid += total
+                            }
+                            totalrevenueorderprice = totalprice
+                            totalrevenueorderitems = totalitems
+                                let insert_checkbox = ""
+                                if(status=="PAID"){
+                                    insert_checkbox = "&check;"
+                                } else {
+                                    insert_checkbox = `<input type="checkbox" style="height: 25px;width:25px;" class="itemselect" data-id="` + count + `">`
+                                
+                                }
+                                pricinglist += `<tr>
+                                    <td>
+                                        
+                                        ` + insert_checkbox + `
+                                    </td> 
+                                                    <td>` + item + `</td>
+                                                    <td>` + department + `</td>
+                                                    <td>`+ departmentitemgroup + `</td>
+                                                    <td>&#8358;`+ price.toFixed(2) + `</td>
+                                                    <td>`+ quantity + `</td>
+                                                    <td>&#8358;` + total.toFixed(2) + `</td>
+                                                    <td>`+ status + `</td>
+                                                    <td><input type="number" min="1" max="1000" class="multiplyitem" data-id="` + count + `"></td>
+                                                    <td><span class="additem" data-id="` + count + `" style="font-size: 16px;"><i class="fa fa-plus-square"></i>
+                                                        <span class="subtractitem" data-id="` + count + `" style="font-size: 16px;"><i class="fa fa-minus-square"></i>
+                                                            <span class="deleteitem" data-id="` + count + `" style="font-size: 16px;"><i class="fa fa-trash-o"></i></span></td>
+                                                </tr>
+                                    `
+                                    count++
+                                });
+                                $("#view-revenue-order-list").html(pricinglist)
+                                $("#view-revenue-order-count").html(totalitems + " Item(s)")
+                                $("#view-revenue-order-price").html("&#8358;" + totalprice.toFixed(2))
+                                $("#pay-revenue-order-price").html("Paid: &#8358;" + totalpaid.toFixed(2) + " (" + totalpaiditems.toFixed(0) + " Items)")
+                                $("#selectallitems").on("click", function(evt){
+                                    totalpaiditems =0
+                                    totalpaid =0
+                                    $(".itemselect").each(function(index, obj){
+                                        $(this).prop('checked',true)
+                                        console.log($(this).attr("data-id"))
+                                        let id = $(this).attr("data-id")
+                                        let price = revenueorderlist[id].sellingprice
+                                        let quantity = revenueorderlist[id].quantity
+
+                                        if(!revenueorderlist[id].genericname.includes("PAID")){
+                                            let total= parseFloat(price) * parseFloat(quantity)
+                                            totalpaiditems++
+                                            totalpaid += total
+                                            $("#pay-revenue-order-price").html("Paid: &#8358;" + totalpaid.toFixed(2) + " (" + totalpaiditems.toFixed(0) + " Items)")
+                                        }
+                                    })
+                                })
+                                $(".itemselect").change(function(){
+                                    if($(this).prop('checked')==true){
+                                        let id = $(this).attr("data-id")
+                                        let price = revenueorderlist[id].sellingprice
+                                        let quantity = revenueorderlist[id].quantity
+                                        if(!revenueorderlist[id].genericname.includes("PAID")){
+                                            let total= parseFloat(price) * parseFloat(quantity)
+                                            totalpaiditems++
+                                            totalpaid += total
+                                            $("#pay-revenue-order-price").html("Paid: &#8358;" + totalpaid.toFixed(2) + " (" + totalpaiditems.toFixed(0) + " Items)")
+                                        }
+                                    } else {
+                                        let id = $(this).attr("data-id")
+                                        let price = revenueorderlist[id].sellingprice
+                                        let quantity = revenueorderlist[id].quantity
+                                        if(!revenueorderlist[id].genericname.includes("PAID")){
+                                            let total= parseFloat(price) * parseFloat(quantity)
+                                            totalpaiditems--
+                                            totalpaid -= total
+                                            $("#pay-revenue-order-price").html("Paid: &#8358;" + totalpaid.toFixed(2) + " (" + totalpaiditems.toFixed(0) + " Items)")
+                                        }
+                                    }
+                                
+                                    
+                                })
+                                $(".deleteitem").on("click", function(evt){
+                                        evt.preventDefault()
+                                        let id = $(this).attr("data-id")
+                                    
+                                        revenueorderlist.splice(id, 1)
+                                        console.log(id)
+                                        
+                                        displayrevenueorder(revenueorderlist)
+
+                                    })
+                                $(".multiplyitem").on('change paste', function () {
+                                    let qty = parseFloat($(this).val())
+
+                                        let id = $(this).attr("data-id")
+                                    
+                                        revenueorderlist[id].quantity = qty
+                                    console.log(revenueorderlist)
+                                        // $("#view-revenue-order-price").html("&#8358;" + totalprice.toFixed(2))
+
+                                        displayrevenueorder(revenueorderlist)
+
+                                    })
+                                $(".additem").on("click", function(evt){
+                                    evt.preventDefault()
+                                    let id = $(this).attr("data-id")
+                                
+                                    revenueorderlist[id].quantity = revenueorderlist[id].quantity + 1
+                                console.log(revenueorderlist)
+                                    // $("#view-revenue-order-price").html("&#8358;" + totalprice.toFixed(2))
+
+                                    displayrevenueorder(revenueorderlist)
+
+                                })
+
+                                $(".subtractitem").on("click", function(evt){
+                                        evt.preventDefault()
+                                        let id = $(this).attr("data-id")
+                                    
+                                        revenueorderlist[id].quantity = revenueorderlist[id].quantity -1
+                                        if(revenueorderlist[id].quantity==0){
+                                            revenueorderlist.splice(id, 1)
+                                        }
+                                        
+                                        
+                                        displayrevenueorder(revenueorderlist)
+
+                                    })
+                            
+                    } else {
+                        $("#view-revenue-order-list").html("")
+                        $("#view-revenue-order-count").html("")
+                        $("#view-revenue-order-price").html("")
+                    }
+                }
+            })
+    </script>
+</body>
+
+</html>

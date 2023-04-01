@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Create Sub-departments</title>
+    <link rel="icon" href="img/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- themify CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <!-- flaticon CSS -->
+    <link rel="stylesheet" href="css/flaticon.css">
+    <!-- magnific popup CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- nice select CSS -->
+    <!-- <link rel="stylesheet" href="css/nice-select.css"> -->
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="css/slick.css">
+    <!-- style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!--::header part start::-->
+    <header class="main_menu">
+            
+        </header>
+        <!-- Header part end-->
+       
+    <!-- breadcrumb start-->
+    <section class="breadcrumb breadcrumb_bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb_iner">
+                        <div class="breadcrumb_iner_item">
+                            <h2>SUYI HOSPITAL </h2>
+                            <p style="padding-bottom: 70px;"><a href="#" style="color:#F1F1F1">Setup</a>: Departments/Items Setup</p><br><br><br> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- breadcrumb start-->
+
+    
+
+    <!--::regervation_part start::-->
+    <section class="regervation_part padding_bottom">
+        <div class="container">
+            <div class="row align-items-center regervation_content">
+                <div class="col-md-12">
+                    <div class="regervation_part_iner">
+                        <br>
+                        <form action="controllers/add-staff.php" class="frmaddperson">
+                            <h2>Create Subdepartments</h2>
+                            
+                        </form>
+                    </div>
+
+
+                    <div class="card-box">
+                       
+                        <ul class="nav nav-tabs nav-tabs-solid nav-tabs-rounded nav-justified">
+                            <li class="nav-item"><a class="nav-link active" href="#solid-rounded-justified-tab1" data-toggle="tab">Sub-Departments</a></li>
+                            <!-- <li class="nav-item"><a class="nav-link" href="#solid-rounded-justified-tab2" data-toggle="tab">Group</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#solid-rounded-justified-tab3" data-toggle="tab">Class</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#solid-rounded-justified-tab4" data-toggle="tab">Sub-Class</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#solid-rounded-justified-tab5" data-toggle="tab">State</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#solid-rounded-justified-tab6" data-toggle="tab">Default Strength</a></li> -->
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane show active" id="solid-rounded-justified-tab1">
+                                <br>
+                                <h3>Sub-Department</h3>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            
+                                            <form action="controllers/index.php" class="form-signin">
+                                                <h2>Add Sub-Department</h2>
+                                                <div class="label label-success" id="subdepartment-status"></div>
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-12">
+                                                        Select Department:<br>
+                                                        <select name="selectdepartment" id="selectdepartment" class="form-control" required>
+
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group col-md-12">
+                                                        <input type="text" name="subdepartment" class="form-control" id="subdepartment" placeholder="Sub-Department" required>
+                                                    </div>
+                                                    <div class="form-group col-md-12">
+                                                        <input type="text" name="subdepartmentcode" class="form-control" id="subdepartmentcode"
+                                                            placeholder="Sub-Department Code">
+                                                    </div>
+                                                    <!-- <div class="form-group col-md-6">
+                                                        <input type="text" name="formabbreviation" class="form-control" id="formabbreviation"
+                                                            placeholder="Form Abbreviation">
+                                                    </div> -->
+                                                    <div class="form-edit-subdepartment"></div>
+                                                    
+                                                </div>
+                                                <div class="regerv_btn">
+                                                    <button type="submit" class="genric-btn primary" id="add-subdepartment-button">Add Department</button>
+                                                    <button type="submit" class="genric-btn warning" id="edit-subdepartment-button">Edit Department</button>
+                                                    <button type="submit" class="genric-btn danger" id="delete-subdepartment-button">Confirm Deletion</button>
+                                                </div>
+                                            </form>
+                                            
+                                        </div>
+                                        <div class="col-6">
+                                            
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    <h4 class="card-title d-inline-block">View Sub-Departments</h4>  <p class="btn btn-primary float-right" id="view-subdepartment-count"></p>
+                                                </div>
+                                                <div class="card-body p-0">
+                                                    <div class="table-responsive">
+                                                        <table class="table mb-0">
+                                                            <thead class="d-none">
+                                                                <tr>
+                                                                    <th>SubDepartment</th>
+                                                                    <th>Department</th>
+                                                                    <th>Code</th>
+                                                                    <th class="text-right">Action</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody id="view-subdepartment-list">
+                                                                
+                                                                
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-5 col-md-6">
+                    <div class="reservation_img">
+                        <img src="img/loginphoto.jpg" alt="">
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <!--::regervation_part end::-->
+
+    
+    <!-- footer part start-->
+    <footer class="footer-area">
+
+        <div class="copyright_part">
+            
+        </div>
+    </footer>
+
+    <!-- footer part end-->
+
+    <!-- jquery plugins here-->
+
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <!-- popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- easing js -->
+    <script src="js/jquery.magnific-popup.js"></script>
+    <!-- swiper js -->
+    <script src="js/swiper.min.js"></script>
+    <!-- swiper js -->
+    <script src="js/masonry.pkgd.js"></script>
+    <!-- particles js -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- <script src="js/jquery.nice-select.min.js"></script> -->
+    <!-- swiper js -->
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <!-- contact js -->
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <script src="js/contact.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+    <script src="views/masterpage.js"></script>
+    <script src="views/department-items-setup.js"></script>
+    <!--<script src="views/corpse-list.js"></script> -->
+    <script>
+        $(document).ready(function(){
+            //Departments
+            //Search for Departments
+            
+            function GetSubDepartmentsFunction(){
+                $("#edit-subdepartment-button").hide()
+                $("#delete-subdepartment-button").hide()
+                $(".form-edit-subdepartment").html("")
+                let departmentlist = ``
+                let getDepartment = "getDepartment"
+                $.post("controllers/combo-setup.php",{getDepartment: getDepartment},function(formdata){
+                    //console.log("itemGroup: ",data)
+                    if(formdata!="No Record Found"){
+                        
+                        let data=JSON.parse(formdata)
+                        let departmentoptions = ``
+                        $.each(data.records, function(key, val) {
+                           
+                            departmentoptions += `
+                            <option value="` + val.department + `">` + val.department + `</option>
+                          `
+                        })
+                        departmentlist = departmentoptions
+                        $("#selectdepartment").html(departmentoptions)
+                    }
+
+                $("#subdepartment").val("")
+                $("#subdepartmentcode").val("")
+                //$("#formabbreviation").val("")
+                let getSubDepartment = "getSubDepartment"
+                $.post("controllers/combo-setup.php",{getSubDepartment: getSubDepartment},function(formdata){
+                    //console.log(data)
+                    if(formdata=="No Record Found"){
+                        $("#view-subdepartment-count").html(formdata)
+                    }else{
+                        console.log(formdata)
+                        console.log(typeof(formdata))
+                        let data=JSON.parse(formdata)
+                        console.log(data)
+                        let count = 0
+                            
+                        let totalrecord = ``
+                        $.each(data.records, function(key, val) {
+                            count++
+                          totalrecord += `
+                            <tr>
+                                <td style="min-width: 200px;">
+                                    
+                                    <h2><a href="#">` + val.subdepartment + `</span></a></h2>
+                                </td>
+                                <td>
+                                    
+                                    <p>` + val.department + `</p>
+                                </td>                 
+                                <td>
+                                    
+                                    <p>` + val.subdepartmentcode + `</p>
+                                </td>
+                                
+                                <td class="text-right">
+                                    <a href="#" data-id="` + val.id + `" class="btn btn-outline-success take-btn edit-subdepartment">Edit</a>
+                                    <a href="#" data-id="` + val.id + `" class="btn btn-outline-danger take-btn delete-subdepartment">Delete</a>
+                                </td>
+                            </tr>
+                          `
+                        })
+                        $("#view-subdepartment-count").html(count + " Record(s) Found")
+                        $("#view-subdepartment-list").html(totalrecord)
+                    }
+                    $(".edit-subdepartment").on("click", function(evt){
+                            evt.preventDefault()
+                            let id = $(this).attr("data-id")
+                            let getDepartmentById = "getDepartmentById"
+                            $.post("controllers/combo-setup.php", {id:id, getDepartmentById: getDepartmentById}, function(data){
+                                console.log(data)
+                                formdata=JSON.parse(data)
+                                $("#department").val(formdata.department)
+                                $("#code").val(formdata.code)
+                                //$("#formabbreviation").val(formdata.abbreviation)
+                                $(".form-edit-department").html(`<input type="hidden" name="departmentid" id="departmentid" value="` + id + `">`)
+                            
+                                $("#edit-department-button").show()
+                            })
+                            
+                           
+                        })
+                    $(".delete-subdepartment").on("click", function(evt){
+                        evt.preventDefault()
+                            let id = $(this).attr("data-id")
+                            let getDepartmentById = "getDepartmentById"
+                            $.post("controllers/combo-setup.php", {id:id, getDepartmentById: getDepartmentById}, function(data){
+                                console.log(data)
+                                formdata=JSON.parse(data)
+                                $("#department").val(formdata.department)
+                                $("#code").val(formdata.code)
+                                //$("#formabbreviation").val(formdata.abbreviation)
+                                $(".form-edit-department").html(`<input type="hidden" name="departmentid" id="departmentid" value="` + id + `">`)
+                            
+                                $("#delete-department-button").show()
+                            })
+                            
+                    })
+                })
+                })
+               
+            }
+
+            GetSubDepartmentsFunction()
+            
+
+            $("#add-department-button").on("click", function(evt){
+                evt.preventDefault();
+                console.log("click")
+                let department = $("#department").val()
+                let departmentcode = $("#code").val()
+                //let formabbreviation = $("#formabbreviation").val()
+                let insertDepartment = "insertDepartment"
+                $.post("controllers/combo-setup.php", {department:department,departmentcode:departmentcode,insertDepartment:insertDepartment},function(data){
+                    $("#department-status").html(data)
+                    GetDepartmentsFunction()
+                })
+               
+            })
+
+            $("#edit-department-button").on("click", function(evt){
+                evt.preventDefault();
+                let id = $("#departmentid").val()
+                let departmentcode = $("#code").val()
+                let department = $("#department").val()
+                //let formabbreviation = $("#formabbreviation").val()
+                let editDepartment = "editDepartment"
+                $.post("controllers/combo-setup.php", {id:id, department:department,departmentcode:departmentcode,editDepartment:editDepartment},function(data){
+                    $("#department-status").html(data)
+                    GetDepartmentsFunction()
+                })
+            })
+
+            $("#delete-department-button").on("click",function(evt){
+                evt.preventDefault();
+                let id = $("#departmentid").val()
+                
+                let deleteDepartment = "deleteDepartment"
+                $.post("controllers/combo-setup.php", {id:id, deleteDepartment:deleteDepartment},function(data){
+                    $("#department-status").html(data)
+                    GetDepartmentsFunction()
+                })
+            })
+           
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,2788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Routine Setup</title>
+    <link rel="icon" href="img/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- themify CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- flaticon CSS -->
+    <link rel="stylesheet" href="css/flaticon.css">
+    <!-- magnific popup CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- nice select CSS -->
+    <!-- <link rel="stylesheet" href="css/nice-select.css"> -->
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <!-- style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        a:hover{
+            color:indigo;
+        }
+    </style>
+</head>
+<body>
+
+      <!--::header part start::-->
+      <header class="main_menu">
+            
+        </header>
+        <!-- Header part end-->
+    
+    <!-- breadcrumb start-->
+    <section class="breadcrumb breadcrumb_bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb_iner">
+                        <div class="form-row">
+                            <div class="form-group col-md-2">
+                                <span id="username" style="color:#F1F1F1;font-size: 17px;"></span>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <span id="pagetitle" style="color:#F1F1F1;font-size: 20px;font-weight: bolder;">Item/Services Routine Setup</span>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <span id="sysdate" style="color:#F1F1F1"></span>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <span id="systime" style="color:#F1F1F1"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- breadcrumb start-->
+
+
+     <!--::regervation_part start::-->
+     <section class="regervation_part padding_bottom" style="margin-top:30px;">
+        <div class="container">
+            <div class="row align-items-center regervation_content">
+                <div class="col-md-12">
+                    <div class="regervation_part_iner">
+                        <br>
+                        <form action="controllers/add-staff.php" class="frmaddperson">
+                            <!-- <h2>Pricing</h2> -->
+                            <div class="label label-success" id="errorlogin"></div>
+                            <div class="form-row">
+                                
+                            </div>
+                            
+                        </form>
+                    </div>
+
+                    <div class="card-box">
+                       
+                        <ul class="nav nav-tabs nav-tabs-solid nav-tabs-rounded nav-justified">
+                            <!-- <li class="nav-item"><a class="nav-link btn-primary active" href="#solid-rounded-justified-tab1" data-toggle="tab">Item Pricing</a></li> -->
+                            <!-- <li class="nav-item"><a class="nav-link btn-primary" href="#solid-rounded-justified-tab7" data-toggle="tab">Supplier</a></li> -->
+                            <!-- <li class="nav-item"><a class="nav-link btn-primary" href="#solid-rounded-justified-tab3" data-toggle="tab">Category of Importance</a></li> -->
+                            <!-- <li class="nav-item"><a class="nav-link btn-primary" href="#solid-rounded-justified-tab4" data-toggle="tab">Location</a></li> -->
+                            <!-- <li class="nav-item"><a class="nav-link btn-primary" href="#solid-rounded-justified-tab8" data-toggle="tab">Packaging</a></li> -->
+                            <!-- <li class="nav-item dropdown">
+                                <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Stocking Setup</a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item" href="#solid-rounded-justified-tab2" data-toggle="tab">Route of Administration</a>
+                                    <a class="dropdown-item" href="#solid-rounded-justified-tab3" data-toggle="tab">Category of Importance</a>
+                                    <a class="dropdown-item" href="#solid-rounded-justified-tab4" data-toggle="tab">Stock Location</a>
+                                    <a class="dropdown-item" href="#solid-rounded-justified-tab5" data-toggle="tab">Physical Position</a> 
+                                </div>
+                            </li> -->
+                            <!-- <li class="nav-item"><a class="nav-link" href="#solid-rounded-justified-tab3" data-toggle="tab">Department Item Group</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#solid-rounded-justified-tab4" data-toggle="tab">Generic Name</a></li> -->
+                            <!-- <li class="nav-item"><a class="nav-link" href="#solid-rounded-justified-tab5" data-toggle="tab">State</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#solid-rounded-justified-tab6" data-toggle="tab">Default Strength</a></li> -->
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane show active" id="solid-rounded-justified-tab1">
+                                <br>
+                                <!-- <h3>Item/Service Pricing</h3> -->
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    <h3 class="card-title d-inline-block"> Add Items to Routines</h3> <br>
+                                                    <!-- <p id="itemdetails"></p> -->
+                                                    <!--<p class="btn btn-primary float-right" id="view-stockitem-count"></p>-->
+                                                    <!-- <p class="float-right"><input type="text" id="searchitemservice" name="searchitemservice" placeholder="Search Item/Service" style="font-size: 18px;"></p> -->
+                                                </div>
+                                                <div class="card-body p-0">
+                                                    <div class="table-responsive" style="padding-left: 10px;">
+                                                        <form action="controllers/index.php" class="form-signin">
+                                                            
+                                                            <div class="label label-success" id="item-combinineditems-status"></div>
+                                                            
+                                                            
+                                                            <div class="form-row">
+
+                                                                <div class="combinedpricing-list"></div>
+                                                                <!-- <div class="form-group col-md-3">
+                                                                    SEARCH:<br>
+                                                                    
+                                                                    <input type="text" name="combinedsearchitem" class="form-control" id="combinedsearchitem" placeholder="Search Primary Item" required>
+                                                                </div>
+                                                                <div class="form-group col-md-9">
+                                                                    Select Generic Name:<br>
+                                                                    
+            
+                                                                    <select id="combinedselectitem" name="combinedselectitem" class="form-control">
+                                                                    </select>
+                                                                </div>
+                                                                <div class="form-group col-md-12">Add Items to Primary Item</div> -->
+                                                                <div class="form-group col-md-3">
+                                                                    SEARCH:<br>
+                                                                    
+                                                                    <input type="text" name="searchcombineditem" class="form-control" id="searchcombineditem" placeholder="Search Secondary Item">
+                                                                </div>
+                                                                <div class="form-group col-md-4">
+                                                                    Select Department Item Grouping:<br>
+                                                                    <select class="form-control" id="combinedselectdepartmentitemgroup" name="combinedselectdepartmentitemgroup">
+                                                                   
+                                                                    </select>
+                                                                </div>
+                                                                <div class="form-group col-md-5">
+                                                                    Select Group:<br>
+                                                                    <select class="form-control" id="combinedselectgroup" name="combinedselectgroup">
+                                                                   
+                                                                    </select>
+                                                                </div>
+                                                                <div class="form-group col-md-6">
+                                                                    Select Class:<br>
+                                                                    <select class="form-control" id="combinedselectclass" name="combinedselectclass">
+                                                                   
+                                                                    </select>
+                                                                </div>
+                                                                <div class="form-group col-md-6">
+                                                                    Select Sub-Class:<br>
+                                                                    <select class="form-control" id="combinedselectsubclass" name="combinedselectsubclass">
+                                                                   
+                                                                    </select>
+                                                                </div>
+                                                                <div class="form-group col-md-5">
+                                                                    <br>
+                                                                    Select Item From Stock:<br>
+                                                                    <select class="form-control" id="combineditems" name="combineditems">
+                                                                   
+                                                                    </select>
+                                                                </div>
+                                                                <div class="form-group col-md-1">
+                                                                    Price Per Piece:<br>
+                                                                    
+                                                                    <input type="text" name="combinedprice" class="form-control" id="combinedprice" placeholder="Unit Price" required>
+                                                                </div>
+                                                                <div class="form-group col-md-1">
+                                                                    Price Per Weight:<br>
+                                                                    
+                                                                    <input type="number" min="0" max="100" name="combinedunitstrength" class="form-control" id="combinedunitstrength" placeholder="Unit Strength" required>
+                                                                </div>
+                                                                <div class="form-group col-md-1">
+                                                                    Price Per Vol:<br>
+                                                                    
+                                                                    <input type="number" min="0" max="100" name="combinedliquidunitstrength" class="form-control" id="combinedliquidunitstrength" placeholder="Liquid Strength" required>
+                                                                </div>
+                                                                <div class="form-group col-md-1">
+                                                                    Price Per Len:<br>
+                                                                    
+                                                                    <input type="number" min="0" max="100" name="combinedlengthunitstrength" class="form-control" id="combinedlengthunitstrength" placeholder="Length Strength" required>
+                                                                </div>
+                                                                <div class="form-group col-md-1">
+                                                                    Price Per Srv:<br>
+                                                                    
+                                                                    <input type="number" min="0" max="100" name="combinedserviceunitstrength" class="form-control" id="combinedserviceunitstrength" placeholder="Service Strength" required>
+                                                                </div>
+                                                                <div class="form-group col-md-2">
+                                                                    <br>
+                                                                    Strength:<br>
+                                                                    <select class="form-control" id="combineditemsstrength" name="combineditemsstrength">
+                                                                       
+                                                                    </select>
+                                                                </div>
+                                                                <div class="form-group col-md-2">
+                                                                    Select Type of Unit:<br>
+                                                                    <select class="form-control" id="combineditemsunittype" name="combineditemsunittype">
+                                                                        <option value="weight">Per Weight</option>
+                                                                        <option value="volume">Per Volume</option>
+                                                                        <option value="service">Per Piece</option>
+                                                                        <option value="length">Per Length</option>
+                                                                        <option value="service">Per Service</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="form-group col-md-2">
+                                                                    Select Unit:<br>
+                                                                    <select class="form-control" id="combineditemsunit" name="combineditemsunit">
+                                                                   
+                                                                    </select>
+                                                                </div>
+                                                                <div class="form-group col-md-4">
+                                                                    <div class="row">
+                                                                        <div class="form-group col-md-4">
+                                                                            Total Unit Quantity:<br>
+                                                                            
+                                                                            <input type="number" style="height:50px;font-size:24px;border-left:none;border-top:none;border-right:none;text-align: center;" min="0" max="100" name="combinedquantity" id="combinedquantity" placeholder="Whole" required>
+                                                                            <!-- <span style="font-size:24px;">/</span> -->
+                                                                        </div>
+                                                                        <div class="form-group col-md-4">
+                                                                            Quantity Needed:<br>
+                                                                            <input type="number" style="height:50px;font-size:24px;border-left:none;border-top:none;border-right:none;text-align: center;" min="0" max="100" name="quantitycombinedquantity" id="quantitycombinedquantity" placeholder="Qty" required title="Unit Qty to be used">
+                                                                            <!-- <span style="font-size:24px;">|</span> -->
+                                                                        </div>
+                                                                        <div class="form-group col-md-4">
+                                                                            Parts of the Whole:<br>
+                                                                            <input type="number" style="height:50px;font-size:24px;border-left:none;border-top:none;border-right:none;text-align: center;" min="0" max="100" name="partcombinedquantity" id="partcombinedquantity" placeholder="Parts" required title="Number of Parts of the Whole">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                                <div class="form-group col-md-2">
+                                                                    Quantity Price:<br>
+                                                                    
+                                                                    <input type="text" name="combinedquantityprice" class="form-control" id="combinedquantityprice" placeholder="Quantity Price" required>
+                                                                </div>
+                                                                <div class="form-group col-md-2">
+                                                                    <br>
+                                                                    <button type="submit" class="genric-btn primary" id="add-combineditem-button" style="font-size: 18px;border-radius: 8px;">Add</button>
+                                                                    <button type="submit" class="genric-btn primary" id="edit-combineditem-button" style="font-size: 18px;border-radius: 8px;">Edit</button>
+                                                                   <input type="hidden" name="combinedstockitemid" id="combinedstockitemid">
+                                                                   <input type="hidden" name="combineditemid" id="combineditemid">
+                                                                   <input type="hidden" name="combineditemstate" id="combineditemstate">
+                                                                   <input type="hidden" name="combineditemform" id="combineditemform">
+                                                                   <input type="hidden" name="combineddepartmentitemgroup" id="combineddepartmentitemgroup">
+                                                                   <input type="hidden" name="combinedsellingprice" id="combinedsellingprice">
+                                                                   <input type="hidden" name="combinedsellingpriceperstrength" id="combinedsellingpriceperstrength">
+                                                                   <input type="hidden" name="combinedsellingpriceperliquidstrength" id="combinedsellingpriceperliquidstrength">
+                                                                   <input type="hidden" name="combinedsellingpriceperlength" id="combinedsellingpriceperlength">
+                                                                   <input type="hidden" name="combinedtotalpiece" id="combinedtotalpiece">
+                                                                   <input type="hidden" name="combinedtotalstrength" id="combinedtotalstrength">
+                                                                   <input type="hidden" name="combinedtotalliquidstrength" id="combinedtotalliquidstrength">
+                                                                   <input type="hidden" name="combinedtotallength" id="combinedtotallength">
+                                                                   <input type="hidden" name="editcombinedpricingitemid" id="editcombinedpricingitemid">
+                                                                </div>
+                                                                <div class="form-group col-md-3">
+                                                                    Add Routine List:<br>
+                                                                    <input type="text" name="regimentname" class="form-control" id="regimentname" style="font-size: 14px;" placeholder="Add Routine Name" required>
+                                                                    <button type="submit" class="genric-btn primary" id="regiment-combinedprice-button" style="font-size: 12px;border-radius: 8px;">ADD</button>
+                                                                    <button type="submit" class="genric-btn success" id="edit-regiment-combinedprice-button" style="font-size: 12px;border-radius: 8px;">EDIT</button>
+                                                                    <button type="submit" class="genric-btn danger" id="delete-regiment-combinedprice-button" style="font-size: 12px;border-radius: 8px;">DEL</button>
+                                                                    
+                                                                    <br>
+                                                                    Select Routine Name:<br>
+                                                                    <select name="itemregiments" style="font-size: 13px;" id="itemregiments" class="form-control"></select>
+                                                                    
+                                                                    <!-- <button type="submit" class="genric-btn danger" id="delete-itemregiment-button" style="font-size: 18px;border-radius: 8px;">DELETE</button> -->
+                                                                    
+                                                                    <div id="itemregimentinfo"></div>
+                                                                    <br>
+                                                                    View Routine List:<br>
+                                                                    <select name="itemregimentslist" style="font-size:14px;font-weight: bolder;" id="itemregimentslist" size="10" class="form-control"></select>
+                                                                    
+                                                                    <!-- <button type="submit" class="genric-btn primary" id="add-selectitemregiment-button" style="font-size: 18px;border-radius: 8px;">ADD SELECTED ITEM</button> -->
+                                                                    <button type="submit" class="genric-btn primary" id="add-itemregiment-button" style="font-size: 14px;border-radius: 8px;">ADD ALL</button>
+                                                                    <button type="submit" class="genric-btn success" id="clear-itemregiment-button" style="font-size: 14px;border-radius: 8px;">CLEAR</button>
+                                                                    <button type="submit" class="genric-btn danger" id="remove-itemregiment-button" style="font-size: 14px;border-radius: 8px;">REMOVE</button>
+                                                            
+                                                                </div>
+                                                              
+                                                                
+                                                                <div class="form-group col-md-9">
+                                                                    <br>
+                                                                    <div class="form-row" id="combinedpricevalue"></div>
+                                                                    <div class="form-row" id="combinedpricetotalvalue"></div>
+                                                                </div>
+                                                                
+                                                                <!-- <div class="form-group col-md-6">
+                                                                 
+                                                                    % Mark-Up:<br>
+                                                                    Percentage <input type="number" value="1" min="1" max="100" class="form-control" id="markuppricecombined" name="markupprice">
+                                                                    Price <input type="number" value="1" min="1" max="100" class="form-control" id="markuppricecombinedprice" name="markupprice">
+                                                                    <button type="submit" class="genric-btn success" id="save-packpricing-button" style="font-size: 18px;border-radius: 8px;">SAVE</button>
+                                                                    <button type="submit" class="genric-btn success" id="compute-combinedpricing-button" style="font-size: 18px;border-radius: 8px;">COMPUTE PRICING</button>
+                                                                    <button type="submit" class="genric-btn success" id="save-combinedprice-button" style="font-size: 18px;border-radius: 8px;">SAVE PRICING</button>
+                                                                    <button type="submit" class="genric-btn success" id="update-combinedprice-button" style="font-size: 18px;border-radius: 8px;">UPDATE</button>
+                                                                    <button type="submit" class="genric-btn success" id="refresh-combinedprice-button" style="font-size: 18px;border-radius: 8px;">REFRESH</button>
+                                                                    
+                                                                    <br>
+                                                                    <div id="computecombinedpricing" style="font-size: 24px;">
+                                                                   
+                                                                    </div>
+                                                                </div> -->
+                                                                
+                                                               
+                                                                <div class="form-row form-edit-combinedpricing"></div>
+                                                                
+                                                            </div>
+                                                            
+                                                            <div class="regerv_btn">
+                                                                
+                                                                <!-- <button type="submit" class="genric-btn primary" id="cancel-packpricing-button" style="font-size: 18px;border-radius: 8px;">Cancel</button>
+                                                                <button type="submit" class="genric-btn success" id="edit-packpricing-button" style="font-size: 18px;border-radius: 8px;">Edit</button>
+                                                                <button type="submit" class="genric-btn danger" id="delete-packpricing-button" style="font-size: 18px;border-radius: 8px;">Confirm Deletion</button> -->
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer part start-->
+    <footer class="footer-area">
+
+        <div class="copyright_part">
+            
+        </div>
+    </footer>
+
+    <!-- footer part end-->
+
+    <!-- jquery plugins here-->
+
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <!-- popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- easing js -->
+    <script src="js/jquery.magnific-popup.js"></script>
+    <!-- swiper js -->
+    <script src="js/swiper.min.js"></script>
+    <!-- swiper js -->
+    <script src="js/masonry.pkgd.js"></script>
+    <!-- particles js -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- <script src="js/jquery.nice-select.min.js"></script> -->
+    <!-- swiper js -->
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <!-- contact js -->
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <script src="js/contact.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+    <script src="views/masterpage.js"></script>
+    <script src="views/stock-item-dispensing.js"></script>
+    <!--<script src="views/corpse-list.js"></script> -->
+    <script src="js/moment.min.js"></script>
+	<script src="js/bootstrap-datetimepicker.min.js"></script>
+    <script>
+            $(function () {
+                $('#expirydate1').datetimepicker({
+                    format: 'LT'
+                });
+                // $('#datetimepicker4').datetimepicker({
+                //     format: 'LT'
+                // });
+            });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("#edit-combineditem-button").hide()
+            let combinedpricingvaluearray = []
+
+            function getCombinedSearchItemsFunction(){
+                  
+                  $("#edit-pricing-button").hide()
+                  $("#delete-pricing-button").hide()
+                  $("#cancel-pricing-button").hide()
+                  $("#add-pricing-button").show()
+                  $("#sellingprice").html("")
+                  $("#packagingvalue").html("")
+                  $("#clear-package-button").hide()
+                  packagingvalue = []
+                  finalpieces = 0
+                  finalweight = 0
+                  finalvolume = 0
+                  combinedpricingvaluearray = []
+                      //get Item Codes
+                      let getStockItem = "getStockItem"
+                      let searchItem = $("#combinedsearchitem").val()
+                      //console.log(searchItem)
+                      $.post("controllers/combo-setup.php",{searchItem:searchItem,getStockItem: getStockItem},function(formdata){
+                          ////console.log(data)
+                          if(formdata=="No Record Found"){
+                              $("#stockitem-status").html(formdata)
+                          }else{
+                              ////console.log(formdata)
+                              //console.log(typeof(formdata))
+                              let data=JSON.parse(formdata)
+                              //console.log(data)
+                              let count = 0
+                                  
+                              let genericnameoptions = ``
+                              $.each(data.records, function(key, val) {
+                                  count++
+                                  genericnameoptions += `
+                                  <option value="` + val.id + `">` + val.genericname + `</option>
+                              `
+                              })
+                              $("#stockitem-status").html(count + " Record(s) Found")
+                              // $("#selectitem").html(genericnameoptions)
+                              $("#combinedselectitem").html(genericnameoptions)
+  
+  
+  
+                              let getStockItemDetailsById = "getStockItemDetailsById"
+                              let searchItem = $("#combinedselectitem").val()
+                              $.post("controllers/combo-setup.php",{searchItem:searchItem,getStockItemDetailsById:getStockItemDetailsById},function(data){
+                                  data = JSON.parse(data)
+                                  $("#stocknumber").val(data.itemcode)
+                                  $("#stockitemnumber").val(data.stockitemnumber)
+                                  $("#itemstrengthvalue").html(data.itemstrength)
+                                //   $("#selectsupplier").html("<option value='" + data.suppliername + "'>" + data.suppliername + "</option>" + supplierlist)
+                                  $("#stockitemid").val(data.id)
+                                  //console.log(data.id)
+                                  let itemid = data.itemid
+                                  $("#itemid").val(itemid)
+                                  //console.log(itemid)
+                                  let GetGenericNameDetails = "GetGenericNameDetails"
+                                  $.post("controllers/combo-setup.php", {id:itemid,GetGenericNameDetails:GetGenericNameDetails},function(data){
+                                      //console.log(data)
+                                      data = JSON.parse(data)
+                                      $("#usagegrouptype").html(data.usagegrouptype)
+                                      $("#itemstate").val(data.itemstate)
+                                      $("#itemserviceunitname").val(data.itemservice)
+                                      $("#itemdepartmentitemgroup").html(data.departmentitemgroup)
+                                      $("#actualpieces").val(zeroifnull(data.actualpieces))
+                                      $("#actualweight").val(zeroifnull(data.actualweight))
+                                      $("#actualvolume").val(zeroifnull(data.actualvolume))
+                                      $("#actuallength").val(zeroifnull(data.actuallength))
+                                      $("#actualservice").val(zeroifnull(data.actualservice))
+                                      $("#weightunit").val(data.weightunit)
+                                      $("#volumeunit").val(data.volumeunit)
+                                      $("#serviceunit").val(data.serviceunit)
+                                  })
+  
+                                  getStockListItemInfo()
+                                  getStockItemPrice()
+                  
+                              })
+                          }
+  
+                          
+                              
+                              
+                          })
+  
+              }
+
+              function getCombinedItemsFunction(){
+
+                //get Department Item Grouping
+                let getDepartmentItemGroup = "getDepartmentItemGroup"
+                let searchItem = ""
+                $.post("controllers/combo-setup.php",{searchItem:searchItem,getDepartmentItemGroup: getDepartmentItemGroup},function(formdata){
+                    if(formdata=="No Record Found"){
+                        $("#combinedselectdepartmentitemgroup").html("<option value='None'>No Dept Item Group</option>")
+                    }else{
+                        // console.log(formdata)
+                        let data = JSON.parse(formdata)
+                        let departmentitemgroupoptions = ``
+                        $.each(data.records, function(key, val){
+                            departmentitemgroupoptions += `
+                                <option value="` + val.departmentitemgroup + `">` + val.departmentitemgroup + `</option>
+                            `
+                        })
+                        $("#combinedselectdepartmentitemgroup").html(departmentitemgroupoptions)
+                    }
+
+                    let deptItemgroup = $("#combinedselectdepartmentitemgroup").val()
+                    let getItemGroupByDeptItemGroup = "getItemGroupByDeptItemGroup"
+                    $.post("controllers/combo-setup.php",{departmentitemgroup:deptItemgroup, getItemGroupByDeptItemGroup: getItemGroupByDeptItemGroup},function(formdata){
+                        //get Item Codes
+                        //console.log(formdata)
+                        let data = JSON.parse(formdata)
+                        let itemgropoptions = ``
+                        $.each(data.records, function(key, val){
+                            itemgropoptions += `
+                                <option value="` + val.itemgroup + `">` + val.itemgroup + `</option>
+                            `
+                        })
+                        $("#combinedselectgroup").html(itemgropoptions)
+
+                        //Get Item Class
+                        let itemgroup = $("#combinedselectgroup").val()
+                        let getItemClassByItemGroup = "getItemClassByItemGroup"
+                        $.post("controllers/combo-setup.php",{searchItem:itemgroup, getItemClassByItemGroup: getItemClassByItemGroup},function(formdata){
+                            //get Item Codes
+                            //console.log(formdata)
+                            let data = JSON.parse(formdata)
+                            let itemclassoptions = ``
+                            $.each(data.records, function(key, val){
+                                itemclassoptions += `
+                                    <option value="` + val.itemclass + `">` + val.itemclass + `</option>
+                                `
+                            })
+                            $("#combinedselectclass").html(itemclassoptions)
+                            //Get Item Subclass
+                            let itemclass = $("#combinedselectclass").val()
+                            let getItemSubClassByClass = "getItemSubClassByClass"
+                            $.post("controllers/combo-setup.php",{selectsubclassclass:itemclass, getItemSubClassByClass: getItemSubClassByClass},function(formdata){
+                                //get Item Codes
+                                //console.log(formdata)
+                                let data = JSON.parse(formdata)
+                                let itemsubclassoptions = ``
+                                $.each(data.records, function(key, val){
+                                    itemsubclassoptions += `
+                                        <option value="` + val.itemsubclass + `">` + val.itemsubclass + `</option>
+                                    `
+                                })
+                                $("#combinedselectsubclass").html(itemsubclassoptions)
+                                itemgroup = $("#combinedselectsubclass").val()
+                                let getStockItemListByUsageSubClass = "getStockItemListByUsageSubClass"
+                                searchItem = $("#searchcombineditem").val()
+                                
+                                //console.log(searchItem)
+                                $.post("controllers/combo-setup.php",{itemgroup:itemgroup, deptItemgroup:deptItemgroup, searchItem:searchItem,getStockItemListByUsageSubClass: getStockItemListByUsageSubClass},function(formdata){
+                                    console.log(formdata)
+                                    if(formdata=="No Record Found"){
+                                        $("#combineditems").html("<option value='None'>No Items</option>")
+                                    }else{
+                                        //console.log(formdata)
+                                        //console.log(typeof(formdata))
+                                        let data=JSON.parse(formdata)
+                                        //console.log(data)
+                                        let count = 0
+                                            
+                                        let genericnameoptions = ``
+                                        $.each(data.records, function(key, val) {
+                                            count++
+                                            genericnameoptions += `
+                                            <option value="` + val.stockitemid + `,` + val.itemid + `,` + val.id + `">` + val.itemgenericname + ` (` + val.tradename + `)</option>
+                                        `
+                                        })
+                                        // $("#stockitem-status").html(count + " Record(s) Found")
+                                        $("#combineditems").html(genericnameoptions)
+                                    
+
+                                        
+                                    
+                                        let searchItem = $("#combineditems").val()
+                                        let splitsearchItem = searchItem.split(",")
+                                        searchItem = splitsearchItem[2]
+                                        //console.log(splitsearchItem)
+                                        getCombinedItemsDetails(searchItem)
+
+                                    }
+
+                                    
+                                        
+                                        
+                                    })
+                                
+                            })
+                        })
+
+                    
+                    })
+                    
+                })
+
+
+
+                }   
+
+                function getCombinedItemsDetails(searchItem){
+                let getStockItemListDetailsById = "getStockItemListDetailsById"
+                $.post("controllers/combo-setup.php",{searchItem:searchItem,getStockItemListDetailsById:getStockItemListDetailsById},function(data){
+                    console.log(data)
+                    data = JSON.parse(data)
+                    $("#combinedstockitemid").val(data.id)
+                    $("#combineditemid").val(data.itemid)
+                    $("#combinedprice").val(data.sellingprice)
+                    $("#combinedunitstrength").val(data.sellingpriceperstrength)
+                    $("#combinedliquidunitstrength").val(data.sellingpriceperliquidstrength)
+                    $("#combinedlengthunitstrength").val(zeroifnull(data.sellingpriceperlength))
+                    $("#combinedserviceunitstrength").val(data.sellingprice)
+                    $("#combinedtotalpiece").val(data.totalpieces)
+                    $("#combinedtotalstrength").val(data.totalstrength)
+                    $("#combinedtotalliquidstrength").val(data.totalliquidstrength)
+                    $("#combinedtotallength").val(zeroifnull(data.totallengthsthrength))
+                    let itemsstrength = `
+                        <option value="pieces,` + data.totalpieces + `">Pcs(` + data.totalpieces + `)</option>
+                        <option value="weight,` + data.totalstrength + `">Wgt(` + data.totalstrength + `)</option>
+                        <option value="volume,` + data.totalliquidstrength + `">Vol(` + data.totalliquidstrength + `)</option>
+                        <option value="length,` + zeroifnull(data.totallengthsthrength) + `">Len(` + zeroifnull(data.totallengthsthrength) + `)</option>
+                        <option value="service,` + data.totalpieces + `">Srv(` + data.totalpieces + `)</option>
+                    `
+                    $("#combineditemsstrength").html(itemsstrength)
+                    let totalpieces = data.totalpieces
+                    let totalstrength = data.totalstrength
+                    let totalliquidstrength = zeroifnull(data.totalliquidstrength)
+                    let totallengthstrength = zeroifnull(data.totallengthsthrength)
+                    let unitstrength = totalstrength / totalpieces
+                    let unitliquidstrength = totalliquidstrength / totalpieces
+                    let unitlengthstrength = totallengthstrength / totalpieces
+
+                    unitstrength = unitstrength.toFixed(0)
+                    unitliquidstrength = unitliquidstrength.toFixed(0)
+                    unitlengthstrength = unitlengthstrength.toFixed(0)
+
+                    // $("#combinedunitstrength").val(unitstrength)
+                    // $("#combinedliquidunitstrength").val(unitliquidstrength)
+                    $("#combinedsellingprice").val(data.sellingprice)
+                    $("#combinedsellingpriceperstrength").val(data.sellingpriceperstrength)
+                    $("#combinedsellingpriceperliquidstrength").val(data.sellingpriceperliquidstrength)
+                    $("#combinedsellingpriceperlength").val(data.sellingpriceperlength)
+
+                    let itemform = data.itemform
+                    if(itemform.includes(",")){
+                        splititemform = itemform.split(",")
+                        itemform = splititemform[1]
+                    }
+                    $("#combineditemform").val(itemform)
+                    //Need the state
+
+                    let itemid = data.itemid
+                    //console.log(itemid)
+                    if(itemid!=0){
+                        let GetGenericNameDetails = "GetGenericNameDetails"
+                        $.post("controllers/combo-setup.php",{id:itemid,GetGenericNameDetails:GetGenericNameDetails},function(formdata){
+                            //console.log(formdata)
+                            let data = JSON.parse(formdata)
+                            $("#combineditemstate").val(data.itemstate)
+                            $("#combineddepartmentitemgroup").val(data.departmentitemgroup)
+                            // $("#actualpieces").val(data.actualpieces)
+                            // $("#actualweight").val(data.actualweight)
+                            // $("#actualvolume").val(data.actualvolume)
+                            // $("#weightunit").val(data.weightunit)
+                            // $("#volumeunit").val(data.volumeunit)
+                            // $("#serviceunit").val(data.serviceunit)
+                            
+                            let price = 0
+                                let unittype = $("#combineditemsunittype").val()
+                                if(unittype=="weight"){
+                                    
+                                    
+                                    price = $("#combinedunitstrength").val()
+                                    // $("#combinedprice").val(price)
+                                    let quantity = zeroifnull($("#combinedquantity").val())
+                                    let quantityprice = quantity * price
+                                    quantityprice = quantityprice.toFixed(2)
+                                    $("#combinedquantityprice").val(quantityprice)
+                                } else if(unittype=="volume"){
+                                    price = $("#combinedliquidunitstrength").val()
+                                    // $("#combinedprice").val(price)
+                                    quantity = zeroifnull($("#combinedquantity").val())
+                                    quantityprice = quantity * price
+                                    quantityprice = quantityprice.toFixed(2)
+                                    $("#combinedquantityprice").val(quantityprice)
+                                } else if(unittype=="length"){
+                                    price = $("#combinedlengthunitstrength").val()
+                                    // $("#combinedprice").val(price)
+                                    quantity = zeroifnull($("#combinedquantity").val())
+                                    quantityprice = quantity * price
+                                    quantityprice = quantityprice.toFixed(2)
+                                    $("#combinedquantityprice").val(quantityprice)
+                                } else if(unittype=="service"){
+                                    
+                                
+                                    
+                                    price = $("#combinedprice").val()
+                                    // $("#combinedprice").val(price)
+                                    quantity = zeroifnull($("#combinedquantity").val())
+                                    quantityprice = quantity * price
+                                    quantityprice = quantityprice.toFixed(2)
+                                    $("#combinedquantityprice").val(quantityprice)
+                                }
+                                let itemstate = $("#combineditemstate").val()
+                                let unitoptions = ``
+                                
+                                                                
+                                //default value for units is weight
+                                //get weight units
+                                let getItemWeightByDepartmentItemGrouping = "getItemWeightByDepartmentItemGrouping"
+                                let departmentitemgroup = $("#combineddepartmentitemgroup").val()
+                                $.post("controllers/combo-setup.php",{state:itemstate, searchItem:departmentitemgroup,getItemWeightByDepartmentItemGrouping:getItemWeightByDepartmentItemGrouping},function(formdata){
+                                    let data = JSON.parse(formdata)
+                                    let itemform = $("#combineditemform").val()
+                                    unitoptions = `
+                                        <option value='Unit'>Unit</option>
+                                        <option value='` + itemform + `'>`+ itemform + `</option>
+                                    `
+                                    $.each(data.records, function(key, val) {
+                                        unitoptions += `
+                                        <option value='` + val.abbreviation + `'>`+ val.unit + `</option>
+                                        `
+                                    });
+                                    // $("#combineditemsunit").html(unitoptions + serviceunit)
+                                })
+                                    
+                    
+                                                                                                    
+                                //default value for units is weight
+                                //get weight units
+                                let getItemVolumeByDepartmentItemGrouping = "getItemVolumeByDepartmentItemGrouping"
+                                departmentitemgroup = $("#combineddepartmentitemgroup").val()
+                                $.post("controllers/combo-setup.php",{state:itemstate, searchItem:departmentitemgroup,getItemVolumeByDepartmentItemGrouping:getItemVolumeByDepartmentItemGrouping},function(formdata){
+                                    let data = JSON.parse(formdata)
+                                    let itemform = $("#combineditemform").val()
+                                    
+                                    $.each(data.records, function(key, val) {
+                                        unitoptions += `
+                                        <option value='` + val.abbreviation + `'>`+ val.unit + `</option>
+                                        `
+                                    });
+                                    // $("#combineditemsunit").html(unitoptions + serviceunit)
+                                })
+
+                                //default value for units is weight
+                                //get weight units
+                                let getItemLengthByDepartmentItemGrouping = "getItemLengthByDepartmentItemGrouping"
+                                departmentitemgroup = $("#combineddepartmentitemgroup").val()
+                                $.post("controllers/combo-setup.php",{state:itemstate, searchItem:departmentitemgroup,getItemLengthByDepartmentItemGrouping:getItemLengthByDepartmentItemGrouping},function(formdata){
+                                    let data = JSON.parse(formdata)
+                                    console.log(data)
+                                    let itemform = $("#combineditemform").val()
+                                    
+                                    $.each(data.records, function(key, val) {
+                                        unitoptions += `
+                                        <option value='` + val.abbreviation + `'>`+ val.unit + `</option>
+                                        `
+                                    });
+                                    // $("#combineditemsunit").html(unitoptions + serviceunit)
+                                })
+                        
+                                                                                                                    
+                                //default value for units is weight
+                                //get weight units
+                                let getItemServiceByDepartmentItemGrouping = "getItemServiceByDepartmentItemGrouping"
+                                departmentitemgroup = $("#combineddepartmentitemgroup").val()
+                                $.post("controllers/combo-setup.php",{state:itemstate, searchItem:departmentitemgroup,getItemServiceByDepartmentItemGrouping:getItemServiceByDepartmentItemGrouping},function(formdata){
+                                    let data = JSON.parse(formdata)
+                                    let itemform = $("#combineditemform").val()
+                                    
+                                    $.each(data.records, function(key, val) {
+                                        unitoptions += `
+                                        <option value='` + val.abbreviation + `'>`+ val.unit + `</option>
+                                        `
+                                    });
+                                    $("#combineditemsunit").html(unitoptions + serviceunit)
+                                })
+
+                            
+                        
+                        })
+                    }
+                    
+                    
+
+                    
+                })
+                }
+
+                $("#combinedselectsubclass").on("change", function(evt){
+                let deptItemgroup = $("#combinedselectdepartmentitemgroup").val()
+                let getStockItemListByUsageSubClass = "getStockItemListByUsageSubClass"
+                let searchItem = $("#searchcombineditem").val()
+                let itemgroup = $("#combinedselectsubclass").val()
+                $.post("controllers/combo-setup.php",{itemgroup:itemgroup, deptItemgroup:deptItemgroup, searchItem:searchItem,getStockItemListByUsageSubClass: getStockItemListByUsageSubClass},function(formdata){
+                    console.log(formdata)
+                    if(formdata=="No Record Found"){
+                        $("#combineditems").html("<option value='None'>No Items</option>")
+                    }else{
+                        //console.log(formdata)
+                        //console.log(typeof(formdata))
+                        let data=JSON.parse(formdata)
+                        //console.log(data)
+                        let count = 0
+                            
+                        let genericnameoptions = ``
+                        $.each(data.records, function(key, val) {
+                            count++
+                            genericnameoptions += `
+                            <option value="` + val.stockitemid + `,` + val.itemid + `,` + val.id + `">` + val.itemgenericname + ` (` + val.tradename + `)</option>
+                        `
+                        })
+                        // $("#stockitem-status").html(count + " Record(s) Found")
+                        $("#combineditems").html(genericnameoptions)
+                    
+
+                        
+                        // let getStockItemListDetailsById = "getStockItemListDetailsById"
+                        let searchItem = $("#combineditems").val()
+                        let splitsearchItem = searchItem.split(",")
+                        searchItem = splitsearchItem[2]
+                        getCombinedItemsDetails(searchItem)
+                    }
+                })
+                })
+                let deptItemgroup = $("#combinedselectdepartmentitemgroup").val()
+                // let getStockItemListByUsageSubClass = "getStockItemListByUsageSubClass"
+                // let searchItem = $("#searchcombineditem").val()
+                let itemgroup = ""
+                $("#combinedselectclass").on("change", function(evt){
+                evt.preventDefault()
+                let itemclass = $("#combinedselectclass").val()
+                let getItemSubClassByClass = "getItemSubClassByClass"
+                $.post("controllers/combo-setup.php",{selectsubclassclass:itemclass, getItemSubClassByClass: getItemSubClassByClass},function(formdata){
+                    //get Item Codes
+                    //console.log(formdata)
+                    let data = JSON.parse(formdata)
+                    let itemsubclassoptions = ``
+                    $.each(data.records, function(key, val){
+                        itemsubclassoptions += `
+                            <option value="` + val.itemsubclass + `">` + val.itemsubclass + `</option>
+                        `
+                    })
+                    $("#combinedselectsubclass").html(itemsubclassoptions)
+                    
+                    deptItemgroup = $("#combinedselectdepartmentitemgroup").val()
+                    getStockItemListByUsageSubClass = "getStockItemListByUsageSubClass"
+                    searchItem = $("#searchcombineditem").val()
+                    itemgroup = $("#combinedselectsubclass").val()
+                    $.post("controllers/combo-setup.php",{itemgroup:itemgroup, deptItemgroup:deptItemgroup, searchItem:searchItem,getStockItemListByUsageSubClass: getStockItemListByUsageSubClass},function(formdata){
+                        ////console.log(data)
+                        if(formdata=="No Record Found"){
+                            $("#combineditems").html("<option value='None'>No Items</option>")
+                        }else{
+                            //console.log(formdata)
+                            //console.log(typeof(formdata))
+                            let data=JSON.parse(formdata)
+                            //console.log(data)
+                            let count = 0
+                                
+                            let genericnameoptions = ``
+                            $.each(data.records, function(key, val) {
+                                count++
+                                genericnameoptions += `
+                                <option value="` + val.stockitemid + `,` + val.itemid + `,` + val.id + `">` + val.itemgenericname + ` (` + val.tradename + `)</option>
+                            `
+                            })
+                            // $("#stockitem-status").html(count + " Record(s) Found")
+                            $("#combineditems").html(genericnameoptions)
+                        
+
+                            
+                            // let getStockItemListDetailsById = "getStockItemListDetailsById"
+                            let searchItem = $("#combineditems").val()
+                            let splitsearchItem = searchItem.split(",")
+                            searchItem = splitsearchItem[2]
+                            getCombinedItemsDetails(searchItem)
+                        }
+                    })
+                })
+
+
+                })
+
+
+                $("#combinedselectgroup").on("change", function(evt){
+                evt.preventDefault()
+
+                let deptItemgroup = $("#combinedselectdepartmentitemgroup").val()
+                let getStockItemListByUsageGroup = "getStockItemListByUsageGroup"
+                let searchItem = $("#searchcombineditem").val()
+                let itemgroup = $("#combinedselectgroup").val()
+                //Get Item Class
+                // let itemgroup = $("#combinedselectgroup").val()
+                let getItemClassByItemGroup = "getItemClassByItemGroup"
+                $.post("controllers/combo-setup.php",{searchItem:itemgroup, getItemClassByItemGroup: getItemClassByItemGroup},function(formdata){
+                    //get Item Codes
+                    //console.log(formdata)
+                    let data = JSON.parse(formdata)
+                    let itemclassoptions = ``
+                    $.each(data.records, function(key, val){
+                        itemclassoptions += `
+                            <option value="` + val.itemclass + `">` + val.itemclass + `</option>
+                        `
+                    })
+                    $("#combinedselectclass").html(itemclassoptions)
+                    //Get Item Subclass
+                    let itemclass = $("#combinedselectclass").val()
+                    let getItemSubClassByClass = "getItemSubClassByClass"
+                    $.post("controllers/combo-setup.php",{selectsubclassclass:itemclass, getItemSubClassByClass: getItemSubClassByClass},function(formdata){
+                        //get Item Codes
+                        //console.log(formdata)
+                        let data = JSON.parse(formdata)
+                        let itemsubclassoptions = ``
+                        $.each(data.records, function(key, val){
+                            itemsubclassoptions += `
+                                <option value="` + val.itemsubclass + `">` + val.itemsubclass + `</option>
+                            `
+                        })
+                        $("#combinedselectsubclass").html(itemsubclassoptions)
+                        
+                        
+                    })
+                })
+                //console.log(searchItem)
+                $.post("controllers/combo-setup.php",{itemgroup:itemgroup, deptItemgroup:deptItemgroup, searchItem:searchItem,getStockItemListByUsageGroup: getStockItemListByUsageGroup},function(formdata){
+                    ////console.log(data)
+                    if(formdata=="No Record Found"){
+                        $("#combineditems").html("<option value='None'>No Items</option>")
+                    }else{
+                        //console.log(formdata)
+                        //console.log(typeof(formdata))
+                        let data=JSON.parse(formdata)
+                        //console.log(data)
+                        let count = 0
+                            
+                        let genericnameoptions = ``
+                        $.each(data.records, function(key, val) {
+                            count++
+                            genericnameoptions += `
+                            <option value="` + val.stockitemid + `,` + val.itemid + `,` + val.id + `">` + val.itemgenericname + ` (` + val.tradename + `)</option>
+                        `
+                        })
+                        // $("#stockitem-status").html(count + " Record(s) Found")
+                        $("#combineditems").html(genericnameoptions)
+                    
+
+                        let searchItem = $("#combineditems").val()
+                        let splitsearchItem = searchItem.split(",")
+                        searchItem = splitsearchItem[2]
+                        getCombinedItemsDetails(searchItem)
+                    }
+
+                    
+                        
+                        
+                    })
+                })
+
+                $("#combinedselectdepartmentitemgroup").on("change", function(evt){
+                    evt.preventDefault()
+                
+
+                        // let deptItemgroup = $("#combinedselectdepartmentitemgroup").val()
+
+                        let deptItemgroup = $("#combinedselectdepartmentitemgroup").val()
+                        let getItemGroupByDeptItemGroup = "getItemGroupByDeptItemGroup"
+                        $.post("controllers/combo-setup.php",{departmentitemgroup:deptItemgroup, getItemGroupByDeptItemGroup: getItemGroupByDeptItemGroup},function(formdata){
+                            //get Item Codes
+                            //console.log(formdata)
+                            let data = JSON.parse(formdata)
+                            let itemgropoptions = ``
+                            $.each(data.records, function(key, val){
+                                itemgropoptions += `
+                                    <option value="` + val.itemgroup + `">` + val.itemgroup + `</option>
+                                `
+                            })
+                            $("#combinedselectgroup").html(itemgropoptions)
+
+                            let getStockItemListByUsageGroup = "getStockItemListByUsageGroup"
+                            let searchItem = $("#searchcombineditem").val()
+                            let itemgroup = $("#combinedselectgroup").val()
+                            let getItemClassByItemGroup = "getItemClassByItemGroup"
+                            $.post("controllers/combo-setup.php",{searchItem:itemgroup, getItemClassByItemGroup: getItemClassByItemGroup},function(formdata){
+                                //get Item Codes
+                                //console.log(formdata)
+                                let data = JSON.parse(formdata)
+                                let itemclassoptions = ``
+                                $.each(data.records, function(key, val){
+                                    itemclassoptions += `
+                                        <option value="` + val.itemclass + `">` + val.itemclass + `</option>
+                                    `
+                                })
+                                $("#combinedselectclass").html(itemclassoptions)
+                                //Get Item Subclass
+                                let itemclass = $("#combinedselectclass").val()
+                                let getItemSubClassByClass = "getItemSubClassByClass"
+                                $.post("controllers/combo-setup.php",{selectsubclassclass:itemclass, getItemSubClassByClass: getItemSubClassByClass},function(formdata){
+                                    //get Item Codes
+                                    //console.log(formdata)
+                                    let data = JSON.parse(formdata)
+                                    let itemsubclassoptions = ``
+                                    $.each(data.records, function(key, val){
+                                        itemsubclassoptions += `
+                                            <option value="` + val.itemsubclass + `">` + val.itemsubclass + `</option>
+                                        `
+                                    })
+                                    $("#combinedselectsubclass").html(itemsubclassoptions)
+                                    //console.log(searchItem)
+                                    itemgroup = $("#combinedselectsubclass").val()
+                                    let getStockItemListByUsageSubClass = "getStockItemListByUsageSubClass"
+                                    searchItem = $("#searchcombineditem").val()
+                                    $.post("controllers/combo-setup.php",{itemgroup:itemgroup, deptItemgroup:deptItemgroup, searchItem:searchItem,getStockItemListByUsageSubClass: getStockItemListByUsageSubClass},function(formdata){
+                                        //console.log(itemgroup,deptItemgroup,searchItem)
+                                        if(formdata=="No Record Found"){
+                                            $("#combineditems").html("<option value='None'>No Items</option>")
+                                        }else{
+                                            //console.log(formdata)
+                                            //console.log(typeof(formdata))
+                                            let data=JSON.parse(formdata)
+                                            //console.log(data)
+                                            let count = 0
+                                                
+                                            let genericnameoptions = ``
+                                            $.each(data.records, function(key, val) {
+                                                count++
+                                                genericnameoptions += `
+                                                <option value="` + val.stockitemid + `,` + val.itemid + `,` + val.id + `">` + val.itemgenericname + ` (` + val.tradename + `)</option>
+                                            `
+                                            })
+                                            // $("#stockitem-status").html(count + " Record(s) Found")
+                                            //console.log(genericnameoptions)
+                                            $("#combineditems").html(genericnameoptions)
+                                        
+                                            let searchItem = $("#combineditems").val()
+                                            let splitsearchItem = searchItem.split(",")
+                                            searchItem = splitsearchItem[2]
+                                            getCombinedItemsDetails(searchItem)
+                                        }
+
+                                        
+                                            
+                                            
+                                        })
+                                    
+                                })
+                            })
+                            
+                        })
+
+
+                })
+
+                $("#combineditems").on("change", function(evt){
+                    evt.preventDefault()
+                    let getStockItemListDetailsById = "getStockItemListDetailsById"
+                        let searchItem = $("#combineditems").val()
+                        let splitsearchItem = searchItem.split(",")
+                        searchItem = splitsearchItem[2]
+                        $.post("controllers/combo-setup.php",{searchItem:searchItem,getStockItemListDetailsById:getStockItemListDetailsById},function(data){
+                            //console.log(data)
+                            data = JSON.parse(data)
+                            $("#combinedstockitemid").val(data.id)
+                            $("#combineditemid").val(data.itemid)
+                            $("#combinedprice").val(data.sellingprice)
+                            $("#combinedunitstrength").val(data.sellingpriceperstrength)
+                            $("#combinedliquidunitstrength").val(data.sellingpriceperliquidstrength)
+                            $("#combinedlengthunitstrength").val(zeroifnull(data.sellingpriceperlength))
+                            $("#combinedserviceunitstrength").val(data.sellingprice)
+                            $("#combinedtotalpiece").val(data.totalpieces)
+                            $("#combinedtotalstrength").val(data.totalstrength)
+                            $("#combinedtotalliquidstrength").val(data.totalliquidstrength)
+                            let itemsstrength = `
+                                <option value="pieces,` + data.totalpieces + `">Pcs(` + data.totalpieces + `)</option>
+                                <option value="weight,` + data.totalstrength + `">Wgt(` + data.totalstrength + `)</option>
+                                <option value="volume,` + data.totalliquidstrength + `">Vol(` + data.totalliquidstrength + `)</option>
+                                <option value="length,` + zeroifnull(data.totallengthsthrength) + `">Len(` + zeroifnull(data.totallengthsthrength) + `)</option>
+                                <option value="service,` + data.totalpieces + `">Srv(` + data.totalpieces + `)</option>
+                            `
+                            $("#combineditemsstrength").html(itemsstrength)
+                            
+                            let totalpieces = data.totalpieces
+                            let totalstrength = data.totalstrength
+                            let unitstrength = totalstrength / totalpieces
+                            unitstrength = unitstrength.toFixed(0)
+                            // $("#combinedunitstrength").val(unitstrength)
+                            
+                            let itemform = data.itemform
+                            if(itemform.includes(",")){
+                                splititemform = itemform.split(",")
+                                itemform = splititemform[1]
+                            }
+                            $("#combineditemform").val(itemform)
+                            //Need the state
+
+                            let itemid = data.itemid
+                            let GetGenericNameDetails = "GetGenericNameDetails"
+                            $.post("controllers/combo-setup.php",{id:itemid,GetGenericNameDetails:GetGenericNameDetails},function(formdata){
+                                //console.log(formdata)
+                                let data = JSON.parse(formdata)
+                                $("#combineditemstate").val(data.itemstate)
+                                $("#combineddepartmentitemgroup").val(data.departmentitemgroup)
+                                
+                                
+
+                            let itemstate = $("#combineditemstate").val()
+                                
+                                let price = 0
+                                let unitoptions = ``
+                                price = $("#combinedunitstrength").val()
+                                // $("#combinedprice").val(price)
+                                let quantity = zeroifnull($("#combinedquantity").val())
+                                let quantityprice = quantity * price
+                                quantityprice = quantityprice.toFixed(2)
+                                $("#combinedquantityprice").val(quantityprice)
+                                                                
+                                //default value for units is weight
+                                //get weight units
+                                let getItemWeightByDepartmentItemGrouping = "getItemWeightByDepartmentItemGrouping"
+                                let departmentitemgroup = $("#combineddepartmentitemgroup").val()
+                                $.post("controllers/combo-setup.php",{state:itemstate, searchItem:departmentitemgroup,getItemWeightByDepartmentItemGrouping:getItemWeightByDepartmentItemGrouping},function(formdata){
+                                    let data = JSON.parse(formdata)
+                                    let itemform = $("#combineditemform").val()
+                                    unitoptions = `
+                                        <option value='Unit'>Unit</option>
+                                        <option value='` + itemform + `'>`+ itemform + `</option>
+                                    `
+                                    $.each(data.records, function(key, val) {
+                                        unitoptions += `
+                                        <option value='` + val.abbreviation + `'>`+ val.unit + `</option>
+                                        `
+                                    });
+                                    // $("#combineditemsunit").html(unitoptions + serviceunit)
+                                })
+                    
+
+                                    itemstate = $("#combineditemstate").val()
+                                    price = 0
+                                    
+                                    price = $("#combinedliquidunitstrength").val()
+                                    // $("#combinedprice").val(price)
+                                    quantity = zeroifnull($("#combinedquantity").val())
+                                    quantityprice = quantity * price
+                                    quantityprice = quantityprice.toFixed(2)
+                                    $("#combinedquantityprice").val(quantityprice)
+                                                                                                                
+                                    //default value for units is weight
+                                    //get weight units
+                                    let getItemVolumeByDepartmentItemGrouping = "getItemVolumeByDepartmentItemGrouping"
+                                    departmentitemgroup = $("#combineddepartmentitemgroup").val()
+                                    $.post("controllers/combo-setup.php",{state:itemstate, searchItem:departmentitemgroup,getItemVolumeByDepartmentItemGrouping:getItemVolumeByDepartmentItemGrouping},function(formdata){
+                                        let data = JSON.parse(formdata)
+                                        let itemform = $("#combineditemform").val()
+                                        
+                                        $.each(data.records, function(key, val) {
+                                            unitoptions += `
+                                            <option value='` + val.abbreviation + `'>`+ val.unit + `</option>
+                                            `
+                                        });
+                                        // $("#combineditemsunit").html(unitoptions + serviceunit)
+                                    })
+                                    
+                            
+                                    itemstate = $("#combineditemstate").val()
+                                    price = 0
+                                    
+                                    price = $("#combinedprice").val()
+                                    // $("#combinedprice").val(price)
+                                    quantity = zeroifnull($("#combinedquantity").val())
+                                    quantityprice = quantity * price
+                                    quantityprice = quantityprice.toFixed(2)
+                                    $("#combinedquantityprice").val(quantityprice) 
+                                    
+                                    
+                                    //default value for units is weight
+                                    //get weight units
+                                    let getItemLengthByDepartmentItemGrouping = "getItemLengthByDepartmentItemGrouping"
+                                    departmentitemgroup = $("#combineddepartmentitemgroup").val()
+                                    $.post("controllers/combo-setup.php",{state:itemstate, searchItem:departmentitemgroup,getItemLengthByDepartmentItemGrouping:getItemLengthByDepartmentItemGrouping},function(formdata){
+                                        let data = JSON.parse(formdata)
+                                        console.log(data)
+                                        let itemform = $("#combineditemform").val()
+                                        
+                                        $.each(data.records, function(key, val) {
+                                            unitoptions += `
+                                            <option value='` + val.abbreviation + `'>`+ val.unit + `</option>
+                                            `
+                                        });
+                                        // $("#combineditemsunit").html(unitoptions + serviceunit)
+                                    })
+                                    
+                            
+                                    itemstate = $("#combineditemstate").val()
+                                    price = 0
+                                    
+                                    price = $("#combinedprice").val()
+                                    // $("#combinedprice").val(price)
+                                    quantity = zeroifnull($("#combinedquantity").val())
+                                    quantityprice = quantity * price
+                                    quantityprice = quantityprice.toFixed(2)
+                                    $("#combinedquantityprice").val(quantityprice) 
+
+                                    //default value for units is weight
+                                    //get weight units
+                                    let getItemServiceByDepartmentItemGrouping = "getItemServiceByDepartmentItemGrouping"
+                                    departmentitemgroup = $("#combineddepartmentitemgroup").val()
+                                    $.post("controllers/combo-setup.php",{state:itemstate, searchItem:departmentitemgroup,getItemServiceByDepartmentItemGrouping:getItemServiceByDepartmentItemGrouping},function(formdata){
+                                        let data = JSON.parse(formdata)
+                                        let itemform = $("#combineditemform").val()
+                                        
+                                        $.each(data.records, function(key, val) {
+                                            unitoptions += `
+                                            <option value='` + val.abbreviation + `'>`+ val.unit + `</option>
+                                            `
+                                        });
+                                        $("#combineditemsunit").html(unitoptions + serviceunit)
+                                    })
+                            })
+                            
+
+                            
+                        })
+                })
+                let serviceunit = ""
+                $("#combineditemsunittype").on("change", function(evt){
+                    evt.preventDefault()
+                    
+                                let price = 0
+                                let unittype = $("#combineditemsunittype").val()
+                                if(unittype=="weight"){
+                                    
+                                
+                                    price = $("#combinedunitstrength").val()
+                                    // $("#combinedprice").val(price)
+                                    let quantity = zeroifnull($("#combinedquantity").val())
+                                    let quantityprice = quantity * price
+                                    quantityprice = quantityprice.toFixed(2)
+                                    $("#combinedquantityprice").val(quantityprice)
+                                    $("#combinedquantity").val($("#combinedtotalstrength").val())
+                                } else if(unittype=="volume"){
+                                    price = $("#combinedliquidunitstrength").val()
+                                    // $("#combinedprice").val(price)
+                                    quantity = zeroifnull($("#combinedquantity").val())
+                                    quantityprice = quantity * price
+                                    quantityprice = quantityprice.toFixed(2)
+                                    $("#combinedquantityprice").val(quantityprice)
+                                    $("#combinedquantity").val($("#combinedtotalliquidstrength").val())
+                                } else if(unittype=="length"){
+                                    price = $("#combinedlengthunitstrength").val()
+                                    // $("#combinedprice").val(price)
+                                    quantity = zeroifnull($("#combinedquantity").val())
+                                    quantityprice = quantity * price
+                                    quantityprice = quantityprice.toFixed(2)
+                                    $("#combinedquantityprice").val(quantityprice)
+                                    $("#combinedquantity").val($("#combinedtotallength").val())
+                                } else if(unittype=="service"){
+                                    
+                                
+                                    
+                                    price = $("#combinedprice").val()
+                                    // $("#combinedprice").val(price)
+                                    quantity = zeroifnull($("#combinedquantity").val())
+                                    quantityprice = quantity * price
+                                    quantityprice = quantityprice.toFixed(2)
+                                    $("#combinedquantityprice").val(quantityprice)
+                                    $("#combinedquantity").val($("#combinedtotalpiece").val())
+                                }
+                                // let itemstate = $("#combineditemstate").val()
+                                // let unitoptions = ``
+                                
+                                                                
+                                // //default value for units is weight
+                                // //get weight units
+                                // let getItemWeightByDepartmentItemGrouping = "getItemWeightByDepartmentItemGrouping"
+                                // let departmentitemgroup = $("#combineddepartmentitemgroup").val()
+                                // $.post("controllers/combo-setup.php",{state:itemstate, searchItem:departmentitemgroup,getItemWeightByDepartmentItemGrouping:getItemWeightByDepartmentItemGrouping},function(formdata){
+                                //     let data = JSON.parse(formdata)
+                                //     let itemform = $("#combineditemform").val()
+                                //     unitoptions = `
+                                //         <option value='Unit'>Unit</option>
+                                //         <option value='` + itemform + `'>`+ itemform + `</option>
+                                //     `
+                                //     $.each(data.records, function(key, val) {
+                                //         unitoptions += `
+                                //         <option value='` + val.abbreviation + `'>`+ val.unit + `</option>
+                                //         `
+                                //     });
+                                //     // $("#combineditemsunit").html(unitoptions + serviceunit)
+                                // })
+                                    
+                    
+                                                                                                    
+                                // //default value for units is weight
+                                // //get weight units
+                                // let getItemVolumeByDepartmentItemGrouping = "getItemVolumeByDepartmentItemGrouping"
+                                // departmentitemgroup = $("#combineddepartmentitemgroup").val()
+                                // console.log(itemstate,departmentitemgroup)
+                                // $.post("controllers/combo-setup.php",{state:itemstate, searchItem:departmentitemgroup,getItemVolumeByDepartmentItemGrouping:getItemVolumeByDepartmentItemGrouping},function(formdata){
+                                //     let data = JSON.parse(formdata)
+                                //     let itemform = $("#combineditemform").val()
+                                    
+                                //     $.each(data.records, function(key, val) {
+                                //         unitoptions += `
+                                //         <option value='` + val.abbreviation + `'>`+ val.unit + `</option>
+                                //         `
+                                //     });
+                                //     // $("#combineditemsunit").html(unitoptions + serviceunit)
+                                // })
+                        
+                                                                                                                    
+                                // //default value for units is weight
+                                // //get weight units
+                                // let getItemServiceByDepartmentItemGrouping = "getItemServiceByDepartmentItemGrouping"
+                                // departmentitemgroup = $("#combineddepartmentitemgroup").val()
+                                // $.post("controllers/combo-setup.php",{state:itemstate, searchItem:departmentitemgroup,getItemServiceByDepartmentItemGrouping:getItemServiceByDepartmentItemGrouping},function(formdata){
+                                //     let data = JSON.parse(formdata)
+                                //     let itemform = $("#combineditemform").val()
+                                    
+                                //     $.each(data.records, function(key, val) {
+                                //         unitoptions += `
+                                //         <option value='` + val.abbreviation + `'>`+ val.unit + `</option>
+                                //         `
+                                //     });
+                                //     $("#combineditemsunit").html(unitoptions + serviceunit)
+                                // })
+                    
+                })
+
+                getCombinedItemsFunction()
+
+                $("#combinedsearchitem").on('change keyup paste', function () {
+                    ApplyCombinedFilterGetItem();
+                });
+
+                function ApplyCombinedFilterGetItem() {
+                    var searchitemservice = $("#combinedsearchitem").val();
+                    //console.log("getItemsFunction")
+                    getCombinedSearchItemsFunction()
+                }
+
+                $("#searchcombineditem").on('change keyup paste', function () {
+                    ApplyFilterGetCombinedItem();
+                });
+
+                function ApplyFilterGetCombinedItem() {
+                    var searchitemservice = $("#searchcombineditem").val();
+                    //console.log("getItemsFunction")
+                    getCombinedItemsFunction()
+                }
+
+                $("#combinedselectitem").on("change", function(evt){
+                    evt.preventDefault()
+                    
+
+                    let getStockItemDetailsById = "getStockItemDetailsById"
+                    let searchItem = $("#combinedselectitem").val()
+                    $.post("controllers/combo-setup.php",{searchItem:searchItem,getStockItemDetailsById:getStockItemDetailsById},function(data){
+                        data = JSON.parse(data)
+                        console.log(data)
+                        $("#stocknumber").val(data.itemcode)
+                        $("#stockitemnumber").val(data.stockitemnumber)
+                        $("#itemstrengthvalue").html(data.itemstrength)
+                        // $("#selectsupplier").html("<option value='" + data.suppliername + "'>" + data.suppliername + "</option>" + supplierlist)
+                        $("#stockitemid").val(data.id)
+                        $("#itemamount").val(data.actualservice)
+                                let itemid = data.itemid
+                                $("#itemid").val(itemid)
+                        let GetGenericNameDetails = "GetGenericNameDetails"
+                        $.post("controllers/combo-setup.php", {id:itemid,GetGenericNameDetails:GetGenericNameDetails},function(data){
+                            data = JSON.parse(data)
+                            console.log(data)
+                            $("#usagegrouptype").html(data.usagegrouptype)
+                            $("#itemstate").val(data.itemstate)
+                            $("#itemserviceunitname").val(data.itemservice)
+                            $("#itemdepartmentitemgroup").html(data.departmentitemgroup)
+                            $("#actualpieces").val(zeroifnull(data.actualpieces))
+                            $("#actualweight").val(zeroifnull(data.actualweight))
+                            $("#actualvolume").val(zeroifnull(data.actualvolume))
+                            $("#actuallength").val(zeroifnull(data.actuallength))
+                            $("#actualservice").val(zeroifnull(data.actualservice))
+                            $("#weightunit").val(data.weightunit)
+                            $("#volumeunit").val(data.volumeunit)
+                            $("#serviceunit").val(data.serviceunit)
+                        })
+                        $("#previousquantity").val("0")
+                        $("#invoicenumber").val("")
+                        $("#invoiceamount").val("")
+                        $("#itemamount").val("")
+                        getStockItemPrice()
+
+                    })
+
+                })
+                function oneifnull(value){
+                    if(value==null){
+                        return 1
+                    } else if(value==""){
+                        return 1
+                    } else {
+                        return value
+                    }
+                }
+                function zeroifnull(value){
+                    if(value==null){
+                        return 0
+                    } else if(value==""){
+                        return 0
+                    } else {
+                        return parseFloat(value)
+                    }
+                }
+
+                $("#combinedquantity").on('change keyup paste', function () {
+                    let quantity = zeroifnull($("#combinedquantity").val())
+                    let unittype = $("#combineditemsunittype").val()
+                    let price = 0
+                    //console.log(unittype.toUpperCase())
+                    if(unittype.toUpperCase()=="VOLUME"){
+                        price = $("#combinedliquidunitstrength").val()
+                        // $("#combinedprice").val(price)
+                        let quantityprice = quantity * price
+                        quantityprice = quantityprice.toFixed(2)
+                        
+                        $("#combinedquantityprice").val(quantityprice)
+                    } else if(unittype.toUpperCase()=="LENGTH"){
+                        price = $("#combinedlengthunitstrength").val()
+                        // $("#combinedprice").val(price)
+                        let quantityprice = quantity * price
+                        quantityprice = quantityprice.toFixed(2)
+                        
+                        $("#combinedquantityprice").val(quantityprice)
+                    } else if(unittype.toUpperCase()=="WEIGHT"){
+                        price = $("#combinedunitstrength").val()
+                        // $("#combinedprice").val(price)
+                        let quantityprice = quantity * price
+                        quantityprice = quantityprice.toFixed(2)
+                        $("#combinedquantityprice").val(quantityprice)
+                    } else{
+                        price = $("#combinedprice").val()
+                        // $("#combinedprice").val(price)
+                        let quantityprice = quantity * price
+                        quantityprice = quantityprice.toFixed(2)
+                        $("#combinedquantityprice").val(quantityprice)
+                    }
+                
+                });
+
+                $("#partcombinedquantity").on('change keyup paste', function () {
+                    let quantity = oneifnull($("#combinedquantity").val())/oneifnull($("#partcombinedquantity").val())
+                    $("#quantitycombinedquantity").val(quantity)
+                    let unittype = $("#combineditemsunittype").val()
+                    let price = 0
+                    //console.log(unittype.toUpperCase())
+                    if(unittype.toUpperCase()=="VOLUME"){
+                        price = $("#combinedliquidunitstrength").val()
+                        // $("#combinedprice").val(price)
+                        let quantityprice = quantity * price
+                        quantityprice = quantityprice.toFixed(2)
+                        
+                        $("#combinedquantityprice").val(quantityprice)
+                    } else if(unittype.toUpperCase()=="LENGTH"){
+                        price = $("#combinedlengthunitstrength").val()
+                        // $("#combinedprice").val(price)
+                        let quantityprice = quantity * price
+                        quantityprice = quantityprice.toFixed(2)
+                        
+                        $("#combinedquantityprice").val(quantityprice)
+                    } else if(unittype.toUpperCase()=="WEIGHT"){
+                        price = $("#combinedunitstrength").val()
+                        // $("#combinedprice").val(price)
+                        let quantityprice = quantity * price
+                        quantityprice = quantityprice.toFixed(2)
+                        $("#combinedquantityprice").val(quantityprice)
+                    } else{
+                        price = $("#combinedprice").val()
+                        // $("#combinedprice").val(price)
+                        let quantityprice = quantity * price
+                        quantityprice = quantityprice.toFixed(2)
+                        $("#combinedquantityprice").val(quantityprice)
+                    }
+                
+                });
+
+                $("#quantitycombinedquantity").on('change keyup paste', function () {
+                    let part = oneifnull($("#combinedquantity").val())/oneifnull($("#quantitycombinedquantity").val())
+                    $("#partcombinedquantity").val(part)
+                    let quantity = oneifnull($("#combinedquantity").val())/oneifnull($("#partcombinedquantity").val())
+                    let unittype = $("#combineditemsunittype").val()
+                    let price = 0
+                    //console.log(unittype.toUpperCase())
+                    if(unittype.toUpperCase()=="VOLUME"){
+                        price = $("#combinedliquidunitstrength").val()
+                        // $("#combinedprice").val(price)
+                        let quantityprice = quantity * price
+                        quantityprice = quantityprice.toFixed(2)
+                        
+                        $("#combinedquantityprice").val(quantityprice)
+                    } else if(unittype.toUpperCase()=="LENGTH"){
+                        price = $("#combinedlengthunitstrength").val()
+                        // $("#combinedprice").val(price)
+                        let quantityprice = quantity * price
+                        quantityprice = quantityprice.toFixed(2)
+                        
+                        $("#combinedquantityprice").val(quantityprice)
+                    } else if(unittype.toUpperCase()=="WEIGHT"){
+                        price = $("#combinedunitstrength").val()
+                        // $("#combinedprice").val(price)
+                        let quantityprice = quantity * price
+                        quantityprice = quantityprice.toFixed(2)
+                        $("#combinedquantityprice").val(quantityprice)
+                    } else{
+                        price = $("#combinedprice").val()
+                        // $("#combinedprice").val(price)
+                        let quantityprice = quantity * price
+                        quantityprice = quantityprice.toFixed(2)
+                        $("#combinedquantityprice").val(quantityprice)
+                    }
+                
+                });
+
+            
+            $("#edit-combineditem-button").on("click", function(evt){
+                $("#edit-combineditem-button").hide()
+                $("#add-combineditem-button").show()
+
+            })
+
+                $("#add-combineditem-button").on("click", function(evt){
+                    evt.preventDefault()
+                    let selectitem = $("#combineditems").val()
+                    let splitselectitem = selectitem.split(",")
+                    let itemid = splitselectitem[1]
+                    let getStockItemDetailsByItemId = "getStockItemDetailsByItemId"
+                    let itemname = "Select Item"
+                    $.post("controllers/combo-setup.php",{searchItem:itemid,getStockItemDetailsByItemId:getStockItemDetailsByItemId},function(formdata){
+                        let data = JSON.parse(formdata)
+                        console.log(data)
+                        itemname = data.genericname + " (" + data.tradename + ")"
+                        let pieces = $("#combinedtotalpiece").val()
+                        //itemname = $("#combineditems").text()
+                        let unitprice = $("#combinedprice").val()
+                        // let unittype =  $("#combineditemsunittype").val()
+                        if($("#combineditemsunittype").val()=="weight"){
+                            unitprice = $("#combinedunitstrength").val()
+                        } else if($("#combineditemsunittype").val()=="volume"){
+                            unitprice = $("#combinedliquidunitstrength").val()
+                        } else if($("#combineditemsunittype").val()=="length"){
+                            unitprice = $("#combinedlengthunitstrength").val()
+                        } else {
+                            unitprice = $("#combinedprice").val()
+                        }
+                        let unitstrength = $("#combinedunitstrength").val()
+                        let unitliquidstrength = $("#combinedliquidunitstrength").val()
+                        let unitlengthstrength = $("#combinedlengthunitstrength").val()
+                        let unit = $("#combineditemsunit").val()
+                        unit = unit.toUpperCase()
+                        let itemquantity = oneifnull($("#combinedquantity").val())/oneifnull($("#partcombinedquantity").val())
+                        let itemquantityprice = $("#combinedquantityprice").val()
+                        // let pieces = $("#pieces").val()
+                        let totalprice = unitprice * itemquantity
+
+                        let combineditemsstrengthvalue = $("#combineditemsstrength").val()
+                        let splitcombineditemstrength = combineditemsstrengthvalue.split(",")
+
+                        let totalpieces = parseFloat(splitcombineditemstrength[1])
+                        let totalstrength = parseFloat(splitcombineditemstrength[1])
+                        let totalliquidstrength = parseFloat(splitcombineditemstrength[1])
+                        let totallengthstrength = parseFloat(splitcombineditemstrength[1])
+
+                        let combinedquantity = oneifnull($("#combinedquantity").val())
+                        let partcombinedquantity = oneifnull($("#partcombinedquantity").val())
+                        let quantitycombinedquantity = oneifnull($("#quantitycombinedquantity").val())
+
+                        let computequantity = combinedquantity / partcombinedquantity
+                        let combineditemsstrength = $("#combineditemsstrength").val()
+
+                        let splitcombineditemstrengthvalue = combineditemsstrength.split("(")
+                        combineditemsstrength = splitcombineditemstrengthvalue[0]
+
+
+                        let combineditemsunittype = splitcombineditemstrength[0]
+                        console.log(computequantity, totalpieces, totalstrength,totalliquidstrength, totallengthstrength)
+                        if(combineditemsunittype=="weight"){
+                            if(unit=="G"){
+                                //do nothing
+                            } else {
+                                totalstrength = parseFloat(totalstrength) * 1000
+                            }
+                            totalstrength = parseFloat(totalstrength)/parseFloat(pieces)
+                            itemquantity = itemquantity * totalstrength
+                        } else if(combineditemsunittype=="volume"){
+                            if(unit=="L"){
+                                //do nothing
+                            } else {
+                                totalliquidstrength = parseFloat(totalliquidstrength) * 1000
+                            }
+                            totalliquidstrength = parseFloat(totalliquidstrength)/parseFloat(pieces)
+                            itemquantity = itemquantity * totalliquidstrength
+                        } else if(combineditemsunittype=="length"){
+                            if(unit=="M"){
+                                //do nothing
+                            } else {
+                                totallengthstrength = parseFloat(totallengthstrength) * 100
+                            }
+                            totallengthstrength = parseFloat(totallengthstrength)/parseFloat(pieces)
+                            itemquantity = itemquantity * totallengthstrength
+                        } else {
+                            itemquantity = itemquantity //* totalpieces
+                        }
+                        
+                        
+                        let itemunit = unitstrength + "(WGT), " + unitliquidstrength + " (VOL), " + unitlengthstrength + " (LEN)"
+                        itemquantity = computequantity + " " + unit
+                        let stockitemlistid = parseInt($("#combinedstockitemid").val())
+                        let combinedpricing = {
+                            itemid: itemid,
+                            stockitemlistid:stockitemlistid,
+                            itemname: itemname,
+                            itemunit: itemunit,
+                            unit:unit,
+                            unitprice: unitprice,
+                            itemquantity: itemquantity,
+                            itemquantityprice:itemquantityprice,
+                            unitstrength: unitstrength,
+                            unitliquidstrength: unitliquidstrength,
+                            unitlengthstrength: unitlengthstrength,
+                            totalprice: totalprice,
+                            computequantity:computequantity,
+                            combineditemsstrength:combineditemsstrength,
+                            combineditemsunittype:combineditemsunittype,
+                            combinedquantity:combinedquantity,
+                            partcombinedquantity:partcombinedquantity,
+                            quantitycombinedquantity:quantitycombinedquantity
+                        }
+                        combinedpricingvaluearray.push(combinedpricing)
+                        console.log(combinedpricingvaluearray)
+
+                        let combinedpricinglist = `<div class="form-group col-md-2" style="font-size:14px;font-weight:bolder;">
+                                
+                                Item
+                                </div>
+                                <div class="form-group col-md-1" style="font-size:14px;font-weight:bolder;">
+                                
+                                    Type of Unit
+                                </div>
+                                <div class="form-group col-md-1" style="font-size:14px;font-weight:bolder;">
+                                
+                                    Unit
+                                </div>
+                                <div class="form-group col-md-2" style="font-size:14px;font-weight:bolder;">
+                                    Whole Qty
+                                </div>
+                                <div class="form-group col-md-2" style="font-size:14px;font-weight:bolder;">
+                                    Unit Qty Used
+                                </div>
+                                <div class="form-group col-md-1" style="font-size:14px;font-weight:bolder;">
+                                    Parts of Whole
+                                </div>
+                                <div class="form-group col-md-2" style="font-size:14px;font-weight:bolder;">
+                                    Qty Price
+                                </div>
+                                
+                                <div class="form-group col-md-1" style="font-size:16px;font-weight:bolder;">
+                                    Action
+                                </div></div>`
+                                let itemnumber = 0
+                                let totalitemsprice = 0
+                                combinedpricingvaluearray.forEach(element => {
+                                    let itemid = element.itemid
+                                    let getStockListByItemId = "getStockListByItemId"
+
+
+                                    // totalitemsprice += parseFloat(element.totalprice)
+                                    let itemstrength = element.combineditemsstrength
+                                    $.post("controllers/combo-setup.php", {itemid:itemid,getStockListByItemId:getStockListByItemId}, function(formdata){
+
+                                            
+                                            let data = JSON.parse(formdata)
+                                            console.log(data)
+                                            let unitprice = 0
+                                           
+                                            let itemstrength = element.combineditemsstrength
+                                            let splititemunit = itemstrength.split(",")
+                                            let wholequantity = splititemunit[1]
+                                            let quantity = element.computequantity
+                                            //Pcs
+                                            if(itemstrength=="Pcs"){
+                                                unitprice = parseFloat(data.unitpriceperpiece)
+                                            }
+                                            //Wgt
+                                            if(itemstrength=="Wgt"){
+                                                unitprice = parseFloat(data.unitpriceperstrength)
+                                            }
+                                            //Vol
+                                            if(itemstrength=="Vol"){
+                                                unitprice = parseFloat(data.unitpriceperliquidstrength)
+                                            }
+                                            //Len
+                                            if(itemstrength=="Len"){
+                                                unitprice = parseFloat(data.unitpriceperlength)
+                                            }
+
+                                            totalprice = parseFloat(element.totalprice)
+
+                                            totalitemsprice += parseFloat(totalprice)
+                                            totalcombinedprice = totalitemsprice
+
+                                            combinedpricinglist += `<div class="form-group col-md-2" style="font-size:15px;">` + element.itemname + `
+                                    
+                                                </div>
+                                                <div class="form-group col-md-1" style="font-size:15px;">` + element.combineditemsunittype + `
+                                                
+                                                </div>
+                                                <div class="form-group col-md-1" style="font-size:15px;">` + element.unit + `
+                                                
+                                            </div>
+                                            <div class="form-group col-md-2" style="font-size:15px;">` + element.combinedquantity + ` ` + element.unit + `
+                                                
+                                            </div>
+                                            <div class="form-group col-md-2" style="font-size:15px;">` + element.itemquantity + `
+                                                
+                                            </div>
+                                            <div class="form-group col-md-1" style="font-size:15px;">` + element.partcombinedquantity + ` parts
+                                                
+                                            </div>
+                                            <div class="form-group col-md-2" style="font-size:15px;">&#8358;` + element.totalprice.toFixed(2) + `
+                                                
+                                            </div>
+
+                                            <div class="form-group col-md-1" style="font-size:18px;"><a href="#" data-id="` + element.itemid + `" class="del-combinedpricing-item"><i class="fa fa-trash-o"></i></a>
+                                                <a href="#" data-id="` + element.itemid + `" class="edit-combinedpricing-item"><i class="fa fa-plus-square-o"></i></a>
+                                                
+                                            </div>
+                                        
+                                                `
+                                                itemnumber += 1
+                                                $("#combinedpricevalue").html(combinedpricinglist)
+                                                $("#combinedpricetotalvalue").html(`<div class="form-group col-md-12" style="font-size:18px;">Total = ` + totalitemsprice.toFixed(2) + ` Naira</div>`)
+                                                
+                                                $(".del-combinedpricing-item").on("click", function(evt){
+                                                    evt.preventDefault()
+                                                    let itemid = $(this).attr("data-id")
+                                                    console.log(itemid)
+
+                                                    // combinedpricingvaluearray.splice(id, 1)
+                                                    //console.log(packagingvalue)
+
+                                                    for(i=0;i<combinedpricingvaluearray.length;i++){
+                                                        if(itemid==combinedpricingvaluearray[i].itemid){
+                                                            console.log(combinedpricingvaluearray[i].itemname," found")
+                                                            combinedpricingvaluearray.splice(i, 1)
+                                                        }
+                                                    }
+                                                    
+                                                    combinedpricinglistitems(combinedpricingvaluearray)
+
+                                                })
+
+                                                $(".edit-combinedpricing-item").on("click", function(evt){
+                                                    evt.preventDefault()
+                                                    let itemid = $(this).attr("data-id")
+                                                    let itemregiments = $("#itemregiments").val()
+
+                                                    
+                                                    combinedpricingvaluearray.forEach(val => {
+
+                                                        if(itemid==val.itemid){
+                                                            console.log(itemregiments,itemregimentarray)
+                                                            let splititemregiments = itemregiments.split(",")
+                                                            let itemregimentid = splititemregiments[0]
+                                                            itemregimentarray.forEach(element => {
+                                                                if(itemregimentid==element.id){
+                                                                    console.log(element.regiment)
+                                                                    let itemroutine = JSON.parse(element.regiment)
+                                                                    itemroutine.push(val)
+                                                                    console.log(itemroutine)
+                                                                    // let genericname = $("#selectitem").val()
+                                                                    let regimentname = splititemregiments[1]
+                                                                    if(regimentname=="" || regimentname==null){
+                                                                        $("#itemregimentinfo").html("Please enter Regiment Name for this list")
+                                                                    } else {
+                                                                        combinedpricingvalue = JSON.stringify(itemroutine)
+                                                                    
+                                                                            let editItemRegiment = "editItemRegiment"
+                                                                            let itemname = "Routine"
+                                                                            
+                                                                            $.post("controllers/combo-setup.php",{itemregimentid:itemregimentid,itemname:itemname,regimentname:regimentname,combinedpricingvalue:combinedpricingvalue,editItemRegiment:editItemRegiment},function(data){
+                                                                                $("#itemregimentinfo").html(data)
+                                                                                getitemregiment()
+                                                                        
+                                                                        })
+                                                                    }
+                                                                }
+                                                            });
+                                                        }
+                                                        
+                                                    });
+
+                                                })
+
+                                                
+                                            });
+                                           
+                                    })
+
+                                    // combinedpricinglist +=  `<div class="form-group col-md-12" style="font-size:18px;">Total = ` + totalitemsprice.toFixed(2) + ` Naira</div>`
+                                   
+                        
+                       
+                        $(".markupitem").on('change paste', function () {
+                            let markup = $(this).val()
+
+                            let id = $(this).attr("data-id")
+                        
+                            console.log(id)
+                            
+
+                        })
+                    })
+                    
+                })
+                let totalcombinedprice = 0
+
+
+                function combinedpricinglistitems(combinedpricingvalue){
+                    console.log(combinedpricingvalue)
+
+                    if(combinedpricingvalue.length>0){
+                        let combinedpricinglist = `<div class="form-group col-md-2" style="font-size:14px;font-weight:bolder;">
+                                
+                                Item
+                                </div>
+                                <div class="form-group col-md-1" style="font-size:14px;font-weight:bolder;">
+                                
+                                    Type of Unit
+                                </div>
+                                <div class="form-group col-md-1" style="font-size:14px;font-weight:bolder;">
+                                
+                                    Unit
+                                </div>
+                                <div class="form-group col-md-2" style="font-size:14px;font-weight:bolder;">
+                                    Whole Qty
+                                </div>
+                                <div class="form-group col-md-2" style="font-size:14px;font-weight:bolder;">
+                                    Unit Qty Used
+                                </div>
+                                <div class="form-group col-md-1" style="font-size:14px;font-weight:bolder;">
+                                    Parts of Whole
+                                </div>
+                                <div class="form-group col-md-2" style="font-size:14px;font-weight:bolder;">
+                                    Qty Price
+                                </div>
+                                
+                                <div class="form-group col-md-1" style="font-size:16px;font-weight:bolder;">
+                                   Action
+                         </div></div>`
+                         let itemnumber = 0
+                         let totalitemsprice = 0
+                         console.log(combinedpricingvalue)
+                         combinedpricingvalue.forEach(element => {
+                            let itemid = element.itemid
+                            let getStockListByItemId = "getStockListByItemId"
+
+
+                            
+                            // let itemstrength = element.combineditemsstrength
+                            $.post("controllers/combo-setup.php", {itemid:itemid,getStockListByItemId:getStockListByItemId}, function(formdata){
+
+                                    let data = JSON.parse(formdata)
+                                    console.log(data)
+                                    let unitprice = 0
+                                    let itemstrength = ""
+                                    if(element.combineditemsstrength!=null){
+                                        
+                                        let splititemstrength = element.combineditemsstrength.split(",")
+                                        itemstrength = splititemstrength[0]
+                                    } else {
+                                        itemstrength="pieces"
+                                    }
+                                    // let itemstrength = element.combineditemsstrength
+                                    let quantity = 1
+                                    if(element.computequantity!=null){
+                                        quantity = element.computequantity
+                                    } else {
+                                        quantity = parseFloat(parseFloat(element.totalprice)/parseFloat(element.unitprice))
+                                    }
+                                     
+
+                                    //Pcs
+                                    unitprice = data.sellingprice
+                                    if(itemstrength=="pieces"){
+                                        unitprice = parseFloat(data.unitpriceperpiece)
+                                    }
+                                    //Wgt
+                                    if(itemstrength=="weight"){
+                                        unitprice = parseFloat(data.unitpriceperstrength)
+                                    }
+                                    //Vol
+                                    if(itemstrength=="volume"){
+                                        unitprice = parseFloat(data.unitpriceperliquidstrength)
+                                    }
+                                    //Len
+                                    if(itemstrength=="length"){
+                                        unitprice = parseFloat(data.unitpriceperlength)
+                                    }
+                                    
+
+                                    totalprice = parseFloat(unitprice * quantity)
+
+                                    totalitemsprice += parseFloat(totalprice)
+                                    totalcombinedprice = totalitemsprice
+
+                                    console.log(itemstrength, quantity, unitprice, totalitemsprice)
+                                    combinedpricinglist += `<div class="form-group col-md-2" style="font-size:15px;">` + element.itemname + `
+                            
+                                        </div>
+                                        <div class="form-group col-md-1" style="font-size:15px;">` + element.combineditemsunittype + `
+                                                
+                                            </div>
+                                            <div class="form-group col-md-1" style="font-size:15px;">` + element.unit + `
+                                            
+                                        </div>
+                                        <div class="form-group col-md-2" style="font-size:15px;">` + element.combinedquantity + ` ` + element.unit + `
+                                            
+                                        </div>
+                                        <div class="form-group col-md-2" style="font-size:15px;">` + element.itemquantity + `
+                                            
+                                        </div>
+                                        <div class="form-group col-md-1" style="font-size:15px;">` + element.partcombinedquantity + ` parts
+                                            
+                                        </div>
+                                    <div class="form-group col-md-2" style="font-size:15px;">&#8358;` + totalprice.toFixed(2) + ` 
+                                        
+                                    </div>
+
+                                    <div class="form-group col-md-1" style="font-size:18px;"><a href="#" data-id="` + element.itemid + `" class="del-combinedpricing-item"><i class="fa fa-trash-o"></i></a>
+                                        <!--<a href="#" data-id="` + element.itemid + `" class="edit-combinedpricing-item"><i class="fa fa-pencil-square-o"></i></a>-->
+                                        
+                                    </div>
+                                
+                                        `
+                                        itemnumber += 1
+                                        
+                                        // console.log(combinedpricinglist)
+                                        // combinedpricinglist +=  
+                                        $("#combinedpricevalue").html(combinedpricinglist)
+                                        $("#combinedpricetotalvalue").html(`<div class="form-group col-md-12" style="font-size:18px;">Total = ` + totalitemsprice.toFixed(2) + ` Naira</div>`)
+                                        totalcombinedprice = parseFloat(totalitemsprice)
+                                        console.log(totalcombinedprice)
+                                        $(".del-combinedpricing-item").on("click", function(evt){
+                                            evt.preventDefault()
+                                            let itemid = $(this).attr("data-id")
+                                            console.log(itemid, combinedpricingvaluearray)
+
+                                            // combinedpricingvaluearray.splice(id, 1)
+                                            //console.log(packagingvalue)
+                                            for(i=0;i<combinedpricingvaluearray.length;i++){
+                                                if(itemid==combinedpricingvaluearray[i].itemid){
+                                                    console.log(combinedpricingvaluearray[i].itemname," found")
+                                                    combinedpricingvaluearray.splice(i, 1)
+                                                }
+                                            }
+                                            
+                                            
+                                            combinedpricinglistitems(combinedpricingvaluearray)
+
+                                        })
+
+                                        $(".edit-combinedpricing-item").on("click", function(evt){
+                                            evt.preventDefault()
+                                            let itemid = $(this).attr("data-id")
+                                            for(i=0;i<combinedpricingvaluearray.length;i++){
+                                                if(itemid==combinedpricingvaluearray[i].itemid){
+                                                    console.log(combinedpricingvaluearray[i].itemname," found")
+                                                    $("#edit-combineditem-button").show()
+                                                    $("#add-combineditem-button").hide()
+                                                    $("#editcombinedpricingitemid").val(i)
+                                                    $("#combinedquantityprice").val(combinedpricingvaluearray[i].totalprice)
+                                                    $("#combinedquantity").val(combinedpricingvaluearray[i].combinedquantity)
+                                                    $("#quantitycombinedquantity").val(combinedpricingvaluearray[i].quantitycombinedquantity)
+                                                    $("#partcombinedquantity").val(combinedpricingvaluearray[i].partcombinedquantity)
+                                                }
+                                            }
+                                        })
+                                        
+                                    });
+                
+                                })
+
+                    
+
+                    
+
+                        $(".markupitem").on('change paste', function () {
+                            let markup = $(this).val()
+
+                            let id = $(this).attr("data-id")
+                        
+                            console.log(combinedpricingvalueid, "2")
+                            
+
+                        })
+
+
+                    } else {
+                        $("#combinedpricevalue").html("")
+                        $("#combinedpricetotalvalue").html("")
+                        $("#markuppricecombined").val("1")
+                        combinedpricingvaluearray = []
+                        combinedpricevalue = []
+                    }
+            }
+            let itemregimentarray = []
+
+            function getitemregiment(){
+                let getItemRegiment = "getItemRegiment"
+                $.post("controllers/combo-setup.php",{getItemRegiment:getItemRegiment},function(data){
+                    if(data!="No Record Found"){
+                        // console.log(data)
+                        let formdata = JSON.parse(data)
+                        itemregimentarray = formdata.records
+                        let itemregimentlist = ``
+                        formdata.records.forEach(val => {
+                            itemregimentlist += `<option value="` + val.id + `,` + val.regimentname + `">` + val.regimentname + `</option>`
+                        });
+                        $("#itemregiments").html(itemregimentlist)
+
+                        let regimentname = $("#itemregiments").val()
+                        let splitregimentname = regimentname.split(",")
+                        regimentname = splitregimentname[1]
+                        itemregimentarray.forEach(val => {
+                            if(regimentname == val.regimentname){
+                                console.log(val.regiment)
+                                let regimentlist = JSON.parse(val.regiment)
+                                combinedpricingvaluearray = regimentlist
+                                let regimentlistitems = ``
+                                let count = 0
+                                regimentlist.forEach(value => {
+                                    regimentlistitems += `<option value="` + count + `,` + value.itemid + `">` + value.itemname + `</option>`
+                                    count++
+                                });
+                                $("#itemregimentslist").html(regimentlistitems)
+
+                                $("#combinedpricevalue").html("")
+                                $("#combinedpricetotalvalue").html("")
+                                combinedpricingvaluearray = []
+                            }
+                        });
+
+                    }
+                })
+            }
+
+            $("#itemregiments").on("change", function(evt){
+                evt.preventDefault()
+                let itemname =$("#itemregiments").val()
+                let splitregimentname = itemname.split(",")
+                itemname = splitregimentname[1]
+                $("#regimentname").val(itemname)
+                itemregimentarray.forEach(val => {
+                    if(itemname==val.regimentname){
+                       
+                        console.log(val.regiment)
+                        let regimentlist = JSON.parse(val.regiment)
+                        // combinedpricingvaluearray = regimentlist
+                        combinedpricingvaluearray = []
+                        let regimentlistitems = ``
+                        let count = 0
+                        regimentlist.forEach(value => {
+                            regimentlistitems += `<option value="` + count + `,` + value.itemid + `">` + value.itemname + `</option>`
+                            count++
+                        });
+                        $("#itemregimentslist").html(regimentlistitems)
+                        
+                        $("#combinedpricevalue").html("")
+                        $("#combinedpricetotalvalue").html("")
+                        combinedpricingvaluearray = []
+                        // console.log(val.regiment)
+                        // let combinedpricingvalue = JSON.parse(val.regiment)
+                        // combinedpricinglistitems(combinedpricingvalue)
+                    }
+                    
+                });
+            })
+
+
+            $("#add-itemregiment-button").on("click", function(evt){
+                evt.preventDefault()
+                let itemname =$("#itemregiments").val()
+                let splitregimentname = itemname.split(",")
+                itemname = splitregimentname[1]
+                let itemregimentid = splitregimentname[0]
+                itemregimentarray.forEach(val => {
+                    if(itemregimentid==val.id){
+                     
+                        combinedpricingvaluearray = JSON.parse(val.regiment)
+                        combinedpricinglistitems(combinedpricingvaluearray)
+                        
+                    }
+                    
+                });
+            })
+
+            $("#itemregimentslist").on("change", function(evt){
+                evt.preventDefault()
+                console.log(itemregimentarray)
+                let itemname =$("#itemregiments").val()
+                let splitregimentname = itemname.split(",")
+                itemname = splitregimentname[1]
+                let itemregimentid = splitregimentname[0]
+                itemregimentarray.forEach(val => {
+                    if(itemregimentid==val.id){
+                        let regiment = JSON.parse(val.regiment)
+                        // console.log(regiment)
+
+                        let itemid = $("#itemregimentslist").val()
+                        let splititemid = itemid.split(",")
+                        itemid = parseFloat(splititemid[1])
+                        let count = parseFloat(splititemid[0])
+                       
+                        console.log(regiment[count])
+                                
+                                getCombinedItemsDetails(regiment[count].stockitemlistid)
+
+                                let getStockItemDetailsByItemId = "getStockItemDetailsByItemId"
+                                // let itemname = "Select Item"
+                                $.post("controllers/combo-setup.php",{searchItem:itemid,getStockItemDetailsByItemId:getStockItemDetailsByItemId},function(formdata){
+                                    let data = JSON.parse(formdata)
+                                    console.log(data)
+                                    itemname = regiment[count].itemname
+                                    let pieces = $("#combinedtotalpiece").val()
+                                    //itemname = $("#combineditems").text()
+                                    let unitprice = regiment[count].unitprice
+                                    let unittype =  regiment[count].combineditemsunittype
+                                    
+                                    let unitstrength = regiment[count].unitstrength
+                                    let unitliquidstrength = regiment[count].unitliquidstrength
+                                    let unitlengthstrength = regiment[count].unitlengthprice
+                                    let unit = regiment[count].unit
+                                    unit = unit.toUpperCase()
+                                    let itemquantity = regiment[count].itemquantity
+                                    let splititemquantity = itemquantity.split(" ")
+                                    itemquantity = parseFloat(splititemquantity[0])
+                                    let itemquantityprice = regiment[count].itemquantityprice
+                                    // let pieces = $("#pieces").val()
+                                    let totalprice = unitprice * itemquantity
+
+                                    let combineditemsstrengthvalue = regiment[count].combineditemsstrength
+                                    let splitcombineditemstrength = combineditemsstrengthvalue.split(",")
+
+                                    let totalpieces = parseFloat(splitcombineditemstrength[1])
+                                    let totalstrength = parseFloat(splitcombineditemstrength[1])
+                                    let totalliquidstrength = parseFloat(splitcombineditemstrength[1])
+                                    let totallengthstrength = parseFloat(splitcombineditemstrength[1])
+
+                                    let combinedquantity = oneifnull($("#combinedquantity").val())
+                                    let partcombinedquantity = oneifnull($("#partcombinedquantity").val())
+
+                                    let computequantity = regiment[count].computequantity
+                                    let combineditemsstrength = regiment[count].combineditemsstrength
+
+                                    let splitcombineditemstrengthvalue = combineditemsstrength.split("(")
+                                    combineditemsstrength = splitcombineditemstrengthvalue[0]
+
+
+                                    let combineditemsunittype = regiment[count].combineditemsunittype
+                                    console.log(totalpieces, totalstrength,totalliquidstrength, totallengthstrength)
+                                    if(combineditemsunittype=="weight"){
+                                        if(unit=="G"){
+                                            //do nothing
+                                        } else {
+                                            totalstrength = parseFloat(totalstrength) * 1000
+                                        }
+                                        totalstrength = parseFloat(totalstrength)/parseFloat(pieces)
+                                        itemquantity = itemquantity * totalstrength
+                                    } else if(combineditemsunittype=="volume"){
+                                        if(unit=="L"){
+                                            //do nothing
+                                        } else {
+                                            totalliquidstrength = parseFloat(totalliquidstrength) * 1000
+                                        }
+                                        totalliquidstrength = parseFloat(totalliquidstrength)/parseFloat(pieces)
+                                        itemquantity = itemquantity * totalliquidstrength
+                                    } else if(combineditemsunittype=="length"){
+                                        if(unit=="M"){
+                                            //do nothing
+                                        } else {
+                                            totallengthstrength = parseFloat(totallengthstrength) * 100
+                                        }
+                                        totallengthstrength = parseFloat(totallengthstrength)/parseFloat(pieces)
+                                        itemquantity = itemquantity * totallengthstrength
+                                    } else {
+                                        itemquantity = itemquantity //* totalpieces
+                                    }
+                                    
+                                    
+                                    let itemunit = unitstrength + "(WGT), " + unitliquidstrength + " (VOL), " + unitlengthstrength + " (LEN)"
+                                    itemquantity = itemquantity + " " + unit
+                                    let stockitemlistid = parseInt(regiment[count].stockitemlistid)
+                                    let combinedpricing = {
+                                        itemid: itemid,
+                                        stockitemlistid:stockitemlistid,
+                                        itemname: itemname,
+                                        itemunit: itemunit,
+                                        unit:unit,
+                                        unitprice: unitprice,
+                                        itemquantity: regiment[count].itemquantity,
+                                        itemquantityprice:itemquantityprice,
+                                        unitstrength: unitstrength,
+                                        unitliquidstrength: unitliquidstrength,
+                                        unitlengthstrength: unitlengthstrength,
+                                        totalprice: totalprice,
+                                        computequantity:computequantity,
+                                        combineditemsstrength:combineditemsstrength,
+                                        combineditemsunittype:combineditemsunittype,
+                                        combinedquantity:regiment[count].combinedquantity,
+                                        partcombinedquantity:regiment[count].partcombinedquantity,
+                                        quantitycombinedquantity:regiment[count].quantitycombinedquantity
+                                    }
+                                    console.log(combinedpricingvaluearray)
+                                    combinedpricingvaluearray.push(combinedpricing)
+                                    console.log(combinedpricingvaluearray)
+
+                                    let combinedpricinglist = `<div class="form-group col-md-2" style="font-size:14px;font-weight:bolder;">
+                                            
+                                            Item
+                                            </div>
+                                          
+                                            <div class="form-group col-md-1" style="font-size:14px;font-weight:bolder;">
+                                
+                                                Type of Unit
+                                            </div>
+                                            <div class="form-group col-md-1" style="font-size:14px;font-weight:bolder;">
+                                            
+                                                Unit
+                                            </div>
+                                            <div class="form-group col-md-2" style="font-size:14px;font-weight:bolder;">
+                                                Whole Qty
+                                            </div>
+                                            <div class="form-group col-md-2" style="font-size:14px;font-weight:bolder;">
+                                                Unit Qty Used
+                                            </div>
+                                            <div class="form-group col-md-1" style="font-size:14px;font-weight:bolder;">
+                                                Parts of Whole
+                                            </div>
+                                            <div class="form-group col-md-2" style="font-size:14px;font-weight:bolder;">
+                                                Qty Price
+                                            </div>
+                                            
+                                            <div class="form-group col-md-1" style="font-size:16px;font-weight:bolder;">
+                                                Action
+                                            </div></div>`
+                                            let itemnumber = 0
+                                            let totalitemsprice = 0
+                                            combinedpricingvaluearray.forEach(element => {
+                                                let itemid = element.itemid
+                                                let getStockListByItemId = "getStockListByItemId"
+
+
+                                                // totalitemsprice += parseFloat(element.totalprice)
+                                                let itemstrength = element.combineditemsstrength
+                                                $.post("controllers/combo-setup.php", {itemid:itemid,getStockListByItemId:getStockListByItemId}, function(formdata){
+
+                                                        
+                                                        let data = JSON.parse(formdata)
+                                                        console.log(data)
+                                                        let unitprice = 0
+
+                                                        let itemstrength = element.combineditemsstrength
+                                                        let quantity = element.computequantity
+                                                        //Pcs
+                                                        if(itemstrength=="Pcs"){
+                                                            unitprice = parseFloat(data.unitpriceperpiece)
+                                                        }
+                                                        //Wgt
+                                                        if(itemstrength=="Wgt"){
+                                                            unitprice = parseFloat(data.unitpriceperstrength)
+                                                        }
+                                                        //Vol
+                                                        if(itemstrength=="Vol"){
+                                                            unitprice = parseFloat(data.unitpriceperliquidstrength)
+                                                        }
+                                                        //Len
+                                                        if(itemstrength=="Len"){
+                                                            unitprice = parseFloat(data.unitpriceperlength)
+                                                        }
+
+                                                        totalprice = parseFloat(element.totalprice)
+
+                                                        totalitemsprice += parseFloat(totalprice)
+                                                        totalcombinedprice = totalitemsprice
+
+                                                        combinedpricinglist += `<div class="form-group col-md-2" style="font-size:18px;">` + element.itemname + `
+                                                
+                                                            </div>
+                                                            <div class="form-group col-md-1" style="font-size:15px;">` + element.combineditemsunittype + `
+                                                
+                                                                </div>
+                                                                <div class="form-group col-md-1" style="font-size:15px;">` + element.unit + `
+                                                                
+                                                            </div>
+                                                            <div class="form-group col-md-2" style="font-size:15px;">` + element.combinedquantity + ` ` + element.unit + `
+                                                                
+                                                            </div>
+                                                            <div class="form-group col-md-2" style="font-size:15px;">` + element.itemquantity + `
+                                                                
+                                                            </div>
+                                                            <div class="form-group col-md-1" style="font-size:15px;">` + element.partcombinedquantity + ` parts
+                                                                
+                                                            </div>
+                                                            <div class="form-group col-md-2" style="font-size:15px;">&#8358;` + element.totalprice.toFixed(2) + `
+                                                                
+                                                            </div>
+
+                                                        <div class="form-group col-md-1" style="font-size:18px;"><a href="#" data-id="` + element.itemid + `" class="del-combinedpricing-item"><i class="fa fa-trash-o"></i></a>
+                                                            <!--<a href="#" data-id="` + element.itemid + `" class="edit-combinedpricing-item"><i class="fa fa-pencil-square-o"></i></a>-->
+                                                            
+                                                        </div>
+                                                    
+                                                            `
+                                                            itemnumber += 1
+                                                            $("#combinedpricevalue").html(combinedpricinglist)
+                                                            $("#combinedpricetotalvalue").html(`<div class="form-group col-md-12" style="font-size:18px;">Total = ` + totalitemsprice.toFixed(2) + ` Naira</div>`)
+                                                            
+                                                            $(".del-combinedpricing-item").on("click", function(evt){
+                                                                evt.preventDefault()
+                                                                let itemid = $(this).attr("data-id")
+                                                                console.log(itemid)
+
+                                                                // combinedpricingvaluearray.splice(id, 1)
+                                                                //console.log(packagingvalue)
+
+                                                                for(i=0;i<combinedpricingvaluearray.length;i++){
+                                                                    if(itemid==combinedpricingvaluearray[i].itemid){
+                                                                        console.log(combinedpricingvaluearray[i].itemname," found")
+                                                                        combinedpricingvaluearray.splice(i, 1)
+                                                                    }
+                                                                }
+                                                                
+                                                                combinedpricinglistitems(combinedpricingvaluearray)
+
+                                                            })
+
+                                                            $(".edit-combinedpricing-item").on("click", function(evt){
+                                                                evt.preventDefault()
+                                                                let itemid = $(this).attr("data-id")
+                                                                for(i=0;i<combinedpricingvaluearray.length;i++){
+                                                                    if(itemid==combinedpricingvaluearray[i].itemid){
+                                                                        console.log(combinedpricingvaluearray[i].itemname," found")
+                                                                        $("#edit-combineditem-button").show()
+                                                                        $("#add-combineditem-button").hide()
+                                                                    }
+                                                                }
+                                                            })
+
+                                                            
+                                                        });
+                                                        
+                                                })
+
+                                                // combinedpricinglist +=  `<div class="form-group col-md-12" style="font-size:18px;">Total = ` + totalitemsprice.toFixed(2) + ` Naira</div>`
+                                                
+                                    
+                                    
+                                    $(".markupitem").on('change paste', function () {
+                                        let markup = $(this).val()
+
+                                        let id = $(this).attr("data-id")
+                                    
+                                        console.log(id)
+                                        
+
+                                    })
+
+
+
+                            })
+
+                            
+                    }
+                })
+            })
+
+            $("#add-selectitemregiment-button").on("click", function(evt){
+                evt.preventDefault()
+                let itemname =$("#itemregiments").val()
+                let splitregimentname = itemname.split(",")
+                itemname = splitregimentname[1]
+                itemregimentarray.forEach(val => {
+                    if(itemname==val.regimentname){
+                        let regiment = JSON.parse(val.regiment)
+                        console.log(regiment)
+
+                        let itemid = $("#itemregimentslist").val()
+                        regiment.forEach(value => {
+                            if(itemid==value.itemid){
+
+                                console.log(value)
+                                getCombinedItemsDetails(value.stockitemlistid)
+
+                                let getStockItemDetailsByItemId = "getStockItemDetailsByItemId"
+                                // let itemname = "Select Item"
+                                $.post("controllers/combo-setup.php",{searchItem:itemid,getStockItemDetailsByItemId:getStockItemDetailsByItemId},function(formdata){
+                                    let data = JSON.parse(formdata)
+                                    console.log(data)
+                                    itemname = value.itemname
+                                    let pieces = $("#combinedtotalpiece").val()
+                                    //itemname = $("#combineditems").text()
+                                    let unitprice = value.unitprice
+                                    let unittype =  value.combineditemsunittype
+                                    
+                                    let unitstrength = value.unitstrength
+                                    let unitliquidstrength = value.unitliquidstrength
+                                    let unitlengthstrength = value.unitlengthprice
+                                    let unit = value.unit
+                                    unit = unit.toUpperCase()
+                                    let itemquantity = value.itemquantity
+                                    let splititemquantity = itemquantity.split(" ")
+                                    itemquantity = parseFloat(splititemquantity[0])
+                                    let itemquantityprice = value.itemquantityprice
+                                    // let pieces = $("#pieces").val()
+                                    let totalprice = unitprice * itemquantity
+
+                                    let combineditemsstrengthvalue = value.combineditemsstrength
+                                    let splitcombineditemstrength = combineditemsstrengthvalue.split(",")
+
+                                    let totalpieces = parseFloat(splitcombineditemstrength[1])
+                                    let totalstrength = parseFloat(splitcombineditemstrength[1])
+                                    let totalliquidstrength = parseFloat(splitcombineditemstrength[1])
+                                    let totallengthstrength = parseFloat(splitcombineditemstrength[1])
+
+                                    let combinedquantity = oneifnull($("#combinedquantity").val())
+                                    let partcombinedquantity = oneifnull($("#partcombinedquantity").val())
+
+                                    let computequantity = value.computequantity
+                                    let combineditemsstrength = value.combineditemsstrength
+
+                                    let splitcombineditemstrengthvalue = combineditemsstrength.split("(")
+                                    combineditemsstrength = splitcombineditemstrengthvalue[0]
+
+
+                                    let combineditemsunittype = value.combineditemsunittype
+                                    console.log(totalpieces, totalstrength,totalliquidstrength, totallengthstrength)
+                                    if(combineditemsunittype=="weight"){
+                                        if(unit=="G"){
+                                            //do nothing
+                                        } else {
+                                            totalstrength = parseFloat(totalstrength) * 1000
+                                        }
+                                        totalstrength = parseFloat(totalstrength)/parseFloat(pieces)
+                                        itemquantity = itemquantity * totalstrength
+                                    } else if(combineditemsunittype=="volume"){
+                                        if(unit=="L"){
+                                            //do nothing
+                                        } else {
+                                            totalliquidstrength = parseFloat(totalliquidstrength) * 1000
+                                        }
+                                        totalliquidstrength = parseFloat(totalliquidstrength)/parseFloat(pieces)
+                                        itemquantity = itemquantity * totalliquidstrength
+                                    } else if(combineditemsunittype=="length"){
+                                        if(unit=="M"){
+                                            //do nothing
+                                        } else {
+                                            totallengthstrength = parseFloat(totallengthstrength) * 100
+                                        }
+                                        totallengthstrength = parseFloat(totallengthstrength)/parseFloat(pieces)
+                                        itemquantity = itemquantity * totallengthstrength
+                                    } else {
+                                        itemquantity = itemquantity //* totalpieces
+                                    }
+                                    
+                                    
+                                    let itemunit = unitstrength + "(WGT), " + unitliquidstrength + " (VOL), " + unitlengthstrength + " (LEN)"
+                                    itemquantity = itemquantity + " " + unit
+                                    let stockitemlistid = parseInt(value.stockitemlistid)
+                                    let combinedpricing = {
+                                        itemid: itemid,
+                                        stockitemlistid:stockitemlistid,
+                                        itemname: itemname,
+                                        itemunit: itemunit,
+                                        unit:unit,
+                                        unitprice: unitprice,
+                                        itemquantity: itemquantity,
+                                        itemquantityprice:itemquantityprice,
+                                        unitstrength: unitstrength,
+                                        unitliquidstrength: unitliquidstrength,
+                                        unitlengthstrength: unitlengthstrength,
+                                        totalprice: totalprice,
+                                        computequantity:computequantity,
+                                        combineditemsstrength:combineditemsstrength,
+                                        combineditemsunittype:combineditemsunittype
+                                    }
+                                    combinedpricingvaluearray.push(combinedpricing)
+                                    console.log(combinedpricingvaluearray)
+
+                                    let combinedpricinglist = `<div class="form-group col-md-2" style="font-size:14px;font-weight:bolder;">
+                                            
+                                            Item
+                                            </div>
+                                            <div class="form-group col-md-1" style="font-size:14px;font-weight:bolder;">
+                                
+                                                Type of Unit
+                                            </div>
+                                            <div class="form-group col-md-1" style="font-size:14px;font-weight:bolder;">
+                                            
+                                                Unit
+                                            </div>
+                                            <div class="form-group col-md-2" style="font-size:14px;font-weight:bolder;">
+                                                Whole Qty
+                                            </div>
+                                            <div class="form-group col-md-2" style="font-size:14px;font-weight:bolder;">
+                                                Unit Qty Used
+                                            </div>
+                                            <div class="form-group col-md-1" style="font-size:14px;font-weight:bolder;">
+                                                Parts of Whole
+                                            </div>
+                                            <div class="form-group col-md-2" style="font-size:14px;font-weight:bolder;">
+                                                Qty Price
+                                            </div>
+                                            
+                                            <div class="form-group col-md-1" style="font-size:16px;">
+                                                Action
+                                            </div></div>`
+                                            let itemnumber = 0
+                                            let totalitemsprice = 0
+                                            combinedpricingvaluearray.forEach(element => {
+                                                let itemid = element.itemid
+                                                let getStockListByItemId = "getStockListByItemId"
+
+
+                                                // totalitemsprice += parseFloat(element.totalprice)
+                                                let itemstrength = element.combineditemsstrength
+                                                $.post("controllers/combo-setup.php", {itemid:itemid,getStockListByItemId:getStockListByItemId}, function(formdata){
+
+                                                        
+                                                        let data = JSON.parse(formdata)
+                                                        console.log(data)
+                                                        let unitprice = 0
+
+                                                        let itemstrength = element.combineditemsstrength
+                                                        let quantity = element.computequantity
+                                                        //Pcs
+                                                        if(itemstrength=="Pcs"){
+                                                            unitprice = parseFloat(data.unitpriceperpiece)
+                                                        }
+                                                        //Wgt
+                                                        if(itemstrength=="Wgt"){
+                                                            unitprice = parseFloat(data.unitpriceperstrength)
+                                                        }
+                                                        //Vol
+                                                        if(itemstrength=="Vol"){
+                                                            unitprice = parseFloat(data.unitpriceperliquidstrength)
+                                                        }
+                                                        //Len
+                                                        if(itemstrength=="Len"){
+                                                            unitprice = parseFloat(data.unitpriceperlength)
+                                                        }
+
+                                                        totalprice = parseFloat(element.totalprice)
+
+                                                        totalitemsprice += parseFloat(totalprice)
+                                                        totalcombinedprice = totalitemsprice
+
+                                                        combinedpricinglist += `<div class="form-group col-md-2" style="font-size:18px;">` + element.itemname + `
+                                                
+                                                            </div>
+                                                            <div class="form-group col-md-1" style="font-size:15px;">` + element.combineditemsunittype + `
+                                                
+                                                                </div>
+                                                                <div class="form-group col-md-1" style="font-size:15px;">` + element.unit + `
+                                                                
+                                                            </div>
+                                                            <div class="form-group col-md-2" style="font-size:15px;">` + element.combinedquantity + ` ` + element.unit + `
+                                                                
+                                                            </div>
+                                                            <div class="form-group col-md-2" style="font-size:15px;">` + element.itemquantity + `
+                                                                
+                                                            </div>
+                                                            <div class="form-group col-md-1" style="font-size:15px;">` + element.partcombinedquantity + ` parts
+                                                                
+                                                            </div>
+                                                            <div class="form-group col-md-2" style="font-size:15px;">&#8358;` + element.totalprice.toFixed(2) + `
+                                                                
+                                                            </div>
+
+                                                        <div class="form-group col-md-1" style="font-size:18px;"><a href="#" data-id="` + element.itemid + `" class="del-combinedpricing-item"><i class="fa fa-trash-o"></i></a>
+                                                            <!--<a href="#" data-id="` + element.itemid + `" class="edit-combinedpricing-item"><i class="fa fa-pencil-square-o"></i></a>-->
+                                                            
+                                                        </div>
+                                                    
+                                                            `
+                                                            itemnumber += 1
+                                                            $("#combinedpricevalue").html(combinedpricinglist)
+                                                            $("#combinedpricetotalvalue").html(`<div class="form-group col-md-12" style="font-size:18px;">Total = ` + totalitemsprice.toFixed(2) + ` Naira</div>`)
+                                                            
+                                                            $(".del-combinedpricing-item").on("click", function(evt){
+                                                                evt.preventDefault()
+                                                                let itemid = $(this).attr("data-id")
+                                                                console.log(itemid)
+
+                                                                // combinedpricingvaluearray.splice(id, 1)
+                                                                //console.log(packagingvalue)
+
+                                                                for(i=0;i<combinedpricingvaluearray.length;i++){
+                                                                    if(itemid==combinedpricingvaluearray[i].itemid){
+                                                                        console.log(combinedpricingvaluearray[i].itemname," found")
+                                                                        combinedpricingvaluearray.splice(i, 1)
+                                                                    }
+                                                                }
+                                                                
+                                                                combinedpricinglistitems(combinedpricingvaluearray)
+
+                                                            })
+
+                                                            $(".edit-combinedpricing-item").on("click", function(evt){
+                                                                evt.preventDefault()
+                                                                let itemid = $(this).attr("data-id")
+                                                                for(i=0;i<combinedpricingvaluearray.length;i++){
+                                                                    if(itemid==combinedpricingvaluearray[i].itemid){
+                                                                        console.log(combinedpricingvaluearray[i].itemname," found")
+                                                                        $("#edit-combineditem-button").show()
+                                                                        $("#add-combineditem-button").hide()
+                                                                    }
+                                                                }
+                                                            })
+
+                                                            
+                                                        });
+                                                        
+                                                })
+
+                                                // combinedpricinglist +=  `<div class="form-group col-md-12" style="font-size:18px;">Total = ` + totalitemsprice.toFixed(2) + ` Naira</div>`
+                                                
+                                    
+                                    
+                                    $(".markupitem").on('change paste', function () {
+                                        let markup = $(this).val()
+
+                                        let id = $(this).attr("data-id")
+                                    
+                                        console.log(id)
+                                        
+
+                                    })
+
+
+
+                            })
+
+                            }
+                        });
+                    }
+                })
+               
+                
+            })
+
+            $("#delete-regiment-combinedprice-button").on("click", function(evt){
+                evt.preventDefault()
+                let itemname =$("#itemregiments").val()
+                let splitregimentname = itemname.split(",")
+                itemname = splitregimentname[1]
+                let id = splitregimentname[0]
+                let deleteItemRegiment = "deleteItemRegiment"
+                $.post("controllers/combo-setup.php",{id:id,itemname:itemname,deleteItemRegiment:deleteItemRegiment},function(data){
+                    $("#itemregimentinfo").html(data)
+                    getitemregiment()
+                })
+
+            })
+
+            $("#edit-regiment-combinedprice-button").on("click", function(evt){
+                evt.preventDefault()
+        
+                let itemname =$("#itemregiments").val()
+                let splitregimentname = itemname.split(",")
+                regimentname = splitregimentname[1]
+                if($("#regimentname").val()==""){
+                    regimentname = splitregimentname[1]
+                } else {
+                    regimentname = $("#regimentname").val()
+                }
+                itemname = "Item Routine"
+                let id = splitregimentname[0]
+                // console.log(id,itemregimentarray)
+                itemregimentarray.forEach(val => {
+                    if(id==val.id){
+                        combinedpricingvalue = val.regiment
+                        console.log(id,regimentname,val.regiment)
+                        let editItemRegiment = "editItemRegiment"
+                        $.post("controllers/combo-setup.php",{itemregimentid:id,regimentname:regimentname,itemname:itemname,combinedpricingvalue:combinedpricingvalue,editItemRegiment:editItemRegiment},function(data){
+                            $("#itemregimentinfo").html(data)
+                            getitemregiment()
+                        })
+                    }
+                    
+                });
+               
+                
+
+            })
+
+            $("#remove-itemregiment-button").on("click", function(evt){
+                evt.preventDefault()
+        
+                let itemname =$("#itemregiments").val()
+                let splitregimentname = itemname.split(",")
+                regimentname = splitregimentname[1]
+                
+                let item = $("#itemregimentslist").val()
+                let splititem = item.split(",")
+                let itemposition = parseInt(splititem[0])
+                let itemid = parseInt(splititem[1])
+                itemname = "Item Routine"
+                let id = splitregimentname[0]
+                console.log(id,item,itemregimentarray)
+                itemregimentarray.forEach(val => {
+                    if(id==val.id){
+
+                        let regiment = JSON.parse(val.regiment)
+                        regiment.splice(itemposition, 1)
+                        combinedpricingvalue = JSON.stringify(regiment)
+
+                        console.log(id,regimentname,combinedpricingvalue)
+                        let editItemRegiment = "editItemRegiment"
+                        $.post("controllers/combo-setup.php",{itemregimentid:id,regimentname:regimentname,itemname:itemname,combinedpricingvalue:combinedpricingvalue,editItemRegiment:editItemRegiment},function(data){
+                            $("#itemregimentinfo").html(data)
+                            getitemregiment()
+                        })
+                    }
+                    
+                });
+               
+                
+
+            })
+            $("#clear-itemregiment-button").on("click", function(evt){
+                evt.preventDefault()
+                $("#combinedpricevalue").html("")
+                $("#combinedpricetotalvalue").html("")
+                combinedpricingvaluearray = []
+
+            })
+
+
+            getitemregiment()
+
+            $("#regiment-combinedprice-button").on("click", function(evt){
+                evt.preventDefault()
+                let genericname = $("#selectitem").val()
+                let regimentname = $("#regimentname").val()
+                if(regimentname=="" || regimentname==null){
+                    $("#itemregimentinfo").html("Please enter Regiment Name for this list")
+                } else {
+                    combinedpricingvalue = JSON.stringify(combinedpricingvaluearray)
+                   
+                        let insertItemRegiment = "insertItemRegiment"
+                        let itemname = "Routine"
+                        
+                        $.post("controllers/combo-setup.php",{itemname:itemname,regimentname:regimentname,combinedpricingvalue:combinedpricingvalue,insertItemRegiment:insertItemRegiment},function(data){
+                            $("#itemregimentinfo").html(data)
+                            getitemregiment()
+                       
+                    })
+                }
+                
+                
+
+            })
+
+
+
+        })
+    </script>
+
+</body>
+</html>

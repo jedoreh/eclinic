@@ -1,0 +1,1664 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Prescription Setup</title>
+    <link rel="icon" href="img/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- themify CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <!-- flaticon CSS -->
+    <link rel="stylesheet" href="css/flaticon.css">
+    <!-- magnific popup CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- nice select CSS -->
+    <!-- <link rel="stylesheet" href="css/nice-select.css"> -->
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <!-- style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        a:hover{
+            color:indigo;
+        }
+    </style>
+    <style>
+        thead, tbody, tr { display: block; }
+
+        tr:after {
+            content: ' ';
+            display: block;
+            visibility: hidden;
+            clear: both;
+        }
+
+        
+
+        tbody {
+            height: 250px;
+            overflow-y: auto;
+        }
+
+        thead {
+            /* fallback */
+        }
+
+        thead th {
+            height: 30px;
+
+            /*text-align: left;*/
+        }
+
+        tbody td, thead th {
+            width: 12.2%;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <!--::header part start::-->
+    <header class="main_menu">
+            
+        </header>
+        <!-- Header part end-->
+       
+    <!-- breadcrumb start-->
+    <section class="breadcrumb breadcrumb_bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb_iner">
+                        <div class="form-row">
+                            <div class="form-group col-md-2">
+                                <span id="username" style="color:#F1F1F1;font-size: 17px;"></span>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <span id="pagetitle" style="color:#F1F1F1;font-size: 20px;font-weight: bolder;">Items/Services Registration</span>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <span id="sysdate" style="color:#F1F1F1"></span>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <span id="systime" style="color:#F1F1F1"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- breadcrumb start-->
+
+    
+
+    <!--::regervation_part start::-->
+    <section class="regervation_part padding_bottom" style="margin-top:30px;">
+        <div class="container">
+            <div class="row align-items-center regervation_content">
+                <div class="col-md-12">
+                    <div class="regervation_part_iner">
+                        <br>
+                        <form action="controllers/add-staff.php" class="frmaddperson">
+                            <!-- <h2>Prescription</h2> -->
+                            <div class="label label-success" id="errorlogin"></div>
+                            <div class="form-row">
+                                
+                            </div>
+                            
+                        </form>
+                    </div>
+
+                    <div class="card-box">
+                       
+                        <ul class="nav nav-tabs nav-tabs-solid nav-tabs-rounded nav-justified">
+                            <!-- <li class="nav-item"><a class="nav-link btn-primary active" href="#solid-rounded-justified-tab1" data-toggle="tab">Item Prescription</a></li> -->
+                            <!-- <li class="nav-item"><a class="nav-link btn-primary" href="#solid-rounded-justified-tab7" data-toggle="tab">Supplier</a></li> -->
+                            <!-- <li class="nav-item"><a class="nav-link btn-primary" href="#solid-rounded-justified-tab3" data-toggle="tab">Category of Importance</a></li> -->
+                            <!-- <li class="nav-item"><a class="nav-link btn-primary" href="#solid-rounded-justified-tab4" data-toggle="tab">Location</a></li> -->
+                            <!-- <li class="nav-item"><a class="nav-link btn-primary" href="#solid-rounded-justified-tab8" data-toggle="tab">Packaging</a></li> -->
+                            <!-- <li class="nav-item dropdown">
+                                <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Stocking Setup</a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item" href="#solid-rounded-justified-tab2" data-toggle="tab">Route of Administration</a>
+                                    <a class="dropdown-item" href="#solid-rounded-justified-tab3" data-toggle="tab">Category of Importance</a>
+                                    <a class="dropdown-item" href="#solid-rounded-justified-tab4" data-toggle="tab">Stock Location</a>
+                                    <a class="dropdown-item" href="#solid-rounded-justified-tab5" data-toggle="tab">Physical Position</a> 
+                                </div>
+                            </li> -->
+                            <!-- <li class="nav-item"><a class="nav-link" href="#solid-rounded-justified-tab3" data-toggle="tab">Department Item Group</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#solid-rounded-justified-tab4" data-toggle="tab">Generic Name</a></li> -->
+                            <!-- <li class="nav-item"><a class="nav-link" href="#solid-rounded-justified-tab5" data-toggle="tab">State</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#solid-rounded-justified-tab6" data-toggle="tab">Default Strength</a></li> -->
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane show active" id="solid-rounded-justified-tab1">
+                                <br>
+                                <!-- <h3>Default Item Prescription</h3> -->
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <form action="controllers/index.php" class="form-signin">
+                                                <h2>Search Item</h2>
+                                                <div class="label label-success" id="Itemprescription-status"></div>
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-3">
+                                                        SEARCH (GENERIC NAME):<br>
+                                                        
+                                                        <input type="text" name="searchitem" class="form-control" id="searchitem" placeholder="Search Stock Item" required>
+                                                    </div>
+                                                    <div class="form-group col-md-9">
+                                                        Generic Name (Trade Name):<br>
+                                                        
+
+                                                        <select id="selectitem" name="selectitem" class="form-control">
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                        Stock Code:<br>
+
+                                                        <input type="text" name="stocknumber" class="form-control" id="stocknumber"
+                                                            placeholder="Stock Number">
+                                                    </div>
+                                                    <div class="form-group col-md-3">
+                                                        Stock Number:<br>
+
+                                                        <input type="text" name="stockitemnumber" class="form-control" id="stockitemnumber"
+                                                            placeholder="Stock Item Number">
+                                                    </div>
+                                                    <div class="form-group col-md-3">
+                                                        Previous Quantity:<br>
+
+                                                        <input type="text" name="previousquantity" class="form-control" id="previousquantity"
+                                                            placeholder="Previous Quantity">
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        Dosage Instruction:<br>
+
+                                                        <textarea name="dosageinstruction" rows="5" class="form-control" id="dosageinstruction"
+                                                            placeholder="Dosage Instruction"></textarea>
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        Administration Instruction:<br>
+
+                                                        <textarea name="administrationinstruction" rows="5" class="form-control" id="administrationinstruction"
+                                                            placeholder="Administration Instruction"></textarea>
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        Special Instruction:<br>
+
+                                                        <textarea name="specialinstruction" rows="5" class="form-control" id="specialinstruction"
+                                                            placeholder="Special Instruction"></textarea>
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                        Route of Administration:<br>
+
+                                                        <select name="routeofadministration" class="form-control" id="routeofadministration"></select>
+                                                    </div>
+                                                    
+                                                    <div class="form-group col-md-6">
+                                                       
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                        Infusion Rate:<br>
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-4">
+                                                                Vol.(Litres):<br>
+        
+                                                                <input type="number" min="1" max="100" id="infusionvolume" value="0" class="form-control">
+                                                            </div>
+                                                            <div class="form-group col-md-3">
+                                                                Number of Hours.:<br>
+        
+                                                                <input type="number" min="1" max="100" id="infusionhour" value="0" class="form-control">
+                                                            </div>
+                                                            <div class="form-group col-md-5">
+                                                                Giving Set:<br>
+        
+                                                                <select name="infusiongivingset" class="form-control" id="infusiongivingset">
+                                                                    <option value="dripgivingset">Drip Giving Set(20 drops/ml)</option>
+                                                                    <option value="bloodgivingset">Blood Giving Set(15 drops/ml)</option>
+                                                                    <option value="solusetgivingset">SoluSet Giving Set(60 drops/ml)</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                        <br>
+                                                        Infusion Constant:<br>
+                                                        <div class="form-control" id="infusionconstant">
+                                                       
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                        Gas Administration Rate:<br>
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-4">
+                                                                Weight(Kg):<br>
+        
+                                                                <input type="number" min="1" max="100" value="0" id="gasinfusionweight" class="form-control">
+                                                            </div>
+                                                            <div class="form-group col-md-3">
+                                                                Number of Hours:<br>
+        
+                                                                <input type="number" min="1" max="100" value="0" id="gasinfusionhour" class="form-control">
+                                                            </div>
+                                                            <div class="form-group col-md-5">
+                                                                Giving Set(/g):<br>
+        
+                                                                <input type="number" min="1" max="100" value="0" id="gasgivingset" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                        <br>
+                                                        Gas Infusion Constant:<br>
+                                                        <div class="form-control" id="gasinfusionconstant">
+                                                       
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        <input type="hidden" id="stockitemid" name="stockitemid">
+                                                        <input type="hidden" id="itemid" name="itemid">
+                                                        <input type="hidden" id="prescriptionid" name="prescriptionid">
+                                                        
+                                                    </div>
+                                                    
+                                                    <div class="form-edit-location"></div>
+                                                    
+                                                </div>
+                                                <div class="regerv_btn">
+                                                    <!-- <button type="submit" class="genric-btn primary" id="add-pricing-button" style="font-size: 24px;border-radius: 8px;">Add Location</button>
+                                                    <button type="submit" class="genric-btn primary" id="cancel-pricing-button" style="font-size: 24px;border-radius: 8px;">Cancel</button>
+                                                    <button type="submit" class="genric-btn success" id="edit-pricing-button" style="font-size: 24px;border-radius: 8px;">Edit Location</button>
+                                                    <button type="submit" class="genric-btn danger" id="delete-pricing-button" style="font-size: 24px;border-radius: 8px;">Confirm Deletion</button> -->
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    <h4 class="card-title d-inline-block">View Prescription of Items/Services</h4> <br>
+                                                    
+                                                    <div class="label label-success" id="item-prescription-status"></div>
+                                                    <p id="itemdetails"></p>
+                                                    <!--<p class="btn btn-primary float-right" id="view-stockitem-count"></p>-->
+                                                    <!-- <p class="float-right"><input type="text" id="searchitemservice" name="searchitemservice" placeholder="Search Item/Service" style="font-size: 18px;"></p> -->
+                                                </div>
+                                                <div class="card-body p-0">
+                                                    <div class="table-responsive scrollable" style="padding-left: 10px;">
+                                                        <form action="controllers/index.php" class="form-signin">
+                                                            
+                                                            <div class="label label-success" id="item-packaging-status"></div>
+                                                            
+                                                            <div class="form-row">
+                                                                <div class="packaging-list"></div>
+                                                                
+                                                                <div class="form-group col-md-6">
+                                                                    Item Strength:<br>
+                                                                    <div class="form-control" id="itemstrengthvalue">
+                                                                   
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group col-md-6">
+                                                                    Item State:<br>
+                                                                    <div class="form-control" id="itemstatevalue">
+                                                                   
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group col-md-3">
+                                                                    <h3>Default Prescriptions:</h3>
+                                                                    
+                                                                </div>
+                                                                
+                                                                <div class="form-group col-md-1">
+                                                                    <br>
+                                                                    <!-- <button type="submit" class="genric-btn primary" id="add-package-button" style="font-size: 18px;border-radius: 8px;">Add</button> -->
+                                                                    <!-- <button type="submit" class="genric-btn danger" id="clear-package-button" style="font-size: 18px;border-radius: 8px;">CLEAR</button> -->
+                                                                </div>
+                                                                <div class="form-group col-md-5">
+                                                                    <br>
+                                                                    
+                                                                </div>
+                                                                <!-- <div class="form-group col-md-2"></div> -->
+                                                                <div class="form-group col-md-6">
+                                                                    <div class="form-row" id="packaging">
+                                                                        <div class="form-group col-md-6">
+                                                                            <br>
+                                                                            Weight:<br>
+                                                                            <select class="form-control" id="weight" name="weight">
+                                                                           </select>
+                                                                        </div>
+                                                                        <div class="form-group col-md-3">
+                                                                            <br>
+                                                                            Dosage Value:<br>
+                                                                            <input type="text" class="form-control"  id="enterdosage">
+                                                                            
+                                                                        </div>
+                                                                        <div class="form-group col-md-3">
+                                                                            <p>
+                                                                                <input type="radio" name="selectdosagetype" class="selectdosagetype" style="font-size: 24px;" value="full">&nbsp;<span style="font-size: 14px;">Full</span> 
+                                                                                <input type="radio" name="selectdosagetype" class="selectdosagetype" style="font-size: 24px;" value="abbr">&nbsp;<span style="font-size: 14px;">Abbr</span> 
+                                                                            </p>
+                                                                            Dosage:<br>
+                                                                          
+                                                                            <select class="form-control" id="dosage" name="dosage">
+                                                                           </select>
+                                                                        </div>
+                                                                        <div class="form-group col-md-3">
+                                                                            <br>
+                                                                            Frequency Value:<br>
+                                                                            <input type="text" class="form-control"  id="frequencyvalue">
+                                                                            
+                                                                        </div>
+                                                                        <div class="form-group col-md-3">
+                                                                            <p>
+                                                                                <input type="radio" name="selectfrequencytype" class="selectfrequencytype" style="font-size: 24px;" value="full">&nbsp;<span style="font-size: 14px;">Full</span> 
+                                                                                <input type="radio" name="selectfrequencytype" class="selectfrequencytype" style="font-size: 24px;" value="abbr">&nbsp;<span style="font-size: 14px;">Abbr</span> 
+                                                                            </p>
+                                                                            Frequency:<br>
+                                                                            <select class="form-control" id="frequency" name="frequency">
+                                                                           </select>
+                                                                        </div>
+                                                                        <div class="form-group col-md-3">
+                                                                            <br>
+                                                                            Duration Value:<br>
+                                                                            <input type="text" class="form-control"  id="enterduration">
+                                                                        </div>
+                                                                        <div class="form-group col-md-3">
+                                                                            <p>
+                                                                                <input type="radio" name="selectdurationtype" class="selectdurationtype" style="font-size: 24px;" value="full">&nbsp;<span style="font-size: 14px;">Full</span> 
+                                                                                <input type="radio" name="selectdurationtype" class="selectdurationtype" style="font-size: 24px;" value="abbr">&nbsp;<span style="font-size: 14px;">Abbr</span> 
+                                                                            </p>
+                                                                            Duration:<br>
+                                                                            <select class="form-control" id="duration" name="duration">
+                                                                           </select>
+                                                                        </div>
+                                                                        <div class="form-group col-md-12">
+                                                                            <button type="submit" class="genric-btn success" id="save-package-button" style="font-size: 18px;border-radius: 8px;">SAVE</button>
+                                                                            <button type="submit" class="genric-btn primary" id="then-package-button" style="font-size: 18px;border-radius: 8px;">FOLLOWED BY</button>
+
+                                                                            <button type="submit" class="genric-btn danger" id="clear-package-button" style="font-size: 18px;border-radius: 8px;">CLEAR</button>
+                                                                            
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group col-md-6">
+                                                                    <div class="form-row" id="packagingvalue"></div>
+                                                                </div>
+                                                                <div class="form-group col-md-6">
+                                                                    
+                                                                    <!-- <br>
+                                                                    Total Pieces:<br>
+                                                                    <div class="form-control" id="totalpieces">
+                                                                   
+                                                                    </div>
+                                                                    
+                                                                    Total Strength:<br>
+                                                                    <div class="form-control" id="totalstrength">
+                                                                    -->
+                                                                    </div>
+                                                                   
+                                                                </div>
+                                                                
+                                                                <div class="form-group col-md-6">
+                                                                    <!-- Unit Price Per Piece:<br>
+                                                                    <button type="submit" class="genric-btn success" id="compute-pricing-button" style="font-size: 18px;border-radius: 8px;">COMPUTE PRICING</button>
+                                                                     -->
+                                                                    <button type="submit" class="genric-btn success" id="save-prescription-button" style="font-size: 18px;border-radius: 8px;">SAVE PRESCRIPTION</button>
+                                                                    <button type="submit" class="genric-btn primary" id="update-prescription-button" style="font-size: 18px;border-radius: 8px;">UPDATE PRESCRIPTION</button>
+                                                                    <button type="submit" class="genric-btn danger" id="delete-prescription-button" style="font-size: 18px;border-radius: 8px;">DELETE PRESCRIPTION</button>
+                                                                    <br>
+                                                                    <div id="sellingprice" style="font-size: 18px;">
+                                                                   
+                                                                    </div>
+                                                                </div> 
+                                                                
+                                                                
+                                                            </div>
+                                                            <div class="form-row">
+                                                                
+                                                            </div>
+                                                            
+                                                            <div class="regerv_btn">
+                                                                <div class="form-row form-edit-stockitemprice table-responsive scrollable"></div>
+                                                               <!-- - <button type="submit" class="genric-btn primary" id="cancel-packpricing-button" style="font-size: 18px;border-radius: 8px;">Cancel</button>
+                                                                <button type="submit" class="genric-btn success" id="edit-packpricing-button" style="font-size: 18px;border-radius: 8px;">Edit</button>
+                                                                <button type="submit" class="genric-btn danger" id="delete-packpricing-button" style="font-size: 18px;border-radius: 8px;">Confirm Deletion</button> -->
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
+                <!-- <div class="col-lg-5 col-md-6">
+                    <div class="reservation_img">
+                        <img src="img/loginphoto.jpg" alt="">
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <!--::regervation_part end::-->
+
+    
+    <!-- footer part start-->
+    <footer class="footer-area">
+
+        <div class="copyright_part">
+            
+        </div>
+    </footer>
+
+    <!-- footer part end-->
+
+    <!-- jquery plugins here-->
+
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <!-- popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- easing js -->
+    <script src="js/jquery.magnific-popup.js"></script>
+    <!-- swiper js -->
+    <script src="js/swiper.min.js"></script>
+    <!-- swiper js -->
+    <script src="js/masonry.pkgd.js"></script>
+    <!-- particles js -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- <script src="js/jquery.nice-select.min.js"></script> -->
+    <!-- swiper js -->
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <!-- contact js -->
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <script src="js/contact.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+    <script src="views/masterpage.js"></script>
+    <script src="views/stock-item-dispensing.js"></script>
+    <!--<script src="views/corpse-list.js"></script> -->
+    <script>
+        $(document).ready(function(){
+            
+            let itemstrength = ""
+            let getDosage = "getDosage"
+            let searchItem = ""
+            let dosagelist = ""
+            let fulldosagelist = ""
+            $.post("controllers/combo-setup.php",{searchItem:searchItem,getDosage:getDosage}, function(data){
+                if(data!="No Record Found"){
+                    let stocktypeoptions = ``
+                    let fullstocktypeoptions = ``
+                    data = JSON.parse(data)
+                    $.each(data.records, function(key, val) {
+                        stocktypeoptions += `<option value="` + val.abbreviation + `">` + val.abbreviation + `</option>`
+                        fullstocktypeoptions += `<option value="` + val.dosage + `">` + val.dosage + `</option>`
+                    });
+                    dosagelist = stocktypeoptions
+                    fulldosagelist = fullstocktypeoptions
+                    $("#dosage").html(stocktypeoptions)
+                }
+            })
+
+            $(".selectdosagetype").on("change", function(){
+                let view = $('input[name="selectdosagetype"]:checked').val()
+                console.log(view)
+                if(view=="full"){
+                    $("#dosage").html(fulldosagelist)
+                } else if(view=="abbr"){
+                    $("#dosage").html(dosagelist)
+                }
+            })
+
+
+            let durationlist = ""
+            let fulldurationlist = ""
+            let getDuration = "getDuration"
+            $.post("controllers/combo-setup.php",{searchItem:searchItem,getDuration:getDuration}, function(data){
+                if(data!="No Record Found"){
+                    let supplieroptions = ``
+                    let fullsupplieroptions = ``
+                    data = JSON.parse(data)
+                    $.each(data.records, function(key, val) {
+                        supplieroptions += `<option value="` + val.abbreviation + `,` + val.abbreviation + `">` + val.abbreviation + `</option>`
+                        fullsupplieroptions += `<option value="` + val.duration + `,` + val.duration + `">` + val.duration + `</option>`
+                    });
+                    durationlist = supplieroptions
+                    fulldurationlist = fullsupplieroptions
+                    $("#duration").html(supplieroptions)
+                }
+            })
+
+            $(".selectdurationtype").on("change", function(){
+                let view = $('input[name="selectdurationtype"]:checked').val()
+                console.log(view)
+                if(view=="full"){
+                    $("#duration").html(fulldurationlist)
+                } else if(view=="abbr"){
+                    $("#duration").html(durationlist)
+                }
+            })
+
+
+            let frequencylist = ""
+            let fullfrequencylist = ""
+            let getFrequency = "getFrequency"
+            //let searchItem = ""
+            $.post("controllers/combo-setup.php",{searchItem:searchItem,getFrequency:getFrequency}, function(data){
+                if(data!="No Record Found"){
+                    let organizationoptions = ``
+                    let fullorganizationoptions = ``
+                    data = JSON.parse(data)
+                    // console.log(data)
+                    $.each(data.records, function(key, val) {
+                        organizationoptions += `<option value="` + val.abbreviation + `,` + val.abbreviation + `">` + val.abbreviation + `</option>`
+                        fullorganizationoptions += `<option value="` + val.frequency + `,` + val.frequency + `">` + val.frequency + `</option>`
+                    });
+                    frequencylist = organizationoptions
+                    fullfrequencylist = fullorganizationoptions
+                    $("#frequency").html(organizationoptions)
+
+                    
+                }
+            })
+
+            $(".selectfrequencytype").on("change", function(){
+                let view = $('input[name="selectfrequencytype"]:checked').val()
+                console.log(view)
+                if(view=="full"){
+                    $("#frequency").html(fullfrequencylist)
+                } else if(view=="abbr"){
+                    $("#frequency").html(frequencylist)
+                }
+            })
+
+            let weightlist = ""
+            let getWeight = "getWeight"
+            //let searchItem = ""
+            $.post("controllers/combo-setup.php",{searchItem:searchItem,getWeight:getWeight}, function(data){
+                if(data!="No Record Found"){
+                    let organizationoptions = ``
+                    data = JSON.parse(data)
+                    // console.log(data)
+                    $.each(data.records, function(key, val) {
+                        organizationoptions += `<option value="` + val.weight + `,` + val.age + `,` + val.sex + `">` + val.sex + `: ` + val.age + `</option>`
+                    });
+                    weightlist = organizationoptions
+                    $("#weight").html(organizationoptions)
+
+                    
+                }
+            })
+
+            
+
+            function getItemsFunction(){
+                  
+                $("#edit-pricing-button").hide()
+                $("#delete-pricing-button").hide()
+                $("#cancel-pricing-button").hide()
+                $("#add-pricing-button").show()
+
+                    //get Item Codes
+                    let getStockItem = "getStockItem"
+                    let searchItem = $("#searchitem").val()
+                    console.log(searchItem)
+                    $.post("controllers/combo-setup.php",{searchItem:searchItem,getStockItem: getStockItem},function(formdata){
+                        //console.log(data)
+                        if(formdata=="No Record Found"){
+                            $("#stockitem-status").html(formdata)
+                        }else{
+                            //console.log(formdata)
+                            console.log(typeof(formdata))
+                            let data=JSON.parse(formdata)
+                            console.log(data)
+                            let count = 0
+                                
+                            let genericnameoptions = ``
+                            $.each(data.records, function(key, val) {
+                                count++
+                                genericnameoptions += `
+                                <option value="` + val.itemcode + `,` + val.genericname + `">` + val.genericname + " (" + val.tradename + `)</option>
+                            `
+                            })
+                            $("#stockitem-status").html(count + " Record(s) Found")
+                            $("#selectitem").html(genericnameoptions)
+
+
+                            let getStockItemDetailsByItemCode = "getStockItemDetailsByItemCode"
+                            let searchItem = $("#selectitem").val()
+                            let splitSearchItem = searchItem.split(",")
+                            searchItem = splitSearchItem[0]
+                            
+                            $.post("controllers/combo-setup.php",{searchItem:searchItem,getStockItemDetailsByItemCode:getStockItemDetailsByItemCode},function(data){
+                                console.log(data)
+
+                                data = JSON.parse(data)
+                                $("#stocknumber").val(data.itemcode)
+                                $("#stockitemnumber").val(data.stockitemnumber)
+                                $("#itemstrengthvalue").html(data.itemstrength)
+                                
+                                $("#stockitemid").val(data.id)
+                                console.log(data.id)
+                                let itemid = data.itemid
+                                $("#itemid").val(itemid)
+                                let GetGenericNameDetails = "GetGenericNameDetails"
+                                $.post("controllers/combo-setup.php", {id:itemid,GetGenericNameDetails:GetGenericNameDetails},function(data){
+                                    console.log(data)
+                                    data = JSON.parse(data)
+                                   
+                                    $("#usagegrouptype").html(data.usagegrouptype)
+                                    $("#itemstate").val(data.itemstate)
+                                    $("#itemstatevalue").html(data.itemstate)
+                                    let departmentitemgroup = data.departmentitemgroup
+                                    let getDeptItemGrpRoute = "getDeptItemGrpRoute"
+                                    $.post("controllers/combo-setup.php",{searchItem:departmentitemgroup,getDeptItemGrpRoute:getDeptItemGrpRoute}, function(data){
+                                        let usagerouteoptions = ``
+                                        console.log(data)
+                                        data = JSON.parse(data)
+                                        $.each(data.records, function(key, val) {
+                                            usagerouteoptions += `<option value="` + val.usageroute + `">` + val.usageroute + `</option>`
+                                        })
+                                        departmentitemgrouplist = usagerouteoptions
+                                        $("#routeofadministration").html(usagerouteoptions)
+
+                                    })
+                                })
+                                let stockitemid = $("#stockitemid").val()
+                                let getStockListByStockItemId = "getStockListByStockItemId"
+                                $.post("controllers/combo-setup.php",{stockitemid:stockitemid,getStockListByStockItemId:getStockListByStockItemId},function(data){
+                                    console.log(data)
+                                    if(data!="No Record Found"){
+                                        let quantity = 0
+                                        data=JSON.parse(data)
+                                        $.each(data.records, function(key, val) {
+                                            quantity += parseInt(val.totalpieces)
+                                        })
+                                        
+                                        $("#previousquantity").val(quantity)
+                                      
+                                    } else {
+                                        $("#previousquantity").val("Not Available")
+                                       
+                                    }
+                                   
+                                })
+
+                                getStockItemPrescription()
+                
+                            })
+                        }
+
+                        
+                            
+                            
+                        })
+
+                    }
+
+                    getItemsFunction()
+                    let prescriptionlist = []
+            function getStockItemPrescription(){
+                let stockitemid = $("#stockitemid").val()
+                // console.log(stockitemid)
+                // let organizationid = $("#organizationid").val()
+                // let stocklistid = $("#stocklistid").val()
+                let getStockItemPrescription = "getStockItemPrescription"
+                $.post("controllers/combo-setup.php",{
+                    stockitemid:stockitemid,
+                    getStockItemPrescription:getStockItemPrescription
+                },function(data){
+                    console.log(data)
+                    if(data!="No Record Found"){
+                        data = JSON.parse(data)
+
+                        $("#prescriptionid").val(data.records[0].id)
+                        $("#dosageinstruction").val(data.records[0].dosageinstruction)
+                        $("#infusionvolume").val(data.records[0].infusionvolume)
+                        $("#infusionhour").val(data.records[0].infusionhour)
+                        $("#gasinfusionhour").val(data.records[0].gasinfusionhour)
+                        $("#gasinfusionweight").val(data.records[0].gasinfusionweight)
+                        $("#specialinstruction").val(data.records[0].specialinstruction)
+                        $("#administrationinstruction").val(data.records[0].administrationinstruction)
+                        $("#routeofadministration").html(`<option value="` + data.records[0].usageroute + `">` + data.records[0].usageroute + `</option>` + departmentitemgrouplist)
+                        console.log(prescriptionid, data.records[0].id)
+                        prescription = data.records[0].prescription
+                        
+                        $("#infusionconstant").html(data.records[0].infusionconstant + " " + data.records[0].infusionrate)
+                        $("#gasinfusionconstant").html(data.records[0].gasinfusionconstant + " " + data.records[0].gasinfusionrate)
+                        prescription = JSON.parse(prescription)
+                        prescriptionlist= prescription
+                        let count = 0
+
+                        let organizations = `<div class="form-group col-md-4" style="font-size:16px;">
+                            
+                            Weight and Age
+                         </div>
+                         
+                         <div class="form-group col-md-3" style="font-size:16px;">
+                         
+                             Dosage
+                         </div>
+                         <div class="form-group col-md-3" style="font-size:16px;">
+                             Frequency/Duration
+                         </div>
+                         <div class="form-group col-md-2" style="font-size:16px;">
+                             Delete
+                         </div>`
+                        $.each(prescription, function(key, val) {
+                            
+                            organizations += `
+
+                            <div class="form-group col-md-4" style="font-size:16px;">
+                            
+                            <a href="#" data-id="` + count + `" style="" class="btn btn-outline-default take-btn stocklistitemprescription"><h3 style="color:blue;">` + val.weight + `</h3></a>
+                         </div>
+                       
+                         <div class="form-group col-md-3" style="font-size:16px;">
+                         
+                            ` + val.enterdosage + ` ` + val.dosage + ` 
+                         </div>
+                         <div class="form-group col-md-3" style="font-size:16px;">
+                            ` + val.frequencyvalue + val.frequency + ` ` + val.enterduration + ` ` + val.duration + `
+                         </div>
+                         <div class="form-group col-md-2" style="font-size:16px;">
+                            <button type="submit" class="genric-btn danger delete-stockitemprescription-button" data-id="` + count + `" style="font-size: 14px;border-radius: 8px;">Delete</button>  
+                         </div>
+
+
+                            `
+                            count++
+                        })
+
+                        $(".form-edit-stockitemprice").html(organizations)
+                        //console.log("Items ", organizations)
+                        $("#save-prescription-button").hide()
+                        $("#update-prescription-button").show()
+                        $("#delete-prescription-button").show()
+                    } else {
+                        $(".form-edit-stockitemprice").html(data)
+                        $("#save-prescription-button").show()
+                        $("#update-prescription-button").hide()
+                        $("#delete-prescription-button").hide()
+                    }
+
+                    $("#delete-prescription-button").on("click",function(evt){
+                        evt.preventDefault()
+                        let itemid = $("#itemid").val()
+                        let stockitemid = $("#stockitemid").val()
+                        let id =  $("#prescriptionid").val()
+                        let deleteDefaultPrescription = "deleteDefaultPrescription"
+                        $.post("controllers/finance-record.php",{id:id,itemid:itemid, stockitemid:stockitemid, deleteDefaultPrescription:deleteDefaultPrescription}, function(data){
+                            $("#Itemprescription-status").html(data)
+                            getItemsFunction()
+                        })
+                    })  
+
+                    $(".delete-stockitemprescription-button").on("click",function(evt){
+                        evt.preventDefault()
+                            let count = $(this).attr("data-id")
+                            console.log(count)
+                            prescriptionlist.pop(count)
+
+                            let itemid = $("#itemid").val()
+                            let stockitemid = $("#stockitemid").val()
+                            let stocknumber = $("#stockitemnumber").val()
+                            let stockcode = $("#stocknumber").val()
+                            let genericname = $("#selectitem").val()
+                            //prescriptionlist.push(packagingvalue)
+                            //packagingvalue = prescriptionlist
+                            console.log(prescriptionlist)
+                            if(prescriptionlist!="" && prescriptionlist!=[]){
+                                let prescription = JSON.stringify(prescriptionlist)
+                                console.log(prescription)
+                                console.log(prescriptionlist)
+                                let prescriptionid = $("#prescriptionid").val()
+                                let usagegrouptype = $("#usagegrouptype").text()
+                                let itemstrength = $("#itemstrengthvalue").text()
+                                let usageroute = $("#routeofadministration").val()
+                                let dosageinstruction = $("#dosageinstruction").val()
+                                let administrationinstruction = $("#administrationinstruction").val()
+                            
+                                let editPrescription = "editPrescription"
+                                $.post("controllers/combo-setup.php",{
+                                    prescriptionid:prescriptionid,
+                                    itemid:itemid,
+                                    stockitemid:stockitemid,
+                                    stocknumber:stocknumber,
+                                    stockcode:stockcode,
+                                    genericname,genericname,
+                                    prescription:prescription,
+                                    usageroute:usageroute,
+                                    dosageinstruction:dosageinstruction,
+                                    administrationinstruction:administrationinstruction,
+                                    usagegrouptype:usagegrouptype,
+                                    itemstrength:itemstrength,
+                                    editPrescription:editPrescription
+                                },function(data){
+                                    $("#Itemprescription-status").html(data)    
+                                })
+                                getDeleteStockItemPrescription()
+
+                            } else {
+                                $("#Itemprescription-status").html("No Prescriptions found")
+                            }
+
+                          
+                       
+                    })
+
+                    $(".stocklistitemprescription").on("click",function(evt){
+                        evt.preventDefault()
+                        let id = $(this).attr("data-id")
+                        console.log(id)
+                       
+                    })
+                    //getOrganizationPrice()
+                })
+            }
+
+            function getDeleteStockItemPrescription(){
+                getStockItemPrescription()
+            }
+
+            function getDeleteOrganizationPrice(){
+                getOrganizationPrice()
+
+            }
+
+            let stat_value = false
+
+            function getOrganizationPrice(){
+                let stockitemid = $("#stockitemid").val()
+                let organizationid = $("#organizationid").val()
+                let stocklistid = $("#stocklistid").val()
+                let getOrganizationPrice = "getOrganizationPrice"
+                $.post("controllers/combo-setup.php",{
+                    stockitemid:stockitemid,
+                    getOrganizationPrice:getOrganizationPrice
+                },function(data){
+                    //console.log(data)
+                    if(data!="No Record Found"){
+                        console.log(data)
+                        data = JSON.parse(data)
+                        let organizations = `<div class="form-group col-md-3" style="font-size:16px;font-style:bold;">
+                            
+                            Organization
+                         </div>
+                         <div class="form-group col-md-3" style="font-size:16px;font-style:bold;">
+                         
+                             Item
+                         </div>
+                         <div class="form-group col-md-2" style="font-size:16px;font-style:bold;">
+                         
+                             Price
+                         </div>
+                         <div class="form-group col-md-3" style="font-size:16px;font-style:bold;">
+                             Discount
+                         </div></div>
+                         <div class="form-group col-md-1" style="font-size:16px;font-style:bold;">
+                             Delete
+                         </div></div>`
+                         let count = 0
+                        $.each(data.records, function(key, val) {
+                            let price = parseFloat(val.price)
+                            
+                            organizations += `
+
+                            <div class="form-group col-md-3" style="font-size:16px;">
+                            
+                            ` + val.organization + `
+                         </div>
+                         <div class="form-group col-md-3" style="font-size:16px;">
+                         
+                            `  + val.stockitem + `
+                         </div>
+                         <div class="form-group col-md-2" style="font-size:16px;">
+                         
+                            ` + price.toFixed(2) + ` Naira
+                         </div>
+                         <div class="form-group col-md-3" style="font-size:16px;">
+                            ` + val.discount + `%
+                         </div></div>
+                         <div class="form-group col-md-1" style="font-size:16px;">
+                            <button type="submit" class="genric-btn danger delete-organization-button" data-id="` + count + `" style="font-size: 14px;border-radius: 8px;">Delete</button>  
+                         </div></div>
+
+
+                            `
+                            count++
+                        })
+
+                        $(".form-edit-organization").html(organizations)
+
+
+                        $(".delete-organization-button").on("click",function(evt){
+                            
+                        })
+                    } else {
+                        $(".form-edit-organization").html(data)
+                    }
+
+
+                    
+                })
+            }
+                  
+                
+
+
+                $("#searchitem").on('change keyup paste', function () {
+                    ApplyFilterGetItem();
+                });
+
+                function ApplyFilterGetItem() {
+                    var searchitemservice = $("#searchitem").val();
+                    console.log("getItemsFunction")
+                    getItemsFunction()
+                }
+                let departmentitemgrouplist = ``
+                $("#selectitem").on("change", function(evt){
+                    evt.preventDefault()
+                    
+                    let getStockItemDetailsByItemCode = "getStockItemDetailsByItemCode"
+                    let searchItem = $("#selectitem").val()
+                    let splitSearchItem = searchItem.split(",")
+                    searchItem = splitSearchItem[0]
+                    $.post("controllers/combo-setup.php",{searchItem:searchItem,getStockItemDetailsByItemCode:getStockItemDetailsByItemCode},function(data){
+                       console.log(data)
+                       data = JSON.parse(data)
+                        $("#stocknumber").val(data.itemcode)
+                        $("#stockitemnumber").val(data.stockitemnumber)
+                        $("#itemstrengthvalue").html(data.itemstrength)
+                        $("#stockitemid").val(data.id)
+                                let itemid = data.itemid
+                                $("#itemid").val(itemid)
+                        let GetGenericNameDetails = "GetGenericNameDetails"
+                        $.post("controllers/combo-setup.php", {id:itemid,GetGenericNameDetails:GetGenericNameDetails},function(data){
+                            data = JSON.parse(data)
+                            $("#usagegrouptype").html(data.usagegrouptype)
+                            $("#itemstate").val(data.itemstate)
+                            $("#itemstatevalue").html(data.itemstate)
+                            let departmentitemgroup = data.departmentitemgroup
+                            let getDeptItemGrpRoute = "getDeptItemGrpRoute"
+                            $.post("controllers/combo-setup.php",{searchItem:departmentitemgroup,getDeptItemGrpRoute:getDeptItemGrpRoute}, function(data){
+                                let usagerouteoptions = ``
+                                data = JSON.parse(data)
+                                $.each(data.records, function(key, val) {
+                                    usagerouteoptions += `<option value="` + val.usageroute + `">` + val.usageroute + `</option>`
+                                })
+                                departmentitemgrouplist = usagerouteoptions
+                                $("#routeofadministration").html(usagerouteoptions)
+
+                            })
+                        })
+                        let stockitemid = $("#stockitemid").val()
+
+                        let getStockListByStockItemId = "getStockListByStockItemId"
+                        $.post("controllers/combo-setup.php",{stockitemid:stockitemid,getStockListByStockItemId:getStockListByStockItemId},function(data){
+                            console.log(stockitemid,searchItem, data)
+                            if(data!="No Record Found"){
+                                let quantity = 0
+                                data=JSON.parse(data)
+                                $.each(data.records, function(key, val) {
+                                    quantity += parseInt(val.totalpieces)
+                                })
+                                
+                                $("#previousquantity").val(quantity)
+                               
+                            } else {
+                                $("#previousquantity").val("Not Available")
+                               
+                            }
+                            
+                        })
+                        
+                        getStockItemPrescription()
+
+                    })
+
+                })
+                $("#add-package-button").hide()
+                $("#clear-package-button").hide()
+                function getPackagingFunction(){
+                
+                  $("#edit-packpricing-button").hide()
+                  $("#delete-packpricing-button").hide()
+                  $("#cancel-packpricing-button").hide()
+                  $("#add-packpricing-button").show()
+  
+                      //get Item Codes
+                      let getStockItem = "getStockItem"
+                      let searchItem = $("#searchitem").val()
+                      console.log(searchItem)
+                      $.post("controllers/combo-setup.php",{searchItem:searchItem,getStockItem: getStockItem},function(formdata){
+                          //console.log(data)
+                          if(formdata=="No Record Found"){
+                              $("#stockitem-status").html(formdata)
+                          }else{
+                              console.log(formdata)
+                              console.log(typeof(formdata))
+                              let data=JSON.parse(formdata)
+                              console.log(data)
+                              let count = 0
+                                  
+                              let genericnameoptions = ``
+                              $.each(data.records, function(key, val) {
+                                  count++
+                                  genericnameoptions += `
+                                  <option value="` + val.itemcode + `,` + val.genericname + `">` + val.genericname + `</option>
+                              `
+                              })
+                              $("#stockitem-status").html(count + " Record(s) Found")
+                              $("#selectitem").html(totalrecord)
+                          }
+  
+                          
+                              
+                              
+                          })
+  
+                      }
+
+
+                let packaginglist = ``
+                let packagingvalue = []
+                let viewpackagingvalue = []
+               
+
+                let packagelistvalue = ``
+                $("#add-package-button").on("click", function(evt){
+                    evt.preventDefault()
+                    $("#save-package-button").show()
+                    
+                    // let numberpackage = $("#numberpackage").val()
+                   
+                })
+
+
+                $("#clear-package-button").on("click", function(evt){
+                    evt.preventDefault()
+                    $("#packagingvalue").html("")
+                    $("#clear-package-button").hide()
+                    packagingvalue = []
+                    viewpackagingvalue = []
+                  
+                })
+
+                let packagingvaluelist = []
+                let totalsum = 0
+                let finalpieces = 0
+                let finalweight = 0
+                let unitpieceprice = 0
+                let unitstrengthprice = 0
+                $("#then-package-button").on("click", function(evt){
+                    evt.preventDefault()
+                        stat_value = true
+                        let weight = ""
+                        let splitwgt = $("#weight").val().split(",")
+                   
+                        weight = $("#weight").val()
+                 
+                   
+                   
+                    let enterdosage = $("#enterdosage").val()
+                    let dosage = $("#dosage").val()
+                    let frequencyvalue = $("#frequencyvalue").val()
+                    let frequency = $("#frequency").val()
+                    let splitfreq = frequency.split(",")
+                    
+                    let enterduration = $("#enterduration").val()
+                    let duration = $("#duration").val()
+                    // let pieces = $("#pieces").val()
+
+                    console.log(weight,enterdosage,dosage,frequency,enterduration,duration)
+                    let splitweight = weight.split(",")
+                    let splitage = splitweight[1].split("(")
+                    let viewweight = splitweight[2] + " " + splitage[0]
+
+                    let splitdosage = dosage.split(",")
+                    let viewdosage = enterdosage + " " + splitdosage[0]
+
+                    let splitfrequency = frequency.split(",")
+                    let viewfrequency = frequencyvalue + " " + splitfrequency[1]
+
+                    let splitduration = duration.split(",")
+                    let viewduration = enterduration + " " + splitduration[0]
+
+                    let prescriptionvalue = {
+                        viewweight: viewweight,
+                        viewdosage: viewdosage,
+                        viewfrequency: viewfrequency,
+                        viewduration: viewduration
+                    }              
+                    viewpackagingvalue.push(prescriptionvalue)
+
+                    let packaging = {
+                        weight: weight,
+                        enterdosage: enterdosage,
+                        dosage: dosage,
+                        frequencyvalue:frequencyvalue,
+                        frequency: frequency,
+                        enterduration: enterduration,
+                        duration: duration
+                    }
+                    packagingvalue.push(packaging)
+                    //prescriptionlist.push(packaging)
+                    //console.log(prescriptionlist)
+
+                    let packaginglist = `<div class="form-group col-md-3" style="font-size:16px;">
+                            
+                               Description
+                            </div>
+                            <div class="form-group col-md-3" style="font-size:16px;">
+                            
+                                Dose
+                            </div>
+                            <div class="form-group col-md-3" style="font-size:16px;">
+                            
+                                Freq
+                            </div>
+                            <div class="form-group col-md-3" style="font-size:16px;">
+                                Duration
+                            </div>
+                           
+                            </div>`
+                            viewpackagingvalue.forEach(element => {
+                        packaginglist += `<div class="form-group col-md-3" style="font-size:18px;">` + element.viewweight + `
+                        
+                        </div>
+                        <div class="form-group col-md-3" style="font-size:18px;">` + element.viewdosage + ` 
+                        
+                        
+                        </div>
+                        <div class="form-group col-md-3" style="font-size:18px;">` + element.viewfrequency + ` 
+                        
+                    </div>
+                    <div class="form-group col-md-3" style="font-size:18px;">` + element.viewduration + `
+                    
+                    </div>
+                        `
+                    });
+                    $("#packagingvalue").html(packaginglist)
+                    $("#clear-package-button").show()
+                    //$("#package").val("")
+                   
+                    // $(this).hide()
+                    
+                })
+                $("#save-package-button").on("click", function(evt){
+                    evt.preventDefault()
+                    let weight = ""
+                    let splitwgt = $("#weight").val().split(",")
+                    if(stat_value==false){
+                        weight = $("#weight").val()
+                    } else {
+                        weight = ",Followed By:,"
+                        stat_value = false
+                    }
+                   
+                    let enterdosage = $("#enterdosage").val()
+                    let dosage = $("#dosage").val()
+                    let frequencyvalue = $("#frequencyvalue").val()
+                    let frequency = $("#frequency").val()
+                    let splitfreq = frequency.split(",")
+                    
+                    let enterduration = $("#enterduration").val()
+                    let duration = $("#duration").val()
+                    // let pieces = $("#pieces").val()
+
+                    console.log(weight,enterdosage,dosage,frequency,enterduration,duration)
+                    let splitweight = weight.split(",")
+                    let splitage = splitweight[1].split("(")
+                    let viewweight = splitweight[2] + " " + splitage[0]
+
+                    let splitdosage = dosage.split(",")
+                    let viewdosage = enterdosage + " " + splitdosage[0]
+
+                    let splitfrequency = frequency.split(",")
+                    let viewfrequency = frequencyvalue + " " + splitfrequency[1]
+
+                    let splitduration = duration.split(",")
+                    let viewduration = enterduration + " " + splitduration[0]
+
+                    let prescriptionvalue = {
+                        viewweight: viewweight,
+                        viewdosage: viewdosage,
+                        viewfrequency: viewfrequency,
+                        viewduration: viewduration
+                    }              
+                    viewpackagingvalue.push(prescriptionvalue)
+
+                    let packaging = {
+                        weight: weight,
+                        enterdosage: enterdosage,
+                        dosage: dosage,
+                        frequencyvalue:frequencyvalue,
+                        frequency: frequency,
+                        enterduration: enterduration,
+                        duration: duration
+                    }
+                    packagingvalue.push(packaging)
+                    //prescriptionlist.push(packaging)
+                    //console.log(prescriptionlist)
+
+                    let packaginglist = `<div class="form-group col-md-3" style="font-size:16px;">
+                            
+                               Description
+                            </div>
+                            <div class="form-group col-md-3" style="font-size:16px;">
+                            
+                                Dose
+                            </div>
+                            <div class="form-group col-md-3" style="font-size:16px;">
+                            
+                                Freq
+                            </div>
+                            <div class="form-group col-md-3" style="font-size:16px;">
+                                Duration
+                            </div>
+                           
+                            </div>`
+                            viewpackagingvalue.forEach(element => {
+                        packaginglist += `<div class="form-group col-md-3" style="font-size:18px;">` + element.viewweight + `
+                        
+                        </div>
+                        <div class="form-group col-md-3" style="font-size:18px;">` + element.viewdosage + ` 
+                        
+                        
+                        </div>
+                        <div class="form-group col-md-3" style="font-size:18px;">` + element.viewfrequency + ` 
+                        
+                    </div>
+                    <div class="form-group col-md-3" style="font-size:18px;">` + element.viewduration + `
+                    
+                    </div>
+                        `
+                    });
+                    $("#packagingvalue").html(packaginglist)
+                    $("#clear-package-button").show()
+                    //$("#package").val("")
+                   
+                    // $(this).hide()
+                    
+
+                })
+
+
+                // function getItemPrescription(){
+                //     let searchItem = $("#selectitem").val()
+                //     let getItemPrescription = "getItemPrescription"
+                //     $.post("controllers/combo-setup.php",{searchItem:searchItem,getItemPrescription:getItemPrescription},function(data){
+                //         data = JSON.parse(data)
+
+                //     })
+                // }
+
+                function oneifnull(value){
+                    if(value==null){
+                        return 1
+                    } else if(value==""){
+                        return 1
+                    } else {
+                        return value
+                    }
+                }
+                function zeroifnull(value){
+                    if(value==null){
+                        return 0
+                    } else if(value==""){
+                        return 0
+                    } else {
+                        return value
+                    }
+                }
+
+                $("#save-prescription-button").on("click", function(evt){
+                    evt.preventDefault()
+                    let itemid = $("#itemid").val()
+                    let stockitemid = $("#stockitemid").val()
+                    let stocknumber = $("#stockitemnumber").val()
+                    let stockcode = $("#stocknumber").val()
+                    let genericname = $("#selectitem").val()
+                    if(packagingvalue!=""){
+                        let prescription = JSON.stringify(packagingvalue)
+                        let usagegrouptype = $("#usagegrouptype").text()
+                        let itemstrength = $("#itemstrengthvalue").text()
+                        let usageroute = $("#routeofadministration").val()
+                        let dosageinstruction = $("#dosageinstruction").val()
+                        let administrationinstruction = $("#administrationinstruction").val()
+                        let specialinstruction = $("#specialinstruction").val()
+                        let infusionvolume = $("#infusionvolume").val()
+                        let infusionhour = $("#infusionhour").val()
+                        let infusiongivingset = $("#infusiongivingset").val()
+                        let infusiongivingconstant = $("#infusiongivingset").val()
+                        let infusionrate = 0
+                        let infusionconstant = ""
+                        if(infusiongivingset=="dripgivingset"){
+                            let rate = ((parseFloat(infusionvolume) * 1000) * 20) / (parseFloat(infusionhour) * 60)
+                            infusionrate = rate 
+                            
+                        } else if(infusiongivingset=="bloodgivingset"){
+                            let rate = ((parseFloat(infusionvolume) * 1000) * 15) / (parseFloat(infusionhour) * 60)
+                            infusionrate = rate 
+                        } else if(infusiongivingset=="solusetgivingset"){
+                            let rate = ((parseFloat(infusionvolume) * 1000) * 60) / (parseFloat(infusionhour) * 60)
+                            infusionrate = rate 
+                        }
+                        infusionconstant = parseFloat(infusionrate).toFixed(0) + " drops/Min"
+                        $("#infusionconstant").html(infusionconstant)
+
+                        let gasinfusionweight = $("#gasinfusionweight").val()
+                        let gasinfusionhour = $("#gasinfusionhour").val()
+                        let gasgivingset = $("#gasgivingset").val()
+                        console.log(infusionvolume,infusionhour,gasinfusionweight,gasinfusionhour,gasgivingset)
+                        let gasinfusiongivingconstant = gasgivingset 
+                        let gasinfusionrate = 0
+                        let gasinfusionconstant = ""
+                        
+                            let rate = ((parseFloat(gasinfusionweight) * 1000) * parseFloat(gasgivingset)) / (parseFloat(gasinfusionhour) * 60)
+                            gasinfusionrate = rate 
+                        
+                            gasinfusionconstant = parseFloat(gasinfusionrate).toFixed(0) + " g/Min"
+                        $("#gasinfusionconstant").html(gasinfusionconstant)
+
+                        let insertPrescription = "insertPrescription"
+                        $.post("controllers/combo-setup.php",{
+                            itemid:itemid,
+                            infusionvolume:infusionvolume,
+                            infusionhour:infusionhour,
+                            infusiongivingset:infusiongivingset,
+                            infusiongivingconstant:infusiongivingconstant,
+                            infusionrate:infusionrate,
+                            gasinfusionweight:gasinfusionweight,
+                            gasinfusionhour:gasinfusionhour,
+                            gasgivingset:gasgivingset,
+                            gasinfusionconstant:gasinfusionconstant,
+                            gasinfusionrate:gasinfusionrate,
+                            stockitemid:stockitemid,
+                            stocknumber:stocknumber,
+                            stockcode:stockcode,
+                            genericname,genericname,
+                            prescription:prescription,
+                            usageroute:usageroute,
+                            dosageinstruction:dosageinstruction,
+                            administrationinstruction:administrationinstruction,
+                            specialinstruction:specialinstruction,
+                            usagegrouptype:usagegrouptype,
+                            itemstrength:itemstrength,
+                            insertPrescription:insertPrescription
+                        },function(data){
+                            $("#Itemprescription-status").html(data)    
+                        })
+                        getStockItemPrescription()
+                    } else {
+                        $("#Itemprescription-status").html("No Prescriptions found")
+                    }
+                   
+                })
+
+                $("#update-prescription-button").on("click", function(evt){
+                    evt.preventDefault()
+                    let itemid = $("#itemid").val()
+                    let stockitemid = $("#stockitemid").val()
+                    let stocknumber = $("#stockitemnumber").val()
+                    let stockcode = $("#stocknumber").val()
+                    let genericname = $("#selectitem").val()
+                    for(i=0;i<packagingvalue.length;i++){
+                        prescriptionlist.push(packagingvalue[i])
+                    }
+                    
+                    //packagingvalue = prescriptionlist
+                    if(prescriptionlist!=""){
+                        let prescription = JSON.stringify(prescriptionlist)
+                        console.log(prescription)
+                        console.log(prescriptionlist)
+                        let prescriptionid = $("#prescriptionid").val()
+                        let usagegrouptype = $("#usagegrouptype").text()
+                        let itemstrength = $("#itemstrengthvalue").text()
+                        let usageroute = $("#routeofadministration").val()
+                        let dosageinstruction = $("#dosageinstruction").val()
+                        let administrationinstruction = $("#administrationinstruction").val()
+                        
+                        
+                        let editPrescription = "editPrescription"
+                        $.post("controllers/combo-setup.php",{
+                            prescriptionid:prescriptionid,
+                            itemid:itemid,
+                            stockitemid:stockitemid,
+                            stocknumber:stocknumber,
+                            stockcode:stockcode,
+                            genericname,genericname,
+                            prescription:prescription,
+                            usageroute:usageroute,
+                            dosageinstruction:dosageinstruction,
+                            administrationinstruction:administrationinstruction,
+                            usagegrouptype:usagegrouptype,
+                            itemstrength:itemstrength,
+                            editPrescription:editPrescription
+                        },function(data){
+                            $("#Itemprescription-status").html(data)    
+                        })
+                        getStockItemPrescription()
+
+                    } else {
+                        $("#Itemprescription-status").html("No Prescriptions found")
+                    }
+                   
+                })
+                $("#update-prescription-button").on("click", function(evt){
+                    evt.preventDefault()
+                    let itemid = $("#itemid").val()
+                    let stockitemid = $("#stockitemid").val()
+                    let stocknumber = $("#stockitemnumber").val()
+                    let stockcode = $("#stocknumber").val()
+                    let genericname = $("#selectitem").val()
+                    for(i=0;i<packagingvalue.length;i++){
+                        prescriptionlist.push(packagingvalue[i])
+                    }
+                    
+                    //packagingvalue = prescriptionlist
+                    if(prescriptionlist!=""){
+                        let prescription = JSON.stringify(prescriptionlist)
+                        console.log(prescription)
+                        console.log(prescriptionlist)
+                        let prescriptionid = $("#prescriptionid").val()
+                        
+                        
+                        let deletePrescription = "deletePrescription"
+                        $.post("controllers/combo-setup.php",{
+                            prescriptionid:prescriptionid,
+                            deletePrescription:deletePrescription
+                        },function(data){
+                            $("#Itemprescription-status").html(data)    
+                        })
+                        getStockItemPrescription()
+
+                    } else {
+                        $("#Itemprescription-status").html("No Prescriptions found")
+                    }
+                   
+                })
+
+                let sellingprice = 0
+                let profit = 0
+                let  = 0
+                let percentageprofit = 0
+                $("#compute-pricing-button").on("click", function(evt){
+                    evt.preventDefault()
+
+                    
+                        
+                       
+                        let unititemprice = unitpieceprice
+                        let unititemstrengthprice = unitstrengthprice
+                        let itemamount = $("#itemamount").val()
+                        console.log(unititemprice,unititemstrengthprice,itemamount)
+                        if(itemamount!=""){
+                            itemamount = parseInt(itemamount)
+                            // unititemprice = itemamount/totalsum
+                            // unitstrengthprice = itemamount / totalstrength
+
+                            let markupprice = parseInt($("#markupprice").val())
+                            console.log(unititemprice,unititemstrengthprice,itemamount, markupprice)
+                            sellingprice = ((markupprice/100) * unititemprice) + unititemprice
+                            profit = sellingprice - unititemprice
+                            percentageprofit = (profit/unititemprice) * 100
+                            let sellingpricedetails = `
+
+                                Selling Price: ` + sellingprice.toFixed(2) + ` Naira<br>
+                                Profit: ` + profit.toFixed(2) + ` Naira<br>
+                                Percentage Profit: ` + percentageprofit + `
+                            `
+                            $("#sellingprice").html(sellingpricedetails)
+                        } else {
+                            $("#item-packaging-status").html("Please Enter Amount For Item")
+                        }
+
+                      
+
+
+                    });
+
+                    $("#save-packageprice-button").on("click", function(evt){
+                        evt.preventDefault()
+                        let itemid = $("#itemid").val()
+                        let stockitemid = $("#stockitemid").val()
+                        let genericname = $("#selectitem").val()
+                        let stockcode = $("#stocknumber").val()
+                        let stocknumber = $("#stockitemnumber").val()
+                        //let usagegrouptype = $("#usagegrouptype").val()
+                        let itemstate = $("#itemstate").val()
+                        let previousquantity = $("#previousquantity").val()
+                        let suppliername = $("#selectsupplier").val()
+                        let invoicenumber = $("#invoicenumber").val()
+                        let invoiceamount = $("#invoiceamount").val()
+                        let itemamount = zeroifnull($("#itemamount").val())
+                        let stocktype = $("#stocktype").val()
+                        let package = JSON.stringify(packagingvalue)
+                        //previousquantity = parseInt(previousquantity) + parseInt(finalpieces)
+                        let totalpieces = finalpieces
+                        let totalweight = finalweight
+                        let unitpriceperpiece = $("#unitpriceperpiece").val()
+                        let unitpriceperstrength = $("#unitpriceperstrength").val()
+                        let percentagemarkup = $("#markupprice").val()
+                        let itemsellingprice = sellingprice
+                        let itemprofit = profit
+                        let itempercentageprofit = percentageprofit
+                        let insertStockListItem = "insertStockListItem"
+
+                        $.post("controllers/combo-setup.php",{
+                            itemid:itemid,
+                            stockitemid:stockitemid,
+                            genericname:genericname,
+                            stockcode:stockcode,
+                            stocknumber:stocknumber,
+                            itemstate:itemstate,
+                            previousquantity:previousquantity,
+                            suppliername:suppliername,
+                            invoicenumber:invoicenumber,
+                            invoiceamount:invoiceamount,
+                            itemamount:itemamount,
+                            stocktype:stocktype,
+                            package:package,
+                            totalpieces:totalpieces,
+                            totalweight:totalweight,
+                            unitpriceperpiece:unitpriceperpiece,
+                            unitpriceperstrength:unitpriceperstrength,
+                            percentagemarkup:percentagemarkup,
+                            itemsellingprice:itemsellingprice,
+                            itemprofit:itemprofit,
+                            itempercentageprofit:itempercentageprofit,
+                            insertStockListItem:insertStockListItem
+                        },function(data){
+                            $("#item-packaging-status").html(data)
+                            let splitstocklistid = data.split("- ")
+                            let stockitemlistid = splitstocklistid[1]
+                            $("#stocklistid").val(stockitemlistid)
+                           
+                            getStockItemPrice()
+                        })
+
+
+
+
+                    })
+
+                    $("#add-organizationdiscount-button").on("click", function(evt){
+                        evt.preventDefault()
+                        let itemid = $("#itemid").val()
+                        let stockitemid = $("#stockitemid").val()
+                        let item = $("#selectitem").val()
+                        let stockitem = $("#stocknumber").val()
+                        let stockitemlistid = $("#stocklistid").val()
+                        let organizationid = $("#organizationid").val()
+                        let organization = $("#organization").val()
+                        let discount = parseFloat($("#organizationdiscount").val())
+                        let unitpriceperpiece = $("#unitpriceperpiece").val()
+                      
+                        let itemprofit = parseFloat(profit)
+
+                        let organizationprofit = parseFloat((discount/100)*itemprofit)
+                        let organizationsellingprice = parseFloat(organizationprofit) + parseFloat(unitpriceperpiece)
+                        console.log(organizationsellingprice,organizationprofit,unitpriceperpiece,discount)
+                        let insertOrganizationSellingPrice = "insertOrganizationSellingPrice" 
+
+                        $.post("controllers/combo-setup.php",{
+                            itemid:itemid,
+                            stockitemid:stockitemid,
+                            item:item,
+                            stockitem:stockitem,
+                            stockitemlistid:stockitemlistid,
+                            organizationid:organizationid,
+                            organization:organization,
+                            discount:discount,
+                            cost:unitpriceperpiece,
+                            profit:organizationprofit,
+                            price:organizationsellingprice,
+                            insertOrganizationSellingPrice:insertOrganizationSellingPrice
+                        },function(data){
+                            $("#item-organization-status").html(data)
+                            // let splitstocklistid = splitstocklistid.split("- ")
+                            // let stockitemlistid = splitstocklistid[1]
+                            // $("#stocklistid").val(stockitemlistid)
+                            getOrganizationPrice()
+                        })
+
+                    })
+
+
+
+                })
+                
+
+        
+    </script>
+</body>
+
+</html>

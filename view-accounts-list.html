@@ -1,0 +1,605 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>medical</title>
+    <link rel="icon" href="img/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- themify CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- flaticon CSS -->
+    <link rel="stylesheet" href="css/flaticon.css">
+    <!-- magnific popup CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- nice select CSS -->
+    <!-- <link rel="stylesheet" href="css/nice-select.css"> -->
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="css/slick.css">
+    <!-- style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        thead, tbody, tr { display: block; }
+
+        tr:after {
+            content: ' ';
+            display: block;
+            visibility: hidden;
+            clear: both;
+        }
+
+        
+
+        tbody {
+            height: 250px;
+            overflow-y: auto;
+        }
+
+        thead {
+            /* fallback */
+        }
+
+        thead th {
+            height: 30px;
+
+            /*text-align: left;*/
+        }
+
+        tbody td, thead th {
+            width: 12.2%;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <!--::header part start::-->
+    <header class="main_menu">
+            
+        </header>
+        <!-- Header part end-->
+       
+    <!-- breadcrumb start-->
+    <section class="breadcrumb breadcrumb_bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb_iner">
+                        <div class="form-row">
+                            <div class="form-group col-md-2">
+                                <span id="username" style="color:#F1F1F1;font-size: 17px;"></span>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <span id="pagetitle" style="color:#F1F1F1;font-size: 20px;font-weight: bolder;">View Accounts List</span>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <span id="sysdate" style="color:#F1F1F1"></span>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <span id="systime" style="color:#F1F1F1"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- breadcrumb start-->
+
+    
+
+    <!--::regervation_part start::-->
+    <section class="regervation_part padding_bottom" style="margin-top:30px;">
+        <div class="container">
+            <div class="row align-items-center regervation_content">
+                <div class="col-md-12">
+                    <div class="regervation_part_iner">
+                        <br>
+                        <form action="controllers/add-staff.php" class="frmaddperson">
+                            <!-- <h2>View Item Orders</h2> -->
+                            <div class="label label-success" id="errorlogin"></div>
+                            <div class="form-row">
+                                
+                            </div>
+                            
+                        </form>
+                    </div>
+                    <div class="card-box">
+                        <ul class="nav nav-tabs nav-tabs-solid nav-tabs-rounded nav-justified">
+                            <li class="nav-item"><a class="nav-link btn-primary active" href="#solid-rounded-justified-tab7" data-toggle="tab">All Account Entries</a></li>
+                            <li class="nav-item"><a class="nav-link btn-primary" href="#solid-rounded-justified-tab1" data-toggle="tab">Accounts Summary</a></li>
+                            <li class="nav-item"><a class="nav-link btn-primary" href="#solid-rounded-justified-tab2" data-toggle="tab"> Payments</a></li> 
+                            <li class="nav-item"><a class="nav-link btn-primary" href="#solid-rounded-justified-tab3" data-toggle="tab"> Expenses</a></li> 
+                            
+                            <!--<li class="nav-item"><a class="nav-link btn-primary" href="#solid-rounded-justified-tab8" data-toggle="tab">Frequency</a></li>
+                            <li class="nav-item"><a class="nav-link btn-primary" href="#solid-rounded-justified-tab4" data-toggle="tab">Duration</a></li>
+                            <li class="nav-item"><a class="nav-link btn-primary" href="#solid-rounded-justified-tab23" data-toggle="tab">Routes</a></li>
+                            <li class="nav-item"><a class="nav-link btn-primary" href="#solid-rounded-justified-tab9" data-toggle="tab">Dosage Unit</a></li> -->
+                            <!-- <li class="nav-item dropdown">
+                                <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Stocking Setup</a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item" href="#solid-rounded-justified-tab2" data-toggle="tab">Route of Administration</a>
+                                    <a class="dropdown-item" href="#solid-rounded-justified-tab3" data-toggle="tab">Category of Importance</a>
+                                    <a class="dropdown-item" href="#solid-rounded-justified-tab4" data-toggle="tab">Stock Location</a>
+                                    <a class="dropdown-item" href="#solid-rounded-justified-tab5" data-toggle="tab">Physical Position</a> 
+                                </div>
+                            </li> -->
+                            <!-- <li class="nav-item"><a class="nav-link" href="#solid-rounded-justified-tab3" data-toggle="tab">Department Item Group</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#solid-rounded-justified-tab4" data-toggle="tab">Generic Name</a></li> -->
+                            <!-- <li class="nav-item"><a class="nav-link" href="#solid-rounded-justified-tab5" data-toggle="tab">State</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#solid-rounded-justified-tab6" data-toggle="tab">Default Strength</a></li> -->
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane show active" id="solid-rounded-justified-tab7">
+                                <br>
+                                <!-- <h3>Sex</h3> -->
+                                <div class="container">
+                                    <div class="form-row">
+                                        <!-- <div id="admit-status"class="form-group col-md-12"></div> -->
+                                        <div class="form-group col-md-4">
+                                            Start Date<br>
+                                            <input type="date" class="form-control"  id="start_date">
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            End Date<br>
+                                            
+                                            <input type="date" class="form-control"  id="end_date">                   
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            Order Number<br>
+                                            
+                                            <input type="text" class="form-control"  id="ordernumber">                   
+                                        </div>
+                                        
+                                        <div class="form-group col-md-12">
+                                            <button type="submit" class="genric-btn success" id="view-entries" style="font-size: 18px;border-radius: 8px;">VIEW ACCOUNT ENTRIES</button>
+                                           
+                                        </div>
+                                                                                
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            
+                                            <div class="card">
+                                                <div class="page-status"></div>
+                                                <div class="card-header">
+                                                    <h4 class="card-title d-inline-block">View Account Entries</h4>  <p class="btn btn-primary float-right" id="view-account-entries-count"><p class="btn btn-primary float-right" id="view-account-entries-amount"></p>
+                                                    <p class="float-right"><input type="text" id="searchaccountentries" name="searchaccountentries" placeholder="Search Account Entries" style="font-size: 18px;"></p>
+                                                </div>
+                                                <div class="card-body p-0">
+                                                    <div class="table-responsive scrollable">
+                                                        <table class="table">
+                                                            <thead>
+                                                                <tr>
+                                                                    
+                                                                    <th>Item</th>
+                                                                    <th>Number</th>
+                                                                    <th>Department</th>
+                                                                    <th>Amount</th>
+                                                                    
+                                                                    <th>Order Number</th>
+                                                                    <th>Reciept</th>
+                                                                    <th>Type</th>
+                                                                    <th>Entry</th>
+                                                                    
+                                                                    <th>Approved</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody id="view-all-account-entries-list">
+                                                                
+                                                                
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="solid-rounded-justified-tab1">
+                                <br>
+                                <!-- <h3>Sex</h3> -->
+                                <div class="container">
+                                    
+                                    <div class="row">
+                                        <div class="col-12">
+                                            
+                                            <div class="card">
+                                                <div class="page-status"></div>
+                                                <div class="card-header">
+                                                    <h4 class="card-title d-inline-block">View Account Summary</h4>  <p class="btn btn-primary float-right" id="view-account-summary-count"><p class="btn btn-primary float-right" id="view-account-summary-amount"></p>
+                                                    <p class="float-right"><input type="text" id="searchaccountsummary" name="searchaccountsummary" placeholder="Search Account Summary" style="font-size: 18px;"></p>
+                                                </div>
+                                                <div class="card-body p-0">
+                                                    <div class="table-responsive scrollable">
+                                                        <table class="table">
+                                                            <thead>
+                                                                <tr>
+                                                                    
+                                                                    <th>Item</th>
+                                                                    <th>Number</th>
+                                                                    <th>Department</th>
+                                                                    <th>Amount</th>
+                                                                    
+                                                                   
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody id="view-all-account-summary-list">
+                                                                
+                                                                
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="solid-rounded-justified-tab2">
+                                <br>
+                                <!-- <h3>Sex</h3> -->
+                                <div class="container">
+                                    
+                                    <div class="row">
+                                        <div class="col-12">
+                                            
+                                            <div class="card">
+                                                <div class="page-status"></div>
+                                                <div class="card-header">
+                                                    <h4 class="card-title d-inline-block">View Payments</h4>  <p class="btn btn-primary float-right" id="view-payments-count"><p class="btn btn-primary float-right" id="view-payments-amount"></p>
+                                                    <p class="float-right"><input type="text" id="searchpayments" name="searchpayments" placeholder="Search Payments" style="font-size: 18px;"></p>
+                                                </div>
+                                                <div class="card-body p-0">
+                                                    <div class="table-responsive scrollable">
+                                                        <table class="table">
+                                                            <thead>
+                                                                <tr>
+                                                                    
+                                                                    <th>Order Number</th>
+                                                                    <th>Bill</th>
+                                                                    <th>Paid</th>
+                                                                    <th>Balance</th>
+                                                                    <th>Date</th>
+                                                                    <th>Person</th>
+                                                                    <th>Type</th>
+                                                                    <th>Approved</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody id="view-all-payments-list">
+                                                                
+                                                                
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="solid-rounded-justified-tab3">
+                                <br>
+                                <!-- <h3>Sex</h3> -->
+                                <div class="container">
+                                    
+                                    <div class="row">
+                                        <div class="col-12">
+                                            
+                                            <div class="card">
+                                                <div class="page-status"></div>
+                                                <div class="card-header">
+                                                    <h4 class="card-title d-inline-block">View Expenses</h4>  <p class="btn btn-primary float-right" id="view-expenses-count"><p class="btn btn-primary float-right" id="view-expenses-amount"></p>
+                                                    <p class="float-right"><input type="text" id="searchexpenses" name="searchexpenses" placeholder="Search Expenses" style="font-size: 18px;"></p>
+                                                </div>
+                                                <div class="card-body p-0">
+                                                    <div class="table-responsive scrollable">
+                                                        <table class="table">
+                                                            <thead>
+                                                                <tr>
+                                                                    
+                                                                    <th>Order Number</th>
+                                                                    <th>Amount</th>
+                                                                    <th>Description</th>
+                                                                    <th>Balance</th>
+                                                                    <th>Date</th>
+                                                                    <th>Person</th>
+                                                                    <th>Approved</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody id="view-all-expenses-list">
+                                                                
+                                                                
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-5 col-md-6">
+                    <div class="reservation_img">
+                        <img src="img/loginphoto.jpg" alt="">
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <!--::regervation_part end::-->
+
+    
+    <!-- footer part start-->
+    <footer class="footer-area">
+
+        <div class="copyright_part">
+            
+        </div>
+    </footer>
+
+    <!-- footer part end-->
+
+    <!-- jquery plugins here-->
+
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <!-- popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- easing js -->
+    <script src="js/jquery.magnific-popup.js"></script>
+    <!-- swiper js -->
+    <script src="js/swiper.min.js"></script>
+    <!-- swiper js -->
+    <script src="js/masonry.pkgd.js"></script>
+    <!-- particles js -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- <script src="js/jquery.nice-select.min.js"></script> -->
+    <!-- swiper js -->
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <!-- contact js -->
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <script src="js/contact.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+    <script src="views/masterpage.js"></script>
+    <!-- <script src="views/records.js"></script>
+    <script src="views/corpse-list.js"></script> -->
+    <script>
+        $(document).ready(function(){
+            $("#errorlogin").html("")
+           
+            function getAllAccountEntries(){
+                let searchItem = $("#searchaccountentries").val()
+                let start_date = $("#start_date").val()
+                let end_date = $("#end_date").val()
+                let ordernumber = $("#ordernumber").val()
+                console.log(start_date,end_date)
+                   getAccountEntries = "getAccountEntries"
+                    $.post("controllers/finance-record.php",{ordernumber:ordernumber,start_date:start_date,end_date:end_date,searchItem:searchItem,getAccountEntries: getAccountEntries},function(formdata){
+                        //console.log("itemGroup: ",data)
+                        if(formdata=="No Record Found"){
+                            $("#view-account-entries-count").html(formdata)
+                        }else{
+                            console.log(formdata)
+                            console.log(typeof(formdata))
+                            let data=JSON.parse(formdata)
+                            console.log(data)
+                            let count = 0
+                            let amount = 0
+                            let totalrecord = ``
+                            $.each(data.records, function(key, val) {
+                                count++
+                                amount += parseFloat(val.amount)
+                            totalrecord += `
+                                <tr>
+                                   
+                                    <td>
+                                        
+                                        <a href="#" data-id="` + val.id + `" class="btn btn-outline-default take-btn itemordername"><h3 style="color:blue;">` + val.item + `</h3></a>
+                                    </td>                 
+                                    <td>
+                                            <p style="font-size:18px;font-weight:bold;">` + val.accountnumber + `</p>
+                                    </td> 
+                                    <td>
+                                            <p style="font-size:18px;font-weight:bold;">` + val.department + `</p>
+                                    </td> 
+                                    <td>
+                                            <p style="font-size:18px;font-weight:bold;">&#8358;` + val.amount + `</p>
+                                    </td> 
+                                    <td>
+                                            <p style="font-size:18px;font-weight:bold;">` + val.paymentorder + `</p>
+                                    </td> 
+                                    <td>
+                                            <p style="font-size:18px;font-weight:bold;">` + val.recieptnumber + `</p>
+                                    </td> 
+                                    <td>
+                                            <p style="font-size:18px;font-weight:bold;">` + val.paymenttype + `</p>
+                                    </td> 
+                                    <td>
+                                            <p style="font-size:18px;font-weight:bold;">` + val.entrytype + `</p>
+                                    </td> 
+                                    <td>
+                                            <p style="font-size:18px;font-weight:bold;">` + val.enteredby + ` (` + val.entereddate + `)</p>
+                                    </td> 
+                                    
+                                </tr>
+                            `
+                            })
+                            $("#view-account-entries-count").html(count + " Record(s) Found")
+                            $("#view-account-entries-amount").html("&#8358; " + amount)
+                            $("#view-all-account-entries-list").html(totalrecord)
+                            totalpaiditems = 0
+                            totalpaid = 0
+                        }
+                    })
+                }
+
+
+
+                $("#view-entries").on("click", function(evt){
+                    getAllAccountEntries()
+                })
+
+            
+                function getAllAccountSummary(){
+                let searchItem = $("#searchaccountsummary").val()
+                
+                   getAccountSummary = "getAccountSummary"
+                    $.post("controllers/finance-record.php",{searchItem:searchItem,getAccountSummary: getAccountSummary},function(formdata){
+                        //console.log("itemGroup: ",data)
+                        if(formdata=="No Record Found"){
+                            $("#view-account-summary-count").html(formdata)
+                        }else{
+                            console.log(formdata)
+                            console.log(typeof(formdata))
+                            let data=JSON.parse(formdata)
+                            console.log(data)
+                            let count = 0
+                            let amount = 0
+                            let totalrecord = ``
+                            $.each(data.records, function(key, val) {
+                                count++
+                                amount += parseFloat(val.amount)
+                            totalrecord += `
+                                <tr>
+                                   
+                                    <td>
+                                        
+                                        <a href="#" data-id="` + val.accountnumber + `" class="btn btn-outline-default take-btn itemordername"><h3 style="color:blue;">` + val.item + `</h3></a>
+                                    </td>                 
+                                    <td>
+                                            <p style="font-size:18px;font-weight:bold;">` + val.accountnumber + `</p>
+                                    </td> 
+                                    <td>
+                                            <p style="font-size:18px;font-weight:bold;">` + val.department + `</p>
+                                    </td> 
+                                    <td>
+                                            <p style="font-size:18px;font-weight:bold;">&#8358;` + val.amount + `</p>
+                                    </td> 
+                                   
+                                    
+                                </tr>
+                            `
+                            })
+                            $("#view-account-summary-count").html(count + " Record(s) Found")
+                            $("#view-account-summary-amount").html("&#8358; " + amount)
+                            $("#view-all-account-summary-list").html(totalrecord)
+                            totalpaiditems = 0
+                            totalpaid = 0
+                        }
+                    })
+                }
+            
+                getAllAccountSummary()
+
+                $("#searchaccountsummary").on('change keyup paste', function () {
+                    ApplyAccountSummary();
+                });
+
+                function ApplyAccountSummary() {
+                    var searchString = $("#searchaccountsummary").val();
+                    console.log("ApplyAccountSummary")
+                    getAllAccountSummary()
+                }
+
+
+                function getAllPayments(){
+                let searchItem = $("#searchpayments").val()
+                
+                   getPayments = "getPayments"
+                    $.post("controllers/finance-record.php",{searchItem:searchItem,getPayments: getPayments},function(formdata){
+                        //console.log("itemGroup: ",data)
+                        if(formdata=="No Record Found"){
+                            $("#view-payments-count").html(formdata)
+                        }else{
+                            console.log(formdata)
+                            console.log(typeof(formdata))
+                            let data=JSON.parse(formdata)
+                            console.log(data)
+                            let count = 0
+                            let amount = 0
+                            let totalrecord = ``
+                            $.each(data.records, function(key, val) {
+                                count++
+                                amount += parseFloat(val.amount)
+                            totalrecord += `
+                                <tr>
+                                   
+                                    <td>
+                                        
+                                        <a href="#" data-id="` + val.id + `" class="btn btn-outline-default take-btn itemordername"><h3 style="color:blue;">` + val.paymentordernumber + `</h3></a>
+                                    </td>                 
+                                    <td>
+                                            <p style="font-size:18px;font-weight:bold;">&#8358;` + val.amount + `</p>
+                                    </td> 
+                                    <td>
+                                            <p style="font-size:18px;font-weight:bold;">&#8358;` + val.paid + `</p>
+                                    </td> 
+                                    <td>
+                                            <p style="font-size:18px;font-weight:bold;">&#8358;` + val.balance + `</p>
+                                    </td> 
+                                    <td>
+                                            <p style="font-size:18px;font-weight:bold;">` + val.paymentdate + `</p>
+                                    </td> 
+                                    <td>
+                                            <p style="font-size:18px;font-weight:bold;">` + val.person + `</p>
+                                    </td> 
+                                    <td>
+                                            <p style="font-size:18px;font-weight:bold;">` + val.paymenttype + `</p>
+                                    </td> 
+                                    <td>
+                                            <p style="font-size:18px;font-weight:bold;">` + val.enteredby + `</p>
+                                    </td> 
+                                    
+                                </tr>
+                            `
+                            })
+                            $("#view-payments-count").html(count + " Record(s) Found")
+                            $("#view-payments-amount").html("&#8358; " + amount)
+                            $("#view-all-payments-list").html(totalrecord)
+                            totalpaiditems = 0
+                            totalpaid = 0
+                        }
+                    })
+                }
+            
+                getAllPayments()
+
+                $("#searchpayments").on('change keyup paste', function () {
+                    ApplyPayments();
+                });
+
+                function ApplyPayments() {
+                    var searchString = $("#searchpayments").val();
+                    console.log("ApplyAccountSummary")
+                    getAllPayments()
+                }
+        })
+    </script>
+</body>
+
+</html>

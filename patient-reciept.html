@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suyi Payment Reciept</title>
+    <link rel="icon" href="img/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- themify CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <!-- flaticon CSS -->
+    <link rel="stylesheet" href="css/flaticon.css">
+    <!-- magnific popup CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- nice select CSS -->
+    <!-- <link rel="stylesheet" href="css/nice-select.css"> -->
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <!-- style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+
+
+   <div class="container">
+       <div class="form-row">
+           <div class="col-md-6">
+
+            <br>
+            <br>
+            <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size:18px;text-align: center;">SUYI HOSPITAL</span><br>
+            110 M.M. WAY, BENIN CITY,
+            EDO STATE NIGERIA<br>
+            <small>Email: suyihospital@gmail.com
+
+            
+            Tel: 07088008002, 0901189990</small></h5>
+            <div id="GFG" style="font-size: smaller;">
+                
+                <div class="details"></div>
+            </div>
+            
+
+            <div>
+                <input type="button" href="#" class="btn btn-primary" value="Print" onclick="printDiv()">
+                <a href="patient-card-registration.html" class="btn btn-success">Go Back</a>
+            </div>
+           </div>
+       </div>
+   </div>
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <script>
+        function printDiv() {
+            var divContents = document.getElementById("GFG").innerHTML;
+            var a = window.open('', '', 'height=500, width=500');
+            a.document.write('<html>');
+                let body_text = `
+            <h5>SUYI HOSPITAL<br>
+            110 M.M. WAY, BENIN CITY
+            EDO STATE NIGERIA<br>
+            <small>Email: suyihospital@gmail.com
+
+            Tel: 07088008002, 0901189990</small></h5>
+            `
+            a.document.write('<body >' + body_text);
+            a.document.write(divContents);
+            a.document.write('</body></html>');
+            a.document.close();
+            a.print();
+        }
+    </script>
+    <script>
+        $(document).ready(function(){
+             // get patient info
+             let getSelectPatientReciept = "getSelectPatientReciept"
+            $.post("controllers/patient-record.php",{getSelectPatientReciept:getSelectPatientReciept}, function(formdata){
+                let data = JSON.parse(formdata)
+                console.log(data)
+
+                let getuserdetails = "getuserdetails"
+                $.post("controllers/masterpage.php", {getuserdetails:getuserdetails}, function(fdata){
+                    if(fdata=="Not Logged In"){
+                        window.open("index.html")
+                    } else {
+                        let persondata = JSON.parse(fdata)
+                        console.log(persondata)
+                        const d = new Date()
+                        let totalamount = 0
+                        // + d.getDate() + ` - ` + d.getMonth() + ` - ` + d.getFullYear()
+                        //
+
+                        let personid=data.records[0].personid
+                        let accountnumber=data.records[0].accountnumber
+                        //check if next of kin
+                        let getBilledTo = "getBilledToPatient"
+                        if(data.records[0].hospitalnumber.includes("CP")){
+                            console.log("corpse")
+                            getBilledTo = "getBilledToMorgue"
+                        } 
+                        let totalbill = 0
+                        $.post("controllers/patient-record.php",{accountnumber:accountnumber,personid:personid,getBilledTo:getBilledTo},function(pdata){
+
+
+                            console.log(pdata)
+                            let person = ""
+                            let phone = ""
+                            let corpse = ""
+                            let tally = ""
+                            if(pdata.includes("|")){
+                                let splitdata = pdata.split("|")
+                                person = splitdata[0]
+                                pdata = splitdata[1] + "</b><br>"
+                                phone = splitdata[2]
+                                corpse = splitdata[3]
+                                tally = splitdata[4]
+                                totalbill = splitdata[5]
+
+                                if(tally!=" "){
+                                    let splittally = tally.split(",")
+                                    let splittallynumber = splittally[0].split(" ")
+                                    tally = "<b><span style='font-size:24px;'>Tally " + splittallynumber[2] + "</span></b>"
+                                }
+                               
+                            } else {
+                                let splitdata = pdata.split("*")
+                                person = splitdata[0]
+                                pdata = ""
+                                phone = splitdata[1]
+                            }
+                            
+
+                            let revenuenumber = data.records[0].revenueordernumber
+                            console.log(revenuenumber)
+
+                            let getPaymentByRevenueOrderNumber = "getPaymentByRevenueOrderNumber"
+                            $.post("controllers/finance-record.php",{revenuenumber:revenuenumber,getPaymentByRevenueOrderNumber:getPaymentByRevenueOrderNumber}, function(formdata){
+
+
+
+                                    console.log(formdata)
+                                    let hospno = data.records[0].hospitalnumber.split("/")
+                                    hospnumber = hospno[0] + "/" + hospno[1] + "/" + hospno[2] + "/<span style='font-size:18px'>" + hospno[3] + "</span>" 
+
+                                    let details = `
+                                    <h5><b>PAYMENT RECIEPT TO:</b> ` + person + `</br>
+                                    <b>Hosp No - ` + hospnumber + `</b> | <b>R.No</b> - ` + data.records[0].recieptnumber + `<br>
+                                    <b>` + pdata + `
+                                    <b>` + phone + ` Date/Time</b> - ` + data.records[0].entereddate.toLocaleString() + `<br>
+                                    <b>Cashier: ` + persondata.person + ` Inv No: ` + revenuenumber + `</small></h5>
+                                
+                                   
+                                    <table border='1' style="font-size:15px">
+                                        <tr>
+                                            
+                                            <th>Description</td>
+                                            <th>Qty</td>
+                                            <th>Amount Per Unit</td>
+                                            <th>Total Amount</td>
+                                        </tr>
+                                `
+                                let balance = 0
+                                let splitgenericname = []
+                                let genericname = ""
+                                let orderitems = JSON.parse(data.records[0].orderitems)
+                                orderitems.forEach(val => {
+                                    let amount = val.quantity * val.sellingprice
+                                    totalamount += amount
+                                    splitgenericname = val.genericname.split(",PAID")
+                                    genericname = splitgenericname[0]
+                                    details += `
+                                        <tr>
+                                            <td>` + genericname + `</td>
+                                            <td>` + val.quantity + `</td>
+                                            <td>&#8358; ` + val.sellingprice.toFixed(2) + `</td>
+                                            <td>&#8358; ` + amount.toFixed(2) + `</td>
+                                        </tr>
+                                    `
+                                
+                                });
+                                balance = (parseFloat(totalbill) + parseFloat(totalamount)) - parseFloat(formdata)
+                                totalbill = parseFloat(totalbill)
+                                let totalbillpayable = (-1 * totalbill) + parseFloat(totalamount)
+                                console.log(totalbill,totalamount,totalbillpayable)
+                                balance = parseFloat(totalbillpayable) - parseFloat(formdata)
+                                // balance = balance - (parseFloat(totalamount) - parseFloat(formdata))
+                                details += `</table>
+                                <small>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This Bill&nbsp;
+                                Grand Total: &nbsp;&nbsp;&nbsp; &#8358;` + totalamount.toFixed(2) + `<br>
+                                    <b>Previous Bill Owing:</b> &#8358;` + totalbill.toFixed(2) + `&nbsp;    
+                                
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;<b>Total Bill Payable:</b> &nbsp;&nbsp;&nbsp; &#8358;` + totalbillpayable.toFixed(2) + `<br>
+                                <b>Amount Paid:</b> &#8358;` + parseFloat(formdata).toFixed(2) + `&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Balance:</b>&nbsp;&nbsp;&nbsp; &#8358;` + balance.toFixed(2) + `<br>
+                                ` + corpse + ` ` + tally + `
+                               </small>
+                                <p>No Refund after Payment Please<br>
+                                    Thankyou for your patronage</p>
+
+                                `
+                                $(".details").html(details)
+                            })
+
+                        })
+                    }
+                })
+            })
+        })
+    </script>
+    
+</body>
+</html>

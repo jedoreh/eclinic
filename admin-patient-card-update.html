@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>medical</title>
+    <link rel="icon" href="img/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- themify CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <!-- flaticon CSS -->
+    <link rel="stylesheet" href="css/flaticon.css">
+    <!-- magnific popup CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- nice select CSS -->
+    <!-- <link rel="stylesheet" href="css/nice-select.css"> -->
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <!-- style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!--::header part start::-->
+    <header class="main_menu">
+            
+        </header>
+        <!-- Header part end-->
+       
+    <!-- breadcrumb start-->
+    <section class="breadcrumb breadcrumb_bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb_iner">
+                        <div class="form-row">
+                            <div class="form-group col-md-2">
+                                <span id="username" style="color:#F1F1F1;font-size: 17px;"></span>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <span id="pagetitle" style="color:#F1F1F1;font-size: 20px;font-weight: bolder;">Patient Card Update</span>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <span id="sysdate" style="color:#F1F1F1"></span>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <span id="systime" style="color:#F1F1F1"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- breadcrumb start-->
+
+    
+
+    <!--::regervation_part start::-->
+    <section class="regervation_part padding_bottom" style="margin-top:30px;">
+        <div class="container">
+            <div class="row align-items-center regervation_content">
+                <div class="col-md-12">
+                    <div class="regervation_part_iner">
+                        <br>
+                        <form action="controllers/add-staff.php" class="frmaddperson">
+                            <!-- <h2>Patient Card Update</h2> -->
+                            <div class="label label-success" id="errorlogin"></div>
+                            <div class="form-row">
+                                
+                            </div>
+                            
+                        </form>
+                    </div>
+                    <div class="card-box">
+                        <ul class="nav nav-tabs nav-tabs-solid nav-tabs-rounded nav-justified">
+                            <!-- <li class="nav-item"><a class="nav-link btn-primary active" href="#solid-rounded-justified-tab6" data-toggle="tab">Sex</a></li> -->
+                            <!-- <li class="nav-item"><a class="nav-link btn-primary" href="#solid-rounded-justified-tab3" data-toggle="tab">Age Range</a></li> 
+                            <li class="nav-item"><a class="nav-link btn-primary" href="#solid-rounded-justified-tab7" data-toggle="tab">Weight</a></li> -->
+                            <!-- <li class="nav-item"><a class="nav-link btn-primary active" href="#solid-rounded-justified-tab8" data-toggle="tab">Patient Card Update</a></li> -->
+                            <!-- <li class="nav-item"><a class="nav-link btn-primary" href="#solid-rounded-justified-tab4" data-toggle="tab">Duration</a></li>
+                            
+                            <li class="nav-item"><a class="nav-link btn-primary" href="#solid-rounded-justified-tab9" data-toggle="tab">Dosage Unit</a></li>
+                             <li class="nav-item dropdown"> 
+                                <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Stocking Setup</a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item" href="#solid-rounded-justified-tab2" data-toggle="tab">Route of Administration</a>
+                                    <a class="dropdown-item" href="#solid-rounded-justified-tab3" data-toggle="tab">Category of Importance</a>
+                                    <a class="dropdown-item" href="#solid-rounded-justified-tab4" data-toggle="tab">Stock Location</a>
+                                    <a class="dropdown-item" href="#solid-rounded-justified-tab5" data-toggle="tab">Physical Position</a> 
+                                </div>
+                            </li> 
+                            <li class="nav-item"><a class="nav-link" href="#solid-rounded-justified-tab3" data-toggle="tab">Department Item Group</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#solid-rounded-justified-tab4" data-toggle="tab">Generic Name</a></li> -->
+                            <!-- <li class="nav-item"><a class="nav-link" href="#solid-rounded-justified-tab5" data-toggle="tab">State</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#solid-rounded-justified-tab6" data-toggle="tab">Default Strength</a></li> -->
+                        </ul>
+                        <div class="tab-content">
+                           
+                            <div class="tab-pane show active" id="solid-rounded-justified-tab8">
+                                <!-- <br> -->
+                                <!-- <h3>Patient Card Update</h3> -->
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            
+                                            <form action="controllers/index.php" class="form-signin">
+                                                <!-- <h2>Search Patient</h2> -->
+                                                <div class="label label-success" id="patient-status"></div>
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-12">
+                                                        <div id="patientcardtotal"></div>
+                                                    </div>
+                                                    <div class="form-group col-md-3">
+                                                        Search for Patient:<br>
+                                                        <input type="text" name="searchpatient" class="form-control" id="searchpatient" placeholder="Name or Number" required>
+                                                    </div>
+                                                    <div class="form-group col-md-9">
+                                                        Select Patient:<br>
+                                                        <select name="selectpatient" id="selectpatient" class="form-control" required>
+
+                                                        </select>
+                                                    </div>
+                                                   
+                                                    
+                                                    <div class="form-group col-md-4" id="form-edit-patient"></div>
+                                                    <div class="form-group col-md-4" id="form-view-patientstatus"></div>
+                                                    <div class="form-group col-md-4" id="form-view-patient"></div>
+
+                                                    <div class="form-group col-md-4">
+                                                        First Name:<br>
+                                                        <input type="text" name="firstname" class="form-control" id="firstname" placeholder="First Name" required>
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        Middle Name:<br>
+                                                        <input type="text" name="middlename" class="form-control" id="middlename" placeholder="Middle Name" required>
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        Last Name:<br>
+                                                        <input type="text" name="lastname" class="form-control" id="lastname" placeholder="Last Name" required>
+                                                    </div>
+                                                    <div class="form-group col-md-2">
+                                                        Gender:<br>
+                                                        <select name="gender" class="form-control" id="gender"></select>
+                                                    </div>
+                                                    <div class="form-group col-md-2">
+                                                        Marital Status:<br>
+                                                        <select name="maritalstatus" class="form-control" id="maritalstatus"></select>
+                                                    </div>
+                                                    <div class="form-group col-md-5">
+                                                        Date of Birth:<br>
+                                                        <input type="date" name="dateofbirth" class="form-control" id="dateofbirth" placeholder="Date of Birth" required>
+                                                    </div>
+                                                    <div class="form-group col-md-3">
+                                                        Age:<br>
+                                                        <input type="text" name="age" class="form-control" id="age" placeholder="Age" required>
+                                                    </div>
+                                                    <div class="form-group col-md-2">
+                                                        House No.<br>
+                                                        <input type="text" name="addressno" class="form-control" id="addressno" placeholder="No." required>
+                                                    </div>
+                                                    <div class="form-group col-md-3">
+                                                        Street<br>
+                                                        <input type="text" name="addressstreet" class="form-control" id="addressstreet" placeholder="Street" required>
+                                                    </div>
+                                                    <div class="form-group col-md-2">
+                                                        Select<br>
+                                                        <select name="addressstreetselect" class="form-control" id="addressstreetselect">
+                                                            <option value="">Select Street</option>
+                                                            <option value="Street">Street</option>
+                                                            <option value="Road">Road</option>
+                                                            <option value="Lane">Lane</option>
+                                                            <option value="Close">Close</option>
+                                                            <option value="Way">Way</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group col-md-3">
+                                                        off<br>
+                                                        <input type="text" name="addressoff" class="form-control" id="addressoff" placeholder="Off" required>
+                                                    </div>
+                                                    <div class="form-group col-md-2">
+                                                        Select<br>
+                                                        <select name="addressoffselect" class="form-control" id="addressoffselect">
+                                                            <option value="">Select Street</option>
+                                                            <option value="Street">Street</option>
+                                                            <option value="Road">Road</option>
+                                                            <option value="Lane">Lane</option>
+                                                            <option value="Close">Close</option>
+                                                            <option value="Way">Way</option>
+                                                        </select>
+                                                    </div>
+                                                    <!-- <div class="form-group col-md-3">
+                                                        Quarter<br>
+                                                        <input type="text" name="addressquarter" class="form-control" id="addressquarter" placeholder="Quarter" required>
+
+                                                    </div> -->
+                                                    <!-- <div class="form-group col-md-2">
+                                                        Town<br>
+                                                        <input type="text" name="addresstown" class="form-control" id="addresstown" placeholder="Town" required>
+
+                                                    </div> -->
+                                                    <div class="form-group col-md-3">
+                                                        Quarter:<br>
+                                                        <select name="addressquarter" id="addressquarter" class="form-control" required>
+
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group col-md-2">
+                                                        Add Quarter:<br>
+                                                        <input type="text" name="addquarter" class="form-control" id="addquarter" placeholder="Add Quarter" required>
+                                                    </div>
+                                                    <div class="form-group col-md-1">
+                                                        <br>
+                                                        <button class="genric-btn primary" id="add-quarter-button">Add</button> 
+                                                    </div>
+                                                    <div class="form-group col-md-3">
+                                                        Town:<br>
+                                                        <select name="addresstown" id="addresstown" class="form-control" required>
+
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group col-md-2">
+                                                        Add Town:<br>
+                                                        <input type="text" name="addtown" class="form-control" id="addtown" placeholder="Add Town" required>
+                                                    </div>
+                                                    <div class="form-group col-md-1">
+                                                        <br>
+                                                        <button class="genric-btn primary" id="add-town-button">Add</button> 
+                                                    </div>
+                                                    <div class="form-group col-md-12">
+                                                        Address:<br>
+                                                        <textarea name="address" class="form-control" id="address" placeholder="ResidentialAddress"></textarea>
+                                                    </div>
+                                                    <div class="form-group col-md-3">
+                                                        Nationality:<br>
+                                                         <select name="nationality" class="form-control" id="nationality">
+                                                             
+                                                         </select>
+                                                     </div>
+                                                     <div class="form-group col-md-3">
+                                                        State of Origin:<br>
+                                                         <select name="stateoforigin" class="form-control" id="stateoforigin">
+                                                             
+                                                         </select>
+                                                     </div>
+                                                     <div class="form-group col-md-3">
+                                                        LGA of Origin:<br>
+
+                                                         <select name="lgaoforigin" class="form-control" id="lgaoforigin">
+                                                             
+                                                         </select>
+                                                     </div>
+                                                     <div class="form-group col-md-3">
+                                                        Tribe:<br>
+                                                        <input type="text" name="tribe" id="tribe" class="form-control">
+
+                                                         <!-- <select name="tribe" class="form-control" id="tribe">
+                                                             
+                                                         </select> -->
+                                                     </div>
+                                                    <div class="form-group col-md-2">
+                                                        Weight(KG):<br>
+                                                        <input type="text" name="weight" class="form-control" id="weight" placeholder="Weight" required>
+                                                    </div>
+                                                    <div class="form-group col-md-2">
+                                                        Height(Metres):<br>
+                                                        <input type="text" name="height" class="form-control" id="height" placeholder="Height" required>
+                                                    </div>
+                                                    <div class="form-group col-md-2">
+                                                        Blood Group:<br>
+                                                        <select name="bloodgroup" class="form-control" id="bloodgroup"></select>
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                        Phone Number:<br>
+                                                        <input type="text" name="phonenumber" class="form-control" id="phonenumber" placeholder="Phone Number" required>
+                                                    </div>
+                                                    <div class="form-group col-md-8">
+                                                        Occupation:<br>
+                                                        <input type="text" name="occupation" class="form-control" id="occupation" placeholder="Occupation" required>
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        Religion:<br>
+                                                        <select name="religion" class="form-control" id="religion"></select>
+                                                    </div>
+                                                    <div class="form-group col-md-3">
+                                                        Next-of-Kin Full Name:<br>
+                                                        <input type="text" name="nextofkin" class="form-control" id="nextofkinsurname" placeholder="Next-of-Kin Fullname" required>
+                                                    </div>
+                                                    <div class="form-group col-md-3">
+                                                        Next-of-Kin Phone:<br>
+                                                        <input type="phone" name="nextofkinphonenumber" class="form-control" id="nextofkinphonenumber" placeholder="Next-of-Kin Phone" required>
+                                                    </div>
+                                                    <div class="form-group col-md-3">
+                                                        Relationship:<br>
+                                                        <select name="nextofkinrelationship" id="nextofkinrelationship" class="form-control" required>
+
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group col-md-2">
+                                                        Add Next-of-Kin Relationship:<br>
+                                                        <input type="text" name="addrelationship" class="form-control" id="addrelationship" placeholder="Add Relationship" required>
+                                                    </div>
+                                                    <div class="form-group col-md-1">
+                                                        <br>
+                                                        <button class="genric-btn primary" id="add-relationship-button">Add</button> 
+                                                    </div>
+                                                    <input type="hidden" id="personid" value="0"> 
+                                                    <input type="hidden" id="agegroup" value="0"> 
+                                                    <input type="hidden" id="paid" value="">
+                                                    <input type="hidden" id="selectpatientnumber" value="">
+                                                </div>
+                                                <div class="regerv_btn">
+                                                    <!-- <button type="submit" class="genric-btn primary" id="add-patient-button" style="font-size: 24px;border-radius: 8px;">Add Patient</button> -->
+                                                    <!-- <button type="submit" class="genric-btn primary" id="cancel-patient-button" style="font-size: 24px;border-radius: 8px;">Cancel</button> -->
+                                                    <button type="submit" class="genric-btn success" id="update-patient-button" style="font-size: 24px;border-radius: 8px;">Update Patient</button>
+                                                    <!-- <button type="submit" class="genric-btn danger" id="delete-patient-button" style="font-size: 24px;border-radius: 8px;">Confirm Deletion</button> -->
+                                                </div>
+                                            </form>
+                                            
+                                        </div>
+                                        <!-- <div class="col-12">
+                                            
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    <h4 class="card-title d-inline-block">View Patients</h4>  <p class="btn btn-primary float-right" id="view-patient-count"></p>
+                                                    <p class="float-right"><input type="text" id="searchpatient" name="searchpatient" placeholder="Search Patient" style="font-size: 18px;"></p>
+                                                </div>
+                                                <div class="card-body p-0">
+                                                    <div class="table-responsive scrollable">
+                                                        <table class="table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Card Number</th>
+                                                                    <th>Patient</th>
+                                                                    <th>Status</th>
+                                                                    <th>Date</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody id="view-patient-list">
+                                                                
+                                                                
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-5 col-md-6">
+                    <div class="reservation_img">
+                        <img src="img/loginphoto.jpg" alt="">
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <!--::regervation_part end::-->
+
+    
+    <!-- footer part start-->
+    <footer class="footer-area">
+
+        <div class="copyright_part">
+            
+        </div>
+    </footer>
+
+    <!-- footer part end-->
+
+    <!-- jquery plugins here-->
+
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <!-- popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- easing js -->
+    <script src="js/jquery.magnific-popup.js"></script>
+    <!-- swiper js -->
+    <script src="js/swiper.min.js"></script>
+    <!-- swiper js -->
+    <script src="js/masonry.pkgd.js"></script>
+    <!-- particles js -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- <script src="js/jquery.nice-select.min.js"></script> -->
+    <!-- swiper js -->
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <!-- contact js -->
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <script src="js/contact.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+    <script src="views/masterpage.js"></script>
+    <script src="views/patient-registration.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/bootstrap-datetimepicker.min.js"></script>
+    <script>
+        $(function () {
+            $('#dateofbirth1').datetimepicker({
+                format: 'LT'
+            });
+            // $('#datetimepicker4').datetimepicker({
+            //     format: 'LT'
+            // });
+        });
+ </script>
+    <script src="views/functions/patient-card-update.js"></script>
+</body>
+
+</html>

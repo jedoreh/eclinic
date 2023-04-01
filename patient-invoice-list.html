@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suyi Payment Invoice</title>
+    <link rel="icon" href="img/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- themify CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <!-- flaticon CSS -->
+    <link rel="stylesheet" href="css/flaticon.css">
+    <!-- magnific popup CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- nice select CSS -->
+    <!-- <link rel="stylesheet" href="css/nice-select.css"> -->
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <!-- style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+
+
+   <div class="container">
+       <div class="form-row">
+           <div class="col-md-6">
+
+            <br>
+            <br>
+            <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size:18px;text-align: center;">SUYI HOSPITAL</span><br>
+            110 M.M. WAY, BENIN CITY,
+            EDO STATE NIGERIA<br>
+            <small>Email: suyihospital@gmail.com
+
+            
+            Tel: 07088008002, 0901189990</small></h5>
+            <div id="GFG" style="font-size: smaller;">
+                
+                <div class="details"></div>
+            </div>
+            
+
+            <div>
+                <input type="button" href="#" class="btn btn-primary" value="Print" onclick="printDiv()">
+                <a href="patient-card-registration.html" class="btn btn-success">Go Back</a>
+            </div>
+           </div>
+       </div>
+   </div>
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <script>
+        function printDiv() {
+            var divContents = document.getElementById("GFG").innerHTML;
+            var a = window.open('', '', 'height=500, width=500');
+            a.document.write('<html>');
+            let body_text = `
+            <h5>SUYI HOSPITAL<br>
+            110 M.M. WAY, BENIN CITY
+            EDO STATE NIGERIA<br>
+            <small>Email: suyihospital@gmail.com
+
+            Tel: 07088008002, 0901189990</small></h5>
+
+            `
+            a.document.write('<body >' + body_text);
+            a.document.write(divContents);
+            a.document.write('</body></html>');
+            a.document.close();
+            a.print();
+        }
+    </script>
+    <script>
+        $(document).ready(function(){
+             // get patient info
+             let getSelectPatientInvoice = "getSelectPatientInvoice"
+            $.post("controllers/patient-record.php",{getSelectPatientInvoice:getSelectPatientInvoice}, function(formdata){
+                let data = JSON.parse(formdata)
+                console.log(data)
+
+                let getuserdetails = "getuserdetails"
+                $.post("controllers/masterpage.php", {getuserdetails:getuserdetails}, function(fdata){
+                    if(fdata=="Not Logged In"){
+                        window.open("index.html")
+                    } else {
+                        let persondata = JSON.parse(fdata)
+                        console.log(persondata)
+                        const d = new Date()
+                        let totalamount = 0
+                        // + d.getDate() + ` - ` + d.getMonth() + ` - ` + d.getFullYear()
+                        //
+                        let personid=data.records[0].personid
+                        //check if next of kin
+                        let accountnumber=data.records[0].hospitalnumber
+                        let getBilledTo = "getBilledToPatient"
+                        if(data.records[0].hospitalnumber.includes("CP")){
+                            console.log("corpse")
+                            getBilledTo = "getBilledToMorgue"
+                        } 
+
+                        $.post("controllers/patient-record.php",{personid:personid,accountnumber:accountnumber,getBilledTo:getBilledTo},function(pdata){
+
+
+                                console.log(pdata)
+                                let person = ""
+                            let phone = ""
+                            let corpse = ""
+                            let tally = ""
+                            if(pdata.includes("|")){
+                                let splitdata = pdata.split("|")
+                                person = splitdata[0]
+                                pdata = splitdata[1] + "</b><br>"
+                                phone = splitdata[2]
+                                corpse = splitdata[3]
+                                tally = splitdata[4]
+                                totalbill = splitdata[5]
+
+                                if(tally!=" "){
+                                    let splittally = tally.split(",")
+                                    let splittallynumber = splittally[0].split(" ")
+                                    tally = "<b>Tally " + splittallynumber[2] + "</b>"
+                                }
+                               
+                            } else {
+                                let splitdata = pdata.split("*")
+                                person = splitdata[0]
+                                pdata = ""
+                                phone = splitdata[1]
+                            }
+                            
+
+                                let invno = data.records[0].revenueordernumber.split("/")
+                                invoicenumber = invno[0] + "/" + invno[1] +"/" + invno[2] + "/" + invno[3] + "/<span style='font-size:18px'>" + invno[4] + "</span>" 
+
+                                let details = `
+                                <h5><b>INVOICE TO:</b> ` + person + `<br>
+                                <b>Hosp No</b> - ` + data.records[0].hospitalnumber + `  <br>
+                                ` + pdata + `
+                                ` + phone + ` <b>Date & Time</b> - ` + data.records[0].orderdate + ` 
+                                
+                                
+                                <table border='1' style="font-size:15px">
+                                    <tr>
+                                        <th>Invoice No</th>
+                                        <th>Description</th>
+                                        <th>Qty</th>
+                                        <th>Amount Per Qty</th>
+                                        <th>Total Amount</th>
+                                        <th>Paid</th>
+                                    </tr>
+                            `
+                            $.each(data.records, function(key, val) {
+                                let orderitems = JSON.parse(val.orderitems)
+                                let invoiceno = val.revenueordernumber
+                                let paidamount = val.paid
+                                orderitems.forEach(val => {
+
+                                    let amount = val.quantity * val.sellingprice
+                                    totalamount += amount
+                                    let splitinvoice = invoiceno.split("/")
+                                    details += `
+                                        <tr>
+                                            <td>` + splitinvoice[4] + `</td>
+                                            <td>` + val.genericname + `</td>
+                                            <td>` + val.quantity + `</td>
+                                            <td>&#8358; ` + val.sellingprice + `</td>
+                                            <td>&#8358; ` + amount + `</td>
+                                            <td>&#8358; ` + paidamount + `</td>
+                                        </tr>
+                                    `
+                                    paidamount = "&check;"
+                                });
+                            })
+                            details += `</table>
+                            
+                            Total Amount: &#8358;` + parseFloat(totalamount.toFixed(2)).toLocaleString('en-US',{maximumFractionDigits:2}) + `<br>
+                                ` + corpse + ` ` + tally + `
+                            <br>Prepared By ` + persondata.person + ` on ` + d.getDate() + ` - ` + d.getMonth() + ` - ` + d.getFullYear() + `
+                            
+                            <br>Please take this invoice to cashier for payment<br>
+                                
+
+                            `
+                            $(".details").html(details)
+                        })
+                        
+                    }
+                })
+            })
+        })
+    </script>
+    
+</body>
+</html>

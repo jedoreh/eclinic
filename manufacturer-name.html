@@ -1,0 +1,997 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Manufacturer Name</title>
+    <link rel="icon" href="img/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- themify CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <!-- flaticon CSS -->
+    <link rel="stylesheet" href="css/flaticon.css">
+    <!-- magnific popup CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- nice select CSS -->
+    <!-- <link rel="stylesheet" href="css/nice-select.css"> -->
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="css/slick.css">
+    <!-- style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        thead, tbody, tr { display: block; }
+
+        tr:after {
+            content: ' ';
+            display: block;
+            visibility: hidden;
+            clear: both;
+        }
+
+        
+
+        tbody {
+            height: 250px;
+            overflow-y: auto;
+        }
+
+        thead {
+            /* fallback */
+        }
+
+        thead th {
+            height: 30px;
+
+            /*text-align: left;*/
+        }
+
+        tbody td, thead th {
+            width: 12.2%;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <!--::header part start::-->
+    <header class="main_menu">
+            
+        </header>
+        <!-- Header part end-->
+       
+    <!-- breadcrumb start-->
+    <section class="breadcrumb breadcrumb_bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb_iner">
+                        <div class="breadcrumb_iner_item">
+                            <h2>SUYI HOSPITAL </h2>
+                            <p style="padding-bottom: 70px;"><a href="#" style="color:#F1F1F1">Setup</a>: Combo Setup</p><br><br><br> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- breadcrumb start-->
+
+    
+
+    <!--::regervation_part start::-->
+    <section class="regervation_part padding_bottom">
+        <div class="container">
+            <div class="row align-items-center regervation_content">
+                <div class="col-md-12">
+                    <div class="regervation_part_iner">
+                        <br>
+                        <form action="controllers/add-staff.php" class="frmaddperson">
+                            <h2>Manufacturer Name</h2>
+                            <div class="label label-success" id="errorlogin"></div>
+                            <div class="form-row">
+                                
+                            </div>
+                            
+                        </form>
+                    </div>
+
+                    <div class="card-box">
+                       
+                        <ul class="nav nav-tabs nav-tabs-solid nav-tabs-rounded nav-justified">
+                            <li class="nav-item"><a class="nav-link active" href="#solid-rounded-justified-tab1" data-toggle="tab">Manufacturer Name</a></li>
+                            <!-- <li class="nav-item"><a class="nav-link" href="#solid-rounded-justified-tab2" data-toggle="tab">Sub Department</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#solid-rounded-justified-tab3" data-toggle="tab">Department Item Group</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#solid-rounded-justified-tab4" data-toggle="tab">Generic Name</a></li> -->
+                            <!-- <li class="nav-item"><a class="nav-link" href="#solid-rounded-justified-tab5" data-toggle="tab">State</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#solid-rounded-justified-tab6" data-toggle="tab">Default Strength</a></li> -->
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane show active" id="solid-rounded-justified-tab1">
+                                <br>
+                                <h3>Manufacturer Name
+                                </h3>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            
+                                            <form action="controllers/index.php" class="form-signin">
+                                                <h2>Add Manufacturer Name</h2>
+                                                <div class="label label-success" id="manufacturer-status"></div>
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-12">
+                                                        <input type="text" name="manufacturer" class="form-control" id="manufacturer" placeholder="Manufacturer Name" required>
+                                                    </div>
+                                                    <!-- <div class="form-group col-md-12">
+                                                        <input type="text" name="code" class="form-control" id="code"
+                                                            placeholder="Department Code">
+                                                    </div> -->
+                                                    <!-- <div class="form-group col-md-6">
+                                                        <input type="text" name="formabbreviation" class="form-control" id="formabbreviation"
+                                                            placeholder="Form Abbreviation">
+                                                    </div> -->
+                                                    <div class="form-edit-manufacturer"></div>
+                                                    
+                                                </div>
+                                                <div class="regerv_btn">
+                                                    <button type="submit" class="genric-btn primary" id="add-manufacturer-button">Add Manufacturer Name</button>
+                                                    <button type="submit" class="genric-btn warning" id="edit-manufacturer-button">Edit Manufacturer Name</button>
+                                                    <button type="submit" class="genric-btn danger" id="delete-manufacturer-button">Confirm Deletion</button>
+                                                </div>
+                                            </form>
+                                            
+                                        </div>
+                                        <div class="col-6">
+                                            
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    <h4 class="card-title d-inline-block">View Manufacturer Names</h4>  <p class="btn btn-primary float-right" id="view-manufacturer-count"></p>
+                                                </div>
+                                                <div class="card-body p-0">
+                                                    <div class="table-responsive">
+                                                        <table class="table mb-0">
+                                                            <thead class="d-none">
+                                                                <tr>
+                                                                    <th>Manufacturer</th>
+                                                                    <!-- <th>Department Code</th> -->
+                                                                    
+                                                                    <th class="text-right">Action</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody id="view-manufacturer-list">
+                                                                
+                                                                
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                          
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-5 col-md-6">
+                    <div class="reservation_img">
+                        <img src="img/loginphoto.jpg" alt="">
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <!--::regervation_part end::-->
+
+    
+    <!-- footer part start-->
+    <footer class="footer-area">
+
+        <div class="copyright_part">
+            
+        </div>
+    </footer>
+
+    <!-- footer part end-->
+
+    <!-- jquery plugins here-->
+
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <!-- popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- easing js -->
+    <script src="js/jquery.magnific-popup.js"></script>
+    <!-- swiper js -->
+    <script src="js/swiper.min.js"></script>
+    <!-- swiper js -->
+    <script src="js/masonry.pkgd.js"></script>
+    <!-- particles js -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- <script src="js/jquery.nice-select.min.js"></script> -->
+    <!-- swiper js -->
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <!-- contact js -->
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <script src="js/contact.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+    <script src="views/masterpage.js"></script>
+    <script src="views/combo-setup.js"></script>
+    <!--<script src="views/corpse-list.js"></script> -->
+    <script>
+        $(document).ready(function(){
+            //Departments
+            //Search for Departments
+            
+            function GetManufacturersFunction(){
+                $("#edit-manufacturer-button").hide()
+                $("#delete-manufacturer-button").hide()
+                $(".form-edit-manufacturer").html("")
+                $("#manufacturer").val("")
+                //$("#code").val("")
+                //$("#formabbreviation").val("")
+                let getManufacturer = "getManufacturer"
+                $.post("controllers/combo-setup.php",{getManufacturer: getManufacturer},function(formdata){
+                    //console.log(data)
+                    if(formdata=="No Record Found"){
+                        $("#view-manufacturer-count").html(formdata)
+                    }else{
+                        console.log(formdata)
+                        console.log(typeof(formdata))
+                        let data=JSON.parse(formdata)
+                        console.log(data)
+                        let count = 0
+                            
+                        let totalrecord = ``
+                        $.each(data.records, function(key, val) {
+                            count++
+                          totalrecord += `
+                            <tr>
+                                <td style="min-width: 200px;">
+                                    
+                                    <h2><a href="#">` + val.manufacturer + `</span></a></h2>
+                                </td>                 
+                                
+                                
+                                <td class="text-right">
+                                    <a href="#" data-id="` + val.id + `" class="btn btn-outline-success take-btn edit-manufacturer">Edit</a>
+                                    <a href="#" data-id="` + val.id + `" class="btn btn-outline-danger take-btn delete-manufacturer">Delete</a>
+                                </td>
+                            </tr>
+                          `
+                        })
+                        $("#view-manufacturer-count").html(count + " Record(s) Found")
+                        $("#view-manufacturer-list").html(totalrecord)
+                    }
+                    $(".edit-manufacturer").on("click", function(evt){
+                            evt.preventDefault()
+                            let id = $(this).attr("data-id")
+                            let getManufacturerById = "getManufacturerById"
+                            $.post("controllers/combo-setup.php", {id:id, getManufacturerById: getManufacturerById}, function(data){
+                                console.log(data)
+                                formdata=JSON.parse(data)
+                                $("#manufacturer").val(formdata.manufacturer)
+                                //$("#code").val(formdata.code)
+                                //$("#formabbreviation").val(formdata.abbreviation)
+                                $(".form-edit-manufacturer").html(`<input type="hidden" name="manufacturerid" id="manufacturerid" value="` + id + `">`)
+                            
+                                $("#edit-manufacturer-button").show()
+                            })
+                            
+                           
+                        })
+                    $(".delete-manufacturer").on("click", function(evt){
+                        evt.preventDefault()
+                            let id = $(this).attr("data-id")
+                            let getManufacturerById = "getManufacturerById"
+                            $.post("controllers/combo-setup.php", {id:id, getManufacturerById: getManufacturerById}, function(data){
+                                console.log(data)
+                                formdata=JSON.parse(data)
+                                $("#manufacturer").val(formdata.manufacturer)
+                                //$("#code").val(formdata.code)
+                                //$("#formabbreviation").val(formdata.abbreviation)
+                                $(".form-edit-manufacturer").html(`<input type="hidden" name="manufacturerid" id="manufacturerid" value="` + id + `">`)
+                            
+                                $("#delete-manufacturer-button").show()
+                            })
+                            
+                    })
+                })
+
+               
+            }
+
+            GetManufacturersFunction()
+            
+
+            $("#add-manufacturer-button").on("click", function(evt){
+                evt.preventDefault();
+                console.log("click")
+                let manufacturer = $("#manufacturer").val()
+                //let departmentcode = $("#code").val()
+                //let formabbreviation = $("#formabbreviation").val()
+                let insertManufacturer = "insertManufacturer"
+                $.post("controllers/combo-setup.php", {manufacturer:manufacturer,insertManufacturer:insertManufacturer},function(data){
+                    $("#manufacturer-status").html(data)
+                    GetManufacturersFunction()
+                })
+               
+            })
+
+            $("#edit-manufacturer-button").on("click", function(evt){
+                evt.preventDefault();
+                let id = $("#manufacturerid").val()
+                //let departmentcode = $("#code").val()
+                let manufacturer = $("#manufacturer").val()
+                //let formabbreviation = $("#formabbreviation").val()
+                let editManufacturer = "editManufacturer"
+                $.post("controllers/combo-setup.php", {id:id, manufacturer:manufacturer,editManufacturer:editManufacturer},function(data){
+                    $("#manufacturer-status").html(data)
+                    GetManufacturersFunction()
+                })
+            })
+
+            $("#delete-manufacturer-button").on("click",function(evt){
+                evt.preventDefault();
+                let id = $("#manufacturerid").val()
+                
+                let deleteManufacturer = "deleteManufacturer"
+                $.post("controllers/combo-setup.php", {id:id, deleteManufacturer:deleteManufacturer},function(data){
+                    $("#manufacturer-status").html(data)
+                    GetManufacturersFunction()
+                })
+            })
+
+
+            //Sub Departments
+            //Search for Sub Departments
+            
+            function GetSubDepartmentsFunction(){
+                $("#edit-subdepartment-button").hide()
+                $("#delete-subdepartment-button").hide()
+                $(".form-edit-subdepartment").html("")
+                let departmentlist = ``
+                let getDepartment = "getDepartment"
+                $.post("controllers/combo-setup.php",{getDepartment: getDepartment},function(formdata){
+                    //console.log("itemGroup: ",data)
+                    if(formdata!="No Record Found"){
+                        
+                        let data=JSON.parse(formdata)
+                        let departmentoptions = ``
+                        $.each(data.records, function(key, val) {
+                           
+                            departmentoptions += `
+                            <option value="` + val.department + `">` + val.department + `</option>
+                          `
+                        })
+                        departmentlist = departmentoptions
+                        $("#selectdepartment").html(departmentoptions)
+                    }
+
+                $("#subdepartment").val("")
+                $("#subdepartmentcode").val("")
+                //$("#formabbreviation").val("")
+                let getSubDepartment = "getSubDepartment"
+                $.post("controllers/combo-setup.php",{getSubDepartment: getSubDepartment},function(formdata){
+                    //console.log(data)
+                    if(formdata=="No Record Found"){
+                        $("#view-subdepartment-count").html(formdata)
+                    }else{
+                        console.log(formdata)
+                        console.log(typeof(formdata))
+                        let data=JSON.parse(formdata)
+                        console.log(data)
+                        let count = 0
+                            
+                        let totalrecord = ``
+                        $.each(data.records, function(key, val) {
+                            count++
+                          totalrecord += `
+                            <tr>
+                                <td style="min-width: 200px;">
+                                    
+                                    <h2><a href="#">` + val.subdepartment + `</span></a></h2>
+                                </td>
+                                <td>
+                                    
+                                    <p>` + val.department + `</p>
+                                </td>                 
+                                <td>
+                                    
+                                    <p>` + val.subdepartmentcode + `</p>
+                                </td>
+                                
+                                <td class="text-right">
+                                    <a href="#" data-id="` + val.id + `" class="btn btn-outline-success take-btn edit-subdepartment">Edit</a>
+                                    <a href="#" data-id="` + val.id + `" class="btn btn-outline-danger take-btn delete-subdepartment">Delete</a>
+                                </td>
+                            </tr>
+                          `
+                        })
+                        $("#view-subdepartment-count").html(count + " Record(s) Found")
+                        $("#view-subdepartment-list").html(totalrecord)
+                    }
+                    $(".edit-subdepartment").on("click", function(evt){
+                            evt.preventDefault()
+                            let id = $(this).attr("data-id")
+                            let getSubDepartmentById = "getSubDepartmentById"
+                            $.post("controllers/combo-setup.php", {id:id, getSubDepartmentById: getSubDepartmentById}, function(data){
+                                console.log(data)
+                                formdata=JSON.parse(data)
+                                $("#subdepartment").val(formdata.subdepartment)
+                                $("#selectitemgroup").val(`<option value="` + formdata.department + `" selected>` + formdata.department +`</option>` +  departmentlist)
+                                $("#subdepartmentcode").val(formdata.subdepartmentcode)
+                                //$("#formabbreviation").val(formdata.abbreviation)
+                                $(".form-edit-subdepartment").html(`<input type="hidden" name="subdepartmentid" id="subdepartmentid" value="` + id + `">`)
+                            
+                                $("#edit-subdepartment-button").show()
+                            })
+                            
+                           
+                        })
+                    $(".delete-subdepartment").on("click", function(evt){
+                        evt.preventDefault()
+                            let id = $(this).attr("data-id")
+                            let getSubDepartmentById = "getSubDepartmentById"
+                            $.post("controllers/combo-setup.php", {id:id, getSubDepartmentById: getSubDepartmentById}, function(data){
+                                console.log(data)
+                                formdata=JSON.parse(data)
+                                $("#subdepartment").val(formdata.subdepartment)
+                                $("#selectitemgroup").val(`<option value="` + formdata.department + `" selected>` + formdata.department +`</option>` +  departmentlist)
+                                $("#subdepartmentcode").val(formdata.subdepartmentcode)
+                                //$("#formabbreviation").val(formdata.abbreviation)
+                                $(".form-edit-subdepartment").html(`<input type="hidden" name="subdepartmentid" id="subdepartmentid" value="` + id + `">`)
+                            
+                                $("#delete-subdepartment-button").show()
+                            })
+                            
+                    })
+                })
+                })
+               
+            }
+
+            GetSubDepartmentsFunction()
+            
+
+            $("#add-subdepartment-button").on("click", function(evt){
+                evt.preventDefault();
+                console.log("click")
+                let department = $("#selectdepartment").val()
+                let subdepartmentcode = $("#subdepartmentcode").val()
+                let subdepartment = $("#subdepartment").val()
+                let insertSubDepartment = "insertSubDepartment"
+                $.post("controllers/combo-setup.php", {subdepartment:subdepartment,department:department,subdepartmentcode:subdepartmentcode,insertSubDepartment:insertSubDepartment},function(data){
+                    $("#subdepartment-status").html(data)
+                    GetSubDepartmentsFunction()
+                })
+               
+            })
+
+            $("#edit-subdepartment-button").on("click", function(evt){
+                evt.preventDefault();
+                let id = $("#subdepartmentid").val()
+                let department = $("#selectdepartment").val()
+                let subdepartmentcode = $("#subdepartmentcode").val()
+                let subdepartment = $("#subdepartment").val()
+                let editSubDepartment = "editSubDepartment"
+                $.post("controllers/combo-setup.php", {id:id, subdepartment:subdepartment, department:department,subdepartmentcode:subdepartmentcode,editSubDepartment:editSubDepartment},function(data){
+                    $("#subdepartment-status").html(data)
+                    GetSubDepartmentsFunction()
+                })
+            })
+
+            $("#delete-subdepartment-button").on("click",function(evt){
+                evt.preventDefault();
+                let id = $("#subdepartmentid").val()
+                
+                let deleteSubDepartment = "deleteSubDepartment"
+                $.post("controllers/combo-setup.php", {id:id, deleteSubDepartment:deleteSubDepartment},function(data){
+                    $("#subdepartment-status").html(data)
+                    GetSubDepartmentsFunction()
+                })
+            })
+
+              //Department Item Group Function
+              function GetDepartmentItemGroupFunction(){
+                $("#edit-departmentitemgroup-button").hide()
+                $("#delete-departmentitemgroup-button").hide()
+                $(".form-edit-departmentitemgroup").html("")
+                let departmentlist = ``
+                //get list of groups
+                let getDepartment = "getDepartment"
+                $.post("controllers/combo-setup.php",{getDepartment: getDepartment},function(formdata){
+                    //console.log("itemGroup: ",data)
+                    if(formdata!="No Record Found"){
+                        
+                        let data=JSON.parse(formdata)
+                        let departmentoptions = ``
+                        $.each(data.records, function(key, val) {
+                           
+                            departmentoptions += `
+                            <option value="` + val.department + `">` + val.department + `</option>
+                          `
+                        })
+                        departmentlist = departmentoptions
+                        $("#selectdeptitemgroupdepartment").html(departmentoptions)
+                    }
+                    let subdepartmentlist = ``
+                    let getSubDepartment = "getSubDepartment"
+                    $.post("controllers/combo-setup.php",{getSubDepartment: getSubDepartment},function(formdata){
+                    //console.log("itemGroup: ",data)
+                    if(formdata!="No Record Found"){
+                        
+                        let data=JSON.parse(formdata)
+                        let subdepartmentoptions = ``
+                        $.each(data.records, function(key, val) {
+                           
+                            subdepartmentoptions += `
+                            <option value="` + val.subdepartment + `">` + val.subdepartment + `</option>
+                          `
+                        })
+                        subdepartmentlist = subdepartmentoptions
+                        $("#selectsubdepartment").html(subdepartmentoptions)
+                    }
+
+
+
+                $("#departmentitemgroup").val("")
+
+
+                let getDepartmentItemGroup = "getDepartmentItemGroup"
+                $.post("controllers/combo-setup.php",{getDepartmentItemGroup: getDepartmentItemGroup},function(formdata){
+                    //console.log(data)
+                    if(formdata=="No Record Found"){
+                        $("#view-departmentitemgroup-count").html(formdata)
+                    }else{
+                        console.log(formdata)
+                        console.log(typeof(formdata))
+                        let data=JSON.parse(formdata)
+                        console.log(data)
+                        let count = 0
+                            
+                        let totalrecord = ``
+                        $.each(data.records, function(key, val) {
+                            count++
+                          totalrecord += `
+                            <tr>
+                                <td style="min-width: 200px;">
+                                    
+                                    <h2><a href="#">` + val.departmentitemgroup + `</span></a></h2>
+                                </td>                 
+                                <td>
+                                    
+                                    <p>` + val.department +  `</p>
+                                </td>
+                                <td>
+                                    
+                                    <p>` +  val.subdepartment + `</p>
+                                </td>
+                                
+                                <td class="text-right">
+                                    <a href="#" data-id="` + val.id + `" class="btn btn-outline-success take-btn edit-departmentitemgroup">Edit</a>
+                                    <a href="#" data-id="` + val.id + `" class="btn btn-outline-danger take-btn delete-departmentitemgroup">Delete</a>
+                                </td>
+                            </tr>
+                          `
+                        })
+                        $("#view-departmentitemgroup-count").html(count + " Record(s) Found")
+                        $("#view-departmentitemgroup-list").html(totalrecord)
+                    }
+
+                    $(".edit-departmentitemgroup").on("click", function(evt){
+                            evt.preventDefault()
+                            let id = $(this).attr("data-id")
+                            let getDepartmentItemGroupById = "getDepartmentItemGroupById"
+                            $.post("controllers/combo-setup.php", {id:id, getDepartmentItemGroupById: getDepartmentItemGroupById}, function(data){
+                                console.log(data)
+                                formdata=JSON.parse(data)
+                                //$("#subclass").val(formdata.itemsubclass)
+                                //$("#itemclass").val(formdata.itemclass)
+                                $("#selectdeptitemgroupdepartment").html(`<option value="` + formdata.department + `" selected>` + formdata.department +`</option>` +  departmentlist)
+                                $("#selectsubdepartment").html(`<option value="` + formdata.subdepartment + `" selected>` + formdata.subdepartment +`</option>` +  subdepartmentlist)
+                                $("#departmentitemgroup").val(formdata.departmentitemgroup)
+                                $(".form-edit-departmentitemgroup").html(`<input type="hidden" name="departmentitemgroupid" id="departmentitemgroupid" value="` + id + `">`)
+                            
+                                $("#edit-departmentitemgroup-button").show()
+                            })
+                            
+                           
+                        })
+                    $(".delete-departmentitemgroup").on("click", function(evt){
+                        evt.preventDefault()
+                            let id = $(this).attr("data-id")
+                            let getDepartmentItemGroupById = "getDepartmentItemGroupById"
+                            $.post("controllers/combo-setup.php", {id:id, getDepartmentItemGroupById: getDepartmentItemGroupById}, function(data){
+                                console.log(data)
+                                formdata=JSON.parse(data)
+                                //console.log(selectedsubclassgroup)
+                                $("#selectdeptitemgroupdepartment").html(`<option value="` + formdata.department + `" selected>` + formdata.department +`</option>` +  departmentlist)
+                                $("#selectsubdepartment").html(`<option value="` + formdata.subdepartment + `" selected>` + formdata.subdepartment +`</option>` +  subdepartmentlist)
+                                $("#departmentitemgroup").val(formdata.departmentitemgroup)
+                                $(".form-edit-departmentitemgroup").html(`<input type="hidden" name="departmentitemgroupid" id="departmentitemgroupid" value="` + id + `">`)
+                            
+                                $("#delete-departmentitemgroup-button").show()
+                            })
+                            
+                    })
+                })
+                    
+                })
+                })
+               
+            }
+
+            GetDepartmentItemGroupFunction()
+            
+
+            $("#add-departmentitemgroup-button").on("click", function(evt){
+                evt.preventDefault();
+                console.log("click")
+                let department = $("#selectdeptitemgroupdepartment").val()
+                let subdepartment = $("#selectsubdepartment").val()
+                let departmentitemgroup = $("#departmentitemgroup").val()
+                //let subclassnote = $("#subclassnote").val()
+                let insertDepartmentItemGroupForm = "insertDepartmentItemGroupForm"
+                $.post("controllers/combo-setup.php", {department:department, subdepartment:subdepartment,departmentitemgroup:departmentitemgroup,insertDepartmentItemGroupForm:insertDepartmentItemGroupForm},function(data){
+                    $("#departmentitemgroup-status").html(data)
+                    GetDepartmentItemGroupFunction()
+                })
+               
+            })
+
+            $("#selectdeptitemgroupdepartment").on("change", function(evt){
+                evt.preventDefault()
+                let selecteddepartment = $("#selectdeptitemgroupdepartment").val()
+                let getSubDepartmentByDepartment = "getSubDepartmentByDepartment"
+                $.post("controllers/combo-setup.php",{department:selecteddepartment, getSubDepartmentByDepartment:getSubDepartmentByDepartment},function(formdata){
+                    console.log(formdata)
+                        let data=JSON.parse(formdata)
+                        console.log(formdata)
+                        let selectsubdepartmentoptions = ``
+                        $.each(data.records, function(key, val) {
+                           
+                            selectsubdepartmentoptions += `
+                            <option value="` + val.subdepartment + `">` + val.subdepartment + `</option>
+                          `
+                          console.log(val.subdepartment)
+                        })
+                        //subdepartmentlist = subdepartmentoptions
+                        $("#selectsubdepartment").html(selectsubdepartmentoptions)
+                 
+                })
+                
+            })
+
+            $("#edit-departmentitemgroup-button").on("click", function(evt){
+                evt.preventDefault();
+                let id = $("#departmentitemgroupid").val()
+                let department = $("#selectdeptitemgroupdepartment").val()
+                let subdepartment = $("#selectsubdepartment").val()
+                let departmentitemgroup = $("#departmentitemgroup").val()
+                 let editDepartmentItemGroup = "editDepartmentItemGroup"
+                $.post("controllers/combo-setup.php", {id:id, department:department, subdepartment:subdepartment,departmentitemgroup:departmentitemgroup,editDepartmentItemGroup:editDepartmentItemGroup},function(data){
+                    $("#departmentitemgroup-status").html(data)
+                    GetDepartmentItemGroupFunction()
+                })
+            })
+
+            $("#delete-departmentitemgroup-button").on("click",function(evt){
+                evt.preventDefault();
+                let id = $("#departmentitemgroupid").val()
+                
+                let deleteDepartmentItemGroup = "deleteDepartmentItemGroup"
+                $.post("controllers/combo-setup.php", {id:id, deleteDepartmentItemGroup:deleteDepartmentItemGroup},function(data){
+                    $("#departmentitemgroup-status").html(data)
+                    GetDepartmentItemGroupFunction()
+                })
+            })
+
+
+            //Generic Name Function
+            function GetGenericNameFunction(){
+                $("#edit-genericname-button").hide()
+                $("#delete-genericname-button").hide()
+                $(".form-edit-genericname").html("")
+                let departmentlist = ``
+                //get list of groups
+                let getDepartment = "getDepartment"
+                $.post("controllers/combo-setup.php",{getDepartment: getDepartment},function(formdata){
+                    //console.log("itemGroup: ",data)
+                    if(formdata!="No Record Found"){
+                        
+                        let data=JSON.parse(formdata)
+                        let departmentoptions = ``
+                        $.each(data.records, function(key, val) {
+                           
+                            departmentoptions += `
+                            <option value="` + val.department + `">` + val.department + `</option>
+                          `
+                        })
+                        departmentlist = departmentoptions
+                        $("#selectgenericnamedepartment").html(departmentoptions)
+                    }
+                    let subdepartmentlist = ``
+                    let getSubDepartment = "getSubDepartment"
+                    $.post("controllers/combo-setup.php",{getSubDepartment: getSubDepartment},function(formdata){
+                    //console.log("itemGroup: ",data)
+                    if(formdata!="No Record Found"){
+                        
+                        let data=JSON.parse(formdata)
+                        let subdepartmentoptions = ``
+                        $.each(data.records, function(key, val) {
+                           
+                            subdepartmentoptions += `
+                            <option value="` + val.subdepartment + `">` + val.subdepartment + `</option>
+                          `
+                        })
+                        subdepartmentlist = subdepartmentoptions
+                        $("#selectgenericnamesubdepartment").html(subdepartmentoptions)
+                    }
+
+
+                    let departmentitemgrouplist = ``
+                    let getDepartmentItemGroup = "getDepartmentItemGroup"
+                $.post("controllers/combo-setup.php",{getDepartmentItemGroup: getDepartmentItemGroup},function(formdata){
+
+                    if(formdata!="No Record Found"){
+                        
+                        let data=JSON.parse(formdata)
+                        let departmentitemgroupoptions = ``
+                        $.each(data.records, function(key, val) {
+                           
+                            departmentitemgroupoptions += `
+                            <option value="` + val.departmentitemgroup + `">` + val.departmentitemgroup + `</option>
+                          `
+                        })
+                        departmentitemgrouplist = departmentitemgroupoptions
+                        $("#selectdepartmentitemgroup").html(departmentitemgroupoptions)
+                    }
+
+                $("#genericname").val("")
+
+
+                let getGenericName = "getGenericName"
+                $.post("controllers/combo-setup.php",{getGenericName: getGenericName},function(formdata){
+                    //console.log(data)
+                    if(formdata=="No Record Found"){
+                        $("#view-genericname-count").html(formdata)
+                    }else{
+                        console.log(formdata)
+                        console.log(typeof(formdata))
+                        let data=JSON.parse(formdata)
+                        console.log(data)
+                        let count = 0
+                            
+                        let totalrecord = ``
+                        $.each(data.records, function(key, val) {
+                            count++
+                          totalrecord += `
+                            <tr>
+                                <td style="min-width: 200px;">
+                                    
+                                    <h2><a href="#">` + val.genericname + `</span></a></h2>
+                                </td>                 
+                                <td>
+                                    
+                                    <p>` + val.department + ` - ` + val.subdepartment + `</p>
+                                </td>
+                                <td>
+                                    
+                                    <p>` +  val.departmentitemgroup + `</p>
+                                </td>
+                                
+                                <td class="text-right">
+                                    <a href="#" data-id="` + val.id + `" class="btn btn-outline-success take-btn edit-genericname">Edit</a>
+                                    <a href="#" data-id="` + val.id + `" class="btn btn-outline-danger take-btn delete-genericname">Delete</a>
+                                </td>
+                            </tr>
+                          `
+                        })
+                        $("#view-genericname-count").html(count + " Record(s) Found")
+                        $("#view-genericname-list").html(totalrecord)
+                    }
+
+                    $(".edit-genericname").on("click", function(evt){
+                            evt.preventDefault()
+                            let id = $(this).attr("data-id")
+                            let getGenericNameById = "getGenericNameById"
+                            $.post("controllers/combo-setup.php", {id:id, getGenericNameById: getGenericNameById}, function(data){
+                                console.log(data)
+                                formdata=JSON.parse(data)
+                                //$("#subclass").val(formdata.itemsubclass)
+                                //$("#itemclass").val(formdata.itemclass)
+                                $("#selectgenericnamedepartment").html(`<option value="` + formdata.department + `" selected>` + formdata.department +`</option>` +  departmentlist)
+                                $("#selectgenericnamesubdepartment").html(`<option value="` + formdata.subdepartment + `" selected>` + formdata.subdepartment +`</option>` +  subdepartmentlist)
+                                $("#selectdepartmentitemgroup").html(`<option value="` + formdata.departmentitemgroup + `" selected>` + formdata.departmentitemgroup +`</option>` +  departmentitemgrouplist)
+                                $("#genericname").val(formdata.genericname)
+                                $(".form-edit-genericname").html(`<input type="hidden" name="genericnameid" id="genericnameid" value="` + id + `">`)
+                            
+                                $("#edit-genericname-button").show()
+                            })
+                            
+                           
+                        })
+                    $(".delete-genericname").on("click", function(evt){
+                        evt.preventDefault()
+                            let id = $(this).attr("data-id")
+                            let getGenericNameById = "getGenericNameById"
+                            $.post("controllers/combo-setup.php", {id:id, getGenericNameById: getGenericNameById}, function(data){
+                                console.log(data)
+                                formdata=JSON.parse(data)
+                                //console.log(selectedsubclassgroup)
+                                $("#selectgenericnamedepartment").html(`<option value="` + formdata.department + `" selected>` + formdata.department +`</option>` +  departmentlist)
+                                $("#selectgenericnamesubdepartment").html(`<option value="` + formdata.subdepartment + `" selected>` + formdata.subdepartment +`</option>` +  subdepartmentlist)
+                                $("#selectdepartmentitemgroup").html(`<option value="` + formdata.departmentitemgroup + `" selected>` + formdata.departmentitemgroup +`</option>` +  departmentitemgrouplist)
+                                $("#genericname").val(formdata.genericname)
+                                $(".form-edit-genericname").html(`<input type="hidden" name="genericnameid" id="genericnameid" value="` + id + `">`)
+                            
+                                $("#delete-genericname-button").show()
+                            })
+                            
+                    })
+                })
+                    })
+                })
+                })
+               
+            }
+
+            GetGenericNameFunction()
+            
+
+            $("#add-genericname-button").on("click", function(evt){
+                evt.preventDefault();
+                console.log("click")
+                let department = $("#selectgenericnamedepartment").val()
+                let subdepartment = $("#selectgenericnamesubdepartment").val()
+                let departmentitemgroup = $("#selectdepartmentitemgroup").val()
+                let genericname = $("#genericname").val()
+                let insertGenericNameForm = "insertGenericNameForm"
+                $.post("controllers/combo-setup.php", {department:department, subdepartment:subdepartment,departmentitemgroup:departmentitemgroup,genericname:genericname,insertGenericNameForm:insertGenericNameForm},function(data){
+                    $("#genericname-status").html(data)
+                    GetGenericNameFunction()
+                })
+               
+            })
+
+            $("#selectgenericnamedepartment").on("change", function(evt){
+                evt.preventDefault()
+                let selecteddepartment = $("#selectgenericnamedepartment").val()
+                let getSubDepartmentByDepartment = "getSubDepartmentByDepartment"
+                $.post("controllers/combo-setup.php",{department:selecteddepartment, getSubDepartmentByDepartment:getSubDepartmentByDepartment},function(formdata){
+                    console.log(formdata)
+                        let data=JSON.parse(formdata)
+                        console.log(formdata)
+                        let selectsubdepartmentoptions = ``
+                        $.each(data.records, function(key, val) {
+                           
+                            selectsubdepartmentoptions += `
+                            <option value="` + val.subdepartment + `">` + val.subdepartment + `</option>
+                          `
+                          //console.log(val.subdepartment)
+                        })
+                        //subdepartmentlist = subdepartmentoptions
+                        $("#selectgenericnamesubdepartment").html(selectsubdepartmentoptions)
+                 
+                })
+                
+            })
+
+            $("#selectgenericnamedepartment").on("change", function(evt){
+                evt.preventDefault()
+                let selecteddepartment = $("#selectgenericnamedepartment").val()
+                let getSubDepartmentByDepartment = "getSubDepartmentByDepartment"
+                $.post("controllers/combo-setup.php",{department:selecteddepartment, getSubDepartmentByDepartment:getSubDepartmentByDepartment},function(formdata){
+                    console.log(formdata)
+                        let data=JSON.parse(formdata)
+                        console.log(formdata)
+                        let selectsubdepartmentoptions = ``
+                        $.each(data.records, function(key, val) {
+                           
+                            selectsubdepartmentoptions += `
+                            <option value="` + val.subdepartment + `">` + val.subdepartment + `</option>
+                          `
+                          //console.log(val.subdepartment)
+                        })
+                        //subdepartmentlist = subdepartmentoptions
+                        $("#selectgenericnamesubdepartment").html(selectsubdepartmentoptions)
+                        let subdepartment = data.records[0].subdepartment
+                        if(subdepartment != "No Sub Department"){
+                            let getDepartmentItemGroupBySubDepartment = "getDepartmentItemGroupBySubDepartment"
+                            $.post("controllers/combo-setup.php",{department:selecteddepartment,subdepartment:subdepartment, getDepartmentItemGroupBySubDepartment:getDepartmentItemGroupBySubDepartment},function(formdata){
+                                console.log(formdata)
+                                    let data=JSON.parse(formdata)
+                                    //console.log(formdata)
+                                    let selectdepartmentitemoptions = ``
+                                    $.each(data.records, function(key, val) {
+                                    
+                                        selectdepartmentitemoptions += `
+                                        <option value="` + val.departmentitemgroup + `">` + val.departmentitemgroup + `</option>
+                                    `
+                                    //console.log(val.subdepartment)
+                                    })
+                                    //subdepartmentlist = subdepartmentoptions
+                                    $("#selectdepartmentitemgroup").html(selectdepartmentitemoptions)
+                                    
+                            
+                            })
+                        }
+                 
+                })
+                
+            })
+
+
+
+            $("#selectgenericnamesubdepartment").on("change", function(evt){
+                evt.preventDefault()
+                let selectedsubdepartment = $("#selectgenericnamesubdepartment").val()
+                let selecteddepartment = $("#selectgenericnamedepartment").val()
+                let getDepartmentItemGroupBySubDepartment = "getDepartmentItemGroupBySubDepartment"
+                $.post("controllers/combo-setup.php",{department:selecteddepartment,subdepartment:selectedsubdepartment, getDepartmentItemGroupBySubDepartment:getDepartmentItemGroupBySubDepartment},function(formdata){
+                    console.log(formdata)
+                        let data=JSON.parse(formdata)
+                        //console.log(formdata)
+                        let selectdepartmentitemoptions = ``
+                        $.each(data.records, function(key, val) {
+                           
+                            selectdepartmentitemoptions += `
+                            <option value="` + val.departmentitemgroup + `">` + val.departmentitemgroup + `</option>
+                          `
+                          //console.log(val.subdepartment)
+                        })
+                        //subdepartmentlist = subdepartmentoptions
+                        $("#selectdepartmentitemgroup").html(selectdepartmentitemoptions)
+                        
+                 
+                })
+                
+            })
+
+            $("#edit-genericname-button").on("click", function(evt){
+                evt.preventDefault();
+                let id = $("#genericnameid").val()
+                let department = $("#selectgenericnamedepartment").val()
+                let subdepartment = $("#selectgenericnamesubdepartment").val()
+                let departmentitemgroup = $("#selectdepartmentitemgroup").val()
+                let genericname = $("#genericname").val()
+                 let editGenericName = "editGenericName"
+                $.post("controllers/combo-setup.php", {id:id, department:department, subdepartment:subdepartment,departmentitemgroup:departmentitemgroup,genericname:genericname,editGenericName:editGenericName},function(data){
+                    $("#genericname-status").html(data)
+                    GetGenericNameFunction()
+                })
+            })
+
+            $("#delete-genericname-button").on("click",function(evt){
+                evt.preventDefault();
+                let id = $("#genericnameid").val()
+                
+                let deleteGenericName = "deleteGenericName"
+                $.post("controllers/combo-setup.php", {id:id, deleteGenericName:deleteGenericName},function(data){
+                    $("#genericname-status").html(data)
+                    GetGenericNameFunction()
+                })
+            })
+           
+        })
+    </script>
+</body>
+
+</html>

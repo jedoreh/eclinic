@@ -1,0 +1,126 @@
+let department = "RECORD DEPARTMENT"
+            let revenueorderlist = []
+            let revenueorderitem = {"genericname":"Corpse Card.,PAID",
+                                    "department":"RECORD DEPARTMENT",
+                                    "departmentitemgroup":"Morgue",
+                                    "sellingprice":0,
+                                    "reorderlevel":0,
+                                    "unittype":"pieces",
+                                    "itemid":0,
+                                    "quantity":1}
+            revenueorderlist.push(revenueorderitem)
+            
+        var selectedFile;
+        document
+          .getElementById("fileUpload")
+          .addEventListener("change", function(event) {
+            selectedFile = event.target.files[0];
+          });
+        document
+          .getElementById("uploadExcel")
+          .addEventListener("click", function() {
+            if (selectedFile) {
+              console.log("Hi...");
+              var fileReader = new FileReader();
+              fileReader.onload = function(event) {
+                var data = event.target.result;
+    
+                var workbook = XLSX.read(data, {
+                  type: "binary"
+                });
+    
+                var read_voters_html=`Inserted<br>`;
+                workbook.SheetNames.forEach(sheet => {
+                  let rowObject = XLSX.utils.sheet_to_row_object_array(
+                    workbook.Sheets[sheet]
+                  );
+                  let jsonObject = JSON.stringify(rowObject);
+                //   document.getElementById("jsonData").innerHTML = jsonObject;
+                  console.log(rowObject);
+                    
+                  rowObject.forEach(function(o) {
+                    // var form_data=JSON.stringify((o));
+                    let ADDRESS = o.ADDRESS
+                    let AMOUNT_PAID = o.AMOUNT_PAID
+                    let CAUSE_OF_DEATH = o.CAUSE_OF_DEATH
+                    let CORPSE_ADMISSION_DATE = o.CORPSE_ADMISSION_DATE
+                    let CORPSE_ADMISSION_FEE = o.CORPSE_ADMISSION_FEE
+                    let CORPSE_TYPE = o.CORPSE_TYPE
+                    let DATE_OF_DEATH = o.DATE_OF_DEATH
+                    let EMBALMENT_FEE = o.EMBALMENT_FEE
+                    let FIRST_NAME_CORPSE = o.FIRST_NAME_CORPSE
+                    let FIRST_NAME_KIN = o.FIRST_NAME_KIN
+                    let LAST_NAME_KIN = o.LAST_NAME_KIN
+                    let LGA_OF_ORIGIN = o.LGA_OF_ORIGIN
+                    let MAINTENANE_FEE = o.MAINTENANE_FEE
+                    let MARITAL_STATUS = o.MARITAL_STATUS
+                    let NATIONALITY = o.NATIONALITY
+                    let OCCUPATION = o.OCCUPATION
+                    let OLD_HOSPITAL_NO = o.OLD_HOSPITAL_NO
+                    let PHONE = o.PHONE
+                    let PLACE_OF_DEATH = o.PLACE_OF_DEATH
+                    let RELATIONSHIP = o.RELATIONSHIP
+                    let REMARK = o.REMARK
+                    let SEX = o.SEX
+                    let SOURCE_OF_CORPSE = o.SOURCE_OF_CORPSE
+                    let STATE_OF_ORIGIN = o.STATE_OF_ORIGIN
+                    let STATUS = o.STATUS
+                    let SURNAME_CORPSE = o.SURNAME_CORPSE
+                    let TALLY_NO = o.TALLY_NO
+                    let TOTAL_BILL = o.TOTAL_BILL
+                    let TRIBE= o.TRIBE
+
+                    let person = FIRST_NAME_KIN + " " + LAST_NAME_KIN + "[" + FIRST_NAME_CORPSE + " " + SURNAME_CORPSE + "]"
+                    let list = JSON.stringify(revenueorderlist)
+                    let price = 0
+                    let totalrevenueorderitems = 1
+                    
+                    let bulkUploadCorpse = "bulkUploadCorpse"
+
+                    $.post("controllers/patient-record.php",
+                            {department:department,patientname:person,price:price,items:totalrevenueorderitems,list:list,ADDRESS:ADDRESS,
+                    AMOUNT_PAID:AMOUNT_PAID,
+                    CAUSE_OF_DEATH:CAUSE_OF_DEATH,
+                    CORPSE_ADMISSION_DATE:CORPSE_ADMISSION_DATE,
+                    CORPSE_ADMISSION_FEE:CORPSE_ADMISSION_FEE,
+                    CORPSE_TYPE:CORPSE_TYPE,
+                    DATE_OF_DEATH:DATE_OF_DEATH,
+                    EMBALMENT_FEE:EMBALMENT_FEE,
+                    FIRST_NAME_CORPSE:FIRST_NAME_CORPSE,
+                    FIRST_NAME_KIN:FIRST_NAME_KIN,
+                    LAST_NAME_KIN:LAST_NAME_KIN,
+                    LGA_OF_ORIGIN:LGA_OF_ORIGIN,
+                    MAINTENANE_FEE:MAINTENANE_FEE,
+                    MARITAL_STATUS:MARITAL_STATUS,
+                    NATIONALITY:NATIONALITY,
+                    OCCUPATION:OCCUPATION,
+                    OLD_HOSPITAL_NO:OLD_HOSPITAL_NO,
+                    PHONE:PHONE,
+                    PLACE_OF_DEATH:PLACE_OF_DEATH,
+                    RELATIONSHIP:RELATIONSHIP,
+                    REMARK:REMARK,
+                    TRIBE:TRIBE,
+                    SEX:SEX,
+                    SOURCE_OF_CORPSE:SOURCE_OF_CORPSE,
+                    STATE_OF_ORIGIN:STATE_OF_ORIGIN,
+                    STATUS:STATUS,
+                    SURNAME_CORPSE:SURNAME_CORPSE,
+                    TALLY_NO:TALLY_NO,
+                    TOTAL_BILL:TOTAL_BILL,
+                    bulkUploadCorpse:bulkUploadCorpse},
+                            function(data){
+                                console.log(data)
+                                console.log(SURNAME_CORPSE)
+
+                            })
+
+                    
+                   
+    
+                    })
+                });
+                
+              };
+              fileReader.readAsBinaryString(selectedFile);
+            }
+          });

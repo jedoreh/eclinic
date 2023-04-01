@@ -1,0 +1,1148 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>medical</title>
+    <link rel="icon" href="img/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- themify CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- flaticon CSS -->
+    <link rel="stylesheet" href="css/flaticon.css">
+    <!-- magnific popup CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- nice select CSS -->
+    <!-- <link rel="stylesheet" href="css/nice-select.css"> -->
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="css/slick.css">
+    <!-- style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        thead, tbody, tr { display: block; }
+
+        tr:after {
+            content: ' ';
+            display: block;
+            visibility: hidden;
+            clear: both;
+        }
+
+        
+
+        tbody {
+            height: 250px;
+            overflow-y: auto;
+        }
+
+        thead {
+            /* fallback */
+        }
+
+        thead th {
+            height: 30px;
+
+            /*text-align: left;*/
+        }
+
+        tbody td, thead th {
+            width: 12.2%;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <!--::header part start::-->
+    <header class="main_menu">
+            
+        </header>
+        <!-- Header part end-->
+       
+    <!-- breadcrumb start-->
+    <section class="breadcrumb breadcrumb_bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb_iner">
+                        <div class="form-row">
+                            <div class="form-group col-md-2">
+                                <span id="username" style="color:#F1F1F1;font-size: 17px;"></span>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <span id="pagetitle" style="color:#F1F1F1;font-size: 20px;font-weight: bolder;">View Item Orders</span>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <span id="sysdate" style="color:#F1F1F1"></span>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <span id="systime" style="color:#F1F1F1"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- breadcrumb start-->
+
+    
+
+    <!--::regervation_part start::-->
+    <section class="regervation_part padding_bottom" style="margin-top:30px;">
+        <div class="container">
+            <div class="row align-items-center regervation_content">
+                <div class="col-md-12">
+                    <div class="regervation_part_iner">
+                        <br>
+                        <form action="controllers/add-staff.php" class="frmaddperson">
+                            <!-- <h2>View Item Orders</h2> -->
+                            <div class="label label-success" id="errorlogin"></div>
+                            <div class="form-row">
+                                
+                            </div>
+                            
+                        </form>
+                    </div>
+                    <div class="card-box">
+                        <ul class="nav nav-tabs nav-tabs-solid nav-tabs-rounded nav-justified">
+                            <!-- <li class="nav-item"><a class="nav-link btn-primary active" href="#solid-rounded-justified-tab6" data-toggle="tab">Sex</a></li> -->
+                            <!-- <li class="nav-item"><a class="nav-link btn-primary active" href="#solid-rounded-justified-tab3" data-toggle="tab"> View Item Order</a></li>  -->
+                            <!-- <li class="nav-item"><a class="nav-link btn-primary" href="#solid-rounded-justified-tab7" data-toggle="tab">Weight</a></li>
+                            <li class="nav-item"><a class="nav-link btn-primary" href="#solid-rounded-justified-tab8" data-toggle="tab">Frequency</a></li>
+                            <li class="nav-item"><a class="nav-link btn-primary" href="#solid-rounded-justified-tab4" data-toggle="tab">Duration</a></li>
+                            <li class="nav-item"><a class="nav-link btn-primary" href="#solid-rounded-justified-tab23" data-toggle="tab">Routes</a></li>
+                            <li class="nav-item"><a class="nav-link btn-primary" href="#solid-rounded-justified-tab9" data-toggle="tab">Dosage Unit</a></li> -->
+                            <!-- <li class="nav-item dropdown">
+                                <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Stocking Setup</a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item" href="#solid-rounded-justified-tab2" data-toggle="tab">Route of Administration</a>
+                                    <a class="dropdown-item" href="#solid-rounded-justified-tab3" data-toggle="tab">Category of Importance</a>
+                                    <a class="dropdown-item" href="#solid-rounded-justified-tab4" data-toggle="tab">Stock Location</a>
+                                    <a class="dropdown-item" href="#solid-rounded-justified-tab5" data-toggle="tab">Physical Position</a> 
+                                </div>
+                            </li> -->
+                            <!-- <li class="nav-item"><a class="nav-link" href="#solid-rounded-justified-tab3" data-toggle="tab">Department Item Group</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#solid-rounded-justified-tab4" data-toggle="tab">Generic Name</a></li> -->
+                            <!-- <li class="nav-item"><a class="nav-link" href="#solid-rounded-justified-tab5" data-toggle="tab">State</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#solid-rounded-justified-tab6" data-toggle="tab">Default Strength</a></li> -->
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane show active" id="solid-rounded-justified-tab3">
+                                <br>
+                                <!-- <h3>Sex</h3> -->
+                                <div class="container">
+                                    <div class="row">
+                                        
+                                        <div class="col-12">
+                                            
+                                            <div class="card">
+                                                <div class="page-status"></div>
+                                                <div class="card-header">
+                                                    <h4 class="card-title d-inline-block">View Item Orders</h4>  <p class="btn btn-primary float-right" id="view-item-order-count"></p>
+                                                    <p class="float-right"><input type="text" id="searchrevenueorder" name="searchrevenueorder" placeholder="Search Revenue Order" style="font-size: 18px;"></p>
+                                                </div>
+                                                <div class="card-body p-0">
+                                                    <div class="table-responsive scrollable">
+                                                        <table class="table">
+                                                            <thead>
+                                                                <tr>
+                                                                    
+                                                                    <th>Number</th>
+                                                                    <th>Person</th>
+                                                                    <th>Comments</th>
+                                                                    <th>Date</th>
+                                                                    <th>Total Price</th>
+                                                                    <th>Paid</th>
+                                                                    <th>Staff</th>
+                                                                    
+                                                                    <th>Action</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody id="view-all-revenue-order-list">
+                                                                
+                                                                
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="col-12">
+                                            
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    <h4 class="card-title d-inline-block">View Items: <span style="font-size:20px;" id="viewrevenueordernumber"></span></h4>  <p class="btn btn-primary float-right" id="view-revenue-order-count"></p>
+                                                    <!-- <p class="float-right"><input type="text" id="searchsex" name="searchsex" placeholder="Search Sex" style="font-size: 18px;"></p> -->
+                                                </div>
+                                                <div class="card-body p-0">
+                                                    <div class="table-responsive">
+                                                        <table class="table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th><span style="cursor: pointer;" class="checkallitem" id="selectallitems">Select All</span></th>
+                                                                    <th>Item</th>
+                                                                    <th>Department</th>
+                                                                    <th>Dept Item Group</th>
+                                                                    <th>Price</th>
+                                                                    <th>Qty</th>
+                                                                    <th>Total</th>
+                                                                    
+                                                                    <th>Status</th>
+                                                                    <th>x</th>
+                                                                  
+                                                                    <th>Action</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody id="view-revenue-order-list">
+                                                                
+                                                                
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="col-12">
+                                            
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    <button type="submit" class="genric-btn primary" id="add-revenue-order-button" style="font-size: 24px;border-radius: 8px;">Pay</button>
+                                                    <button type="submit" class="genric-btn success" id="discard-revenue-order-button" style="font-size: 24px;border-radius: 8px;">Cancel</button>
+                                                    <button type="submit" class="genric-btn primary" id="update-revenue-order-button" style="font-size: 24px;border-radius: 8px;">Update</button>
+                                                    <button type="submit" class="genric-btn primary" id="print-reciept-revenue-order-button" style="font-size: 24px;border-radius: 8px;">Reciept</button>
+                                                    <button type="submit" class="genric-btn danger" id="cancel-revenue-order-button" style="font-size: 24px;border-radius: 8px;">Clear</button>
+                                                    <button type="submit" class="genric-btn info" id="tally-revenue-order-button" style="font-size: 24px;border-radius: 8px;">Tally</button>
+                                                    <!-- <button type="submit" class="genric-btn info" id="update-corpse-revenue-order-button" style="font-size: 24px;border-radius: 8px;">Update Corpse Slip</button> -->
+                                                    <button type="submit" class="genric-btn info" id="update-patient-revenue-order-button" style="font-size: 24px;border-radius: 8px;">Update Patient Slip</button>
+                                                    <p class="btn btn-success float-right" style="font-size: 24px;">
+                                                        Deposit<br>
+                                                        <input type="number" name="deposit" id="deposit" class="form-control" required>
+                                                            
+                                                    </p> 
+                                                    <p class="btn btn-success float-right" style="font-size: 24px;">
+                                                        <select name="paymenttype" id="paymenttype" class="form-control" required>
+                                                            <option value="CASH">CASH</option>
+                                                            <option value="POS">POS</option>
+                                                            <option value="TRANSFER">TRANSFER</option>
+                                                        </select>
+                                                    </p> 
+                                                    <p class="btn btn-success float-right" id="pay-revenue-order-price" style="font-size: 24px;"></p>  
+                                                    <p class="btn btn-primary float-right" id="view-revenue-order-price" style="font-size: 24px;"></p>
+                                                    <!-- <p class="float-right"><input type="text" id="searchsex" name="searchsex" placeholder="Search Sex" style="font-size: 18px;"></p> -->
+                                                </div>
+                                                <input type="hidden" id="revenue-order-id">
+                                                <input type="hidden" id="revenue-order-number">
+                                                <input type="hidden" id="paid" value="0">
+                                                <input type="hidden" id="status" value="">
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-5 col-md-6">
+                    <div class="reservation_img">
+                        <img src="img/loginphoto.jpg" alt="">
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <!--::regervation_part end::-->
+
+    
+    <!-- footer part start-->
+    <footer class="footer-area">
+
+        <div class="copyright_part">
+            
+        </div>
+    </footer>
+
+    <!-- footer part end-->
+
+    <!-- jquery plugins here-->
+
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <!-- popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- easing js -->
+    <script src="js/jquery.magnific-popup.js"></script>
+    <!-- swiper js -->
+    <script src="js/swiper.min.js"></script>
+    <!-- swiper js -->
+    <script src="js/masonry.pkgd.js"></script>
+    <!-- particles js -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- <script src="js/jquery.nice-select.min.js"></script> -->
+    <!-- swiper js -->
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <!-- contact js -->
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <script src="js/contact.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+    <script src="views/masterpage.js"></script>
+    <!-- <script src="views/records.js"></script>
+    <script src="views/corpse-list.js"></script> -->
+    <script>
+        $(document).ready(function(){
+            // get departments
+            let departmentitemgrouplist = ``
+            let departmentlist = ``
+            
+           
+               $("#tally-revenue-order-button").hide()
+
+             
+
+                // Add item to revenue order List
+                let revenueorderlist = []
+                let totalrevenueorderprice = 0
+                let totalrevenueorderitems = 0
+                $("#add-item-button").on("click", function(evt){
+                    evt.preventDefault()
+                    let selecteditem = $("#selectitem").val()
+                    if(selecteditem!="" && selecteditem!=null){
+                        let splititem = selecteditem.split(",")
+                        let itemid = splititem[0]
+                        console.log(itemid)
+
+                        //Get all the pieces
+                        let totalpreviousquantity = 0
+                        let getStockItemListByItemId = "getStockItemListByItemId"
+                        let sellingprice = 0
+                        let sellingpriceperpiece = 0
+                        let sellingpriceperweight = 0
+                        let sellingpricepervolume = 0
+                        let reorderlevel = 0
+                        let reorderlevelunit = ""
+                        
+                        let unittype = ""
+                        $.post("controllers/combo-setup.php",{id:itemid,getStockItemListByItemId:getStockItemListByItemId},function(formdata){
+                            //console.log(formdata)
+                            if(formdata!="No Record Found"){
+                                let data = JSON.parse(formdata)
+                                
+                                $.each(data.records, function(key, val) {
+                                
+                                    totalpreviousquantity += parseFloat(val.previousquantity)
+                                    sellingpriceperpiece = parseFloat(val.sellingprice)
+                                    sellingpriceperweight = parseFloat(val.sellingpriceperstrength)
+                                    sellingpricepervolume = parseFloat(val.sellingpriceperliquidstrength)
+                                    reorderlevel = val.reorderlevel
+                                    unittype = $("#selectunittype").val()
+                                    if(unittype=="pieces"){
+                                        sellingprice = sellingpriceperpiece
+                                    }else if(unittype=="weight"){
+                                        sellingprice = sellingpriceperweight
+                                    }else if(unittype=="volume"){
+                                        sellingprice = sellingpricepervolume
+                                    }
+                                    console.log(sellingprice)
+
+                                })
+                                let itemgenericname = splititem[1]
+                                let department = $("#selectdepartment").val()
+                                splitdepartment = department.split(",")
+                                department = splitdepartment[1]
+                                let departmentitemgroup = $("#selectdepartmentitemgrouping").val()
+                                let revenueorderitem = {"genericname":itemgenericname,
+                                                        "department":department,
+                                                        "departmentitemgroup":departmentitemgroup,
+                                                        "sellingprice":sellingprice,
+                                                        "reorderlevel":reorderlevel,
+                                                        "quantity":1}
+                                revenueorderlist.push(revenueorderitem)
+                                console.log(revenueorderlist)
+                                displayrevenueorder(revenueorderlist)
+                            }
+                            
+                        })
+                        
+                    }
+                })
+
+                $("#add-allitem-button").on("click", function(evt){
+                    evt.preventDefault()
+                    let selecteditem = $("#selectallitem").val()
+                    if(selecteditem!="" && selecteditem!=null){
+                        let splititem = selecteditem.split(",")
+                        let itemid = splititem[0]
+                        console.log(itemid)
+
+                        //Get all the pieces
+                        let totalpreviousquantity = 0
+                        let getStockItemListByItemId = "getStockItemListByItemId"
+                        let sellingprice = 0
+                        let sellingpriceperpiece = 0
+                        let sellingpriceperweight = 0
+                        let sellingpricepervolume = 0
+                        let reorderlevel = 0
+                        let reorderlevelunit = ""
+                        
+                        let unittype = ""
+                        $.post("controllers/combo-setup.php",{id:itemid,getStockItemListByItemId:getStockItemListByItemId},function(formdata){
+                            //console.log(formdata)
+                            if(formdata!="No Record Found"){
+                                let data = JSON.parse(formdata)
+                                
+                                $.each(data.records, function(key, val) {
+                                
+                                    totalpreviousquantity += parseFloat(val.previousquantity)
+                                    sellingpriceperpiece = parseFloat(val.sellingprice)
+                                    sellingpriceperweight = parseFloat(val.sellingpriceperstrength)
+                                    sellingpricepervolume = parseFloat(val.sellingpriceperliquidstrength)
+                                    reorderlevel = val.reorderlevel
+                                    unittype = $("#selectunittype").val()
+                                    if(unittype=="pieces"){
+                                        sellingprice = sellingpriceperpiece
+                                    }else if(unittype=="weight"){
+                                        sellingprice = sellingpriceperweight
+                                    }else if(unittype=="volume"){
+                                        sellingprice = sellingpricepervolume
+                                    }
+                                    console.log(sellingprice)
+
+                                })
+                                let itemgenericname = splititem[1]
+                                let department = $("#selectdepartment").val()
+                                splitdepartment = department.split(",")
+                                department = splitdepartment[1]
+                                let departmentitemgroup = $("#selectdepartmentitemgrouping").val()
+                                let revenueorderitem = {"genericname":itemgenericname,
+                                                        "department":department,
+                                                        "departmentitemgroup":departmentitemgroup,
+                                                        "sellingprice":sellingprice,
+                                                        "reorderlevel":reorderlevel,
+                                                        "quantity":1}
+                                revenueorderlist.push(revenueorderitem)
+                                console.log(revenueorderlist)
+                                displayrevenueorder(revenueorderlist)
+                            }
+                            
+                        })
+                        
+                    }
+                })
+
+                let totalpaiditems = 0
+                let totalpaid = 0
+                function displayrevenueorder(revenueorderlist){
+                    console.log(revenueorderlist)
+                    if(revenueorderlist.length>0){
+                        let count = 0
+                        let totalprice = 0
+                        let totalitems = 0
+                        let pricinglist = ``
+                        
+                        totalpaiditems = 0
+                        totalpaid = 0
+                        revenueorderlist.forEach(element => {
+                            console.log(element)
+                            let item = element.genericname
+                            let status = "NOT PAID"
+                            if(item.includes(",")){
+                                console.log(item)
+                                itemgroup = item.split(",")
+                                item = itemgroup[0]
+                                status = itemgroup[1]
+                                
+                            } 
+                            let department = element.department
+                            let departmentitemgroup = element.departmentitemgroup
+                            let price = parseFloat(element.sellingprice)
+                            let quantity = element.quantity
+                            
+                            let total = parseFloat(price) * parseFloat(quantity)
+                            totalitems++
+                            totalprice += total
+                          
+                            if(status=="PAID"){
+                                totalpaiditems++
+                                totalpaid += total
+                            }
+                            totalrevenueorderprice = totalprice
+                            totalrevenueorderitems = totalitems
+                                let insert_checkbox = ""
+                                if(status=="PAID"){
+                                    insert_checkbox = "&check;"
+                                } else {
+                                    insert_checkbox = `<input type="checkbox" style="height: 25px;width:25px;" class="itemselect" data-id="` + count + `">`
+                                   
+                                }
+                                pricinglist += `<tr>
+                                    <td>
+                                        
+                                        ` + insert_checkbox + `
+                                    </td> 
+                                                    <td>` + item + `</td>
+                                                    <td>` + department + `</td>
+                                                    <td>`+ departmentitemgroup + `</td>
+                                                    <td>&#8358;`+ price.toFixed(2) + `</td>
+                                                    <td>`+ quantity + `</td>
+                                                    <td>&#8358;` + total.toFixed(2) + `</td>
+                                                    <td>`+ status + `</td>
+                                                    <td><input type="number" min="1" max="1000" class="multiplyitem" data-id="` + count + `"></td>
+                                                    <td><span class="additem" data-id="` + count + `" style="font-size: 16px;"><i class="fa fa-plus-square"></i>
+                                                        <span class="subtractitem" data-id="` + count + `" style="font-size: 16px;"><i class="fa fa-minus-square"></i>
+                                                            <span class="deleteitem" data-id="` + count + `" style="font-size: 16px;"><i class="fa fa-trash-o"></i></span></td>
+                                                </tr>
+                                    `
+                                    count++
+                                });
+                                $("#view-revenue-order-list").html(pricinglist)
+                                $("#view-revenue-order-count").html(totalitems + " Item(s)")
+                                $("#view-revenue-order-price").html("&#8358;" + totalprice.toFixed(2))
+                                $("#pay-revenue-order-price").html("Paid: &#8358;" + totalpaid.toFixed(2) + " (" + totalpaiditems.toFixed(0) + " Items)")
+                                $("#selectallitems").on("click", function(evt){
+                                    totalpaiditems =0
+                                    totalpaid =0
+                                    $(".itemselect").each(function(index, obj){
+                                        $(this).prop('checked',true)
+                                        console.log($(this).attr("data-id"))
+                                        let id = $(this).attr("data-id")
+                                        let price = revenueorderlist[id].sellingprice
+                                        let quantity = revenueorderlist[id].quantity
+
+                                        if(!revenueorderlist[id].genericname.includes("PAID")){
+                                            let total= parseFloat(price) * parseFloat(quantity)
+                                            totalpaiditems++
+                                            totalpaid += total
+                                            $("#pay-revenue-order-price").html("Paid: &#8358;" + totalpaid.toFixed(2) + " (" + totalpaiditems.toFixed(0) + " Items)")
+                                        }
+                                    })
+                                })
+                                $(".itemselect").change(function(){
+                                    if($(this).prop('checked')==true){
+                                        let id = $(this).attr("data-id")
+                                        let price = revenueorderlist[id].sellingprice
+                                        let quantity = revenueorderlist[id].quantity
+                                        if(!revenueorderlist[id].genericname.includes("PAID")){
+                                            let total= parseFloat(price) * parseFloat(quantity)
+                                            totalpaiditems++
+                                            totalpaid += total
+                                            $("#pay-revenue-order-price").html("Paid: &#8358;" + totalpaid.toFixed(2) + " (" + totalpaiditems.toFixed(0) + " Items)")
+                                        }
+                                    } else {
+                                        let id = $(this).attr("data-id")
+                                        let price = revenueorderlist[id].sellingprice
+                                        let quantity = revenueorderlist[id].quantity
+                                        if(!revenueorderlist[id].genericname.includes("PAID")){
+                                            let total= parseFloat(price) * parseFloat(quantity)
+                                            totalpaiditems--
+                                            totalpaid -= total
+                                            $("#pay-revenue-order-price").html("Paid: &#8358;" + totalpaid.toFixed(2) + " (" + totalpaiditems.toFixed(0) + " Items)")
+                                        }
+                                    }
+                                   
+                                    
+                                })
+                                $(".deleteitem").on("click", function(evt){
+                                        evt.preventDefault()
+                                        let id = $(this).attr("data-id")
+                                    
+                                        revenueorderlist.splice(id, 1)
+                                        console.log(id)
+                                        
+                                        displayrevenueorder(revenueorderlist)
+
+                                    })
+                                $(".multiplyitem").on('change paste', function () {
+                                    let qty = parseFloat($(this).val())
+
+                                        let id = $(this).attr("data-id")
+                                    
+                                        revenueorderlist[id].quantity = qty
+                                    console.log(revenueorderlist)
+                                        // $("#view-revenue-order-price").html("&#8358;" + totalprice.toFixed(2))
+
+                                        displayrevenueorder(revenueorderlist)
+
+                                    })
+                                $(".additem").on("click", function(evt){
+                                    evt.preventDefault()
+                                    let id = $(this).attr("data-id")
+                                
+                                    revenueorderlist[id].quantity = revenueorderlist[id].quantity + 1
+                                   console.log(revenueorderlist)
+                                    // $("#view-revenue-order-price").html("&#8358;" + totalprice.toFixed(2))
+
+                                    displayrevenueorder(revenueorderlist)
+
+                                })
+
+                                $(".subtractitem").on("click", function(evt){
+                                        evt.preventDefault()
+                                        let id = $(this).attr("data-id")
+                                    
+                                        revenueorderlist[id].quantity = revenueorderlist[id].quantity -1
+                                        if(revenueorderlist[id].quantity==0){
+                                            revenueorderlist.splice(id, 1)
+                                        }
+                                        
+                                        
+                                        displayrevenueorder(revenueorderlist)
+
+                                    })
+                               
+                    } else {
+                        $("#view-revenue-order-list").html("")
+                        $("#view-revenue-order-count").html("")
+                        $("#view-revenue-order-price").html("")
+                    }
+                }
+
+                $("#cancel-revenue-order-button").on("click", function(evt){
+                    evt.preventDefault()
+                    revenueorderlist = []
+                    displayrevenueorder(revenueorderlist)
+                })
+
+                $(".page-status").html("")
+                $("#tally-revenue-order-button").on("click",function(evt){
+                    evt.preventDefault()
+
+
+                    revenueorderlist.forEach(element => {
+                        let item = element.genericname
+                        let status = "NOT PAID"
+                        if(item.includes(",")){
+                            console.log(item)
+                            itemgroup = item.split(",")
+                            item = itemgroup[0]
+                            status = itemgroup[1]
+                            
+                        } 
+                        
+                        
+                        if(status=="PAID"){
+                           let tally = $(this).attr("data-id")
+                           console.log($(this).attr("data-id"))
+                           
+                            console.log(selectitemorder)
+                            let revenueordernumber = selectitemorder.revenueordernumber
+                            let getRevenueOrder = "getRevenueOrder"
+                            $.post("controllers/finance-record.php", {searchItem:revenueordernumber,getRevenueOrder:getRevenueOrder}, function(data){
+
+                                let tallyname = $(this).text()
+                                 let fdata = JSON.parse(data)
+                                 let patientname = fdata.records[0].patientname
+                                 let enteredby = fdata.records[0].enteredby
+                                 let description = tallyname + ", " + revenueordernumber + ", " + item + ", Staff - " + enteredby
+
+                                 let insertTally = "insertTally"
+                                 $.post("controllers/patient-record.php",{description:description,patientname:patientname,tallynumber:tally,insertTally:insertTally}, function(data){
+                                     console.log(data)
+                                 })
+
+                                $(".page-status").html("Tally " + tally + " Assigned Successfully")
+                            })
+
+                           
+                        } else {
+                            console.log("Not Paid")
+                            $(".page-status").html("Cannot Assign Tally")
+                        }
+
+                    });
+                })
+                function zeroifnull(value){
+                    if(value==null){
+                        return 0
+                    } else if(value==""){
+                        return 0
+                    } else {
+                        return parseFloat(value)
+                    }
+                }
+
+                function emptyifnull(value){
+                    if(value==null){
+                        return ""
+                    } else if(value==""){
+                        return ""
+                    } else {
+                        return value
+                    }
+                }
+                $("#add-revenue-order-button").on("click",function(evt){
+                    evt.preventDefault()
+                    let insert_check = false
+                    $(".itemselect").each(function(index, obj){
+                        if($(this).prop('checked')==true){
+                            console.log($(this).attr("data-id"))
+                            let id = $(this).attr("data-id")
+                            let item = revenueorderlist[id].genericname
+                            item = item + ",PAID"
+                            revenueorderlist[id].genericname = item
+                            insert_check = true
+                        }
+                       
+                    })
+                    let deposit = zeroifnull($("#deposit").val())
+                    if (insert_check == true) {
+                        let updatePayment = "updatePayment"
+                        let list = JSON.stringify(revenueorderlist)
+                        
+                        let price = parseFloat(totalrevenueorderprice).toFixed(2)
+                        let id = $("#revenue-order-id").val()
+                        let revenueordernumber = $("#revenue-order-number").val()
+                        
+                        let paid = 0
+                        if(deposit>0){
+                            paid = parseFloat(deposit).toFixed(2)
+                        } else {
+                            paid = parseFloat(totalpaid).toFixed(2)
+                        }
+                        
+                        let paiditems = totalpaiditems
+                        let balance = price - paid
+                        let paymenttype = $("#paymenttype").val()
+                        
+                        console.log(list,price,id,revenueordernumber,paid,paiditems,balance)
+                        $.post("controllers/finance-record.php", {paymenttype:paymenttype,balance:balance,paiditems:paiditems,paid:paid,revenueordernumber:revenueordernumber,id:id,price:price,items:totalrevenueorderitems,list:list,updatePayment:updatePayment}, function(data){
+                        
+                        
+                            console.log(data)
+                            list = JSON.parse(list)
+
+                            list.forEach(element => {
+                                let item = element.genericname
+                                if(item.includes(",")){
+                                    console.log(element)
+                                    itemgroup = item.split(",")
+                                    item = itemgroup[0]
+                                    status = itemgroup[1]
+                                    
+
+                                        let department = element.department
+                                        let departmentitemgroup = element.departmentitemgroup
+                                        let price = element.sellingprice
+                                        let quantity = element.quantity
+                                        let unittype = element.unittype
+                                        let itemid = element.itemid
+                                        let id = element.itemid
+                                        
+                                        let insertAccountEntryStockList = "insertAccountEntryStockList"
+
+                                        let total = parseFloat(price) * parseFloat(quantity)
+                                        console.log(id, itemid, price, quantity,unittype, total)
+                                        $.post("controllers/finance-record.php", {id:id, itemid:itemid,department:department,departmentitemgroup:departmentitemgroup,total:total,quantity:quantity,unittype:unittype,revenueordernumber:revenueordernumber,paymenttype:paymenttype,item:item,list:list,insertAccountEntryStockList:insertAccountEntryStockList}, function(data){
+                                            console.log(data)
+                                            let newdata = JSON.parse(data)
+                                            let secondaryitems = newdata.records[0].combined
+                                            if(secondaryitems==""){
+                                                //do nothing
+                                                console.log("No Combined items")
+                                            } else{
+                                                secondaryitems = JSON.parse(secondaryitems)
+                                                $.each(secondaryitems, function(key, val) {
+                                                    let itemname = val.itemname
+                                                    let itemid = val.itemid
+                                                    let stocklistitemid = val.stockitemlistid
+                                                    let totalprice = val.totalprice
+                                                    let itemquantity = val.itemquantity
+                                                    let splititemquantity = itemquantity.split(" ")
+                                                    itemquantity = parseFloat(splititemquantity[0])
+                                                    let itemquantityprice = parseFloat(val.itemquantityprice)
+                                                    let combineditemsunittype = val.combineditemsunittype
+                                                    let unit = val.unit
+                                                    let updateSecondaryItem = "updateSecondaryItem"
+                                                    console.log(itemname, itemid, stocklistitemid, totalprice, itemquantity, itemquantityprice, combineditemsunittype, unit)
+                                                    $.post("controllers/finance-record.php",{stocklistitemid:stocklistitemid,paymenttype:paymenttype,updateSecondaryItem:updateSecondaryItem,revenueordernumber:revenueordernumber,itemname:itemname,itemid:itemid,itemquantity:itemquantity,itemquantityprice:itemquantityprice,unittype:combineditemsunittype,unit:unit},function(formdata){
+                                                        console.log(formdata)
+                                                    })
+                                                })
+                                            }
+
+                                            updateTallyNumber()
+                                            revenueorderlist = []
+                                            displayrevenueorder(revenueorderlist)
+
+                                            getRevenueOrders()
+                                            
+
+                                            //check if item is combined
+
+                                        })
+                                    
+                                    
+                                    
+                                } 
+                                
+                            })
+                        
+                        }) 
+                    } else if(deposit>0) {
+
+                        console.log("deposit")
+                        //get all fields
+                        let updatePayment_Deposit = "updatePayment_Deposit"
+                        let list = JSON.stringify(revenueorderlist)
+                        
+                        let price = parseFloat(totalrevenueorderprice).toFixed(2)
+                        let id = $("#revenue-order-id").val()
+                        let revenueordernumber = $("#revenue-order-number").val()
+                        
+                        let paid = 0
+                        paid = parseFloat(deposit)
+                        let prepaid = parseFloat($("#paid").val())
+                        let status = $("#status").val()
+                        if(status.includes("_")){
+                            let splitstatus = status.split("_")
+                            let number = parseInt(splitstatus[1])
+                            number++
+                            status = splitstatus[0] + "_" + number.toFixed(0)
+                        } else {
+                            status = status + "_1"
+
+                        }
+
+                        let paiditems = totalpaiditems
+                        let balance = price - paid - prepaid
+                        let totalpaid = paid + prepaid
+                        let paymenttype = $("#paymenttype").val()
+
+                        paid = parseFloat(deposit).toFixed(2)
+                        
+                        console.log(totalpaid,status,list,price,id,revenueordernumber,paid,paiditems,balance,prepaid)
+                        $.post("controllers/finance-record.php", {status:status,totalpaid:totalpaid,paymenttype:paymenttype,balance:balance,paiditems:paiditems,paid:paid,revenueordernumber:revenueordernumber,id:id,price:price,items:totalrevenueorderitems,list:list,updatePayment_Deposit:updatePayment_Deposit}, function(data){
+                            //add to accountentry
+
+
+
+                            //add payment
+                            updateTallyNumber()
+                            //update all revenueorders
+                            revenueorderlist = []
+                            displayrevenueorder(revenueorderlist)
+
+                            getRevenueOrders()
+                        })
+                        
+                    } else {
+                        console.log("No New Payment")
+                    }
+                    
+
+                    
+                })
+                $("#update-revenue-order-button").on("click",function(evt){
+                    evt.preventDefault()
+                    let updateRevenueOrder = "updateRevenueOrder"
+                    let list = JSON.stringify(revenueorderlist)
+                    let price = parseFloat(totalrevenueorderprice).toFixed(2)
+                    let id = $("#revenue-order-id").val()
+                    let revenueordernumber = $("#revenue-order-number").val()
+                    
+                    $.post("controllers/finance-record.php", {revenueordernumber:revenueordernumber,id:id,price:price,items:totalrevenueorderitems,list:list,updateRevenueOrder:updateRevenueOrder}, function(data){
+                        console.log(data)
+                        $("#revenue-order-status").html(data)
+                        revenueorderlist = []
+                        displayrevenueorder(revenueorderlist)
+                        getRevenueOrders()
+                    }) 
+                })
+
+                let selectitemorder = []
+
+                $("#discard-revenue-order-button").on("click", function(evt){
+                    evt.preventDefault()
+                    revenueorderlist = []
+                    displayrevenueorder(revenueorderlist)
+                    getRevenueOrders()
+                })
+                getRevenueOrders()
+                $("#searchrevenueorder").on('change keyup paste', function () {
+                    ApplyFilterGetItem();
+                });
+
+                function ApplyFilterGetItem() {
+                    var searchitemservice = $("#searchrevenueorder").val();
+                    console.log("getRevenueOrders")
+                    getRevenueOrders()
+                }
+                function getRevenueOrders(){
+                    $("#add-revenue-order-button").show()
+                    $("#discard-revenue-order-button").hide()
+                    $("#update-revenue-order-button").hide()
+                    $("#print-reciept-revenue-order-button").hide()
+                    $("#update-corpse-revenue-order-button").hide()
+                    $("#update-patient-revenue-order-button").hide()
+                    $("#viewrevenueordernumber").html("New Item Order")
+                    let searchItem = $("#searchrevenueorder").val()
+                   getRevenueOrder = "getRevenueOrder"
+                    $.post("controllers/finance-record.php",{searchItem:searchItem,getRevenueOrder: getRevenueOrder},function(formdata){
+                        //console.log("itemGroup: ",data)
+                        if(formdata=="No Record Found"){
+                            $("#view-item-order-count").html(formdata)
+                        }else{
+                            // console.log(formdata)
+                            console.log(typeof(formdata))
+                            let data=JSON.parse(formdata)
+                            console.log(data)
+                            let count = 0
+                                
+                            let totalrecord = ``
+                            $.each(data.records, function(key, val) {
+                                count++
+                                
+                            totalrecord += `
+                                <tr>
+                                   
+                                    <td>
+                                        
+                                        <a href="#" data-id="` + val.id + `" class="btn btn-outline-default take-btn itemordername"><h3 style="color:blue;">` + val.revenueordernumber + `</h3></a>
+                                    </td>                 
+                                    <td>
+                                            <p style="font-size:18px;font-weight:bold;">` + val.patientname + ` [` + val.hospitalnumber + `]</p>
+                                    </td> 
+                                    <td>
+                                            <p style="font-size:18px;font-weight:bold;">` + val.comments + `</p>
+                                    </td> 
+                                    <td>
+                                            <p style="font-size:18px;font-weight:bold;">` + val.itemorderdate + `</p>
+                                    </td> 
+                                    <td>
+                                            <p style="font-size:18px;font-weight:bold;">&#8358;` + val.totalamount + ` [` + val.items + ` items]</p>
+                                    </td> 
+                                    <td>
+                                            <p style="font-size:18px;font-weight:bold;">&#8358;` + val.paid + ` [` + val.paiditems + ` items]</p>
+                                    </td> 
+                                    <td>
+                                            <p style="font-size:18px;font-weight:bold;">` + val.enteredby + ` (Updated ` + val.updateddate + `)</p>
+                                    </td> 
+                                    
+                                </tr>
+                            `
+                            })
+                            $("#view-item-order-count").html(count + " Record(s) Found")
+                            $("#view-all-revenue-order-list").html(totalrecord)
+                            totalpaiditems = 0
+                            totalpaid = 0
+                        }
+                        
+                        
+
+                            $(".itemordername").on("click", function(evt){
+                                evt.preventDefault()
+                                let id = $(this).attr("data-id")
+                                let getRevenueOrderById = "getRevenueOrderById"
+                                $.post("controllers/finance-record.php", {id:id, getRevenueOrderById: getRevenueOrderById}, function(data){
+                                    console.log(data)
+                                    formdata=JSON.parse(data)
+                                    let itemorder = formdata.itemorder
+                                    selectitemorder = formdata
+                                    revenueorderlist = JSON.parse(itemorder)
+                                    $("#revenue-order-id").val(formdata.id)
+                                    $("#revenue-order-number").val(formdata.revenueordernumber)
+                                    $("#paid").val(formdata.paid)
+                                    $("#status").val(formdata.status)
+                                    displayrevenueorder(revenueorderlist)
+                                    console.log(revenueorderlist)
+                                    $("#tally-revenue-order-button").hide()
+                                    revenueorderlist.forEach(element => {
+                                        let genericname = element.genericname
+                                        if(genericname.includes("Accommodation Fee")){
+                                            let splitgenericname = genericname.split(" ")
+                                            let tallynumber = splitgenericname[2]
+                                            console.log(splitgenericname)
+
+                                            $("#tally-revenue-order-button").text("Tally " + tallynumber)
+                                            $("#tally-revenue-order-button").attr("data-id", tallynumber)
+                                            $("#tally-revenue-order-button").show()
+                                        } else {
+                                            // do nothing for now
+                                        }
+                                    });
+                                    
+                                    $("#viewrevenueordernumber").html(formdata.revenueordernumber)
+                                    
+                                    $("#discard-revenue-order-button").show()
+                                    $("#update-revenue-order-button").show()
+                                    $("#print-reciept-revenue-order-button").show()
+                                    $("#update-corpse-revenue-order-button").show()
+                                    $("#update-patient-revenue-order-button").show()
+                                    $("#cancel-revenue-order-button").hide()
+
+
+                   
+                                })
+                                
+                            })
+
+                        $(".delete-revenue-order").on("click", function(evt){
+                            evt.preventDefault()
+                                let id = $(this).attr("data-id")
+                                let DeleteRevenueOrderById = "DeleteRevenueOrderById"
+                                $.post("controllers/finance-record.php", {id:id, DeleteRevenueOrderById: DeleteRevenueOrderById}, function(data){
+                                    console.log(data)
+                                    $("#revenue-order-status").html(data)
+                                    getRevenueOrders()
+                                })
+                                
+                        })
+                    })
+                    
+
+                }
+
+                function updateTallyNumber(){
+                    $("#tally-revenue-order-button").hide()
+                    revenueorderlist.forEach(element => {
+                        let genericname = element.genericname
+                        if(genericname.includes("Accommodation Fee")){
+                            let splitgenericname = genericname.split(" ")
+                            let tallynumber = splitgenericname[2]
+                            console.log(splitgenericname)
+
+                            $("#tally-revenue-order-button").text("Tally " + tallynumber)
+                            $("#tally-revenue-order-button").attr("data-id", tallynumber)
+                            $("#tally-revenue-order-button").show()
+
+
+                            let item = element.genericname
+                            let tally = tallynumber
+                            if(item.includes(",")){
+                                console.log(item)
+                                itemgroup = item.split(",")
+                                item = itemgroup[0]
+                                status = itemgroup[1]
+                                
+                            } 
+
+                            console.log(selectitemorder)
+                            let revenueordernumber = selectitemorder.revenueordernumber
+                            let getRevenueOrder = "getRevenueOrder"
+                            $.post("controllers/finance-record.php", {searchItem:revenueordernumber,getRevenueOrder:getRevenueOrder}, function(data){
+
+                                let tallyname = "Tally " + tallynumber
+                                 let fdata = JSON.parse(data)
+                                 let patientname = fdata.records[0].patientname
+                                 let enteredby = fdata.records[0].enteredby
+                                 let description = tallyname + ", " + revenueordernumber + ", " + item + ", Staff - " + enteredby
+
+                                 let insertTally = "insertTally"
+                                 $.post("controllers/patient-record.php",{description:description,patientname:patientname,tallynumber:tally,insertTally:insertTally}, function(data){
+                                     console.log(data)
+                                     $("#tally-revenue-order-button").hide()
+                                     $("#pay-revenue-order-price").text("")
+                                 })
+
+                                $(".page-status").html("Tally " + tally + " Assigned Successfully")
+                            })
+                        } else {
+                            // do nothing for now
+                        }
+                    });
+                }
+
+                $("#print-reciept-revenue-order-button").on("click", function(evt){
+                    evt.preventDefault()
+                    let id = $("#revenue-order-id").val()
+                    console.log(id)
+  
+                        // let cardnumber = val.cardnumber
+                        let getPatientAccountPaymentById = "getPatientAccountPaymentById"
+                        $.post("controllers/finance-record.php", {id:id, getPatientAccountPaymentById: getPatientAccountPaymentById}, function(data){
+                            
+                            data = JSON.parse(data)
+                            console.log(data)
+                            if(data.records[0].status!="NOT PAID"){
+                                window.open("patient-reciept.html")
+                            } else {
+                                // let cardnumber = val.cardnumber
+                                let getPatientCardPaymentById = "getPatientCardPaymentById"
+                                $.post("controllers/finance-record.php", {id:id, getPatientCardPaymentById: getPatientCardPaymentById}, function(data){
+                                    console.log(data)
+                                    window.open("patient-invoice.html")
+                                    
+                                })
+                            }
+                            // 
+                            
+                        })
+                })
+
+                $("#update-corpse-revenue-order-button").on("click", function(evt){
+                    evt.preventDefault()
+                    let id = $("#revenue-order-id").val()
+                    console.log(id)
+  
+                        // let cardnumber = val.cardnumber
+                        let getPatientAccountPaymentById = "getPatientAccountPaymentById"
+                        $.post("controllers/finance-record.php", {id:id, getPatientAccountPaymentById: getPatientAccountPaymentById}, function(data){
+                            
+                            data = JSON.parse(data)
+                            console.log(data)
+                            if(data.records[0].status!="NOT PAID"){
+                                window.open("patient-reciept.html")
+                            } else {
+                                // let cardnumber = val.cardnumber
+                                let getPatientCardPaymentById = "getPatientCardPaymentById"
+                                $.post("controllers/finance-record.php", {id:id, getPatientCardPaymentById: getPatientCardPaymentById}, function(data){
+                                    console.log(data)
+                                    window.open("patient-invoice.html")
+                                    
+                                })
+                            }
+                            // 
+                            
+                        })
+                })
+
+                $("#update-patient-revenue-order-button").on("click", function(evt){
+                    evt.preventDefault()
+                    let id = $("#revenue-order-id").val()
+                    console.log(id)
+  
+                        // let cardnumber = val.cardnumber
+                        let getPatientAccountPaymentById = "getPatientAccountPaymentById"
+                        $.post("controllers/finance-record.php", {id:id, getPatientAccountPaymentById: getPatientAccountPaymentById}, function(data){
+                            
+                            data = JSON.parse(data)
+                            console.log(data)
+                            if(data.records[0].status!="NOT PAID"){
+                                window.open("patient-record-update.html")
+                            } else {
+                                // let cardnumber = val.cardnumber
+                                let getPatientCardPaymentById = "getPatientCardPaymentById"
+                                $.post("controllers/finance-record.php", {id:id, getPatientCardPaymentById: getPatientCardPaymentById}, function(data){
+                                    console.log(data)
+                                    window.open("patient-invoice.html")
+                                    
+                                })
+                            }
+                            // 
+                            
+                        })
+                })
+                   
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suyi Payment Invoice</title>
+    <link rel="icon" href="img/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- themify CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <!-- flaticon CSS -->
+    <link rel="stylesheet" href="css/flaticon.css">
+    <!-- magnific popup CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- nice select CSS -->
+    <!-- <link rel="stylesheet" href="css/nice-select.css"> -->
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <!-- style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+
+
+   <div class="container">
+       <div class="form-row">
+           <div class="col-md-6">
+
+            <br>
+            <br>
+            <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size:18px;text-align: center;">SUYI HOSPITAL</span><br>
+            110 M.M. WAY, BENIN CITY,
+            EDO STATE NIGERIA<br>
+            <small>Email: suyihospital@gmail.com
+
+            
+            Tel: 07088008002, 0901189990</small></h5>
+            <div id="GFG" style="font-size: smaller;">
+                
+                <div class="details"></div>
+            </div>
+            
+
+            <div>
+                <input type="button" href="#" class="btn btn-primary" value="Print" onclick="printDiv()">
+                <a href="patient-card-registration.html" class="btn btn-success">Go Back</a>
+            </div>
+           </div>
+       </div>
+   </div>
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <script>
+        function printDiv() {
+            var divContents = document.getElementById("GFG").innerHTML;
+            var a = window.open('', '', 'height=500, width=500');
+            a.document.write('<html>');
+            let body_text = `
+            <h5>SUYI HOSPITAL<br>
+            110 M.M. WAY, BENIN CITY
+            EDO STATE NIGERIA<br>
+            <small>Email: suyihospital@gmail.com
+
+            Tel: 07088008002, 0901189990</small></h5>
+
+            `
+            a.document.write('<body >' + body_text);
+            a.document.write(divContents);
+            a.document.write('</body></html>');
+            a.document.close();
+            a.print();
+        }
+    </script>
+    <script>
+        $(document).ready(function(){
+             // get patient info
+            let getSelectPatientLabTest = "getSelectPatientLabTest"
+            $.post("controllers/patient-record.php",{getSelectPatientLabTest:getSelectPatientLabTest}, function(formdata){
+                console.log(formdata)
+                let data = JSON.parse(formdata)
+                console.log(data)
+
+                let getuserdetails = "getuserdetails"
+                $.post("controllers/masterpage.php", {getuserdetails:getuserdetails}, function(fdata){
+                    if(fdata=="Not Logged In"){
+                        window.open("index.html")
+                    } else {
+                        let persondata = JSON.parse(fdata)
+                        console.log(persondata)
+                        const d = new Date()
+                        
+                        
+                                let invno = data.records[0].laboratoryreportnumber
+                                invoicenumber = invno
+
+                                let details = `
+                                <h5><b>LABORATORY TEST RESULT</b><br>
+                                <b>Hosp No</b> - ` + data.records[0].patientnumber + `  <br><b>Laboratory Test Number</b> - ` + invoicenumber + `<br>
+                                <b>Patient Name</b> - ` + data.records[0].patientname + ` 
+                                 <b>Date & Time</b> - ` + data.records[0].entereddate + ` </h5>
+                                
+                                
+                             
+                            `
+                            let orderitems = JSON.parse(data.records[0].labreport)
+                            console.log(orderitems)
+                            orderitems.forEach(val => {
+                                
+                                console.log(val.test)
+                                details += `
+                                <h5><b>` + val.test + `</b> 
+                                    <table border='1' style="font-size:15px">
+                                    <tr>
+                                        
+                                        <th>Component</th>
+                                        <th>Result</th>
+                                        <th>Comment</th>
+                                    </tr>
+                                    `
+                                val.result.forEach(element => {
+                                    console.log(element.testname,element.result)
+                                    details += `
+                                    <tr>
+                                        <td>` + element.testname + `</td>
+                                        <td>` + element.result + `</td>
+                                        <td>` + element.comment + `</td>
+                                    </tr>
+                                `
+                                });
+                                details += `</table>`
+                            
+                            });
+                            details += `
+                            <br>Prepared By ` + data.records[0].enteredby + `
+                            <br>Printed By ` + persondata.person + ` on ` + d.getDate() + ` - ` + d.getMonth() + ` - ` + d.getFullYear() + `
+                            
+                            <br>Please take this lab report to your doctor<br>
+                                
+
+                            `
+                            $(".details").html(details)
+                     
+                        
+                    }
+                })
+            })
+        })
+    </script>
+    
+</body>
+</html>

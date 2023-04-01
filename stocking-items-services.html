@@ -1,0 +1,1074 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Item/Service Stocking</title>
+    <link rel="icon" href="img/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- themify CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <!-- flaticon CSS -->
+    <link rel="stylesheet" href="css/flaticon.css">
+    <!-- magnific popup CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- nice select CSS -->
+    <!-- <link rel="stylesheet" href="css/nice-select.css"> -->
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <!-- style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        thead, tbody, tr { display: block; }
+
+        tr:after {
+            content: ' ';
+            display: block;
+            visibility: hidden;
+            clear: both;
+        }
+
+        
+
+        tbody {
+            height: 250px;
+            overflow-y: auto;
+        }
+
+        thead {
+            /* fallback */
+        }
+
+        thead th {
+            height: 30px;
+
+            /*text-align: left;*/
+        }
+
+        tbody td, thead th {
+            width: 12.2%;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <!--::header part start::-->
+    <header class="main_menu">
+            
+        </header>
+        <!-- Header part end-->
+       
+    <!-- breadcrumb start-->
+    <section class="breadcrumb breadcrumb_bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb_iner">
+                        <div class="form-row">
+                            <div class="form-group col-md-2">
+                                <span id="username" style="color:#F1F1F1;font-size: 17px;"></span>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <span id="pagetitle" style="color:#F1F1F1;font-size: 20px;font-weight: bolder;">Stocking Items/Services</span>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <span id="sysdate" style="color:#F1F1F1"></span>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <span id="systime" style="color:#F1F1F1"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- breadcrumb start-->
+
+    
+
+    <!--::regervation_part start::-->
+    <section class="regervation_part padding_bottom"  style="margin-top:30px;">
+        <div class="container">
+            <div class="row align-items-center regervation_content">
+                <div class="col-md-12">
+                    <div class="regervation_part_iner">
+                        <br>
+                        <form action="controllers/add-staff.php" class="frmaddperson">
+                            <!-- <h2>Stocking Items/Services</h2> -->
+                            <div class="label label-success" id="errorlogin"></div>
+                            <div class="form-row">
+                                
+                            </div>
+                            
+                        </form>
+                    </div>
+
+                    <div class="card-box">
+                       
+                        <ul class="nav nav-tabs nav-tabs-solid nav-tabs-rounded nav-justified">
+                            <!-- <li class="nav-item"><a class="nav-link btn-primary active" href="#solid-rounded-justified-tab1" data-toggle="tab">Stocking Item/Service</a></li> -->
+                            <!-- <li class="nav-item"><a class="nav-link btn-primary" href="#solid-rounded-justified-tab7" data-toggle="tab">Supplier</a></li> -->
+                            <!-- <li class="nav-item"><a class="nav-link btn-primary" href="#solid-rounded-justified-tab3" data-toggle="tab">Category of Importance</a></li> -->
+                            <!-- <li class="nav-item"><a class="nav-link btn-primary" href="#solid-rounded-justified-tab4" data-toggle="tab">Location</a></li> -->
+                            <!-- <li class="nav-item"><a class="nav-link btn-primary" href="#solid-rounded-justified-tab8" data-toggle="tab">Packaging</a></li> -->
+                            <!-- <li class="nav-item dropdown">
+                                <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Stocking Setup</a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item" href="#solid-rounded-justified-tab2" data-toggle="tab">Route of Administration</a>
+                                    <a class="dropdown-item" href="#solid-rounded-justified-tab3" data-toggle="tab">Category of Importance</a>
+                                    <a class="dropdown-item" href="#solid-rounded-justified-tab4" data-toggle="tab">Stock Location</a>
+                                    <a class="dropdown-item" href="#solid-rounded-justified-tab5" data-toggle="tab">Physical Position</a> 
+                                </div>
+                            </li> -->
+                            <!-- <li class="nav-item"><a class="nav-link" href="#solid-rounded-justified-tab3" data-toggle="tab">Department Item Group</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#solid-rounded-justified-tab4" data-toggle="tab">Generic Name</a></li> -->
+                            <!-- <li class="nav-item"><a class="nav-link" href="#solid-rounded-justified-tab5" data-toggle="tab">State</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#solid-rounded-justified-tab6" data-toggle="tab">Default Strength</a></li> -->
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane show active" id="solid-rounded-justified-tab1">
+                                <br>
+                                <!-- <h3>Item/Service Registration</h3> -->
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            
+                                            <form action="controllers/index.php" class="form-signin">
+                                                <!-- <h2>Register Item/Service</h2> -->
+                                                <div class="label label-success" id="stockitem-status"></div>
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-4">
+                                                        Search Generic Name:<br>
+                                                        <input type="text" name="searchgenericname" id="searchgenericname" class="form-control" required>
+
+                                                    </div>
+                                                    <div class="form-group col-md-8">
+                                                        Select Generic Name:<br>
+                                                        <select name="selectgenericname" id="selectgenericname" class="form-control" required>
+
+                                                        </select>
+                                                    </div>
+                                                    
+                                                    <div class="form-group col-md-4">
+                                                        Department:<br>
+                                                        <div name="selectdepartment" id="selectdepartment" class="form-control" required>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        Sub-Department:<br>
+                                                        <div name="selectsubdepartment" id="selectsubdepartment" class="form-control" required>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        Department Item Group:<br>
+                                                        <div name="selectdepartmentitemgroup" id="selectdepartmentitemgroup" class="form-control" required>
+
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    
+
+                                                    <div class="form-group col-md-6">
+                                                        Item Form:<br>
+                                                        <div name="selectform" id="selectform" class="form-control" required>
+
+                                                        </div>
+                                                    </div>
+                                                   
+                                                    <div class="form-group col-md-6">
+                                                        Item State:<br>
+                                                        <div name="selectstate" id="selectstate" class="form-control" required>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group col-md-12">
+                                                        Item Strength:<br>
+                                                        <div name="selectstrength" id="selectstrength" class="form-control" required>
+
+                                                        </div>
+                                                    </div> 
+                                                   
+                                                    <!-- <div class="form-group col-md-12">
+                                                        Enter Strength: <span id="statevalue">Volume</span><br>
+                                                        <input type="text" name="itemvolume" id="itemvolume" placeholder="Enter Value">
+                                                        <select name="selectvolumeunit" id="selectvolumeunit">
+
+                                                        </select>
+                                                        /
+                                                        <select name="selectvolumeformulation" id="selectvolumeformulation">
+
+                                                        </select>
+                                                        <span id="selectitemvolumeform"></span>
+                                                    </div>
+                                                    <div class="form-group col-md-2">
+                                                        <input type="checkbox" name="checkcombinedstrength" id="checkcombinedstrength" class="form-control">
+                                                       </div>
+                                                       <div class="form-group col-md-10">
+                                                        Combined Item Strength
+                   
+                                                        
+                                                    </div>
+                                                    <div id="combineditemstrengthform">
+                                                        <div class="form-group col-md-12"> 
+                                                            Enter Combined Strength: <span id="statevalue">Weight</span><br>
+                                                            <div id="combinedweight"></div>
+                                                             <input type="text" name="itemweight1" id="itemweight1" placeholder="Item 1"> 
+                                                             <input type="text" name="itemweight2" id="itemweight2" placeholder="Item 2"> 
+                                                            <select name="selectweightunit" id="selectweightunit">
+    
+                                                            </select>
+                                                            /
+                                                            <select name="selectweightformulation" id="selectweightformulation">
+    
+                                                            </select>
+                                                            <span id="selectitemweightform"></span>
+                                                        </div>
+                                                        <div class="form-group col-md-12">
+                                                            Enter Combined Strength: <span id="statevalue">Volume</span><br>
+                                                            <input type="text" name="itemvolume1" id="itemvolume1" placeholder="Item 1">
+                                                            <input type="text" name="itemvolume2" id="itemvolume2" placeholder="Item 2">
+                                                            <select name="selectvolumeunit" id="selectvolumeunit">
+    
+                                                            </select>
+                                                            /
+                                                            <select name="selectvolumeformulation" id="selectvolumeformulation">
+    
+                                                            </select>
+                                                            <span id="selectitemvolumeform"></span>
+                                                        </div>
+                                                    </div> -->
+                                                    <!-- <div class="form-group col-md-6">
+                                                        Usage Group Type:<br>
+                                                        <div name="selectusagegrouptype" id="selectusagegrouptype" class="form-control" required>
+
+                                                        </div>
+                                                    </div> -->
+                                                    <div class="form-group col-md-6">
+                                                        Usage Group:<br>
+                                                        <div name="selectusagegroup" id="selectusagegroup" class="form-control" required>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                        Usage Class:<br>
+                                                        <div name="selectusageclass" id="selectusageclass" class="form-control" required>
+
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="form-group col-md-6">
+                                                        Usage Sub-Class:<br>
+                                                        <div name="selectusagesubclass" id="selectusagesubclass" class="form-control" required>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                        Usage Route Type:<br>
+                                                        <div name="selectusageroutetype" id="selectusageroutetype" class="form-control" required>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                        Usage Route:<br>
+                                                        <div name="selectusageroute" id="selectusageroute" class="form-control" required>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group col-md-12">
+                                                       
+                                                        <input type="hidden" id="genericnamedetails" name="genericnamedetails"> 
+                                                        <input type="hidden" id="codename" name="codename"> 
+                                                        <input type="hidden" id="itemform" name="itemform"> 
+                                                        <input type="hidden" id="stocknumber" name="stocknumber">
+                                                        <input type="hidden" id="itemid" name="itemid">
+                                                        <input type="hidden" id="itemstrength" name="itemstrength">
+                                                    </div>
+                                                    <div class="form-group col-md-12">
+                                                        <h3>Category of Importance:</h3>
+                                                    </div>
+                                                    <div class="form-group col-md-3">
+                                                        
+                                                        <select name="selectessential" id="selectessential" class="form-control" required>
+                                                            <option value="N">Non-Essential</option>
+                                                            <option value="E">Essential</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group col-md-3">
+                                                        
+                                                        <select name="selectexpensive" id="selectexpensive" class="form-control" required>
+                                                            <option value="N">Non-Expensive</option>
+                                                            <option value="E">Expensive</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group col-md-3">
+                                                        
+                                                        <select name="selectemergency" id="selectemergency" class="form-control" required>
+                                                            <option value="N">Non-Emergency</option>
+                                                            <option value="E">Emergency</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group col-md-3">
+                                                        
+                                                        <select name="selectitemtype" id="selectitemtype" class="form-control" required>
+                                                            <option value="D">Drug</option>
+                                                            <option value="I">Item</option>
+                                                            <option value="S">Service</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group col-md-12">
+                                                        <h3>Manufacturer:</h3>
+                                                    </div>
+                                                     <div class="form-group col-md-6">
+                                                        Select Manufacturer Name:<br>
+                                                        <select name="selectmanufacturername" id="selectmanufacturername" class="form-control" required>
+
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        Add Manufacturer<br>
+                                                        <input type="text" name="addmanufacturer" class="form-control" id="addmanufacturer">
+                                                    </div>
+                                                    <div class="form-group col-md-2">
+                                                        <br>
+                                                        <button class="genric-btn primary" id="add-manufacturer-button">Add</button> 
+                                                    </div>
+                                                    
+                                                    <div class="form-group col-md-6">
+                                                        Select Supplier Name:<br>
+                                                        <select name="selectsuppliername" id="selectsuppliername" class="form-control" required>
+
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        Add Supplier<br>
+                                                        <input type="text" name="addsupplier" class="form-control" id="addsupplier">
+                                                    </div>
+                                                    <div class="form-group col-md-2">
+                                                        <br>
+                                                        <button class="genric-btn primary" id="add-supplier-button">Add</button> 
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        Select Location:<br>
+                                                        <select name="selectlocation" id="selectlocation" class="form-control" required>
+
+                                                        </select>
+                                                    </div>
+                                                    
+                       
+                                                    <div class="form-group col-md-4">
+                                                        Enter Trade Name:
+                                                        <input type="text" name="manufacturertradename" class="form-control" id="manufacturertradename" placeholder="Trade Name" required>
+                                                    </div> 
+                              
+                                                    <div class="form-group col-md-4">
+                                                        Enter Expiry Date:<br>
+                                                        <input type="date" name="expirydate" class="form-control" id="expirydate" placeholder="Expiry Date" required>
+                                                    </div>
+                                                    <div class="form-group col-md-3">
+                                                        Enter Reorder Level:
+                                                        <input type="text" name="reorderlevel" class="form-control" id="reorderlevel" placeholder="Reorder Level" required>
+                                                    </div>
+                                                    <div class="form-group col-md-3">
+                                                        Reorder Level Unit:
+                                                        <select name="reorderlevelunit" class="form-control" id="reorderlevelunit">
+                                                            <option value="pieces">Pieces</option>
+                                                            <option value="weight">Weight</option>
+                                                            <option value="volume">Volume</option>
+                                                            <option value="service">Service</option>
+                                                            <option value="length">Length</option>
+                                                        </select>
+                                                        
+                                                    </div>  
+                              
+                                                    <div class="form-group col-md-6">
+                                                        Enter Manufactured Date:<br>
+                                                        <input type="date" name="manufactureddate" class="form-control" id="manufactureddate" placeholder="Manufactured Date" required>
+                                                    </div>
+                                                    <!-- <div class="form-group col-md-6">
+                                                        <input type="text" name="formabbreviation" class="form-control" id="formabbreviation"
+                                                            placeholder="Form Abbreviation">
+                                                    </div> -->
+                                                    <div class="form-edit-stockitem"></div>
+
+                                                    
+                                                </div>
+                                                <div class="regerv_btn">
+                                                    <button type="submit" class="genric-btn primary" id="add-stockitem-button" style="font-size: 24px;border-radius: 8px;">Code Item/Service</button>
+                                                    <button type="submit" class="genric-btn primary" id="cancel-stockitem-button" style="font-size: 24px;border-radius: 8px;">Cancel</button>
+                                                    <button type="submit" class="genric-btn success" id="edit-stockitem-button" style="font-size: 24px;border-radius: 8px;">Edit</button>
+                                                    <button type="submit" class="genric-btn danger" id="delete-stockitem-button" style="font-size: 24px;border-radius: 8px;">Confirm Deletion</button>
+                                                </div>
+                                            </form>
+                                            
+                                        </div>
+                                        <div class="col-12">
+                                            
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    <h4 class="card-title d-inline-block">View Registered Items/Services</h4>  <p class="btn btn-primary float-right" id="view-stockitem-count"></p>
+                                                    <p class="float-right"><input type="text" id="searchitemservice" name="searchitemservice" placeholder="Search Item/Service" style="font-size: 18px;"></p>
+                                                </div>
+                                                <div class="card-body p-0">
+                                                    <div class="table-responsive scrollable">
+                                                        <table class="table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Trade Name</th>
+                                                                    <th>Generic Name</th>
+                                                                    <th>ItemCode</th>
+                                                                    <th>Exp Date/Man Date</th>
+                                                                    <!-- <th>Department Item Group</th> -->
+                                                                    <th>Item Strength</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody id="view-stockitem-list">
+                                                                
+                                                                
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- <div class="col-lg-5 col-md-6">
+                    <div class="reservation_img">
+                        <img src="img/loginphoto.jpg" alt="">
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <!--::regervation_part end::-->
+
+    
+    <!-- footer part start-->
+    <footer class="footer-area">
+
+        <div class="copyright_part">
+            
+        </div>
+    </footer>
+
+    <!-- footer part end-->
+
+    <!-- jquery plugins here-->
+
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <!-- popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- easing js -->
+    <script src="js/jquery.magnific-popup.js"></script>
+    <!-- swiper js -->
+    <script src="js/swiper.min.js"></script>
+    <!-- swiper js -->
+    <script src="js/masonry.pkgd.js"></script>
+    <!-- particles js -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- <script src="js/jquery.nice-select.min.js"></script> -->
+    <!-- swiper js -->
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <!-- contact js -->
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <script src="js/contact.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+    <script src="views/masterpage.js"></script>
+    <script src="views/stock-item-dispensing.js"></script>
+    <!--<script src="views/corpse-list.js"></script> -->
+    <script src="js/moment.min.js"></script>
+	<script src="js/bootstrap-datetimepicker.min.js"></script>
+    
+	<script>
+            $(function () {
+                $('#expirydate1').datetimepicker({
+                    format: 'LT'
+                });
+				// $('#datetimepicker4').datetimepicker({
+                //     format: 'LT'
+                // });
+            });
+     </script>
+     <script>
+         $(document).ready(function(){
+              // Select 2
+            if($('.select').length > 0) {
+                    $('.select').select2({
+                        minimumResultsForSearch: -1,
+                        width: '100%'
+                    });
+                
+                }
+
+                $("#searchgenericname").on('change keyup paste', function () {
+                    ApplyFilterGenericName();
+                });
+
+                function ApplyFilterGenericName() {
+                    var searchString = $("#searchgenericname").val();
+                    console.log("GetSubDepartmentsFunction")
+                    GetGenericNameFunction()
+                }
+                let genericnamelist = ``
+                function GetGenericNameFunction(){
+                    
+                    //get list of groups
+                    let getItem = "getItem"
+                    let searchItem = $("#searchgenericname").val()
+                    $.post("controllers/combo-setup.php",{searchItem:searchItem,getItem: getItem},function(formdata){
+                        //console.log("itemGroup: ",data)
+                        if(formdata!="No Record Found"){
+                            console.log(formdata)
+                            let data=JSON.parse(formdata)
+                            let genericnameoptions = ``
+                            $.each(data.records, function(key, val) {
+                            
+                                genericnameoptions += `
+                                <option value="` + val.id + `,` + val.genericname + `">` + val.genericname + `</option>
+                            `
+                            })
+                            genericnamelist = genericnameoptions
+                            $("#selectgenericname").html(genericnameoptions)
+                            //$("#combinedgenericname").html(genericnameoptions)
+                            GetGenericNameDetails()
+                            
+                            }
+                        })
+                    }
+
+                function GetGenericNameDetails(){
+                    let GetGenericNameDetails = "GetGenericNameDetails"
+                            let searchItem = $("#selectgenericname").val()
+                            let breakdownsearch = searchItem.split(",")
+                            searchItem = breakdownsearch[0]
+                            console.log(breakdownsearch)
+                            $.post("controllers/combo-setup.php",{id:searchItem,GetGenericNameDetails: GetGenericNameDetails},function(formdata){
+                                    console.log(formdata)
+                                    $("#genericnamedetails").val(formdata)
+                                    let data = JSON.parse(formdata)
+                                    $("#selectdepartment").html(data.department)
+                                    $("#selectsubdepartment").html(data.subdepartment)
+                                    $("#selectdepartmentitemgroup").html(data.departmentitemgroup)
+                                    $("#selectform").html(data.itemform)
+                                    
+                                    $("#selectstate").html(data.itemstate)
+                                    $("#selectstrength").html(data.strengthvalue)
+                                    $("#selectusagegrouptype").html(data.usagegrouptype)
+                                    $("#selectusagegroup").html(data.usagegroup)
+                                    $("#selectusageclass").html(data.usageclass)
+                                    $("#selectusagesubclass").html(data.usagesubclass)
+                                    $("#selectusageroutetype").html(data.usageroutetype)
+                                    $("#selectusageroute").html(data.usageroute)
+                                    $("#codename").val(data.codename)
+                                    $("#itemform").val(data.itemformcode + "," + data.itemform)
+                                    $("#stocknumber").val(data.stocknumber)
+                                    $("#itemid").val(data.id)
+                                    $("#itemstrength").val(data.strengthvalue)
+
+                                })
+
+                            
+                }
+                
+
+                GetGenericNameFunction()
+
+                $("#selectgenericname").on("change", function(evt){
+                    evt.preventDefault()
+                    
+                    
+                    GetGenericNameDetails()
+                    
+                })
+
+                function getItemsFunction(){
+                    $("#add-stockitem-button").show()
+                    $("#cancel-stockitem-button").hide()
+                    $("#edit-stockitem-button").hide()
+                    $("#delete-stockitem-button").hide()
+
+                    let manufacturerlist = ``
+                    let getManufacturer = "getManufacturer"
+                    let searchItem = ""
+                    $.post("controllers/combo-setup.php",{searchItem:searchItem,getManufacturer: getManufacturer},function(formdata){
+
+                        if(formdata!="No Record Found"){
+                            
+                            let data=JSON.parse(formdata)
+                            let manufactureroptions = ``
+                            $.each(data.records, function(key, val) {
+                            
+                                manufactureroptions += `
+                                <option value="` + val.manufacturer + `">` + val.manufacturer + `</option>
+                            `
+                            })
+                            manufacturerlist = manufactureroptions
+                            $("#selectmanufacturername").html(manufactureroptions)
+                        }
+
+                        let supplierlist = ``
+                        let getSupplier = "getSupplier"
+                        let searchItem = ""
+                        $.post("controllers/combo-setup.php",{searchItem:searchItem,getSupplier: getSupplier},function(formdata){
+
+                            if(formdata!="No Record Found"){
+                                
+                                let data=JSON.parse(formdata)
+                                let supplieroptions = ``
+                                $.each(data.records, function(key, val) {
+                                
+                                    supplieroptions += `
+                                    <option value="` + val.supplier + `">` + val.supplier + `</option>
+                                `
+                                })
+                                supplierlist = supplieroptions
+                                $("#selectsuppliername").html(supplieroptions)
+                            }
+                            let locationlist = ``
+                            let getLocation = "getLocation"
+                            let searchItem = ""
+                            $.post("controllers/combo-setup.php",{searchItem:searchItem,getLocation: getLocation},function(formdata){
+
+                                if(formdata!="No Record Found"){
+                                    
+                                    let data=JSON.parse(formdata)
+                                    let locationoptions = ``
+                                    $.each(data.records, function(key, val) {
+                                    
+                                        locationoptions += `
+                                        <option value="` + val.location + `">` + val.location + `</option>
+                                    `
+                                    })
+                                    locationlist = locationoptions
+                                    $("#selectlocation").html(locationoptions)
+                                }
+
+
+
+
+                                //get Item Codes
+                                let getStockItem = "getStockItem"
+                                let searchItem = $("#searchitemservice").val()
+                                console.log(searchItem)
+                                $.post("controllers/combo-setup.php",{searchItem:searchItem,getStockItem: getStockItem},function(formdata){
+                                    //console.log(data)
+                                    if(formdata=="No Record Found"){
+                                        $("#view-stockitem-count").html(formdata)
+                                    }else{
+                                        console.log(formdata)
+                                        console.log(typeof(formdata))
+                                        let data=JSON.parse(formdata)
+                                        console.log(data)
+                                        let count = 0
+                                            
+                                        let totalrecord = ``
+                                        $.each(data.records, function(key, val) {
+                                            count++
+                                        totalrecord += `
+                                            <tr>
+                                                <td>
+                                                    
+                                                    <a href="#" data-id="` + val.id + `" style="" class="btn btn-outline-default take-btn itemname"><h3 style="color:blue;">` + val.tradename + `</h3></a>
+                                                </td> 
+                                                <td>
+                                                    
+                                                    <p style="font-size:18px;font-weight:bold;">` + val.genericname + `</p>
+                                                </td>                
+                                                <td>
+                                                    
+                                                    <p style="font-size:18px;font-weight:bold;">` + val.itemcode + ` [` + val.stockitemnumber + `]</p>
+                                                </td>
+                                                
+                                                <td>
+                                                    
+                                                    <p style="font-size:18px;font-weight:bold;">` + val.expirydate + `/` + val.manufactureddate + `</p>
+                                                </td>
+                                                <td>
+                                                    <p style="font-size:18px;font-weight:bold;">` + val.itemstrength + `</p>
+                                                </td>
+                                            </tr>
+                                        `
+                                        })
+                                        $("#view-stockitem-count").html(count + " Record(s) Found")
+                                        $("#view-stockitem-list").html(totalrecord)
+                                    }
+
+                                    $(".itemname").on("click",function(evt){
+                                        evt.preventDefault()
+                                        let id = $(this).attr("data-id")
+                                        let getStockItemDetailsById = "getStockItemDetailsById"
+                                        $.post("controllers/combo-setup.php",{searchItem:id, getStockItemDetailsById:getStockItemDetailsById},function(formdata){
+                                            
+                                            let data=JSON.parse(formdata)
+                                            let reorderlevelunitlist = `
+                                                <option value="pieces">Pieces</option>
+                                                <option value="weight">Weight</option>
+                                                <option value="volume">Volume</option>
+                                            `
+                                            $("#manufactureddate").val(data.manufactureddate)
+                                            $("#reorderlevel").val(data.reorderlevel)
+                                            $("#reorderlevelunit").html(`<option value='` + data.reorderlevelunit + `' selected>` + data.reorderlevelunit + `</option>` + reorderlevelunitlist)
+                                            $("#expirydate").val(data.expirydate)
+                                            $("#manufacturertradename").val(data.tradename)
+                                            let itemtypelist = `
+
+                                                <option value="D">Drug</option>
+                                                <option value="I">Item</option>
+                                                <option value="S">Service</option>
+                                            `
+                                            $("#selectitemtype").html("<option value='" + data.itemtype + "'>" + data.itemtype + "</option>" + itemtypelist)
+                                            
+                                            let emergencylist = `
+
+                                                <option value="N">Non-Emergency</option>
+                                                <option value="E">Emergency</option>
+                                                `
+                                                $("#selectemergency").html("<option value='" + data.emergency + "'>" + data.emergency + "</option>" + emergencylist)
+
+                                            let expensivelist = `
+
+                                                <option value="N">Non-Expensive</option>
+                                                <option value="E">Expensive</option>
+                                            `
+                                            $("#selectexpensive").html("<option value='" + data.expensive + "'>" + data.expensive + "</option>" + expensivelist)
+
+                                            let essentiallist = `
+
+                                                <option value="N">Non-Essential</option>
+                                                <option value="E">Essential</option>
+                                            `
+                                            $("#selectessential").html("<option value='" + data.essential + "'>" + data.essential + "</option>" + essentiallist)
+                                            $("#selectlocation").html("<option value='" + data.location + "'>" + data.location + "</option>" + locationlist)
+                                            $("#selectsuppliername").html("<option value='" + data.suppliername + "'>" + data.suppliername + "</option>" + supplierlist)
+                                            $("#selectmanufacturername").html("<option value='" + data.manufacturername + "'>" + data.manufacturername + "</option>" + manufacturerlist)
+                                           
+                                            $("#itemstrength").val(data.itemstrength)
+                                            $("#itemid").val(data.itemid)
+                                            $("#stocknumber").val(data.stockitemnumber)
+                                            $("#itemform").val(data.itemform)
+                                            $("#codename").val(data.itemcode)
+                                            $("#itemstrength").val(data.itemstrength)
+
+                                            let itemid = data.itemid
+
+                                            $("#add-stockitem-button").hide()
+                                            $("#cancel-stockitem-button").show()
+                                            $("#edit-stockitem-button").show()
+                                            $("#delete-stockitem-button").show()
+                                            $(".form-edit-stockitem").html(`<input type="hidden" name="stockitemid" id="stockitemid" value="` + data.id + `">`)
+                                            console.log(data.id)
+                                            $("#selectgenericname").html("<option value='" + itemid + `,` + data.genericname + "'>" + data.genericname + "</option>" + genericnamelist)
+                                            GetGenericNameDetails()
+                                        })
+                                    })
+
+                                })
+
+                            })
+                            
+
+                        })
+
+
+                    })
+                }
+
+
+                getItemsFunction()
+                $("#searchitemservice").on('change keyup paste', function () {
+                    ApplyFilterGetItem();
+                });
+
+                function ApplyFilterGetItem() {
+                    var searchitemservice = $("#searchitemservice").val();
+                    console.log("GetManufacturersFunction")
+                    getItemsFunction()
+                }
+
+                $("#addmanufacturer").on('change keyup paste', function(){
+                    ApplyManufacturerSearch();
+                })
+
+                function ApplyManufacturerSearch(){
+                    let searchItem = $("#addmanufacturer").val()
+                    let getManufacturer = "getManufacturer"
+                    $.post("controllers/combo-setup.php",{searchItem:searchItem,getManufacturer: getManufacturer},function(formdata){
+
+                        if(formdata!="No Record Found"){
+                            console.log(formdata)
+                            let data=JSON.parse(formdata)
+                            let manufactureroptions = ``
+                            $.each(data.records, function(key, val) {
+                            
+                                manufactureroptions += `
+                                <option value="` + val.manufacturer + `">` + val.manufacturer + `</option>
+                            `
+                            })
+                            //manufacturerlist = manufactureroptions
+                            $("#selectmanufacturername").html(manufactureroptions)
+                        }
+                    })
+                }
+
+                $("#addsupplier").on('change keyup paste', function(){
+                    ApplySupplierSearch();
+                })
+
+                function ApplySupplierSearch(){
+                    let searchItem = $("#addsupplier").val()
+                    let getSupplier = "getSupplier"
+                    $.post("controllers/combo-setup.php",{searchItem:searchItem,getSupplier: getSupplier},function(formdata){
+
+                        if(formdata!="No Record Found"){
+                            console.log(formdata)
+                            let data=JSON.parse(formdata)
+                            let manufactureroptions = ``
+                            $.each(data.records, function(key, val) {
+                            
+                                manufactureroptions += `
+                                <option value="` + val.supplier + `">` + val.supplier + `</option>
+                            `
+                            })
+                            //manufacturerlist = manufactureroptions
+                            $("#selectsuppliername").html(manufactureroptions)
+                        }
+                    })
+                }
+
+                     $("#add-manufacturer-button").on("click", function(evt){
+                    evt.preventDefault()
+                    let manufacturer = $("#addmanufacturer").val()
+                    if(manufacturer!=""){
+                        let insertManufacturer = "insertManufacturer"
+                        let manufacturercode = ""
+                        $.post("controllers/combo-setup.php", {manufacturer:manufacturer,manufacturercode:manufacturercode,insertManufacturer:insertManufacturer},function(data){
+                            //let manufacturerlist = ``
+                            let getManufacturer = "getManufacturer"
+                            let searchItem = ""
+                            $.post("controllers/combo-setup.php",{searchItem:searchItem,getManufacturer: getManufacturer},function(formdata){
+
+                            if(formdata!="No Record Found"){
+                                console.log(formdata)
+                                let data=JSON.parse(formdata)
+                                let manufactureroptions = ``
+                                $.each(data.records, function(key, val) {
+                                
+                                    manufactureroptions += `
+                                    <option value="` + val.manufacturer + `">` + val.manufacturer + `</option>
+                                `
+                                })
+                                //manufacturerlist = manufactureroptions
+                                $("#selectmanufacturername").html(manufactureroptions)
+                            }
+                            $("#addmanufacturer").val("")
+                        })
+                    })
+                    }
+                })
+
+                $("#add-supplier-button").on("click", function(evt){
+                    evt.preventDefault()
+                    let manufacturer = $("#addsupplier").val()
+                    if(manufacturer!=""){
+                        let insertSupplier = "insertSupplier"
+                        let manufacturercode = ""
+                        $.post("controllers/combo-setup.php", {supplier:manufacturer,suppliercode:manufacturercode,insertSupplier:insertSupplier},function(data){
+                            //let manufacturerlist = ``
+                            let getSupplier = "getSupplier"
+                            let searchItem = ""
+                            $.post("controllers/combo-setup.php",{searchItem:searchItem,getSupplier: getSupplier},function(formdata){
+
+                            if(formdata!="No Record Found"){
+                                console.log(formdata)
+                                let data=JSON.parse(formdata)
+                                let manufactureroptions = ``
+                                $.each(data.records, function(key, val) {
+                                
+                                    manufactureroptions += `
+                                    <option value="` + val.supplier + `">` + val.supplier + `</option>
+                                `
+                                })
+                                //manufacturerlist = manufactureroptions
+                                $("#selectsuppliername").html(manufactureroptions)
+                            }
+                            $("#addsupplier").val("")
+                        })
+                    })
+                    }
+                })
+
+
+            $("#add-stockitem-button").on("click", function(evt){
+                evt.preventDefault()
+                let insertStockItemForm = "insertStockItemForm"
+                let genericname = $("#selectgenericname").val()
+                let breakdownsearch = genericname.split(",")
+                genericname = breakdownsearch[1]
+                let codename = $("#codename").val()
+                codename = codename.substring(0,codename.length-1)
+                let itemform = $("#itemform").val()
+                let stocknumber = $("#stocknumber").val()
+                let itemid = $("#itemid").val()
+                let manufacturername = $("#selectmanufacturername").val()
+                let manufacturercode = manufacturername.substring(0,3)
+                let suppliername = $("#selectsuppliername").val()
+                let location = $("#selectlocation").val()
+                let categoryofimportance = $("#selectessential").val() + $("#selectexpensive").val() + $("#selectemergency").val() + $("#selectitemtype").val() 
+                let essential = $("#selectessential").val()
+                let expensive = $("#selectexpensive").val()
+                let emergency = $("#selectemergency").val()
+                let itemtype = $("#selectitemtype").val()
+                let tradename = $("#manufacturertradename").val()
+                let expirydate = $("#expirydate").val()
+                let reorderlevel = zeroifnull($("#reorderlevel").val())
+                let reorderlevelunit = $("#reorderlevelunit").val()
+                let manufactureddate = $("#manufactureddate").val()
+                let itemstrength = $("#itemstrength").val()
+                $.post("controllers/combo-setup.php", {codename:codename, 
+                                                        itemid:itemid,
+                                                        stocknumber:stocknumber,
+                                                        itemstrength:itemstrength,
+                                                        manufacturername:manufacturername,
+                                                        suppliername:suppliername,
+                                                        manufacturercode:manufacturercode,
+                                                        genericname:genericname,
+                                                        location:location,
+                                                        itemform:itemform,
+                                                        categoryofimportance:categoryofimportance,
+                                                        essential:essential,
+                                                        expensive:expensive,
+                                                        emergency:emergency,
+                                                        itemtype:itemtype,
+                                                        tradename:tradename,
+                                                        expirydate:expirydate,
+                                                        reorderlevel:reorderlevel,
+                                                        reorderlevelunit:reorderlevelunit,
+                                                        manufactureddate:manufactureddate,
+                                                        insertStockItemForm:insertStockItemForm},function(data){
+                    $("#stockitem-status").html(data)
+                    getItemsFunction()
+                })
+            })
+
+            $("#edit-stockitem-button").on("click", function(evt){
+                evt.preventDefault()
+
+                let editStockItemForm = "editStockItemForm"
+                let stockitemid = $("#stockitemid").val()
+                let genericname = $("#selectgenericname").val()
+                let breakdownsearch = genericname.split(",")
+                genericname = breakdownsearch[1]
+                let codename = $("#codename").val()
+                codename = codename.substring(0,codename.length-1)
+                let itemform = $("#itemform").val()
+                let stocknumber = $("#stocknumber").val()
+                let itemid = $("#itemid").val()
+                let manufacturername = $("#selectmanufacturername").val()
+                let manufacturercode = manufacturername.substring(0,3)
+                let suppliername = $("#selectsuppliername").val()
+                let location = $("#selectlocation").val()
+                let categoryofimportance = $("#selectessential").val() + $("#selectexpensive").val() + $("#selectemergency").val() + $("#selectitemtype").val() 
+                let essential = $("#selectessential").val()
+                let expensive = $("#selectexpensive").val()
+                let emergency = $("#selectemergency").val()
+                let itemtype = $("#selectitemtype").val()
+                let tradename = $("#manufacturertradename").val()
+                let expirydate = $("#expirydate").val()
+                let reorderlevel = $("#reorderlevel").val()
+                let reorderlevelunit = $("#reorderlevelunit").val()
+                let manufactureddate = $("#manufactureddate").val()
+                let itemstrength = $("#itemstrength").val()
+                $.post("controllers/combo-setup.php", {stockitemid:stockitemid,
+                                                        codename:codename, 
+                                                        itemid:itemid,
+                                                        stocknumber:stocknumber,
+                                                        itemstrength:itemstrength,
+                                                        manufacturername:manufacturername,
+                                                        suppliername:suppliername,
+                                                        manufacturercode:manufacturercode,
+                                                        genericname:genericname,
+                                                        location:location,
+                                                        itemform:itemform,
+                                                        categoryofimportance:categoryofimportance,
+                                                        essential:essential,
+                                                        expensive:expensive,
+                                                        emergency:emergency,
+                                                        itemtype:itemtype,
+                                                        tradename:tradename,
+                                                        expirydate:expirydate,
+                                                        reorderlevel:reorderlevel,
+                                                        reorderlevelunit:reorderlevelunit,
+                                                        manufactureddate:manufactureddate,
+                                                        editStockItemForm:editStockItemForm},function(data){
+                    $("#stockitem-status").html(data)
+                    getItemsFunction()
+                })
+            })
+
+            $("#delete-stockitem-button").on("click", function(evt){
+                evt.preventDefault()
+
+                let deleteStockItemForm = "deleteStockItemForm"
+                let stockitemid = $("#stockitemid").val()
+                console.log(stockitemid)
+                $.post("controllers/combo-setup.php", {stockitemid:stockitemid,
+                                        deleteStockItemForm:deleteStockItemForm},function(data){
+                    $("#stockitem-status").html(data)
+                    getItemsFunction()
+                })
+            })
+
+
+            $("#cancel-stockitem-button").on("click",function(evt){
+                evt.preventDefault();
+                getItemsFunction()
+            })
+            function oneifnull(value){
+                if(value==null){
+                    return 1
+                } else if(value==""){
+                    return 1
+                } else {
+                    return value
+                }
+            }
+            function zeroifnull(value){
+                if(value==null){
+                    return 0
+                } else if(value==""){
+                    return 0
+                } else {
+                    return value
+                }
+            }
+         })
+     </script>
+</body>
+
+</html>

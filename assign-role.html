@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>medical</title>
+    <link rel="icon" href="img/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- themify CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <!-- flaticon CSS -->
+    <link rel="stylesheet" href="css/flaticon.css">
+    <!-- magnific popup CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- nice select CSS -->
+    <!-- <link rel="stylesheet" href="css/nice-select.css"> -->
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="css/slick.css">
+    <!-- style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.15.3/xlsx.full.min.js"
+    ></script>
+</head>
+
+<body>
+    <!--::header part start::-->
+    <header class="main_menu">
+            
+        </header>
+        <!-- Header part end-->
+       
+    <!-- breadcrumb start-->
+    <section class="breadcrumb breadcrumb_bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb_iner">
+                        <div class="form-row">
+                            <div class="form-group col-md-2">
+                                <span id="username" style="color:#F1F1F1;font-size: 17px;"></span>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <span id="pagetitle" style="color:#F1F1F1;font-size: 20px;font-weight: bolder;">Password Management & Staff Accounts</span>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <span id="sysdate" style="color:#F1F1F1"></span>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <span id="systime" style="color:#F1F1F1"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- breadcrumb start-->
+
+    
+
+    <!--::regervation_part start::-->
+    <section class="regervation_part padding_bottom" style="margin-top:30px;">
+        <div class="container">
+            <div class="row align-items-center regervation_content">
+                <div class="col-md-12">
+                    <div class="regervation_part_iner">
+                        <br>
+                        <form action="controllers/add-staff.php" class="frmaddperson">
+                            <h2>Create Staff Account and Assign Roles/Password</h2>
+                            <div class="label label-success" id="errorlogin"></div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    Select Staff:<br>
+                                    <select name="selectstaff" class="form-control" id="selectstaff">
+                                       
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group col-md-6">
+                                    Person Type:<br>
+                                    <select name="persontype" id="persontype" class="form-control" style="display:block;"></select>
+                                  
+                                </div>
+                                <div class="form-group col-md-4">
+                                    Account Type:<br>
+                                    <select name="accountype" id="accountype" class="form-control"></select>
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <br>
+                                    <button type="submit" class="genric-btn primary" id="add-accounttype">Add Account Type</button>
+                                
+                                </div>
+                                <div class="form-group col-md-6">
+                                    Department:<br>
+                                    <select name="department" id="department" class="form-control"></select>
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <p id="account_type_list"></p>
+                           </div>
+                            </div>
+
+                            
+                            <div class="regerv_btn">
+                                <button type="submit" class="genric-btn primary" id="add-staff-role">Click to Add Staff Role</button>
+                                <button type="submit" class="genric-btn primary" id="update-staff-role">Click to Update Staff Role</button>
+                              
+                            </div>
+                        </form>
+                        <!-- <input type="file" id="fileUpload" accept=".xls,.xlsx" class='form-control' /><br /> -->
+                        <!-- <button type="button" id="uploadExcel" class='btn btn-primary'>Upload</button> -->
+                    </div>
+                </div>
+                <!-- <div class="col-lg-5 col-md-6">
+                    <div class="reservation_img">
+                        <img src="img/loginphoto.jpg" alt="">
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <!--::regervation_part end::-->
+
+    
+    <!-- footer part start-->
+    <footer class="footer-area">
+
+        <div class="copyright_part">
+            
+        </div>
+    </footer>
+
+    <!-- footer part end-->
+
+    <!-- jquery plugins here-->
+
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <!-- popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- easing js -->
+    <script src="js/jquery.magnific-popup.js"></script>
+    <!-- swiper js -->
+    <script src="js/swiper.min.js"></script>
+    <!-- swiper js -->
+    <script src="js/masonry.pkgd.js"></script>
+    <!-- particles js -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- <script src="js/jquery.nice-select.min.js"></script> -->
+    <!-- swiper js -->
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <!-- contact js -->
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <script src="js/contact.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+    <script src="views/masterpage.js"></script>
+    <!-- <script src="views/add-staff.js"></script> -->
+
+    <script>
+        $(document).ready(function(){
+            
+              //get list of staff
+              let staffusername = ""
+              let selectstafflist = ``
+              let persontypelist = ``
+              let departmentlist = ``
+              let accounttypelist = ``
+              function getStaff(){
+                // let searchItem = "MORGUE"
+                let getStaff = "getStaff"
+                $.post("controllers/add-staff.php",{getStaff:getStaff},function(formdata){
+                    console.log(formdata)
+                    if(formdata!="No Record Found"){
+                        
+                        let data=JSON.parse(formdata)
+                        let itemgenericnameoptions = ``
+                        $.each(data.records, function(key, val) {
+                        
+                            itemgenericnameoptions += `
+                            <option value="` + val.personid + `, ` + val.person + `">` + val.person + ` (` + val.stafftype + `)</option>
+                        `
+                        })
+                        selectstafflist = itemgenericnameoptions
+                        $("#selectstaff").html(itemgenericnameoptions)
+                        // $("#nextofkinrelationship2").html(itemgenericnameoptions)
+                        let selectid = $("#selectstaff").val()
+                        let splitid = selectid.split(", ")
+                        let personid = splitid[0]
+                        console.log(personid)
+
+                        let getStaffInfo = "getStaffInfo"
+                        $.post("controllers/add-staff.php", 
+                                {
+                                    personid:personid,
+                                    getStaffInfo:getStaffInfo
+                                }, function(data){
+                                    console.log(data)
+                                    if(data!="No Record Found"){
+                                        data = JSON.parse(data)
+                                        console.log(data)
+                                        $("#persontype").html(`<option value="` + data.records[0].stafftype + `">`+ data.records[0].stafftype + `</option>` + persontypelist)
+                                        $("#department").html(`<option value="` + data.records[0].department + `">`+ data.records[0].department + `</option>` + departmentlist)
+                                        personaccounttypes = JSON.parse(data.records[0].systemaccounttype)
+                                        viewAccountTypes()
+                                    }
+                                    
+                                })
+                    } else {
+                        $("#selectstaff").html("<option value='No Record'>No Record</option>")
+                        // $("#nextofkinrelationship2").html("<option value='No Record'>No Record</option>")
+                    }
+                })
+            }
+
+            getStaff()
+
+                    
+            let getaccounttype = "getaccounttype"
+            let getpersontype = "getpersontype"
+            let getdepartment = "getdepartment"
+            $.post("controllers/add-staff.php", {getpersontype:getpersontype}, function(data){
+                console.log(data)
+                data = JSON.parse(data)
+                let persontypes = ``
+                data.records.forEach(element => {
+                    persontypes += `<option value="` + element.persontype + `">`+ element.persontype + `</option>`
+                });
+                persontypelist = persontypes
+                $("#persontype").html(persontypes)
+            })
+
+            $.post("controllers/add-staff.php", {getaccounttype:getaccounttype}, function(data){
+                data = JSON.parse(data)
+                let countries = ``
+                data.records.forEach(element => {
+
+                    countries += `<option value="` + element.systemaccounttype + `">`+ element.systemaccounttype + `</option>`
+
+                });
+                accounttypelist = countries
+                $("#accountype").html(countries)
+            
+            })
+
+            $.post("controllers/add-staff.php", {getdepartment:getdepartment}, function(data){
+                data = JSON.parse(data)
+                let countries = ``
+                data.records.forEach(element => {
+
+                    countries += `<option value="` + element.department + `">`+ element.department + `</option>`
+
+                });
+                departmentlist = countries
+                $("#department").html(countries)
+            
+            })
+
+            let submenu = `
+                <div class="row align-items-center" id"modules_menu">
+                            <div class="col-lg-12">
+                                <nav class="navbar navbar-expand-lg navbar-light" style="text-align:left">
+                                    
+                                    
+            
+                                    <div class="navbar-collapse align-items-center"
+                                        id="navbarSupportedContent1" style="text-align:left; padding-left:30px; color:#000000;">
+                                        <ul class="navbar-nav align-items-center">
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="add-staff.html">Recruitment</a>
+                                            </li>
+                                            <!--<li class="nav-item">
+                                                <a class="nav-link" href="assign-role.html">Assign Role/Duty</a>
+                                            </li>-->
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="duty-roster.html">Duty Roster</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="termination.html">Termination</a>
+                                            </li>
+                                            
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="dashboard.html">
+                                                    <span class="navbar-toggler-icon"></span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    
+                                </nav>
+                            </div>
+                        </div>
+            `
+
+            // $(".sub_menu").html(submenu)
+
+            let personaccounttypes = []
+            $("#add-staff-role").on("click", function(evt){
+                evt.preventDefault()
+               
+                let selectperson =  $("#selectstaff").val()
+                console.log(selectperson)
+                let splitperson = selectperson.split(", ")
+                let personid = splitperson[0]
+                
+                // let splitpersonname = person.split(", ")
+                let firstname = splitperson[1].toLowerCase()
+                let lastname = splitperson[2].toLowerCase()
+                let person = (firstname + " " + lastname).toUpperCase()
+                let persontype = $("#persontype").val()
+                let accountype = JSON.stringify(personaccounttypes)
+                let department = $("#department").val()
+                let assignstaffrole = "assignstaffrole"
+                $.post("controllers/add-staff.php", 
+                        {
+                            firstname:firstname,
+                            lastname:lastname,
+                            personid:personid,
+                            person:person,
+                            persontype:persontype,
+                            accountype:accountype,
+                            department:department,
+                            assignstaffrole:assignstaffrole
+                        }, function(data){
+                    $("#errorlogin").html(data)
+                    $(".frmaddperson")[0].reset()
+                })
+            })
+
+
+            $("#update-staff-role").on("click", function(evt){
+                evt.preventDefault()
+               
+                let selectperson =  $("#selectstaff").val()
+                let splitperson = selectperson.split(",")
+                let personid = splitperson[0]
+                
+                // let splitpersonname = person.split(", ")
+                let firstname = splitperson[1].toLowerCase()
+                let lastname = splitperson[2].toLowerCase()
+                console.log(staffusername)
+                let person = (firstname + " " + lastname).toUpperCase()
+                let persontype = $("#persontype").val()
+                let accountype = JSON.stringify(personaccounttypes)
+                let department = $("#department").val()
+                let updatestaffrole = "updatestaffrole"
+                $.post("controllers/add-staff.php", 
+                        {
+                            firstname:firstname,
+                            lastname:lastname,
+                            personid:personid,
+                            person:person,
+                            persontype:persontype,
+                            accountype:accountype,
+                            department:department,
+                            username:staffusername,
+                            updatestaffrole:updatestaffrole
+                        }, function(data){
+                    console.log(data)
+                    $("#errorlogin").html(data)
+                    $(".frmaddperson")[0].reset()
+                })
+            })
+            
+
+            $("#add-accounttype").on("click", function(evt){
+                evt.preventDefault()
+                let accounttype = $("#accountype").val()
+                personaccounttypes.push(accounttype)
+                viewAccountTypes()
+            })
+
+            function  viewAccountTypes(){
+                let accounttypes = ``
+                let i = 0
+                personaccounttypes.forEach(element => {
+                    i = i + 1
+                    accounttypes += element + ` | <span class="deleteaccounttype btn btn-primary" data-id="` + i + `"> Delete</span><br>`
+                });
+                $("#account_type_list").html(accounttypes)
+                $(".deleteaccounttype").on("click", function(evt){
+                    evt.preventDefault()
+                    let id = $(this).attr("data-id")
+                    personaccounttypes.pop(id, 1)
+                    viewAccountTypes()
+                })
+            }
+
+
+            $("#selectstaff").on("change", function(){
+                let selectid = $("#selectstaff").val()
+                let splitid = selectid.split(",")
+                let personid = splitid[0]
+                console.log(personid)
+
+                let getStaffInfo = "getStaffInfo"
+                $.post("controllers/add-staff.php", 
+                        {
+                            personid:personid,
+                            getStaffInfo:getStaffInfo
+                        }, function(data){
+                            console.log(data)
+                            if(data!="No Record Found"){
+                                data = JSON.parse(data)
+                                console.log(data)
+                                $("#persontype").html(`<option value="` + data.records[0].stafftype + `">`+ data.records[0].stafftype + `</option>` + persontypelist)
+                                $("#department").html(`<option value="` + data.records[0].department + `">`+ data.records[0].department + `</option>` + departmentlist)
+                                staffusername = data.records[0].username
+                                personaccounttypes = JSON.parse(data.records[0].systemaccounttype)
+                                viewAccountTypes()
+                            }
+                            
+                        })
+                
+            })
+
+        })
+      </script>
+</body>
+
+</html>

@@ -1,0 +1,2543 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>medical</title>
+    <link rel="icon" href="img/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- themify CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- flaticon CSS -->
+    <link rel="stylesheet" href="css/flaticon.css">
+    <!-- magnific popup CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- nice select CSS -->
+    <!-- <link rel="stylesheet" href="css/nice-select.css"> -->
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="css/slick.css">
+    <!-- style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        thead, tbody, tr { display: block; }
+
+        tr:after {
+            content: ' ';
+            display: block;
+            visibility: hidden;
+            clear: both;
+        }
+
+        
+
+        tbody {
+            height: 250px;
+            overflow-y: auto;
+        }
+
+        thead {
+            /* fallback */
+        }
+
+        thead th {
+            height: 30px;
+
+            /*text-align: left;*/
+        }
+
+        tbody td, thead th {
+            width: 12.2%;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <!--::header part start::-->
+    <header class="main_menu">
+            
+        </header>
+        <!-- Header part end-->
+       
+    <!-- breadcrumb start-->
+    <section class="breadcrumb breadcrumb_bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb_iner">
+                        <div class="form-row">
+                            <div class="form-group col-md-2">
+                                <span id="username" style="color:#F1F1F1;font-size: 17px;"></span>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <span id="pagetitle" style="color:#F1F1F1;font-size: 20px;font-weight: bolder;">Item Order</span>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <span id="sysdate" style="color:#F1F1F1"></span>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <span id="systime" style="color:#F1F1F1"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- breadcrumb start-->
+
+    
+
+    <!--::regervation_part start::-->
+    <section class="regervation_part padding_bottom" style="margin-top:30px;">
+        <div class="container">
+            <div class="row align-items-center regervation_content">
+                <div class="col-md-12">
+                    <div class="regervation_part_iner">
+                        <br>
+                        <form action="controllers/add-staff.php" class="frmaddperson">
+                            <!-- <h2>Item Order</h2> -->
+                            <div class="label label-success" id="errorlogin"></div>
+                            <div class="form-row">
+                                
+                            </div>
+                            
+                        </form>
+                    </div>
+                    <div class="card-box">
+                        <ul class="nav nav-tabs nav-tabs-solid nav-tabs-rounded nav-justified">
+                            <!-- <li class="nav-item"><a class="nav-link btn-primary active" href="#solid-rounded-justified-tab6" data-toggle="tab">Sex</a></li> -->
+                            <!-- <li class="nav-item"><a class="nav-link btn-primary active" href="#solid-rounded-justified-tab3" data-toggle="tab">Item Order</a></li>  -->
+                            <!-- <li class="nav-item"><a class="nav-link btn-primary" href="#solid-rounded-justified-tab7" data-toggle="tab">Weight</a></li>
+                            <li class="nav-item"><a class="nav-link btn-primary" href="#solid-rounded-justified-tab8" data-toggle="tab">Frequency</a></li>
+                            <li class="nav-item"><a class="nav-link btn-primary" href="#solid-rounded-justified-tab4" data-toggle="tab">Duration</a></li>
+                            <li class="nav-item"><a class="nav-link btn-primary" href="#solid-rounded-justified-tab23" data-toggle="tab">Routes</a></li>
+                            <li class="nav-item"><a class="nav-link btn-primary" href="#solid-rounded-justified-tab9" data-toggle="tab">Dosage Unit</a></li> -->
+                            <!-- <li class="nav-item dropdown">
+                                <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Stocking Setup</a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item" href="#solid-rounded-justified-tab2" data-toggle="tab">Route of Administration</a>
+                                    <a class="dropdown-item" href="#solid-rounded-justified-tab3" data-toggle="tab">Category of Importance</a>
+                                    <a class="dropdown-item" href="#solid-rounded-justified-tab4" data-toggle="tab">Stock Location</a>
+                                    <a class="dropdown-item" href="#solid-rounded-justified-tab5" data-toggle="tab">Physical Position</a> 
+                                </div>
+                            </li> -->
+                            <!-- <li class="nav-item"><a class="nav-link" href="#solid-rounded-justified-tab3" data-toggle="tab">Department Item Group</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#solid-rounded-justified-tab4" data-toggle="tab">Generic Name</a></li> -->
+                            <!-- <li class="nav-item"><a class="nav-link" href="#solid-rounded-justified-tab5" data-toggle="tab">State</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#solid-rounded-justified-tab6" data-toggle="tab">Default Strength</a></li> -->
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane show active" id="solid-rounded-justified-tab3">
+                               
+                                <!-- <h3>Sex</h3> -->
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            
+                                            <form action="controllers/index.php" class="form-signin">
+                                                <!-- <h2>Patient Information</h2> -->
+                                                <div class="label label-success" id="card-status"></div>
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-1" style="font-size: 20px;">
+                                                        
+                                                        <input type="radio" class="corpsesource" name="corpsesource" style="font-size: 24px;" value="PATIENT">&nbsp;<span style="font-size: 24px;">PATIENT</span> <br>
+                                                        <input type="radio" class="corpsesource" name="corpsesource" style="font-size: 24px;" value="CORPSE">&nbsp;<span style="font-size: 24px;">CORPSE</span> 
+                                                   
+                                                    </div>
+                                                    <div class="form-group col-md-2">
+                                                        Search:<br>
+                                                        <input type="text" name="searchpatient" class="form-control" id="searchpatient" placeholder="Search Patients" required>
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        Select Patient:<br>
+                                                        <select type="text" name="selectpatient" class="form-control" id="selectpatient"></select>
+                                                    </div>
+                                                    <div class="form-group col-md-2" style="font-size: 20px;">
+                                                        HOSPITAL No.:<br>
+                                                        <div class="form-patientinfo-hospitalno" id="form-patientinfo-hospitalno"></div>
+                                                    </div>
+                                                    
+                                                    <div class="form-group col-md-1" style="font-size: 20px;">
+                                                        SEX:<br>
+                                                        <div class="form-patientinfo-sex" id="form-patientinfo-sex"></div>
+                                                    </div>
+                                                    <div class="form-group col-md-1" style="font-size: 20px;">
+                                                        AGE:<br>
+                                                        <div class="form-patientinfo-age" id="form-patientinfo-age"></div>
+                                                    </div>
+                                                    <div class="form-group col-md-1" style="font-size: 20px;">
+                                                        WEIGHT:<br>
+                                                        <div class="form-patientinfo-weight" id="form-patientinfo-weight"></div>
+                                                    </div>
+
+                                                    <input type="hidden" id="patientid" value="0">
+                                                    <input type="hidden" id="patientname" value="">
+                                                    <input type="hidden" id="personid" value="0"> 
+                                                    <input type="hidden" id="selectpatientnumber" value="">
+                                                    <div class="form-patientinfo-sex"></div>
+                                                    
+                                                </div>
+                                                <div class="regerv_btn">
+                                                    
+                                                    <!-- <button type="submit" class="genric-btn primary" id="cancel-sex-button" style="font-size: 24px;border-radius: 8px;">Cancel</button>
+                                                    <button type="submit" class="genric-btn success" id="edit-sex-button" style="font-size: 24px;border-radius: 8px;">Edit Sex</button>
+                                                    <button type="submit" class="genric-btn danger" id="delete-sex-button" style="font-size: 24px;border-radius: 8px;">Confirm Deletion</button> -->
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="col-12">
+                                                        <!-- <h2>Item Order</h2> -->
+                                                    </div>
+                                                    <div class="col-6">
+                                                        Item Order Number:<br>
+                                                        <select name="selectitemorder" class="form-control" id="selectitemorder"></select>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        Recall Item Order:<br>
+                                                        <select name="selectitemlist" class="form-control" id="selectitemlist"></select>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <br>
+                                                        <button type="submit" class="genric-btn success" id="recall-itemorder-button" style="font-size: 24px;border-radius: 8px;">Refill</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="col-12">
+                                            
+                                            <form action="controllers/index.php" class="form-signin">
+                                                <!-- <h2>Item Search</h2> -->
+                                                <div class="label label-success" id="revenue-order-status"></div>
+                                               
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-3">
+                                                        Select Department:<br>
+                                                        <select id="selectdepartment" name="selectdepartment" class="form-control"></select>
+                                                        
+                                                    </div>
+                                                    <div class="form-group col-md-3">
+                                                        Select Department Item Grouping:<br>
+                                                        <select id="selectdepartmentitemgrouping" name="selectdepartmentitemgrouping" class="form-control"></select>
+                                                        
+                                                    </div>
+                                                    <div class="form-group col-md-3">
+                                                        Select Item:<br>
+                                                        <select id="selectitem" name="selectitem" class="form-control"></select>
+                                                        
+                                                    </div>
+                                                    <div class="form-group col-md-2">
+                                                        Select Unit Type:<br>
+                                                        <select id="selectunittype" name="selectunittype" class="form-control">
+                                                            <option value="pieces">Pieces/Service</option>
+                                                            <option value="weight">Weight</option>
+                                                            <option value="volume">Volume</option>
+                                                            <option value="length">Length</option>
+                                                        </select>
+                                                        
+                                                    </div>
+                                                    <div class="form-group col-md-1">
+                                                        <br>
+                                                        <button type="submit" class="genric-btn primary" id="add-item-button" style="font-size: 24px;border-radius: 8px;">Add</button>
+                                                    </div>
+                                                    <!-- <div class="form-group col-md-6">
+                                                        <input type="text" name="manufacturercode" class="form-control" id="manufacturercode"
+                                                            placeholder="Manufacturer Code">
+                                                    </div> -->
+                                                    
+                                                    <div class="form-edit-item"></div>
+                                                   
+                                                    <div class="form-group col-12">
+                                                        
+                                                                
+                                                            <input type="checkbox" name="checkadvancedsearch" id="checkadvancedsearch" style="height: 25px;width:25px;">
+                                                            <span style="margin-left: 5px;font-size: large;">Advanced Search </span>
+                                                        
+                                                        
+                                                    </div>
+                                                    <div id="advancedsearchcontainer" class="form-row">
+                                                        <div class="form-group col-md-6">
+                                                            Search All Items:<br>
+                                                            <input type="text" id="searchitems" name="searchitems" class="form-control">
+                                                            
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            Select Group:<br>
+                                                            <select name="selectusagegroup" id="selectusagegroup" class="form-control" required>
+    
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            Select Class:<br>
+                                                            <select name="selectusageclass" id="selectusageclass" class="form-control" required>
+    
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            Select SubClass:<br>
+                                                            <select name="selectusagesubclass" id="selectusagesubclass" class="form-control" required>
+    
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group col-md-12">
+                                                            Select Item:<br>
+                                                            <select id="selectallitem" name="selectallitem" class="form-control"></select>
+                                                            
+                                                        </div>
+                                                       
+                                                        <div class="regerv_btn">
+                                                            <button type="submit" class="genric-btn primary" id="add-allitem-button" style="font-size: 24px;border-radius: 8px;">Add Item</button>
+                                                           
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-2">
+                                                        Search Regiment:<br>
+                                                        <input type="text" id="searchregiment" name="searchregiment" class="form-control">
+                                                        
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        Select Regiment:<br>
+                                                        <select name="selectregiment" id="selectregiment" class="form-control" required>
+    
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group col-md-3">
+                                                        <br>
+                                                        <button type="submit" class="genric-btn success" id="add-regiment-button" style="font-size: 24px;border-radius: 8px;">Add Regiment</button>
+                                                    </div>
+                                                    <div class="form-group col-md-3">
+                                                        <br>
+                                                        <p class="btn btn-primary float-right" id="view-revenue-order-price" style="font-size: 24px;"></p>
+                                                    </div>
+                                                </div>
+
+                                                
+                                            </form>
+                                            
+                                        </div>
+                                        <div class="col-12">
+                                            
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    <h4 class="card-title d-inline-block">View Items: <span id="viewrevenueordernumber"></span></h4>  <p class="btn btn-primary float-right" id="view-revenue-order-count"></p>
+                                                    <!-- <p class="float-right"><input type="text" id="searchsex" name="searchsex" placeholder="Search Sex" style="font-size: 18px;"></p> -->
+                                                </div>
+                                                <div class="card-body p-0">
+                                                    <div class="table-responsive">
+                                                        <table class="table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Item</th>
+                                                                    <th>Department</th>
+                                                                    <th>Dept Item Group</th>
+                                                                    <th>Price</th>
+                                                                    <th>Qty</th>
+                                                                    <th>Total</th>
+                                                                    <th>x</th>
+                                                                    <th>Action</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody id="view-revenue-order-list">
+                                                                
+                                                                
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="col-12">
+                                            
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    <button type="submit" class="genric-btn primary" id="add-patient-revenue-order-button" style="font-size: 24px;border-radius: 8px;">Submit</button>
+                                                    <!-- <button type="submit" class="genric-btn primary" id="add-revenue-order-button" style="font-size: 24px;border-radius: 8px;">Submit Revenue Order</button> -->
+                                                    <button type="submit" class="genric-btn success" id="discard-revenue-order-button" style="font-size: 24px;border-radius: 8px;">Cancel</button>
+                                                    <button type="submit" class="genric-btn primary" id="update-revenue-order-button" style="font-size: 24px;border-radius: 8px;">Update</button>
+                                                    <button type="submit" class="genric-btn danger" id="cancel-revenue-order-button" style="font-size: 24px;border-radius: 8px;">Clear</button>
+                                                      
+                                                    <!-- <p class="float-right"><input type="text" id="searchsex" name="searchsex" placeholder="Search Sex" style="font-size: 18px;"></p> -->
+                                                </div>
+                                                <input type="hidden" id="revenue-order-id">
+                                                <input type="hidden" id="revenue-order-number">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-12">
+                                            
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    <h4 class="card-title d-inline-block">View Item Orders</h4>  <p class="btn btn-primary float-right" id="view-item-order-count"></p>
+                                                    <p class="float-right"><input type="text" id="searchrevenueorder" name="searchrevenueorder" placeholder="Search Revenue Order" style="font-size: 18px;"></p>
+                                                </div>
+                                                <div class="card-body p-0">
+                                                    <div class="table-responsive scrollable">
+                                                        <table class="table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Number</th>
+                                                                    <th>Date</th>
+                                                                    <th>Total Price</th>
+                                                                    <th>Staff</th>
+                                                                    
+                                                                    <th>Action</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody id="view-all-revenue-order-list">
+                                                                
+                                                                
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-5 col-md-6">
+                    <div class="reservation_img">
+                        <img src="img/loginphoto.jpg" alt="">
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <!--::regervation_part end::-->
+
+    
+    <!-- footer part start-->
+    <footer class="footer-area">
+
+        <div class="copyright_part">
+            
+        </div>
+    </footer>
+
+    <!-- footer part end-->
+
+    <!-- jquery plugins here-->
+
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <!-- popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- easing js -->
+    <script src="js/jquery.magnific-popup.js"></script>
+    <!-- swiper js -->
+    <script src="js/swiper.min.js"></script>
+    <!-- swiper js -->
+    <script src="js/masonry.pkgd.js"></script>
+    <!-- particles js -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- <script src="js/jquery.nice-select.min.js"></script> -->
+    <!-- swiper js -->
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <!-- contact js -->
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <script src="js/contact.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+    <script src="views/masterpage.js"></script>
+    <!-- <script src="views/records.js"></script>
+    <script src="views/corpse-list.js"></script> -->
+    <script>
+        $(document).ready(function(){
+            // get departments
+            let departmentitemgrouplist = ``
+            let departmentlist = ``
+
+           
+
+            
+            let getDepartment = "getDepartment"
+            let searchItem = ""
+            let deptitemgrpitems = ``
+            let displayselectedlistitems = ``
+            $.post("controllers/combo-setup.php",{searchItem:searchItem,getDepartment: getDepartment},function(formdata){
+                //console.log("itemGroup: ",data)
+                if(formdata!="No Record Found"){
+                    
+                    let data=JSON.parse(formdata)
+                    let departmentoptions = ``
+                    $.each(data.records, function(key, val) {
+                        
+                        departmentoptions += `
+                        <option value="` + val.id + `,` + val.department + `">` + val.department + `</option>
+                        `
+                    })
+                    departmentlist = departmentoptions
+                    $("#selectdepartment").html(departmentoptions)
+                    let department = $("#selectdepartment").val()
+                    let splitsearch = department.split(",")
+                    department = splitsearch[1]
+                    let getDepartmentItemGroupByDepartment = "getDepartmentItemGroupByDepartment"
+                    $.post("controllers/combo-setup.php",{department:department,getDepartmentItemGroupByDepartment:getDepartmentItemGroupByDepartment}, function(formdata){
+                        if(formdata!="No Record Found"){
+                            let data = JSON.parse(formdata)
+                            let departmentitemgroupoptions = ``
+                            $.each(data.records, function(key, val){
+                                departmentitemgroupoptions += `
+                                <option value="` + val.departmentitemgroup + `">` + val.departmentitemgroup + `</option>
+                                `
+                            })
+                            departmentitemgrouplist = departmentitemgroupoptions
+                            $("#selectdepartmentitemgrouping").html(departmentitemgroupoptions)
+                            let deptItemgroup = $("#selectdepartmentitemgrouping").val()
+                            let GetItemGenericNameByDepartment = "GetItemGenericNameByDepartment"
+                            $.post("controllers/combo-setup.php",{searchItem:department,GetItemGenericNameByDepartment:GetItemGenericNameByDepartment}, function(formdata){
+                                // console.log(formdata)
+                                if(formdata!="No Record Found"){
+                                    let data = JSON.parse(formdata)
+                                    let itemoptions = ``
+                                    deptitemgrpitems = `<select id="selectdptitemgrpitem" name="selectdptitemgrpitem" class="form-control">`
+                                    $.each(data.records, function(key, val){
+                                        itemoptions += `
+                                        <option value="` + val.id + `,` + val.itemgenericname + `">` + val.tradename + " (" + val.itemgenericname + `)</option>
+                                        `
+                                        deptitemgrpitems += `
+                                        <option value="` + val.id + `,` + val.itemgenericname + `">` + val.tradename + " (" + val.itemgenericname + `)</option>
+                                        `
+                                    })
+                                    deptitemgrpitems += `</select>`
+                                    // console.log(itemoptions)
+                                    // departmentitemgrouplist = departmentitemgroupoptions
+                                    $("#selectitem").html(itemoptions)
+
+                                    let pricinglist = displayselectedlistitems + `<tr>
+                                                    <td>` + deptitemgrpitems + `</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>
+                                                            <span class="additemtolist" style="font-size:18px;cursor:pointer;"><i class="fa fa-plus-square"></i> Add</span></td>
+                                                </tr>`
+                                        $("#view-revenue-order-list").html(pricinglist)
+
+                                        $("#selectdptitemgrpitem").on("change", function(evt){
+                                        evt.preventDefault()
+                                        let selecteditem = $("#selectdptitemgrpitem").val()
+                                        if(selecteditem!="" && selecteditem!=null){
+                                            let splititem = selecteditem.split(",")
+                                            let itemid = splititem[0]
+                                            console.log(itemid)
+
+                                            //Get all the pieces
+                                            let totalpreviousquantity = 0
+                                            let getStockItemListByItemId = "getStockItemListByItemId"
+                                            let sellingprice = 0
+                                            let sellingpriceperpiece = 0
+                                            let sellingpriceperweight = 0
+                                            let sellingpricepervolume = 0
+                                            let reorderlevel = 0
+                                            let reorderlevelunit = ""
+                                            
+                                            let unittype = ""
+                                            $.post("controllers/combo-setup.php",{id:itemid,getStockItemListByItemId:getStockItemListByItemId},function(formdata){
+                                                //console.log(formdata)
+                                                if(formdata!="No Record Found"){
+                                                    let data = JSON.parse(formdata)
+                                                    
+                                                    $.each(data.records, function(key, val) {
+                                                        itemid = val.id
+                                                        totalpreviousquantity += parseFloat(val.previousquantity)
+                                                        sellingpriceperpiece = parseFloat(val.sellingprice)
+                                                        sellingpriceperweight = parseFloat(val.sellingpriceperstrength)
+                                                        sellingpricepervolume = parseFloat(val.sellingpriceperliquidstrength)
+                                                        reorderlevel = val.reorderlevel
+                                                        unittype = $("#selectunittype").val()
+                                                        if(unittype=="pieces"){
+                                                            sellingprice = sellingpriceperpiece
+                                                        }else if(unittype=="weight"){
+                                                            sellingprice = sellingpriceperweight
+                                                        }else if(unittype=="volume"){
+                                                            sellingprice = sellingpricepervolume
+                                                        }
+                                                        console.log(sellingprice)
+
+                                                    })
+                                                    let itemgenericname = splititem[1]
+                                                    let department = $("#selectdepartment").val()
+                                                    splitdepartment = department.split(",")
+                                                    department = splitdepartment[1]
+                                                    let departmentitemgroup = $("#selectdepartmentitemgrouping").val()
+                                                    let revenueorderitem = {"genericname":itemgenericname,
+                                                                            "department":department,
+                                                                            "departmentitemgroup":departmentitemgroup,
+                                                                            "sellingprice":sellingprice,
+                                                                            "reorderlevel":reorderlevel,
+                                                                            "unittype":unittype,
+                                                                            "itemid":itemid,
+                                                                            "quantity":1}
+                                                    revenueorderlist.push(revenueorderitem)
+                                                    console.log(revenueorderlist)
+                                                    displayrevenueorder(revenueorderlist)
+                                                }
+                                                
+                                            })
+                                            
+                                        }
+                                    })
+
+                                    $(".additemtolist").on("click", function(evt){
+                                        evt.preventDefault()
+                                        let selecteditem = $("#selectdptitemgrpitem").val()
+                                        if(selecteditem!="" && selecteditem!=null){
+                                            let splititem = selecteditem.split(",")
+                                            let itemid = splititem[0]
+                                            console.log(itemid)
+
+                                            //Get all the pieces
+                                            let totalpreviousquantity = 0
+                                            let getStockItemListByItemId = "getStockItemListByItemId"
+                                            let sellingprice = 0
+                                            let sellingpriceperpiece = 0
+                                            let sellingpriceperweight = 0
+                                            let sellingpricepervolume = 0
+                                            let reorderlevel = 0
+                                            let reorderlevelunit = ""
+                                            
+                                            let unittype = ""
+                                            $.post("controllers/combo-setup.php",{id:itemid,getStockItemListByItemId:getStockItemListByItemId},function(formdata){
+                                                //console.log(formdata)
+                                                if(formdata!="No Record Found"){
+                                                    let data = JSON.parse(formdata)
+                                                    
+                                                    $.each(data.records, function(key, val) {
+                                                        itemid = val.id
+                                                        totalpreviousquantity += parseFloat(val.previousquantity)
+                                                        sellingpriceperpiece = parseFloat(val.sellingprice)
+                                                        sellingpriceperweight = parseFloat(val.sellingpriceperstrength)
+                                                        sellingpricepervolume = parseFloat(val.sellingpriceperliquidstrength)
+                                                        reorderlevel = val.reorderlevel
+                                                        unittype = $("#selectunittype").val()
+                                                        if(unittype=="pieces"){
+                                                            sellingprice = sellingpriceperpiece
+                                                        }else if(unittype=="weight"){
+                                                            sellingprice = sellingpriceperweight
+                                                        }else if(unittype=="volume"){
+                                                            sellingprice = sellingpricepervolume
+                                                        }
+                                                        console.log(sellingprice)
+
+                                                    })
+                                                    let itemgenericname = splititem[1]
+                                                    let department = $("#selectdepartment").val()
+                                                    splitdepartment = department.split(",")
+                                                    department = splitdepartment[1]
+                                                    let departmentitemgroup = $("#selectdepartmentitemgrouping").val()
+                                                    let revenueorderitem = {"genericname":itemgenericname,
+                                                                            "department":department,
+                                                                            "departmentitemgroup":departmentitemgroup,
+                                                                            "sellingprice":sellingprice,
+                                                                            "reorderlevel":reorderlevel,
+                                                                            "unittype":unittype,
+                                                                            "itemid":itemid,
+                                                                            "quantity":1}
+                                                    revenueorderlist.push(revenueorderitem)
+                                                    console.log(revenueorderlist)
+                                                    displayrevenueorder(revenueorderlist)
+                                                }
+                                                
+                                            })
+                                            
+                                        }
+                                    })
+                                    
+                                }
+
+                            })
+                            // let deptItemgroup = $("#selectdepartmentitemgrouping").val()
+                            let getDeptItemGrpUsageGroup = "getDeptItemGrpUsageGroup"
+                            $.post("controllers/combo-setup.php",{searchItem:deptItemgroup,getDeptItemGrpUsageGroup:getDeptItemGrpUsageGroup}, function(formdata){
+                                if(formdata!="No Record Found"){
+                                    let data = JSON.parse(formdata)
+                                    let itemgroupoptions = ``
+                                    $.each(data.records, function(key, val){
+                                        itemgroupoptions += `
+                                        <option value="` + val.itemgroup + `">` + val.itemgroup + `</option>
+                                        `
+                                    })
+                                    genericnameusagegrouplist = itemgroupoptions
+                                    $("#selectusagegroup").html(itemgroupoptions)
+                                    
+                                    //$("#selectformdepartmentitemgroup").html(departmentitemgroupoptions)
+                                    let selectgroup = $("#selectusagegroup").val()
+                                    let getItemClassByItemGroup = "getItemClassByItemGroup"
+                                    $.post("controllers/combo-setup.php",{searchItem:selectgroup,getItemClassByItemGroup:getItemClassByItemGroup},function(formdata){
+                                        console.log(formdata)
+                                        let data = JSON.parse(formdata)
+                                        let genericnameclassoptions = ``
+                                        $.each(data.records, function(key, val) {
+                                        
+                                            genericnameclassoptions += `
+                                            <option value="` + val.itemclass + `">` + val.itemclass + `</option>
+                                            `
+                                        })
+                                        genericnameusageclasslist = genericnameclassoptions
+                                        $("#selectusageclass").html(genericnameclassoptions)
+                                        let selectsubclassclass = $("#selectusageclass").val()
+                                        let getItemSubClassByClass = "getItemSubClassByClass"
+                                        $.post("controllers/combo-setup.php",{selectsubclassclass:selectsubclassclass,getItemSubClassByClass:getItemSubClassByClass},function(formdata){
+                                            console.log(formdata)
+                                            let data = JSON.parse(formdata)
+                                            let genericnamesubclassoptions = ``
+                                            $.each(data.records, function(key, val) {
+                                            
+                                                genericnamesubclassoptions += `
+                                                <option value="` + val.itemsubclass + `">` + val.itemsubclass + `</option>
+                                                `
+                                            })
+                                            genericnameusagesubclasslist = genericnamesubclassoptions
+                                            $("#selectusagesubclass").html(genericnamesubclassoptions)
+                                            let searchItem = $("#searchitems").val()
+                                            let selectsubclass = $("#selectusagesubclass").val()
+                                            let GetGenericNameByUsageSubClass = "GetGenericNameByUsageSubClass"
+                                            $.post("controllers/combo-setup.php",{searchItem:searchItem,itemsubclass:selectsubclass,GetGenericNameByUsageSubClass:GetGenericNameByUsageSubClass},function(formdata){
+                                                console.log(formdata)
+                                                if(formdata!="No Record Found"){
+                                                    let data = JSON.parse(formdata)
+                                                    let genericnameoptions = ``
+                                                    $.each(data.records, function(key, val) {
+                                                    
+                                                        genericnameoptions += `
+                                                        <option value="` + val.id + `,` + val.itemgenericname + `">` + val.itemgenericname + `</option>
+                                                        `
+                                                    })
+                                                    genericnamelist = genericnameoptions
+                                                    $("#selectallitem").html(genericnameoptions)
+                                                    // let selectclass = $("#selectgenericnameitemgroupclass").val()
+                                                    
+                                                }
+                                            
+                                            })
+                                        })
+                                    })
+                                }
+
+                            })
+                        }
+
+                    })
+                }
+            })
+
+            $("#selectdepartment").on("change", function(evt){
+                     evt.preventDefault()
+                    //  let department = $("#selectdepartment").val()
+                     let department = $("#selectdepartment").val()
+                    let splitsearch = department.split(",")
+                    department = splitsearch[1]
+                        let getDepartmentItemGroupByDepartment = "getDepartmentItemGroupByDepartment"
+                        $.post("controllers/combo-setup.php",{department:department,getDepartmentItemGroupByDepartment:getDepartmentItemGroupByDepartment}, function(formdata){
+                            if(formdata!="No Record Found"){
+                                let data = JSON.parse(formdata)
+                                let departmentitemgroupoptions = ``
+                                $.each(data.records, function(key, val){
+                                    departmentitemgroupoptions += `
+                                    <option value="` + val.departmentitemgroup + `">` + val.departmentitemgroup + `</option>
+                                    `
+                                })
+                                departmentitemgrouplist = departmentitemgroupoptions
+                                $("#selectdepartmentitemgrouping").html(departmentitemgroupoptions)
+                                let departmentitemgroup = $("#selectdepartmentitemgrouping").val()
+                                let GetItemGenericNameByDepartment = "GetItemGenericNameByDepartment"
+                                $.post("controllers/combo-setup.php",{searchItem:department,GetItemGenericNameByDepartment:GetItemGenericNameByDepartment}, function(formdata){
+                                    if(formdata!="No Record Found"){
+                                        
+                                        let data = JSON.parse(formdata)
+                                        let itemoptions = ``
+                                        deptitemgrpitems = `<select id="selectdptitemgrpitem" name="selectdptitemgrpitem" class="form-control">`
+                                        $.each(data.records, function(key, val){
+                                            itemoptions += `
+                                            <option value=" ` + val.id + `,` + val.itemgenericname + `">` + val.tradename + " (" + val.itemgenericname + `)</option>
+                                            `
+                                            deptitemgrpitems += `
+                                            <option value="` + val.id + `,` + val.itemgenericname + `">` + val.tradename + " (" + val.itemgenericname + `)</option>
+                                            `
+                                        })
+                                        deptitemgrpitems += `</select>`
+                                        // departmentitemgrouplist = departmentitemgroupoptions
+                                        $("#selectitem").html(itemoptions)
+
+                                        let pricinglist = displayselectedlistitems + `<tr>
+                                                    <td>` + deptitemgrpitems + `</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>
+                                                            <span class="additemtolist" style="font-size:18px;cursor:pointer;"><i class="fa fa-plus-square"></i> Add</span></td>
+                                                </tr>`
+                                        $("#view-revenue-order-list").html(pricinglist)
+
+                                        $("#selectdptitemgrpitem").on("change", function(evt){
+                                            evt.preventDefault()
+                                            let selecteditem = $("#selectdptitemgrpitem").val()
+                                            if(selecteditem!="" && selecteditem!=null){
+                                                let splititem = selecteditem.split(",")
+                                                let itemid = splititem[0]
+                                                console.log(itemid)
+
+                                                //Get all the pieces
+                                                let totalpreviousquantity = 0
+                                                let getStockItemListByItemId = "getStockItemListByItemId"
+                                                let sellingprice = 0
+                                                let sellingpriceperpiece = 0
+                                                let sellingpriceperweight = 0
+                                                let sellingpricepervolume = 0
+                                                let reorderlevel = 0
+                                                let reorderlevelunit = ""
+                                                
+                                                let unittype = ""
+                                                $.post("controllers/combo-setup.php",{id:itemid,getStockItemListByItemId:getStockItemListByItemId},function(formdata){
+                                                    //console.log(formdata)
+                                                    if(formdata!="No Record Found"){
+                                                        let data = JSON.parse(formdata)
+                                                        
+                                                        $.each(data.records, function(key, val) {
+                                                            itemid = val.id
+                                                            totalpreviousquantity += parseFloat(val.previousquantity)
+                                                            sellingpriceperpiece = parseFloat(val.sellingprice)
+                                                            sellingpriceperweight = parseFloat(val.sellingpriceperstrength)
+                                                            sellingpricepervolume = parseFloat(val.sellingpriceperliquidstrength)
+                                                            reorderlevel = val.reorderlevel
+                                                            unittype = $("#selectunittype").val()
+                                                            if(unittype=="pieces"){
+                                                                sellingprice = sellingpriceperpiece
+                                                            }else if(unittype=="weight"){
+                                                                sellingprice = sellingpriceperweight
+                                                            }else if(unittype=="volume"){
+                                                                sellingprice = sellingpricepervolume
+                                                            }
+                                                            console.log(sellingprice)
+
+                                                        })
+                                                        let itemgenericname = splititem[1]
+                                                        let department = $("#selectdepartment").val()
+                                                        splitdepartment = department.split(",")
+                                                        department = splitdepartment[1]
+                                                        let departmentitemgroup = $("#selectdepartmentitemgrouping").val()
+                                                        let revenueorderitem = {"genericname":itemgenericname,
+                                                                                "department":department,
+                                                                                "departmentitemgroup":departmentitemgroup,
+                                                                                "sellingprice":sellingprice,
+                                                                                "reorderlevel":reorderlevel,
+                                                                                "unittype":unittype,
+                                                                                "itemid":itemid,
+                                                                                "quantity":1}
+                                                        revenueorderlist.push(revenueorderitem)
+                                                        console.log(revenueorderlist)
+                                                        displayrevenueorder(revenueorderlist)
+                                                    }
+                                                    
+                                                })
+                                                
+                                            }
+                                        })
+
+                                        $(".additemtolist").on("click", function(evt){
+                                            evt.preventDefault()
+                                            let selecteditem = $("#selectdptitemgrpitem").val()
+                                            if(selecteditem!="" && selecteditem!=null){
+                                                let splititem = selecteditem.split(",")
+                                                let itemid = splititem[0]
+                                                console.log(itemid)
+
+                                                //Get all the pieces
+                                                let totalpreviousquantity = 0
+                                                let getStockItemListByItemId = "getStockItemListByItemId"
+                                                let sellingprice = 0
+                                                let sellingpriceperpiece = 0
+                                                let sellingpriceperweight = 0
+                                                let sellingpricepervolume = 0
+                                                let reorderlevel = 0
+                                                let reorderlevelunit = ""
+                                                
+                                                let unittype = ""
+                                                $.post("controllers/combo-setup.php",{id:itemid,getStockItemListByItemId:getStockItemListByItemId},function(formdata){
+                                                    //console.log(formdata)
+                                                    if(formdata!="No Record Found"){
+                                                        let data = JSON.parse(formdata)
+                                                        
+                                                        $.each(data.records, function(key, val) {
+                                                            itemid = val.id
+                                                            totalpreviousquantity += parseFloat(val.previousquantity)
+                                                            sellingpriceperpiece = parseFloat(val.sellingprice)
+                                                            sellingpriceperweight = parseFloat(val.sellingpriceperstrength)
+                                                            sellingpricepervolume = parseFloat(val.sellingpriceperliquidstrength)
+                                                            reorderlevel = val.reorderlevel
+                                                            unittype = $("#selectunittype").val()
+                                                            if(unittype=="pieces"){
+                                                                sellingprice = sellingpriceperpiece
+                                                            }else if(unittype=="weight"){
+                                                                sellingprice = sellingpriceperweight
+                                                            }else if(unittype=="volume"){
+                                                                sellingprice = sellingpricepervolume
+                                                            }
+                                                            console.log(sellingprice)
+
+                                                        })
+                                                        let itemgenericname = splititem[1]
+                                                        let department = $("#selectdepartment").val()
+                                                        splitdepartment = department.split(",")
+                                                        department = splitdepartment[1]
+                                                        let departmentitemgroup = $("#selectdepartmentitemgrouping").val()
+                                                        let revenueorderitem = {"genericname":itemgenericname,
+                                                                                "department":department,
+                                                                                "departmentitemgroup":departmentitemgroup,
+                                                                                "sellingprice":sellingprice,
+                                                                                "reorderlevel":reorderlevel,
+                                                                                "unittype":unittype,
+                                                                                "itemid":itemid,
+                                                                                "quantity":1}
+                                                        revenueorderlist.push(revenueorderitem)
+                                                        console.log(revenueorderlist)
+                                                        displayrevenueorder(revenueorderlist)
+                                                    }
+                                                    
+                                                })
+                                                
+                                            }
+                                        })
+                                        
+                                    }
+
+                                })
+
+                                // let deptItemgroup = $("#selectdepartmentitemgrouping").val()
+                                let getDeptItemGrpUsageGroup = "getDeptItemGrpUsageGroup"
+                                $.post("controllers/combo-setup.php",{searchItem:departmentitemgroup,getDeptItemGrpUsageGroup:getDeptItemGrpUsageGroup}, function(formdata){
+                                    if(formdata!="No Record Found"){
+                                        let data = JSON.parse(formdata)
+                                        let itemgroupoptions = ``
+                                        $.each(data.records, function(key, val){
+                                            itemgroupoptions += `
+                                            <option value="` + val.itemgroup + `">` + val.itemgroup + `</option>
+                                            `
+                                        })
+                                        genericnameusagegrouplist = itemgroupoptions
+                                        $("#selectusagegroup").html(itemgroupoptions)
+                                        
+                                        //$("#selectformdepartmentitemgroup").html(departmentitemgroupoptions)
+                                        let selectgroup = $("#selectusagegroup").val()
+                                        let getItemClassByItemGroup = "getItemClassByItemGroup"
+                                        $.post("controllers/combo-setup.php",{searchItem:selectgroup,getItemClassByItemGroup:getItemClassByItemGroup},function(formdata){
+                                            console.log(formdata)
+                                            let data = JSON.parse(formdata)
+                                            let genericnameclassoptions = ``
+                                            $.each(data.records, function(key, val) {
+                                            
+                                                genericnameclassoptions += `
+                                                <option value="` + val.itemclass + `">` + val.itemclass + `</option>
+                                                `
+                                            })
+                                            genericnameusageclasslist = genericnameclassoptions
+                                            $("#selectusageclass").html(genericnameclassoptions)
+                                            let selectsubclassclass = $("#selectusageclass").val()
+                                            let getItemSubClassByClass = "getItemSubClassByClass"
+                                            $.post("controllers/combo-setup.php",{selectsubclassclass:selectsubclassclass,getItemSubClassByClass:getItemSubClassByClass},function(formdata){
+                                                console.log(formdata)
+                                                let data = JSON.parse(formdata)
+                                                let genericnamesubclassoptions = `<option value="">Select Sub Class</option>`
+                                                $.each(data.records, function(key, val) {
+                                                
+                                                    genericnamesubclassoptions += `
+                                                    <option value="` + val.itemsubclass + `">` + val.itemsubclass + `</option>
+                                                    `
+                                                })
+                                                genericnameusagesubclasslist = genericnamesubclassoptions
+                                                $("#selectusagesubclass").html(genericnamesubclassoptions)
+                                                let searchItem = $("#searchitems").val()
+                                                let selectsubclass = $("#selectusagesubclass").val()
+                                                let GetGenericNameByUsageSubClass = "GetGenericNameByUsageSubClass"
+                                                $.post("controllers/combo-setup.php",{searchItem:searchItem,itemsubclass:selectsubclass,GetGenericNameByUsageSubClass:GetGenericNameByUsageSubClass},function(formdata){
+                                                    console.log(formdata)
+                                                    if(formdata!="No Record Found"){
+                                                        let data = JSON.parse(formdata)
+                                                        let genericnameoptions = ``
+                                                        $.each(data.records, function(key, val) {
+                                                        
+                                                            genericnameoptions += `
+                                                            <option value="` + val.id + `,` + val.itemgenericname + `">` + val.itemgenericname + `</option>
+                                                            `
+                                                        })
+                                                        genericnamelist = genericnameoptions
+                                                        $("#selectallitem").html(genericnameoptions)
+                                                        // let selectclass = $("#selectgenericnameitemgroupclass").val()
+                                                        
+                                                    }
+                                                
+                                                })
+                                            })
+                                        })
+                                    }
+
+                                })
+                            }
+
+                        })
+                 })
+
+                 $("#selectdepartmentitemgrouping").on("change", function(evt){
+                    let departmentitemgroup = $("#selectdepartmentitemgrouping").val()
+                    let GetGenericNameByDepartmentItemGrouping = "GetGenericNameByDepartmentItemGrouping"
+                    $.post("controllers/combo-setup.php",{searchItem:departmentitemgroup,GetGenericNameByDepartmentItemGrouping:GetGenericNameByDepartmentItemGrouping}, function(formdata){
+                        if(formdata!="No Record Found"){
+                            console.log(formdata)
+                            let data = JSON.parse(formdata)
+                            let itemoptions = ``
+                            deptitemgrpitems = `<select id="selectdptitemgrpitem" name="selectdptitemgrpitem" class="form-control">`
+                            $.each(data.records, function(key, val){
+                                itemoptions += `
+                                <option value=" ` + val.id + `,` + val.itemgenericname + `">` + val.tradename + " (" + val.itemgenericname + `)</option>
+                                `
+
+                                deptitemgrpitems += `
+                                <option value="` + val.id + `,` + val.itemgenericname + `">` + val.tradename + " (" + val.itemgenericname + `)</option>
+                                `
+                            })
+                            deptitemgrpitems += `</select>`
+                            // departmentitemgrouplist = departmentitemgroupoptions
+                            $("#selectitem").html(itemoptions)
+                            let pricinglist = displayselectedlistitems + `<tr>
+                                                    <td>` + deptitemgrpitems + `</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>
+                                                            <span class="additemtolist" style="font-size:18px;cursor:pointer;"><i class="fa fa-plus-square"></i> Add</span></td>
+                                                </tr>`
+                                        $("#view-revenue-order-list").html(pricinglist)
+
+                                        $("#selectdptitemgrpitem").on("change", function(evt){
+                                            evt.preventDefault()
+                                            let selecteditem = $("#selectdptitemgrpitem").val()
+                                            if(selecteditem!="" && selecteditem!=null){
+                                                let splititem = selecteditem.split(",")
+                                                let itemid = splititem[0]
+                                                console.log(itemid)
+
+                                                //Get all the pieces
+                                                let totalpreviousquantity = 0
+                                                let getStockItemListByItemId = "getStockItemListByItemId"
+                                                let sellingprice = 0
+                                                let sellingpriceperpiece = 0
+                                                let sellingpriceperweight = 0
+                                                let sellingpricepervolume = 0
+                                                let reorderlevel = 0
+                                                let reorderlevelunit = ""
+                                                
+                                                let unittype = ""
+                                                $.post("controllers/combo-setup.php",{id:itemid,getStockItemListByItemId:getStockItemListByItemId},function(formdata){
+                                                    //console.log(formdata)
+                                                    if(formdata!="No Record Found"){
+                                                        let data = JSON.parse(formdata)
+                                                        
+                                                        $.each(data.records, function(key, val) {
+                                                            itemid = val.id
+                                                            totalpreviousquantity += parseFloat(val.previousquantity)
+                                                            sellingpriceperpiece = parseFloat(val.sellingprice)
+                                                            sellingpriceperweight = parseFloat(val.sellingpriceperstrength)
+                                                            sellingpricepervolume = parseFloat(val.sellingpriceperliquidstrength)
+                                                            reorderlevel = val.reorderlevel
+                                                            unittype = $("#selectunittype").val()
+                                                            if(unittype=="pieces"){
+                                                                sellingprice = sellingpriceperpiece
+                                                            }else if(unittype=="weight"){
+                                                                sellingprice = sellingpriceperweight
+                                                            }else if(unittype=="volume"){
+                                                                sellingprice = sellingpricepervolume
+                                                            }
+                                                            console.log(sellingprice)
+
+                                                        })
+                                                        let itemgenericname = splititem[1]
+                                                        let department = $("#selectdepartment").val()
+                                                        splitdepartment = department.split(",")
+                                                        department = splitdepartment[1]
+                                                        let departmentitemgroup = $("#selectdepartmentitemgrouping").val()
+                                                        let revenueorderitem = {"genericname":itemgenericname,
+                                                                                "department":department,
+                                                                                "departmentitemgroup":departmentitemgroup,
+                                                                                "sellingprice":sellingprice,
+                                                                                "reorderlevel":reorderlevel,
+                                                                                "unittype":unittype,
+                                                                                "itemid":itemid,
+                                                                                "quantity":1}
+                                                        revenueorderlist.push(revenueorderitem)
+                                                        console.log(revenueorderlist)
+                                                        displayrevenueorder(revenueorderlist)
+                                                    }
+                                                    
+                                                })
+                                                
+                                            }
+                                        })
+
+                                        $(".additemtolist").on("click", function(evt){
+                                            evt.preventDefault()
+                                            let selecteditem = $("#selectdptitemgrpitem").val()
+                                            if(selecteditem!="" && selecteditem!=null){
+                                                let splititem = selecteditem.split(",")
+                                                let itemid = splititem[0]
+                                                console.log(itemid)
+
+                                                //Get all the pieces
+                                                let totalpreviousquantity = 0
+                                                let getStockItemListByItemId = "getStockItemListByItemId"
+                                                let sellingprice = 0
+                                                let sellingpriceperpiece = 0
+                                                let sellingpriceperweight = 0
+                                                let sellingpricepervolume = 0
+                                                let reorderlevel = 0
+                                                let reorderlevelunit = ""
+                                                
+                                                let unittype = ""
+                                                $.post("controllers/combo-setup.php",{id:itemid,getStockItemListByItemId:getStockItemListByItemId},function(formdata){
+                                                    //console.log(formdata)
+                                                    if(formdata!="No Record Found"){
+                                                        let data = JSON.parse(formdata)
+                                                        
+                                                        $.each(data.records, function(key, val) {
+                                                            itemid = val.id
+                                                            totalpreviousquantity += parseFloat(val.previousquantity)
+                                                            sellingpriceperpiece = parseFloat(val.sellingprice)
+                                                            sellingpriceperweight = parseFloat(val.sellingpriceperstrength)
+                                                            sellingpricepervolume = parseFloat(val.sellingpriceperliquidstrength)
+                                                            reorderlevel = val.reorderlevel
+                                                            unittype = $("#selectunittype").val()
+                                                            if(unittype=="pieces"){
+                                                                sellingprice = sellingpriceperpiece
+                                                            }else if(unittype=="weight"){
+                                                                sellingprice = sellingpriceperweight
+                                                            }else if(unittype=="volume"){
+                                                                sellingprice = sellingpricepervolume
+                                                            }
+                                                            console.log(sellingprice)
+
+                                                        })
+                                                        let itemgenericname = splititem[1]
+                                                        let department = $("#selectdepartment").val()
+                                                        splitdepartment = department.split(",")
+                                                        department = splitdepartment[1]
+                                                        let departmentitemgroup = $("#selectdepartmentitemgrouping").val()
+                                                        let revenueorderitem = {"genericname":itemgenericname,
+                                                                                "department":department,
+                                                                                "departmentitemgroup":departmentitemgroup,
+                                                                                "sellingprice":sellingprice,
+                                                                                "reorderlevel":reorderlevel,
+                                                                                "unittype":unittype,
+                                                                                "itemid":itemid,
+                                                                                "quantity":1}
+                                                        revenueorderlist.push(revenueorderitem)
+                                                        console.log(revenueorderlist)
+                                                        displayrevenueorder(revenueorderlist)
+                                                    }
+                                                    
+                                                })
+                                                
+                                            }
+                                        })
+                        }
+
+
+
+                    })
+
+                    // let deptItemgroup = $("#selectdepartmentitemgrouping").val()
+                    let getDeptItemGrpUsageGroup = "getDeptItemGrpUsageGroup"
+                    $.post("controllers/combo-setup.php",{searchItem:departmentitemgroup,getDeptItemGrpUsageGroup:getDeptItemGrpUsageGroup}, function(formdata){
+                        if(formdata!="No Record Found"){
+                            let data = JSON.parse(formdata)
+                            let itemoptions = ``
+                            $.each(data.records, function(key, val){
+                                itemoptions += `
+                                <option value="` + val.itemgroup + `">` + val.itemgroup + `</option>
+                                `
+                            })
+                            genericnameusagegrouplist = itemoptions
+                            $("#selectusagegroup").html(itemoptions)
+                            
+                            //$("#selectformdepartmentitemgroup").html(departmentitemgroupoptions)
+                            let selectgroup = $("#selectusagegroup").val()
+                            let getItemClassByItemGroup = "getItemClassByItemGroup"
+                            $.post("controllers/combo-setup.php",{searchItem:selectgroup,getItemClassByItemGroup:getItemClassByItemGroup},function(formdata){
+                                console.log(formdata)
+                                let data = JSON.parse(formdata)
+                                let genericnameclassoptions = ``
+                                $.each(data.records, function(key, val) {
+                                
+                                    genericnameclassoptions += `
+                                    <option value="` + val.itemclass + `">` + val.itemclass + `</option>
+                                    `
+                                })
+                                genericnameusageclasslist = genericnameclassoptions
+                                $("#selectusageclass").html(genericnameclassoptions)
+                                let selectsubclassclass = $("#selectusageclass").val()
+                                let getItemSubClassByClass = "getItemSubClassByClass"
+                                $.post("controllers/combo-setup.php",{selectsubclassclass:selectsubclassclass,getItemSubClassByClass:getItemSubClassByClass},function(formdata){
+                                    console.log(formdata)
+                                    let data = JSON.parse(formdata)
+                                    let genericnamesubclassoptions = `<option value="">Select Sub Class</option>`
+                                    $.each(data.records, function(key, val) {
+                                    
+                                        genericnamesubclassoptions += `
+                                        <option value="` + val.itemsubclass + `">` + val.itemsubclass + `</option>
+                                        `
+                                    })
+                                    genericnameusagesubclasslist = genericnamesubclassoptions
+                                    $("#selectusagesubclass").html(genericnamesubclassoptions)
+                                    let searchItem = $("#searchitems").val()
+                                    let selectsubclass = $("#selectusagesubclass").val()
+                                    let GetGenericNameByUsageSubClass = "GetGenericNameByUsageSubClass"
+                                    $.post("controllers/combo-setup.php",{searchItem:searchItem,itemsubclass:selectsubclass,GetGenericNameByUsageSubClass:GetGenericNameByUsageSubClass},function(formdata){
+                                        console.log(formdata)
+                                        if(formdata!="No Record Found"){
+                                            let data = JSON.parse(formdata)
+                                            let genericnameoptions = ``
+                                            $.each(data.records, function(key, val) {
+                                            
+                                                genericnameoptions += `
+                                                <option value="` + val.id + `,` + val.itemgenericname + `">` + val.itemgenericname + `</option>
+                                                `
+                                            })
+                                            genericnamelist = genericnameoptions
+                                            $("#selectallitem").html(genericnameoptions)
+                                            // let selectclass = $("#selectgenericnameitemgroupclass").val()
+                                            
+                                        }
+                                    
+                                    })
+                                })
+                            })
+                        }
+
+                    })
+                 })
+
+                
+                 //Advanced Search
+                 $("#advancedsearchcontainer").hide()
+                 $("#checkadvancedsearch").change(function(){
+                    if($("#checkadvancedsearch").is(":checked")){
+                        $("#advancedsearchcontainer").show()
+                        
+                    } else {
+                        $("#advancedsearchcontainer").hide()
+                    }
+                })
+
+
+                let getItemGroupByDeptItemGroup = "getItemGroupByDeptItemGroup"
+                let genericnameusagegrouplist = ``
+                let genericnameusageclasslist = ``
+                let genericnameusagesubclasslist = ``
+                let genericnamelist = ``
+
+                searchAllItem = $("#selectdepartmentitemgrouping").val()
+                // splitsearch = searchItem.split(",")
+                // searchItem = splitsearch[0]
+                // console.log(searchItem)
+                $.post("controllers/combo-setup.php",{departmentitemgroup:searchAllItem,getItemGroupByDeptItemGroup: getItemGroupByDeptItemGroup},function(formdata){
+                    // console.log(formdata)
+                    if(formdata!="No Record Found"){
+                        
+                        let data=JSON.parse(formdata)
+                        let usagegroupoptions = ``
+                        $.each(data.records, function(key, val) {
+                        
+                            usagegroupoptions += `
+                            <option value="` + val.itemgroup + `">` + val.itemgroup + `</option>
+                        `
+                        })
+                        genericnameusagegrouplist = usagegroupoptions
+                        $("#selectusagegroup").html(usagegroupoptions)
+                        //$("#selectformdepartmentitemgroup").html(departmentitemgroupoptions)
+                        let selectgroup = $("#selectusagegroup").val()
+                        let getItemClassByItemGroup = "getItemClassByItemGroup"
+                        $.post("controllers/combo-setup.php",{searchItem:selectgroup,getItemClassByItemGroup:getItemClassByItemGroup},function(formdata){
+                            console.log(formdata)
+                            let data = JSON.parse(formdata)
+                            let genericnameclassoptions = ``
+                            $.each(data.records, function(key, val) {
+                            
+                                genericnameclassoptions += `
+                                <option value="` + val.itemclass + `">` + val.itemclass + `</option>
+                                `
+                            })
+                            genericnameusageclasslist = genericnameclassoptions
+                            $("#selectusageclass").html(genericnameclassoptions)
+                            let selectsubclassclass = $("#selectusageclass").val()
+                            let getItemSubClassByClass = "getItemSubClassByClass"
+                            $.post("controllers/combo-setup.php",{selectsubclassclass:selectsubclassclass,getItemSubClassByClass:getItemSubClassByClass},function(formdata){
+                                console.log(formdata)
+                                let data = JSON.parse(formdata)
+                                let genericnamesubclassoptions = `<option value="">Select Sub Class</option>`
+                                $.each(data.records, function(key, val) {
+                                
+                                    genericnamesubclassoptions += `
+                                    <option value="` + val.itemsubclass + `">` + val.itemsubclass + `</option>
+                                    `
+                                })
+                                genericnameusagesubclasslist = genericnamesubclassoptions
+                                $("#selectusagesubclass").html(genericnamesubclassoptions)
+                                let searchItem = $("#searchitems").val()
+                                let selectsubclass = $("#selectusagesubclass").val()
+                                let GetGenericNameByUsageSubClass = "GetGenericNameByUsageSubClass"
+                                $.post("controllers/combo-setup.php",{searchItem:searchItem,itemsubclass:selectsubclass,GetGenericNameByUsageSubClass:GetGenericNameByUsageSubClass},function(formdata){
+                                    console.log(formdata)
+                                    if(formdata!="No Record Found"){
+                                         let data = JSON.parse(formdata)
+                                        let genericnameoptions = ``
+                                        $.each(data.records, function(key, val) {
+                                        
+                                            genericnameoptions += `
+                                            <option value="` + val.id + `,` + val.itemgenericname + `">` + val.itemgenericname + `</option>
+                                            `
+                                        })
+                                        genericnamelist = genericnameoptions
+                                        $("#selectallitem").html(genericnameoptions)
+                                        // let selectclass = $("#selectgenericnameitemgroupclass").val()
+                                        
+                                    }
+                                   
+                                })
+                            })
+                        })
+                    }
+                })
+
+
+                $("#searchitems").on('change keyup paste', function () {
+                    ApplyFilterGenericName();
+                });
+
+                function ApplyFilterGenericName() {
+                    var searchString = $("#searchitems").val();
+                    console.log("GetSubDepartmentsFunction")
+                    GetGenericNameFunction()
+                }
+
+                function GetGenericNameFunction(){
+                    let searchItem = $("#searchitems").val()
+                    let selectsubclass = $("#selectusagesubclass").val()
+                    let GetGenericNameByUsageSubClass = "GetGenericNameByUsageSubClass"
+                    $.post("controllers/combo-setup.php",{searchItem:searchItem,itemsubclass:selectsubclass,GetGenericNameByUsageSubClass:GetGenericNameByUsageSubClass},function(formdata){
+                        console.log(formdata)
+                        if(formdata!="No Record Found"){
+                            let data = JSON.parse(formdata)
+                            let genericnameoptions = ``
+                            $.each(data.records, function(key, val) {
+                            
+                                genericnameoptions += `
+                                <option value="` + val.id + `,` + val.itemgenericname + `">` + val.itemgenericname + `</option>
+                                `
+                            })
+                            genericnamelist = genericnameoptions
+                            $("#selectallitem").html(genericnameoptions)
+                            // let selectclass = $("#selectgenericnameitemgroupclass").val()
+                            
+                        }
+                        
+                    })
+                }
+                $("#selectusagesubclass").on("change", function(evt){
+                    evt.preventDefault()
+                    let searchItem = $("#searchitems").val()
+                    let selectsubclass = $("#selectusagesubclass").val()
+                    let GetGenericNameByUsageSubClass = "GetGenericNameByUsageSubClass"
+                    $.post("controllers/combo-setup.php",{searchItem:searchItem,itemsubclass:selectsubclass,GetGenericNameByUsageSubClass:GetGenericNameByUsageSubClass},function(formdata){
+                        console.log(formdata)
+                        if(formdata!="No Record Found"){
+                            let data = JSON.parse(formdata)
+                            let genericnameoptions = ``
+                            $.each(data.records, function(key, val) {
+                            
+                                genericnameoptions += `
+                                <option value="` + val.id + `,` + val.itemgenericname + `">` + val.itemgenericname + `</option>
+                                `
+                            })
+                            genericnamelist = genericnameoptions
+                            $("#selectallitem").html(genericnameoptions)
+                            // let selectclass = $("#selectgenericnameitemgroupclass").val()
+                            
+                        }
+                        
+                    })
+                })
+
+
+                $("#selectusagegroup").on("change", function(evt){
+                    evt.preventDefault()
+                    //$("#selectformdepartmentitemgroup").html(departmentitemgroupoptions)
+                    let selectgroup = $("#selectusagegroup").val()
+                    let getItemClassByItemGroup = "getItemClassByItemGroup"
+                    console.log(selectgroup)
+                    $.post("controllers/combo-setup.php",{searchItem:selectgroup,getItemClassByItemGroup:getItemClassByItemGroup},function(formdata){
+                        console.log(formdata)
+                        let data = JSON.parse(formdata)
+                        let genericnameclassoptions = ``
+                        $.each(data.records, function(key, val) {
+                        
+                            genericnameclassoptions += `
+                            <option value="` + val.itemclass + `">` + val.itemclass + `</option>
+                            `
+                        })
+                        genericnameusageclasslist = genericnameclassoptions
+                        $("#selectusageclass").html(genericnameclassoptions)
+                        let selectsubclassclass = $("#selectusageclass").val()
+                        let getItemSubClassByClass = "getItemSubClassByClass"
+                        $.post("controllers/combo-setup.php",{selectsubclassclass:selectsubclassclass,getItemSubClassByClass:getItemSubClassByClass},function(formdata){
+                            console.log(formdata)
+                            let data = JSON.parse(formdata)
+                            let genericnamesubclassoptions = `<option value="">Select Sub Class</option>`
+                            $.each(data.records, function(key, val) {
+                            
+                                genericnamesubclassoptions += `
+                                <option value="` + val.itemsubclass + `">` + val.itemsubclass + `</option>
+                                `
+                            })
+                            genericnameusagesubclasslist = genericnamesubclassoptions
+                            $("#selectusagesubclass").html(genericnamesubclassoptions)
+                            let searchItem = $("#searchitems").val()
+                            let selectsubclass = $("#selectusagesubclass").val()
+                            let GetGenericNameByUsageSubClass = "GetGenericNameByUsageSubClass"
+                            $.post("controllers/combo-setup.php",{searchItem:searchItem,itemsubclass:selectsubclass,GetGenericNameByUsageSubClass:GetGenericNameByUsageSubClass},function(formdata){
+                                console.log(formdata)
+                                if(formdata!="No Record Found"){
+                                    let data = JSON.parse(formdata)
+                                    let genericnameoptions = ``
+                                    $.each(data.records, function(key, val) {
+                                    
+                                        genericnameoptions += `
+                                        <option value="` + val.id + `,` + val.itemgenericname + `">` + val.itemgenericname + `</option>
+                                        `
+                                    })
+                                    genericnamelist = genericnameoptions
+                                    $("#selectallitem").html(genericnameoptions)
+                                    // let selectclass = $("#selectgenericnameitemgroupclass").val()
+                                    
+                                }
+                                
+                            })
+                        })
+                    })
+                })
+
+
+                $("#selectusageclass").on("change", function(evt){
+                    evt.preventDefault()
+                    let selectsubclassclass = $("#selectusageclass").val()
+                    let getItemSubClassByClass = "getItemSubClassByClass"
+                    $.post("controllers/combo-setup.php",{selectsubclassclass:selectsubclassclass,getItemSubClassByClass:getItemSubClassByClass},function(formdata){
+                        console.log(formdata)
+                        let data = JSON.parse(formdata)
+                        let genericnamesubclassoptions = `<option value="">Select Sub Class</option>`
+                        $.each(data.records, function(key, val) {
+                        
+                            genericnamesubclassoptions += `
+                            <option value="` + val.itemsubclass + `">` + val.itemsubclass + `</option>
+                            `
+                        })
+                        genericnameusagesubclasslist = genericnamesubclassoptions
+                        $("#selectusagesubclass").html(genericnamesubclassoptions)
+                        let searchItem = $("#searchitems").val()
+                        let selectsubclass = $("#selectusagesubclass").val()
+                        let GetGenericNameByUsageSubClass = "GetGenericNameByUsageSubClass"
+                        $.post("controllers/combo-setup.php",{searchItem:searchItem,itemsubclass:selectsubclass,GetGenericNameByUsageSubClass:GetGenericNameByUsageSubClass},function(formdata){
+                            console.log(formdata)
+                            if(formdata!="No Record Found"){
+                                let data = JSON.parse(formdata)
+                                let genericnameoptions = ``
+                                $.each(data.records, function(key, val) {
+                                
+                                    genericnameoptions += `
+                                    <option value="` + val.id + `,` + val.itemgenericname + `">` + val.itemgenericname + `</option>
+                                    `
+                                })
+                                genericnamelist = genericnameoptions
+                                $("#selectallitem").html(genericnameoptions)
+                                // let selectclass = $("#selectgenericnameitemgroupclass").val()
+                                
+                            }
+                            
+                        })
+                    })
+                })
+
+                $(".corpsesource").on("change", function(){
+                    let view = $('input[name="corpsesource"]:checked').val()
+                    console.log(view)
+                    if(view=="PATIENT"){
+                        loadPatientCards()
+                    } else if(view=="CORPSE"){
+                        loadCorpseCards()
+                    }
+                })
+
+                //Patient Info
+                 //Advanced Search
+                 function loadPatientCards(){
+                let loadPatientPards = "loadPatientPards"
+                $.post("controllers/patient-record.php",{loadPatientPards: loadPatientPards},function(formdata){
+                        console.log("prescription: ",formdata)
+                        if(formdata=="No Record Found"){
+                            $("#patientcardtotal").html(formdata)
+                        }else{
+                            data = JSON.parse(formdata)
+                            allpatientcards = data.records
+                            totalnumbercards = allpatientcards.length
+                            totalfoundcards = totalnumbercards
+                            let patientcardlist = `<option value='0'>Select Patient</option>`
+                            let count = 0
+                            console.log()
+                            for(i=0;i<allpatientcards.length;i++){
+                                    let status = allpatientcards[i].status
+                                   
+                                        count++
+                                        patientcardlist += `
+                                            <option value="` + allpatientcards[i].patientnumber + `">` + allpatientcards[i].person + ` [` + allpatientcards[i].status + `: ` + allpatientcards[i].cardnumber + `]</option>
+                                        `
+
+                                    
+               
+                                    // $("#paid").val(allpatientcards[i].status)
+                            }
+                                
+                            totalfoundcards = count
+                            // console.log(patientcardlist)
+                            $("#selectpatient").html(patientcardlist)
+                            $("#patientcardtotal").html("Found " + totalfoundcards + " Cards Out of " + totalnumbercards + " Cards")
+                            
+                        }
+
+                    })
+                }
+
+                function loadCorpseCards(){
+                let loadCorpsePards = "loadCorpsePards"
+                $.post("controllers/patient-record.php",{loadCorpsePards: loadCorpsePards},function(formdata){
+                        // console.log("prescription: ",formdata)
+                        if(formdata=="No Record Found"){
+                            $("#view-item-order-count").html(formdata)
+                        }else{
+                            data = JSON.parse(formdata)
+                            allpatientcards = data.records
+                            totalnumbercards = allpatientcards.length
+                            totalfoundcards = totalnumbercards
+                            let patientcardlist = `<option value='0'>Select Patient</option>`
+                            let count = 0
+                            console.log()
+                            for(i=0;i<allpatientcards.length;i++){
+                               
+                                    count++
+                                    patientcardlist += `
+                                        <option value="` + allpatientcards[i].patientnumber + `">` + allpatientcards[i].person + ` [` + allpatientcards[i].status + `: ` + allpatientcards[i].cardnumber + `]</option>
+                                    `
+
+                                    // $("#paid").val(allpatientcards[i].status)
+                            }
+                                
+                            totalfoundcards = count
+                            $("#selectpatient").html(patientcardlist)
+                            $("#patientcardtotal").html("Found " + totalfoundcards + " Cards Out of " + totalnumbercards + " Cards")
+                            
+                        }
+
+                    })
+            }
+
+
+                let allpatientcards = []
+                let totalnumbercards = 0
+                let totalfoundcards = 0
+                loadPatientCards()
+                $("#form-patientinfo-age").html("")
+                $("#form-patientinfo-sex").html("")
+                $("#form-patientinfo-weight").html("")
+                
+                $("#searchpatient").on('change keyup paste', function () {
+                    ApplyFilterGetPatient();
+                });
+
+                function ApplyFilterGetPatient() {
+                    var searchitemservice = $("#searchpatient").val();
+                    console.log("getPatientCards")
+                    getPatientCards()
+                }
+
+                function getPatientCards(){
+                    console.log(allpatientcards)
+                    // $("#viewrevenueordernumber").html("New Prescription Order")
+                    let searchItem = $("#searchpatient").val()
+                    
+                    let count = 0
+                    $("#selectpatient").html("")
+                    
+                    let patientcardlist = `<option value='0'>Select Patient</option>`
+                    for(i=0;i<allpatientcards.length;i++){
+                        console.log(allpatientcards[i].person)
+                        
+                        if(allpatientcards[i].person.includes(searchItem) || allpatientcards[i].cardnumber.includes(searchItem) || allpatientcards[i].patientnumber.includes(searchItem)){
+                            count++
+                            console.log(searchItem)
+                            patientcardlist += `
+                                <option value="` + allpatientcards[i].patientnumber + `" selected>` + allpatientcards[i].person + ` [` + allpatientcards[i].status + `: ` + allpatientcards[i].cardnumber + `]</option>
+                            `
+                            
+                        }
+                    }
+                    
+                    if(count>0){
+                        totalfoundcards = count
+                        $("#selectpatient").html(patientcardlist)
+                        $("#card-status").html("Found " + totalfoundcards + " Cards Out of " + totalnumbercards + " Cards")
+                        let id = $("#selectpatient").val()
+                        let view = $('input[name="corpsesource"]:checked').val()
+                        console.log(view)
+                        if(view=="PATIENT"){
+                            getPatientCardId(id)
+                        } else if(view=="CORPSE"){
+                            getCorpseCardId(id)
+                        } else {
+                            getPatientCardId(id)
+                        }
+                    } else {
+                        $("#card-status").html("Found " + count + " Cards Out of " + totalnumbercards + " Cards")
+                    }
+                    
+                }
+
+                $("#selectpatient").on("change", function(evt){
+                    evt.preventDefault()
+                    let id = $(this).val()
+                    console.log(id)
+                    
+                    let view = $('input[name="corpsesource"]:checked').val()
+                    console.log(view)
+                    if(view=="PATIENT"){
+                        getPatientCardId(id)
+                    } else if(view=="CORPSE"){
+                        getCorpseCardId(id)
+                    } else {
+                        getPatientCardId(id)
+                    }
+                   
+
+                })
+
+                let patientrevenueorderlist = []
+
+                function getPatientCardId(id){
+               
+                    $("#selectprescription").hide()
+                    console.log(id)
+                    let getPatientInfoByPatientNumber = "getPatientInfoByPatientNumber"
+                    $.post("controllers/patient-record.php",{id:id,getPatientInfoByPatientNumber: getPatientInfoByPatientNumber},function(formdata){
+                        console.log(formdata)
+                       
+                       
+                        let data = JSON.parse(formdata)
+                        let patienttype = data.patienttype
+                        
+                        let personid = data.personid
+                        $("#selectpatientnumber").val(id)
+                        $("#patientid").val(data.patientid)
+                        $("#patientname").val(data.person)
+                     
+                        $("#personid").val(data.personid)
+                       
+                        
+                        $("#form-patientinfo-age").html(data.age)
+                        $("#form-patientinfo-hospitalno").html(data.patientnumber)
+                        $("#form-patientinfo-sex").html(data.gender)
+                        $("#form-patientinfo-weight").html(data.weight)
+                        // console.log(data.age,data.gender,data.weight)
+
+                        //get item orders
+                        let getPatientItemOrders = "getPatientItemOrders"
+                        let patientid = data.patientid
+                        // let personid = data.personid
+                        $.post("controllers/patient-record.php",{id:personid,getPatientItemOrders: getPatientItemOrders},function(orderformdata){
+                            console.log(orderformdata)
+                            let patientitemorderlist = ``
+                            let orderdata = JSON.parse(orderformdata)
+                            patientrevenueorderlist = []
+                            orderdata.records.forEach(val => {
+                                patientitemorderlist += `<option value="` + val.id + `">` + val.revenueordernumber + ` (` + val.status + `: ` + val.totalamount + val.itemorderdate + `)</option>`
+                                patientrevenueorderlist.push(val)
+                                $("#patientid").val(val.patientid)
+                            });
+                            $("#selectitemorder").html(patientitemorderlist)
+
+                            let itemorder = patientrevenueorderlist[0].itemorder
+                            // console.log(itemorder)
+                            let recallitems = JSON.parse(itemorder)
+                            let itemlist = ``
+                            recallitems.forEach(val => {
+                                itemlist += `<option value="` + val.itemid + `">` + val.genericname + ` (` + val.sellingprice + `)</option>`
+
+                            })
+                            $("#selectitemlist").html(itemlist)
+                        })
+
+                       
+                    })
+                }
+
+                function getCorpseCardId(id){
+
+                    $("#selectprescription").hide()
+                    console.log(id)
+                    
+                    let getCorpseinfoByCorpseRegistrationNumber = "getCorpseinfoByCorpseRegistrationNumber"
+                    $.post("controllers/patient-record.php",{id:id,getCorpseinfoByCorpseRegistrationNumber: getCorpseinfoByCorpseRegistrationNumber},function(formdata){
+                        console.log(formdata)
+                       
+                       
+                       let data = JSON.parse(formdata)
+                       let patienttype = data.patienttype
+                       
+                       let personid = data.personid
+                       $("#selectpatientnumber").val(id)
+                       $("#patientid").val(data.patientid)
+                       $("#patientname").val(data.person)
+                    
+                       $("#personid").val(data.personid)
+                      
+                       
+                       $("#form-patientinfo-age").html(data.age)
+                       $("#form-patientinfo-hospitalno").html(data.corpseregistrationnumber)
+                       $("#form-patientinfo-sex").html(data.gender)
+                       $("#form-patientinfo-weight").html(data.weight)
+                       // console.log(data.age,data.gender,data.weight)
+
+                       //get item orders
+                    //    let getPatientItemOrders = ""
+
+                    //    getPatientItemOrders = "getPatientItemOrders"
+                        let getMorguePatientItemOrders = "getMorguePatientItemOrders"
+                       
+                       let patientid = data.patientid
+                       // let personid = data.personid
+                       $.post("controllers/patient-record.php",{id:personid,getMorguePatientItemOrders: getMorguePatientItemOrders},function(orderformdata){
+                           console.log(orderformdata)
+                           let patientitemorderlist = ``
+                           let orderdata = JSON.parse(orderformdata)
+                           patientrevenueorderlist = []
+                           orderdata.records.forEach(val => {
+                               patientitemorderlist += `<option value="` + val.id + `">` + val.revenueordernumber + ` (` + val.status + `: ` + val.totalamount + val.itemorderdate + `)</option>`
+                               patientrevenueorderlist.push(val)
+                               $("#patientid").val(val.patientid)
+                           });
+                           $("#selectitemorder").html(patientitemorderlist)
+
+                           let itemorder = patientrevenueorderlist[0].itemorder
+                           // console.log(itemorder)
+                           let recallitems = JSON.parse(itemorder)
+                           let itemlist = ``
+                           recallitems.forEach(val => {
+                               itemlist += `<option value="` + val.itemid + `">` + val.genericname + ` (` + val.sellingprice + `)</option>`
+
+                           })
+                           $("#selectitemlist").html(itemlist)
+                       })
+                    })
+                }
+
+                $("#selectitemorder").on("change", function(evt){
+                    evt.preventDefault()
+                    let revenueorderid = $("#selectitemorder").val()
+                    
+                    patientrevenueorderlist.forEach(val => {
+                       
+                        if(revenueorderid==val.id){
+                            let itemorder = val.itemorder
+                            recallitems = JSON.parse(itemorder)
+                            
+                            let itemlist = ``
+                            recallitems.forEach(val => {
+                                itemlist += `<option value="` + val.itemid + `">` + val.genericname + ` (` + val.sellingprice + `)</option>`
+
+                            })
+                            $("#selectitemlist").html(itemlist)
+                        }
+                    
+                    });
+
+                })
+
+                $("#recall-itemorder-button").on("click", function(evt){
+                    evt.preventDefault()
+                    let revenueorderid = $("#selectitemorder").val()
+                    // console.log(patientrevenueorderlist)
+                    patientrevenueorderlist.forEach(val => {
+                        
+                        if(revenueorderid==val.id){
+                            let itemorder = val.itemorder
+                            revenueorderlist = JSON.parse(itemorder)
+                            revenueorderlist.forEach(val => {
+                                let item = val.genericname
+                                if(item.includes(".,")){
+                                    let splititem = item.split(".,")
+                                    item = splititem[0] + "."
+                                }
+                                val.genericname = item
+                            });
+                            $("#revenue-order-id").val(val.id)
+                            $("#revenue-order-number").val(val.revenueordernumber)
+                            displayrevenueorder(revenueorderlist)
+                            $("#viewrevenueordernumber").html(val.revenueordernumber)
+                            
+                            $("#discard-revenue-order-button").show()
+                            $("#update-revenue-order-button").show()
+                            $("#add-revenue-order-button").hide()
+                        }
+                    
+                    });
+                    
+
+                    
+
+                })
+
+
+
+
+
+                // Add item to revenue order List
+                let revenueorderlist = []
+                let totalrevenueorderprice = 0
+                let totalrevenueorderitems = 0
+                $("#add-item-button").on("click", function(evt){
+                    evt.preventDefault()
+                    let selecteditem = $("#selectitem").val()
+                    if(selecteditem!="" && selecteditem!=null){
+                        let splititem = selecteditem.split(",")
+                        let itemid = splititem[0]
+                        console.log(itemid)
+
+                        //Get all the pieces
+                        let totalpreviousquantity = 0
+                        let getStockItemListByItemId = "getStockItemListByItemId"
+                        let sellingprice = 0
+                        let sellingpriceperpiece = 0
+                        let sellingpriceperweight = 0
+                        let sellingpricepervolume = 0
+                        let reorderlevel = 0
+                        let reorderlevelunit = ""
+                        
+                        let unittype = ""
+                        $.post("controllers/combo-setup.php",{id:itemid,getStockItemListByItemId:getStockItemListByItemId},function(formdata){
+                            //console.log(formdata)
+                            if(formdata!="No Record Found"){
+                                let data = JSON.parse(formdata)
+                                
+                                $.each(data.records, function(key, val) {
+                                    itemid = val.id
+                                    totalpreviousquantity += parseFloat(val.previousquantity)
+                                    sellingpriceperpiece = parseFloat(val.sellingprice)
+                                    sellingpriceperweight = parseFloat(val.sellingpriceperstrength)
+                                    sellingpricepervolume = parseFloat(val.sellingpriceperliquidstrength)
+                                    reorderlevel = val.reorderlevel
+                                    unittype = $("#selectunittype").val()
+                                    if(unittype=="pieces"){
+                                        sellingprice = sellingpriceperpiece
+                                    }else if(unittype=="weight"){
+                                        sellingprice = sellingpriceperweight
+                                    }else if(unittype=="volume"){
+                                        sellingprice = sellingpricepervolume
+                                    }
+                                    console.log(sellingprice)
+
+                                })
+                                let itemgenericname = splititem[1]
+                                let department = $("#selectdepartment").val()
+                                splitdepartment = department.split(",")
+                                department = splitdepartment[1]
+                                let departmentitemgroup = $("#selectdepartmentitemgrouping").val()
+                                let revenueorderitem = {"genericname":itemgenericname,
+                                                        "department":department,
+                                                        "departmentitemgroup":departmentitemgroup,
+                                                        "sellingprice":sellingprice,
+                                                        "reorderlevel":reorderlevel,
+                                                        "unittype":unittype,
+                                                        "itemid":itemid,
+                                                        "quantity":1}
+                                revenueorderlist.push(revenueorderitem)
+                                console.log(revenueorderlist)
+                                displayrevenueorder(revenueorderlist)
+                            }
+                            
+                        })
+                        
+                    }
+                })
+
+                
+
+                $("#selectitem").on("change", function(evt){
+                    evt.preventDefault()
+                    let selecteditem = $("#selectitem").val()
+                    if(selecteditem!="" && selecteditem!=null){
+                        let splititem = selecteditem.split(",")
+                        let itemid = splititem[0]
+                        console.log(itemid)
+
+                        //Get all the pieces
+                        let totalpreviousquantity = 0
+                        let getStockItemListByItemId = "getStockItemListByItemId"
+                        let sellingprice = 0
+                        let sellingpriceperpiece = 0
+                        let sellingpriceperweight = 0
+                        let sellingpricepervolume = 0
+                        let reorderlevel = 0
+                        let reorderlevelunit = ""
+                        
+                        let unittype = ""
+                        $.post("controllers/combo-setup.php",{id:itemid,getStockItemListByItemId:getStockItemListByItemId},function(formdata){
+                            //console.log(formdata)
+                            if(formdata!="No Record Found"){
+                                let data = JSON.parse(formdata)
+                                
+                                $.each(data.records, function(key, val) {
+                                    itemid = val.id
+                                    totalpreviousquantity += parseFloat(val.previousquantity)
+                                    sellingpriceperpiece = parseFloat(val.sellingprice)
+                                    sellingpriceperweight = parseFloat(val.sellingpriceperstrength)
+                                    sellingpricepervolume = parseFloat(val.sellingpriceperliquidstrength)
+                                    reorderlevel = val.reorderlevel
+                                    unittype = $("#selectunittype").val()
+                                    if(unittype=="pieces"){
+                                        sellingprice = sellingpriceperpiece
+                                    }else if(unittype=="weight"){
+                                        sellingprice = sellingpriceperweight
+                                    }else if(unittype=="volume"){
+                                        sellingprice = sellingpricepervolume
+                                    }
+                                    console.log(sellingprice)
+
+                                })
+                                let itemgenericname = splititem[1]
+                                let department = $("#selectdepartment").val()
+                                splitdepartment = department.split(",")
+                                department = splitdepartment[1]
+                                let departmentitemgroup = $("#selectdepartmentitemgrouping").val()
+                                let revenueorderitem = {"genericname":itemgenericname,
+                                                        "department":department,
+                                                        "departmentitemgroup":departmentitemgroup,
+                                                        "sellingprice":sellingprice,
+                                                        "reorderlevel":reorderlevel,
+                                                        "unittype":unittype,
+                                                        "itemid":itemid,
+                                                        "quantity":1}
+                                revenueorderlist.push(revenueorderitem)
+                                console.log(revenueorderlist)
+                                displayrevenueorder(revenueorderlist)
+                            }
+                            
+                        })
+                        
+                    }
+                })
+
+                
+
+                $("#selectallitem").on("change", function(evt){
+                    evt.preventDefault()
+                    let selecteditem = $("#selectallitem").val()
+                    if(selecteditem!="" && selecteditem!=null){
+                        let splititem = selecteditem.split(",")
+                        let itemid = splititem[0]
+                        console.log(itemid)
+
+                        //Get all the pieces
+                        let totalpreviousquantity = 0
+                        let getStockItemListByItemId = "getStockItemListByItemId"
+                        let sellingprice = 0
+                        let sellingpriceperpiece = 0
+                        let sellingpriceperweight = 0
+                        let sellingpricepervolume = 0
+                        let reorderlevel = 0
+                        let reorderlevelunit = ""
+                        
+                        let unittype = ""
+                        $.post("controllers/combo-setup.php",{id:itemid,getStockItemListByItemId:getStockItemListByItemId},function(formdata){
+                            //console.log(formdata)
+                            if(formdata!="No Record Found"){
+                                let data = JSON.parse(formdata)
+                                
+                                $.each(data.records, function(key, val) {
+                                    itemid = val.id
+                                    totalpreviousquantity += parseFloat(val.previousquantity)
+                                    sellingpriceperpiece = parseFloat(val.sellingprice)
+                                    sellingpriceperweight = parseFloat(val.sellingpriceperstrength)
+                                    sellingpricepervolume = parseFloat(val.sellingpriceperliquidstrength)
+                                    reorderlevel = val.reorderlevel
+                                    unittype = $("#selectunittype").val()
+                                    if(unittype=="pieces"){
+                                        sellingprice = sellingpriceperpiece
+                                    }else if(unittype=="weight"){
+                                        sellingprice = sellingpriceperweight
+                                    }else if(unittype=="volume"){
+                                        sellingprice = sellingpricepervolume
+                                    }
+                                    console.log(sellingprice)
+
+                                })
+                                let itemgenericname = splititem[1]
+                                let department = $("#selectdepartment").val()
+                                splitdepartment = department.split(",")
+                                department = splitdepartment[1]
+                                let departmentitemgroup = $("#selectdepartmentitemgrouping").val()
+                                let revenueorderitem = {"genericname":itemgenericname,
+                                                        "department":department,
+                                                        "departmentitemgroup":departmentitemgroup,
+                                                        "sellingprice":sellingprice,
+                                                        "reorderlevel":reorderlevel,
+                                                        "unittype":unittype,
+                                                        "itemid":itemid,
+                                                        "quantity":1}
+                                revenueorderlist.push(revenueorderitem)
+                                console.log(revenueorderlist)
+                                displayrevenueorder(revenueorderlist)
+                            }
+                            
+                        })
+                        
+                    }
+                })
+
+                $("#add-allitem-button").on("click", function(evt){
+                    evt.preventDefault()
+                    let selecteditem = $("#selectallitem").val()
+                    if(selecteditem!="" && selecteditem!=null){
+                        let splititem = selecteditem.split(",")
+                        let itemid = splititem[0]
+                        console.log(itemid)
+
+                        //Get all the pieces
+                        let totalpreviousquantity = 0
+                        let getStockItemListByItemId = "getStockItemListByItemId"
+                        let sellingprice = 0
+                        let sellingpriceperpiece = 0
+                        let sellingpriceperweight = 0
+                        let sellingpricepervolume = 0
+                        let reorderlevel = 0
+                        let reorderlevelunit = ""
+                        
+                        let unittype = ""
+                        $.post("controllers/combo-setup.php",{id:itemid,getStockItemListByItemId:getStockItemListByItemId},function(formdata){
+                            //console.log(formdata)
+                            if(formdata!="No Record Found"){
+                                let data = JSON.parse(formdata)
+                                
+                                $.each(data.records, function(key, val) {
+                                    itemid = val.id
+                                    totalpreviousquantity += parseFloat(val.previousquantity)
+                                    sellingpriceperpiece = parseFloat(val.sellingprice)
+                                    sellingpriceperweight = parseFloat(val.sellingpriceperstrength)
+                                    sellingpricepervolume = parseFloat(val.sellingpriceperliquidstrength)
+                                    reorderlevel = val.reorderlevel
+                                    unittype = $("#selectunittype").val()
+                                    if(unittype=="pieces"){
+                                        sellingprice = sellingpriceperpiece
+                                    }else if(unittype=="weight"){
+                                        sellingprice = sellingpriceperweight
+                                    }else if(unittype=="volume"){
+                                        sellingprice = sellingpricepervolume
+                                    }
+                                    console.log(sellingprice)
+
+                                })
+                                let itemgenericname = splititem[1]
+                                let department = $("#selectdepartment").val()
+                                splitdepartment = department.split(",")
+                                department = splitdepartment[1]
+                                let departmentitemgroup = $("#selectdepartmentitemgrouping").val()
+                                let revenueorderitem = {"genericname":itemgenericname,
+                                                        "department":department,
+                                                        "departmentitemgroup":departmentitemgroup,
+                                                        "sellingprice":sellingprice,
+                                                        "reorderlevel":reorderlevel,
+                                                        "unittype":unittype,
+                                                        "itemid":itemid,
+                                                        "quantity":1}
+                                revenueorderlist.push(revenueorderitem)
+                                console.log(revenueorderlist)
+                                displayrevenueorder(revenueorderlist)
+                            }
+                            
+                        })
+                        
+                    }
+                })
+
+                
+                function displayrevenueorder(revenueorderlist){
+                    if(revenueorderlist.length>0){
+                        let count = 0
+                        let totalprice = 0
+                        let totalitems = 0
+                        let pricinglist = ``
+                        revenueorderlist.forEach(element => {
+                            let item = element.genericname
+                            let department = element.department
+                            let departmentitemgroup = element.departmentitemgroup
+                            let price = element.sellingprice
+                            let quantity = element.quantity
+                            
+                            let total = parseFloat(price) * parseFloat(quantity)
+                            totalitems++
+                            totalprice += total
+                            totalrevenueorderprice = totalprice
+                            totalrevenueorderitems = totalitems
+                            
+                                pricinglist += `<tr>
+                                                    <td>` + item + `</td>
+                                                    <td>` + department + `</td>
+                                                    <td>`+ departmentitemgroup + `</td>
+                                                    <td>&#8358;`+ price.toFixed(2) + `</td>
+                                                    <td>`+ quantity + `</td>
+                                                    <td>&#8358;` + total.toFixed(2) + `</td>
+                                                    <td><input type="number" min="1" max="1000" class="multiplyitem" data-id="` + count + `"></td>
+                                                    <td><span class="additem" data-id="` + count + `" style="font-size: 16px;"><i class="fa fa-plus-square"></i>
+                                                        <span class="subtractitem" data-id="` + count + `" style="font-size: 16px;"><i class="fa fa-minus-square"></i>
+                                                            <span class="deleteitem" data-id="` + count + `" style="font-size: 16px;"><i class="fa fa-trash-o"></i></span></td>
+                                                </tr>
+                                    `
+                                    count++
+                                });
+                                displayselectedlistitems = pricinglist
+                                pricinglist += `<tr>
+                                                    <td>` + deptitemgrpitems + `</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>
+                                                            <span class="additemtolist" style="font-size:18px;cursor:pointer;"><i class="fa fa-plus-square"></i> Add</span></td>
+                                                </tr>`
+                                $("#view-revenue-order-list").html(pricinglist)
+
+                                $("#selectdptitemgrpitem").on("change", function(evt){
+                                        evt.preventDefault()
+                                        let selecteditem = $("#selectdptitemgrpitem").val()
+                                        if(selecteditem!="" && selecteditem!=null){
+                                            let splititem = selecteditem.split(",")
+                                            let itemid = splititem[0]
+                                            console.log(itemid)
+
+                                            //Get all the pieces
+                                            let totalpreviousquantity = 0
+                                            let getStockItemListByItemId = "getStockItemListByItemId"
+                                            let sellingprice = 0
+                                            let sellingpriceperpiece = 0
+                                            let sellingpriceperweight = 0
+                                            let sellingpricepervolume = 0
+                                            let reorderlevel = 0
+                                            let reorderlevelunit = ""
+                                            
+                                            let unittype = ""
+                                            $.post("controllers/combo-setup.php",{id:itemid,getStockItemListByItemId:getStockItemListByItemId},function(formdata){
+                                                //console.log(formdata)
+                                                if(formdata!="No Record Found"){
+                                                    let data = JSON.parse(formdata)
+                                                    
+                                                    $.each(data.records, function(key, val) {
+                                                        itemid = val.id
+                                                        totalpreviousquantity += parseFloat(val.previousquantity)
+                                                        sellingpriceperpiece = parseFloat(val.sellingprice)
+                                                        sellingpriceperweight = parseFloat(val.sellingpriceperstrength)
+                                                        sellingpricepervolume = parseFloat(val.sellingpriceperliquidstrength)
+                                                        reorderlevel = val.reorderlevel
+                                                        unittype = $("#selectunittype").val()
+                                                        if(unittype=="pieces"){
+                                                            sellingprice = sellingpriceperpiece
+                                                        }else if(unittype=="weight"){
+                                                            sellingprice = sellingpriceperweight
+                                                        }else if(unittype=="volume"){
+                                                            sellingprice = sellingpricepervolume
+                                                        }
+                                                        console.log(sellingprice)
+
+                                                    })
+                                                    let itemgenericname = splititem[1]
+                                                    let department = $("#selectdepartment").val()
+                                                    splitdepartment = department.split(",")
+                                                    department = splitdepartment[1]
+                                                    let departmentitemgroup = $("#selectdepartmentitemgrouping").val()
+                                                    let revenueorderitem = {"genericname":itemgenericname,
+                                                                            "department":department,
+                                                                            "departmentitemgroup":departmentitemgroup,
+                                                                            "sellingprice":sellingprice,
+                                                                            "reorderlevel":reorderlevel,
+                                                                            "unittype":unittype,
+                                                                            "itemid":itemid,
+                                                                            "quantity":1}
+                                                    revenueorderlist.push(revenueorderitem)
+                                                    console.log(revenueorderlist)
+                                                    displayrevenueorder(revenueorderlist)
+                                                }
+                                                
+                                            })
+                                            
+                                        }
+                                    })
+
+                                    $(".additemtolist").on("click", function(evt){
+                                        evt.preventDefault()
+                                        let selecteditem = $("#selectdptitemgrpitem").val()
+                                        if(selecteditem!="" && selecteditem!=null){
+                                            let splititem = selecteditem.split(",")
+                                            let itemid = splititem[0]
+                                            console.log(itemid)
+
+                                            //Get all the pieces
+                                            let totalpreviousquantity = 0
+                                            let getStockItemListByItemId = "getStockItemListByItemId"
+                                            let sellingprice = 0
+                                            let sellingpriceperpiece = 0
+                                            let sellingpriceperweight = 0
+                                            let sellingpricepervolume = 0
+                                            let reorderlevel = 0
+                                            let reorderlevelunit = ""
+                                            
+                                            let unittype = ""
+                                            $.post("controllers/combo-setup.php",{id:itemid,getStockItemListByItemId:getStockItemListByItemId},function(formdata){
+                                                //console.log(formdata)
+                                                if(formdata!="No Record Found"){
+                                                    let data = JSON.parse(formdata)
+                                                    
+                                                    $.each(data.records, function(key, val) {
+                                                        itemid = val.id
+                                                        totalpreviousquantity += parseFloat(val.previousquantity)
+                                                        sellingpriceperpiece = parseFloat(val.sellingprice)
+                                                        sellingpriceperweight = parseFloat(val.sellingpriceperstrength)
+                                                        sellingpricepervolume = parseFloat(val.sellingpriceperliquidstrength)
+                                                        reorderlevel = val.reorderlevel
+                                                        unittype = $("#selectunittype").val()
+                                                        if(unittype=="pieces"){
+                                                            sellingprice = sellingpriceperpiece
+                                                        }else if(unittype=="weight"){
+                                                            sellingprice = sellingpriceperweight
+                                                        }else if(unittype=="volume"){
+                                                            sellingprice = sellingpricepervolume
+                                                        }
+                                                        console.log(sellingprice)
+
+                                                    })
+                                                    let itemgenericname = splititem[1]
+                                                    let department = $("#selectdepartment").val()
+                                                    splitdepartment = department.split(",")
+                                                    department = splitdepartment[1]
+                                                    let departmentitemgroup = $("#selectdepartmentitemgrouping").val()
+                                                    let revenueorderitem = {"genericname":itemgenericname,
+                                                                            "department":department,
+                                                                            "departmentitemgroup":departmentitemgroup,
+                                                                            "sellingprice":sellingprice,
+                                                                            "reorderlevel":reorderlevel,
+                                                                            "unittype":unittype,
+                                                                            "itemid":itemid,
+                                                                            "quantity":1}
+                                                    revenueorderlist.push(revenueorderitem)
+                                                    console.log(revenueorderlist)
+                                                    displayrevenueorder(revenueorderlist)
+                                                }
+                                                
+                                            })
+                                            
+                                        }
+                                    })
+
+
+                                $("#view-revenue-order-count").html(totalitems + " Item(s)")
+                                $("#view-revenue-order-price").html("Total: &#8358;" + totalprice.toFixed(2))
+                                $(".deleteitem").on("click", function(evt){
+                                        evt.preventDefault()
+                                        let id = $(this).attr("data-id")
+                                    
+                                        revenueorderlist.splice(id, 1)
+                                        console.log(id)
+                                        
+                                        displayrevenueorder(revenueorderlist)
+
+                                    })
+                                
+                                $(".multiplyitem").on('change paste', function () {
+                                   let qty = parseFloat($(this).val())
+
+                                    let id = $(this).attr("data-id")
+                                
+                                    revenueorderlist[id].quantity = qty
+                                console.log(revenueorderlist)
+                                    // $("#view-revenue-order-price").html("&#8358;" + totalprice.toFixed(2))
+
+                                    displayrevenueorder(revenueorderlist)
+
+                                })
+
+                                $(".additem").on("click", function(evt){
+                                    evt.preventDefault()
+                                    let id = $(this).attr("data-id")
+                                
+                                    revenueorderlist[id].quantity = revenueorderlist[id].quantity + 1
+                                   console.log(revenueorderlist)
+                                    // $("#view-revenue-order-price").html("&#8358;" + totalprice.toFixed(2))
+
+                                    displayrevenueorder(revenueorderlist)
+
+                                })
+
+                                $(".subtractitem").on("click", function(evt){
+                                        evt.preventDefault()
+                                        let id = $(this).attr("data-id")
+                                    
+                                        revenueorderlist[id].quantity = revenueorderlist[id].quantity -1
+                                        if(revenueorderlist[id].quantity==0){
+                                            revenueorderlist.splice(id, 1)
+                                        }
+                                        
+                                        
+                                        displayrevenueorder(revenueorderlist)
+
+                                    })
+                               
+                    } else {
+                        displayselectedlistitems = ``
+                        $("#view-revenue-order-list").html("")
+                        $("#view-revenue-order-count").html("")
+                        $("#view-revenue-order-price").html("")
+                    }
+                }
+
+                $("#cancel-revenue-order-button").on("click", function(evt){
+                    evt.preventDefault()
+                    revenueorderlist = []
+                    displayrevenueorder(revenueorderlist)
+                })
+                $("#add-revenue-order-button").on("click",function(evt){
+                    evt.preventDefault()
+                    let insertRevenueOrder = "insertRevenueOrder"
+                    let list = JSON.stringify(revenueorderlist)
+                    let price = parseFloat(totalrevenueorderprice).toFixed(2)
+                    let department = $("#selectdepartment").val()
+                    let splitdepartment = department.split(",")
+                    let itemdepartment = splitdepartment[1]
+                    console.log(insertRevenueOrder)
+                    $.post("controllers/finance-record.php", {department:itemdepartment,patientname:"",patientid:0,personid:0,cardnumber:"",hospitalnumber:"",price:price,items:totalrevenueorderitems,list:list,insertRevenueOrder:insertRevenueOrder}, function(data){
+                        console.log(data)
+                        $("#revenue-order-status").html(data)
+                        revenueorderlist = []
+                        displayrevenueorder(revenueorderlist)
+                        getRevenueOrders()
+                    }) 
+                })
+                $("#add-patient-revenue-order-button").on("click",function(evt){
+                    evt.preventDefault()
+                    let insertRevenueOrder = "insertRevenueOrder"
+                    let list = JSON.stringify(revenueorderlist)
+                    let price = parseFloat(totalrevenueorderprice).toFixed(2)
+                    let department = $("#selectdepartment").val()
+                    let splitdepartment = department.split(",")
+                    let itemdepartment = splitdepartment[1]
+                    let patienttype="PATIENT"
+                    let view = $('input[name="corpsesource"]:checked').val()
+                    console.log(view)
+                    if(view=="PATIENT"){
+                        patienttype="PATIENT"
+                    } else if(view=="CORPSE"){
+                        patienttype="CORPSE"
+                    } else {
+                        patienttype="PATIENT"
+                    }
+
+                    let patientid = $("#patientid").val()
+                    let patientname = $("#patientname").val()
+                    let personid = $("#personid").val()
+                    let patientnumber = $("#selectpatientnumber").val()
+                    console.log(insertRevenueOrder)
+                    $.post("controllers/finance-record.php", {patienttype:patienttype,department:itemdepartment,patientname:patientname,patientid:patientid,personid:personid,cardnumber:"",hospitalnumber:patientnumber,price:price,items:totalrevenueorderitems,list:list,insertRevenueOrder:insertRevenueOrder}, function(data){
+                        console.log(data)
+                        $("#revenue-order-status").html(data)
+                        revenueorderlist = []
+                        displayrevenueorder(revenueorderlist)
+                        getRevenueOrders()
+                    }) 
+                })
+                $("#update-revenue-order-button").on("click",function(evt){
+                    evt.preventDefault()
+                    let updateRevenueOrder = "updateRevenueOrder"
+                    let list = JSON.stringify(revenueorderlist)
+                    let price = parseFloat(totalrevenueorderprice).toFixed(2)
+                    let id = $("#revenue-order-id").val()
+                    let revenueordernumber = $("#revenue-order-number").val()
+                    
+                    $.post("controllers/finance-record.php", {revenueordernumber:revenueordernumber,id:id,price:price,items:totalrevenueorderitems,list:list,updateRevenueOrder:updateRevenueOrder}, function(data){
+                        console.log(data)
+                        $("#revenue-order-status").html(data)
+                        revenueorderlist = []
+                        displayrevenueorder(revenueorderlist)
+                        getRevenueOrders()
+                    }) 
+                })
+
+                $("#discard-revenue-order-button").on("click", function(evt){
+                    evt.preventDefault()
+                    revenueorderlist = []
+                    displayrevenueorder(revenueorderlist)
+                    getRevenueOrders()
+                })
+                getRevenueOrders()
+                $("#searchrevenueorder").on('change keyup paste', function () {
+                    ApplyFilterGetItem();
+                });
+
+                function ApplyFilterGetItem() {
+                    var searchitemservice = $("#searchrevenueorder").val();
+                    console.log("getRevenueOrders")
+                    getRevenueOrders()
+                }
+                function getRevenueOrders(){
+                    $("#add-revenue-order-button").show()
+                    $("#discard-revenue-order-button").hide()
+                    $("#update-revenue-order-button").hide()
+                    $("#viewrevenueordernumber").html("New Item Order")
+                    let searchItem = $("#searchrevenueorder").val()
+                   getRevenueOrder = "getRevenueOrder"
+                    $.post("controllers/finance-record.php",{searchItem:searchItem,getRevenueOrder: getRevenueOrder},function(formdata){
+                        //console.log("itemGroup: ",data)
+                        if(formdata=="No Record Found"){
+                            $("#view-item-order-count").html(formdata)
+                        }else{
+                            console.log(formdata)
+                            console.log(typeof(formdata))
+                            let data=JSON.parse(formdata)
+                            console.log(data)
+                            let count = 0
+                                
+                            let totalrecord = ``
+                            $.each(data.records, function(key, val) {
+                                count++
+                            totalrecord += `
+                                <tr>
+                                    <td>
+                                        
+                                        <a href="#" data-id="` + val.id + `" class="btn btn-outline-default take-btn itemordername"><h3 style="color:blue;">` + val.revenueordernumber + `</h3></a>
+                                    </td>                 
+                                    
+                                    <td>
+                                            <p style="font-size:18px;font-weight:bold;">` + val.itemorderdate + `</p>
+                                    </td> 
+                                    <td>
+                                            <p style="font-size:18px;font-weight:bold;">&#8358;` + val.totalamount + ` [` + val.items + ` items]</p>
+                                    </td> 
+                                    <td>
+                                            <p style="font-size:18px;font-weight:bold;">` + val.enteredby + ` (Updated ` + val.updateddate + `)</p>
+                                    </td> 
+                                    <td>
+                                        <a href="#" data-id="` + val.id + `" class="btn btn-outline-primary take-btn revenue-order-patient">Invoice</a>
+                                        
+                                        <a href="#" data-id="` + val.id + `" class="btn btn-outline-danger take-btn delete-revenue-order">Delete</a>
+                                    </td>
+                                </tr>
+                            `
+                            })
+                            $("#view-item-order-count").html(count + " Record(s) Found")
+                            $("#view-all-revenue-order-list").html(totalrecord)
+                            
+                        }
+                        
+
+                            $(".itemordername").on("click", function(evt){
+                                evt.preventDefault()
+                                let id = $(this).attr("data-id")
+                                let getRevenueOrderById = "getRevenueOrderById"
+                                $.post("controllers/finance-record.php", {id:id, getRevenueOrderById: getRevenueOrderById}, function(data){
+                                    console.log(data)
+                                    formdata=JSON.parse(data)
+                                    let itemorder = formdata.itemorder
+                                    revenueorderlist = JSON.parse(itemorder)
+                                    $("#revenue-order-id").val(formdata.id)
+                                    $("#revenue-order-number").val(formdata.revenueordernumber)
+                                    displayrevenueorder(revenueorderlist)
+                                    $("#viewrevenueordernumber").html(formdata.revenueordernumber)
+                                    
+                                    $("#discard-revenue-order-button").show()
+                                    $("#update-revenue-order-button").show()
+                                    $("#add-revenue-order-button").hide()
+                   
+                                })
+                                
+                            })
+
+                        $(".delete-revenue-order").on("click", function(evt){
+                            evt.preventDefault()
+                                let id = $(this).attr("data-id")
+                                let DeleteRevenueOrderById = "DeleteRevenueOrderById"
+                                $.post("controllers/finance-record.php", {id:id, DeleteRevenueOrderById: DeleteRevenueOrderById}, function(data){
+                                    console.log(data)
+                                    $("#revenue-order-status").html(data)
+                                    getRevenueOrders()
+                                })
+                                
+                        })
+
+                        $(".revenue-order-patient").on("click", function(evt){
+                            evt.preventDefault()
+                            let id = $(this).attr("data-id")
+                            
+                                    // let cardnumber = val.cardnumber
+                                    let getPatientCardPaymentById = "getPatientCardPaymentById"
+                                    $.post("controllers/finance-record.php", {id:id, getPatientCardPaymentById: getPatientCardPaymentById}, function(data){
+                                        console.log(data)
+                                        window.open("patient-invoice.html")
+                                        
+                                    })
+                                
+                            
+
+                            
+                                
+
+                        })
+                    })
+                    
+                }
+        })
+    </script>
+</body>
+
+</html>

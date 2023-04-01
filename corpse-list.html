@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>medical</title>
+    <link rel="icon" href="img/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- themify CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <!-- flaticon CSS -->
+    <link rel="stylesheet" href="css/flaticon.css">
+    <!-- magnific popup CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- nice select CSS -->
+    <!-- <link rel="stylesheet" href="css/nice-select.css"> -->
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="css/slick.css">
+    <!-- style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        thead, tbody, tr { display: block; }
+
+        tr:after {
+            content: ' ';
+            display: block;
+            visibility: hidden;
+            clear: both;
+        }
+
+        
+
+        tbody {
+            height: 250px;
+            overflow-y: auto;
+        }
+
+        thead {
+            /* fallback */
+        }
+
+        thead th {
+            height: 30px;
+
+            /*text-align: left;*/
+        }
+
+        tbody td, thead th {
+            width: 12.2%;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <!--::header part start::-->
+    <header class="main_menu">
+            
+        </header>
+        <!-- Header part end-->
+       
+    <!-- breadcrumb start-->
+    <section class="breadcrumb breadcrumb_bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb_iner">
+                        <div class="form-row">
+                            <div class="form-group col-md-2">
+                                <span id="username" style="color:#F1F1F1;font-size: 17px;"></span>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <span id="pagetitle" style="color:#F1F1F1;font-size: 20px;font-weight: bolder;">Corpse List</span>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <span id="sysdate" style="color:#F1F1F1"></span>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <span id="systime" style="color:#F1F1F1"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- breadcrumb start-->
+
+    
+
+    <!--::regervation_part start::-->
+    <section class="regervation_part padding_bottom" style="margin-top:30px;">
+        <div class="container">
+            <div class="row align-items-center regervation_content">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="page-status"></div>
+                        <div class="label label-success" id="errorlogin"></div>
+                        <div class="card-header">
+                            <h4 class="card-title d-inline-block">View Morgue Current List</h4>  <p class="btn btn-primary float-right" id="view-account-summary-count">
+                            <p class="float-right"><input type="text" id="searchmorguecurrentlist" name="searchmorguecurrentlist" placeholder="Search Morgue Current List" style="font-size: 18px;"></p>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="table-responsive scrollable">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            
+                                            <th>Number</th>
+                                            <th>Corpse</th>
+                                            <th>Next of Kin</th>
+                                            <th>Code</th>
+                                            <th>Date</th>
+                                            <th>Status</th>
+                                            <th>Day(s)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="view-all-current-morgue-list">
+                                        
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-5 col-md-6">
+                    <div class="reservation_img">
+                        <img src="img/loginphoto.jpg" alt="">
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <!--::regervation_part end::-->
+
+    
+    <!-- footer part start-->
+    <footer class="footer-area">
+
+        <div class="copyright_part">
+            
+        </div>
+    </footer>
+
+    <!-- footer part end-->
+
+    <!-- jquery plugins here-->
+
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <!-- popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- easing js -->
+    <script src="js/jquery.magnific-popup.js"></script>
+    <!-- swiper js -->
+    <script src="js/swiper.min.js"></script>
+    <!-- swiper js -->
+    <script src="js/masonry.pkgd.js"></script>
+    <!-- particles js -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- <script src="js/jquery.nice-select.min.js"></script> -->
+    <!-- swiper js -->
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <!-- contact js -->
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <script src="js/contact.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+    <script src="views/masterpage.js"></script>
+    <script src="views/records.js"></script>
+    <script src="views/corpse-list.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#errorlogin").html("")
+
+            function getMorgueCurrent(){
+                let searchItem = $("#searchmorguecurrentlist").val()
+                
+                   getMorgueCurrentList = "getMorgueCurrentList"
+                    $.post("controllers/patient-record.php",{searchItem:searchItem,getMorgueCurrentList: getMorgueCurrentList},function(formdata){
+                        //console.log("itemGroup: ",data)
+                        if(formdata=="No Record Found"){
+                            $("#view-account-summary-count").html(formdata)
+                        }else{
+                            console.log(formdata)
+                            console.log(typeof(formdata))
+                            let data=JSON.parse(formdata)
+                            console.log(data)
+                            let count = 0
+                            
+                           
+                            let totalrecord = ``
+                            $.each(data.records, function(key, val) {
+                                count++
+                               
+                                let date1 = new Date()
+                                let entereddate = ""
+                                if(val.dateentered!=null){
+                                    if(val.dateentered.includes(" ")){
+                                        entereddate = val.dateentered
+                                    } else {
+                                        console.log(val.dateentered)
+                                        let splitdate = val.dateentered.split("/")
+                                        if(parseInt(splitdate[1])>parseInt(splitdate[0])){
+                                            let testdate = splitdate[1]
+                                            splitdate[1] = splitdate[0]
+                                            splitdate[0] = testdate
+                                        }
+                                        entereddate = splitdate[2] + "-" + splitdate[1] + "-" + splitdate[0] + " 12:01:01"
+                                    }
+                                }
+                               
+                                let date2 = new Date(entereddate)
+
+                                console.log(parseFloat(date1.getTime()))
+                                console.log(entereddate)
+                                console.log(parseFloat(date2.getTime()))
+                                let timedifference = parseFloat(date1.getTime()) - parseFloat(date2.getTime())
+                                console.log(timedifference)
+                                let days = Math.ceil(timedifference/(1000*3600*24))
+                                
+                                let splittally = val.tallynumber.split(" ")
+                            totalrecord += `
+                                <tr>
+                                   
+                                    <td>
+                                        
+                                        <a href="#" data-id="` + val.corpseregistrationnumber + `" class="btn btn-outline-default take-btn itemordername"><h3 style="color:blue;">` + val.corpseregistrationnumber + ` (Tally ` + splittally[2] + `)</h3></a>
+                                    </td>                 
+                                    <td>
+                                            <p style="font-size:18px;font-weight:bold;">` + val.corpsename + `</p>
+                                    </td> 
+                                    <td>
+                                            <p style="font-size:18px;font-weight:bold;">` + val.nextofkin + `</p>
+                                    </td> 
+                                    <td>
+                                            <p style="font-size:18px;font-weight:bold;">` + val.corpsecode + `</p>
+                                    </td> 
+                                    <td>
+                                            <p style="font-size:18px;font-weight:bold;">` + val.dateentered + `</p>
+                                    </td> 
+                                    <td>
+                                            <p style="font-size:18px;font-weight:bold;">` + val.status + `</p>
+                                    </td> 
+                                    <td>
+                                            <p style="font-size:18px;font-weight:bold;">` + days + ` Days</p>
+                                    </td> 
+                                    
+                                </tr>
+                            `
+                            })
+                            $("#view-account-summary-count").html(count + " Record(s) Found")
+                           
+                            $("#view-all-current-morgue-list").html(totalrecord)
+                            totalpaiditems = 0
+                            totalpaid = 0
+                        }
+                    })
+                }
+            
+                getMorgueCurrent()
+
+                $("#searchaccountsummary").on('change keyup paste', function () {
+                    ApplyAccountSummary();
+                });
+
+                function ApplyAccountSummary() {
+                    var searchString = $("#searchmorguecurrentlist").val();
+                    console.log("ApplyAccountSummary")
+                    getMorgueCurrent()
+                }
+
+        })
+
+    </script>
+</body>
+
+</html>

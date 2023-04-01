@@ -1,0 +1,535 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>medical</title>
+    <link rel="icon" href="img/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- themify CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <!-- flaticon CSS -->
+    <link rel="stylesheet" href="css/flaticon.css">
+    <!-- magnific popup CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- nice select CSS -->
+    <!-- <link rel="stylesheet" href="css/nice-select.css"> -->
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="css/slick.css">
+    <!-- style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.15.3/xlsx.full.min.js"
+    ></script>
+</head>
+
+<body>
+    <!--::header part start::-->
+    <header class="main_menu">
+            
+        </header>
+        <!-- Header part end-->
+       
+    <!-- breadcrumb start-->
+    <section class="breadcrumb breadcrumb_bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb_iner">
+                        <div class="form-row">
+                            <div class="form-group col-md-2">
+                                <span id="username" style="color:#F1F1F1;font-size: 17px;"></span>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <span id="pagetitle" style="color:#F1F1F1;font-size: 20px;font-weight: bolder;">Staff Registration</span>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <span id="sysdate" style="color:#F1F1F1"></span>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <span id="systime" style="color:#F1F1F1"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- breadcrumb start-->
+
+    
+
+    <!--::regervation_part start::-->
+    <section class="regervation_part padding_bottom" style="margin-top:30px;">
+        <div class="container">
+            <div class="row align-items-center regervation_content">
+                <div class="col-md-12">
+                    <div class="regervation_part_iner">
+                        <br>
+                        <form action="controllers/add-staff.php" class="frmaddperson">
+                            <h2>Staff Registration</h2>
+                            <div class="label label-success" id="errorlogin"></div>
+                            <div class="form-row">
+                                <div class="form-group col-md-5">
+                                    First Name:<br>
+                                    <input type="text" name="firstname" class="form-control" id="firstname" placeholder="First Name">
+                                </div>
+                                <div class="form-group col-md-5">
+                                    Last Name:<br>
+                                    <input type="text" name="lastname" class="form-control" id="lastname"
+                                        placeholder="Last Name">
+                                </div>
+                                <div class="form-group col-md-2">
+                                    Sex:<br>
+                                    <select name="sex" class="form-control" id="sex">
+                                        <option value="Female">Female</option>
+                                        <option value="Male">Male</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-2">
+                                    House No.<br>
+                                    <input type="text" name="addressno" class="form-control" id="addressno" placeholder="No." required>
+                                </div>
+                                <div class="form-group col-md-3">
+                                    Street<br>
+                                    <input type="text" name="addressstreet" class="form-control" id="addressstreet" placeholder="Street" required>
+                                </div>
+                                <div class="form-group col-md-2">
+                                    Select<br>
+                                    <select name="addressstreetselect" class="form-control" id="addressstreetselect">
+                                        <option value="">Select Street</option>
+                                        <option value="Street">Street</option>
+                                        <option value="Road">Road</option>
+                                        <option value="Lane">Lane</option>
+                                        <option value="Close">Close</option>
+                                        <option value="Way">Way</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-3">
+                                    off<br>
+                                    <input type="text" name="addressoff" class="form-control" id="addressoff" placeholder="Off" required>
+                                </div>
+                                <div class="form-group col-md-2">
+                                    Select<br>
+                                    <select name="addressoffselect" class="form-control" id="addressoffselect">
+                                        <option value="">Select Street</option>
+                                        <option value="Street">Street</option>
+                                        <option value="Road">Road</option>
+                                        <option value="Lane">Lane</option>
+                                        <option value="Close">Close</option>
+                                        <option value="Way">Way</option>
+                                    </select>
+                                </div>
+                                <!-- <div class="form-group col-md-3">
+                                    Quarter<br>
+                                    <input type="text" name="addressquarter" class="form-control" id="addressquarter" placeholder="Quarter" required>
+
+                                </div> -->
+                                <!-- <div class="form-group col-md-2">
+                                    Town<br>
+                                    <input type="text" name="addresstown" class="form-control" id="addresstown" placeholder="Town" required>
+
+                                </div> -->
+                                <div class="form-group col-md-3">
+                                    Quarter:<br>
+                                    <select name="addressquarter" id="addressquarter" class="form-control" required>
+
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-2">
+                                    Add Quarter:<br>
+                                    <input type="text" name="addquarter" class="form-control" id="addquarter" placeholder="Add Quarter" required>
+                                </div>
+                                <div class="form-group col-md-1">
+                                    <br>
+                                    <button class="genric-btn primary" id="add-quarter-button">Add</button> 
+                                </div>
+                                <div class="form-group col-md-3">
+                                    Town:<br>
+                                    <select name="addresstown" id="addresstown" class="form-control" required>
+
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-2">
+                                    Add Town:<br>
+                                    <input type="text" name="addtown" class="form-control" id="addtown" placeholder="Add Town" required>
+                                </div>
+                                <div class="form-group col-md-1">
+                                    <br>
+                                    <button class="genric-btn primary" id="add-town-button">Add</button> 
+                                </div>
+                                <div class="form-group col-md-12">
+                                    Address:<br>
+                                    <textarea name="address" class="form-control" id="address" placeholder="Residential Address"></textarea>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    Nationality:<br>
+                                     <select name="nationality" class="form-control" id="nationality">
+                                         
+                                     </select>
+                                 </div>
+                                 <div class="form-group col-md-4">
+                                    State of Origin:<br>
+                                     <select name="stateoforigin" class="form-control" id="stateoforigin">
+                                         
+                                     </select>
+                                 </div>
+                                 <div class="form-group col-md-4">
+                                    LGA of Origin:<br>
+
+                                     <select name="lgaoforigin" class="form-control" id="lgaoforigin">
+                                         
+                                     </select>
+                                 </div>
+                                 <div class="form-group col-md-3">
+                                    Date of Birth:<br>
+                                    <input type="date" name="dateofbirth" class="form-control" id="dateofbirth" placeholder="Date of Birth" required>
+                                </div>
+                                <div class="form-group col-md-2">
+                                    Age:<br>
+                                    <input type="text" name="age" class="form-control" id="age" placeholder="Age" required>
+                                </div>
+                                <div class="form-group col-md-2">
+                                    Phone No:<br>
+                                    <input type="text" name="phonenumber" class="form-control" id="phonenumber" placeholder="Phone Numbers">
+                                </div>
+                                <div class="form-group col-md-2">
+                                    Whatsap No:<br>
+                                    <input type="text" name="phonenumberwhatsap" class="form-control" id="phonenumberwhatsap" placeholder="Whatsap Phone Numbers">
+                                </div>
+                                <div class="form-group col-md-3">
+                                    Email:<br>
+                                    <input type="text" name="email" class="form-control" id="email"
+                                        placeholder="Email">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    
+                                    Qualification<br>
+                                    <select class="form-control" id="select_qualification">
+                                        <option value="WASSCE">WASSCE</option>
+                                        <option value="OND">OND</option>
+                                        <option value="TCII">TCII</option>
+                                        <option value="HND">HND</option>
+                                        <option value="BSc.">BSc.</option>
+                                        <option value="BEng.">BEng.</option>
+                                        <option value="BA.">BA.</option>
+                                        <option value="MSc.">MSc.</option>
+                                        <option value="PHD.">PHD.</option>
+                                        <option value="MBA">MBA</option>
+                                        <option value="MBA">MBA</option>
+                                        <option value="Llb.">Llb.</option>
+                                        <option value="MBMS.">MBMS.</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    
+                                    Date<br>
+                                    <input type="date" class="form-control" id="date_qualification">
+                                </div>
+                                <div class="form-group col-md-1">
+                                    <br>
+                                    <button type="submit" class="genric-btn primary" id="add_academic_qualification">Add</button>
+                                </div>
+                                <div class="form-group col-md-3">
+                                    
+                                    Marital Status<br>
+                                    <select class="form-control" id="maritalstatus">
+                                        <option value="Single">Single</option>
+                                        <option value="Married">Married</option>
+                                        
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <p id="academic_qualification_list"></p>
+                                </div>
+                                
+                                <div class="form-group col-md-3">
+                                   
+                                    Name of School attended<br>
+                                    <input type="text" class="form-control" id="establishment">
+                                </div>
+                                <div class="form-group col-md-2">
+                                    Date From<br>
+                                    <input type="date" class="form-control" id="datefrom">
+                                    
+                                </div>
+                                <div class="form-group col-md-2">
+                                    Date To<br>
+                                    <input type="date" class="form-control" id="dateto">
+                                   
+                                </div>
+                                 
+                                <div class="form-group col-md-1">
+                                        <br>
+                                        <button type="submit" class="genric-btn primary" id="add_employment_record">Add</button>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    Profession<br>
+                                    <input type="text" class="form-control" id="profession" name="profession">
+                                   
+                                </div>
+                                <div class="form-group col-md-12">
+                                         <p id="employment_record_list"></p>
+                                </div>
+                                
+                                <!-- <div class="form-group col-md-4">
+                                    Person Type:<br>
+                                    <select name="persontype" id="persontype" class="form-control" style="display:block;"></select>
+                                  
+                                </div>
+                                <div class="form-group col-md-4">
+                                    Account Type:<br>
+                                    <select name="accountype" id="accountype" class="form-control"></select>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    Department:<br>
+                                    <select name="department" id="department" class="form-control"></select>
+                                </div> -->
+                            </div>
+
+                            <!--Add Next of Kin NUmber 1-->
+                            <h2>Add Next of Kin Number 1</h2>
+                            <div class="label label-success" id="errorlogin"></div>
+                            <div class="form-row">
+                                <div class="form-group col-md-5">
+                                    First Name:<br>
+                                    <input type="text" name="nk1firstname" class="form-control" id="nk1firstname" placeholder="First Name">
+                                </div>
+                                <div class="form-group col-md-5">
+                                    Last Name:<br>
+                                    <input type="text" name="nk1lastname" class="form-control" id="nk1lastname"
+                                        placeholder="Last Name">
+                                </div>
+                                <div class="form-group col-md-2">
+                                    Sex:<br>
+                                    <select name="nk1sex" class="form-control" id="nk1sex">
+                                        <option value="Female">Female</option>
+                                        <option value="Male">Male</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group col-md-6">
+                                    Address:<br>
+                                    <textarea name="nk1address" class="form-control" id="nk1address" placeholder="Residential Address"></textarea>
+                                </div>
+                                <div class="form-group col-md-3">
+                                    Relationship:<br>
+                                    <select name="nextofkinrelationship" id="nextofkinrelationship" class="form-control" required>
+
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-2">
+                                    Add Next-of-Kin Relationship:<br>
+                                    <input type="text" name="addrelationship" class="form-control" id="addrelationship" placeholder="Add Relationship" required>
+                                </div>
+                                <div class="form-group col-md-1">
+                                    <br>
+                                    <button class="genric-btn primary" id="add-relationship-button">Add</button> 
+                                </div>
+                                <div class="form-group col-md-4">
+                                    Nationality:<br>
+                                     <select name="nk1nationality" class="form-control" id="nk1nationality">
+                                         
+                                     </select>
+                                 </div>
+                                 <div class="form-group col-md-4">
+                                    State of Origin:<br>
+                                     <select name="nk1stateoforigin" class="form-control" id="nk1stateoforigin">
+                                         
+                                     </select>
+                                 </div>
+                                 <div class="form-group col-md-4">
+                                    LGA of Origin:<br>
+
+                                     <select name="nk1lgaoforigin" class="form-control" id="nk1lgaoforigin">
+                                         
+                                     </select>
+                                 </div>
+                                 <div class="form-group col-md-2">
+                                    Town:<br>
+
+                                     <select name="nk1town" class="form-control" id="nk1town">
+                                         
+                                     </select>
+                                 </div>
+                                 
+                                <div class="form-group col-md-2">
+                                    Age:<br>
+                                    <input type="number" name="nk1age" class="form-control" id="nk1age" placeholder="Age" required>
+                                </div>
+                                <div class="form-group col-md-2">
+                                    Phone No:<br>
+                                    <input type="text" name="nk1phonenumber" class="form-control" id="nk1phonenumber" placeholder="Phone Numbers">
+                                </div>
+                                <div class="form-group col-md-2">
+                                    Whatsap No:<br>
+                                    <input type="text" name="nk1phonenumberwhatsap" class="form-control" id="nk1phonenumberwhatsap" placeholder="Whatsap Phone Numbers">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    Email:<br>
+                                    <input type="text" name="nk1email" class="form-control" id="nk1email"
+                                        placeholder="Email">
+                                </div>
+                                <!-- <div class="form-group col-md-6">
+                                    
+                                    <input type="hidden" name="addstaff" id="addstaff">
+                                </div> -->
+                            </div>
+                            <h2>Add Next of Kin Number 2</h2>
+                            <div class="label label-success" id="errorlogin"></div>
+                            <div class="form-row">
+                                <div class="form-group col-md-5">
+                                    First Name:<br>
+                                    <input type="text" name="nk2firstname" class="form-control" id="nk2firstname" placeholder="First Name">
+                                </div>
+                                <div class="form-group col-md-5">
+                                    Last Name:<br>
+                                    <input type="text" name="nk2lastname" class="form-control" id="nk2lastname"
+                                        placeholder="Last Name">
+                                </div>
+                                <div class="form-group col-md-2">
+                                    Sex:<br>
+                                    <select name="nk2sex" class="form-control" id="nk2sex">
+                                        <option value="Female">Female</option>
+                                        <option value="Male">Male</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group col-md-6">
+                                    Address:<br>
+                                    <textarea name="nk2address" class="form-control" id="nk2address" placeholder="Residential Address"></textarea>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    Relationship:<br>
+                                    <select name="nextofkinrelationship2" id="nextofkinrelationship2" class="form-control" required>
+
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    Nationality:<br>
+                                     <select name="nk2nationality" class="form-control" id="nk2nationality">
+                                         
+                                     </select>
+                                 </div>
+                                 <div class="form-group col-md-4">
+                                    State of Origin:<br>
+                                     <select name="nk2stateoforigin" class="form-control" id="nk2stateoforigin">
+                                         
+                                     </select>
+                                 </div>
+                                 <div class="form-group col-md-4">
+                                    LGA of Origin:<br>
+
+                                     <select name="nk2lgaoforigin" class="form-control" id="nk2lgaoforigin">
+                                         
+                                     </select>
+                                 </div>
+                                 <div class="form-group col-md-2">
+                                    Town:<br>
+
+                                     <select name="nk2town" class="form-control" id="nk2town">
+                                         
+                                     </select>
+                                 </div>
+                                 
+                                <div class="form-group col-md-2">
+                                    Age:<br>
+                                    <input type="number" name="nk2age" class="form-control" id="nk2age" placeholder="Age" required>
+                                </div>
+                                <div class="form-group col-md-2">
+                                    Phone No:<br>
+                                    <input type="text" name="nk2phonenumber" class="form-control" id="nk2phonenumber" placeholder="Phone Numbers">
+                                </div>
+                                <div class="form-group col-md-2">
+                                    Whatsap No:<br>
+                                    <input type="text" name="nk2phonenumberwhatsap" class="form-control" id="nk2phonenumberwhatsap" placeholder="Whatsap Phone Numbers">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    Email:<br>
+                                    <input type="text" name="nk2email" class="form-control" id="nk2email"
+                                        placeholder="Email">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    
+                                    <input type="hidden" name="addstaff" id="addstaff">
+                                </div>
+                            </div>
+                            <div class="regerv_btn">
+                                <button type="submit" class="genric-btn primary" id="add-staff">Click to Add Staff</button>
+                                <!-- <button type="submit" class="genric-btn primary" id="uploadMorgue">Click to Upload Morgue</button> -->
+                              
+                            </div>
+                        </form>
+                        <!-- <input type="file" id="fileUpload" accept=".xls,.xlsx" class='form-control' /><br /> -->
+                        <!-- <button type="button" id="uploadExcel" class='btn btn-primary'>Upload</button> -->
+                    </div>
+                </div>
+                <!-- <div class="col-lg-5 col-md-6">
+                    <div class="reservation_img">
+                        <img src="img/loginphoto.jpg" alt="">
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <!--::regervation_part end::-->
+
+    
+    <!-- footer part start-->
+    <footer class="footer-area">
+
+        <div class="copyright_part">
+            
+        </div>
+    </footer>
+
+    <!-- footer part end-->
+
+    <!-- jquery plugins here-->
+
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <!-- popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- easing js -->
+    <script src="js/jquery.magnific-popup.js"></script>
+    <!-- swiper js -->
+    <script src="js/swiper.min.js"></script>
+    <!-- swiper js -->
+    <script src="js/masonry.pkgd.js"></script>
+    <!-- particles js -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- <script src="js/jquery.nice-select.min.js"></script> -->
+    <!-- swiper js -->
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <!-- contact js -->
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <script src="js/contact.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+    <script src="views/masterpage.js"></script>
+    <script src="views/add-staff.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            
+
+        })
+      </script>
+</body>
+
+</html>

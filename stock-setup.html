@@ -1,0 +1,3093 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Stock Setup</title>
+    <link rel="icon" href="img/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- themify CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <!-- flaticon CSS -->
+    <link rel="stylesheet" href="css/flaticon.css">
+    <!-- magnific popup CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- nice select CSS -->
+    <!-- <link rel="stylesheet" href="css/nice-select.css"> -->
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <!-- style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        a:hover{
+            color:indigo;
+        }
+    </style>
+    <style>
+        thead, tbody, tr { display: block; }
+
+        tr:after {
+            content: ' ';
+            display: block;
+            visibility: hidden;
+            clear: both;
+        }
+
+        
+
+        tbody {
+            height: 250px;
+            overflow-y: auto;
+        }
+
+        thead {
+            /* fallback */
+        }
+
+        thead th {
+            height: 30px;
+
+            /*text-align: left;*/
+        }
+
+        tbody td, thead th {
+            width: 12.2%;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <!--::header part start::-->
+    <header class="main_menu">
+            
+        </header>
+        <!-- Header part end-->
+       
+    <!-- breadcrumb start-->
+    <section class="breadcrumb breadcrumb_bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb_iner">
+                        <!-- <div class="breadcrumb_iner_item">
+                            <h2>SUYI HOSPITAL </h2>
+                            <p style="padding-bottom: 70px;"><a href="#" style="color:#F1F1F1">Setup</a>: Combo Setup</p><br><br><br> 
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- breadcrumb start-->
+
+    
+
+    <!--::regervation_part start::-->
+    <section class="regervation_part padding_bottom" style="margin-top:30px;">
+        <div class="container">
+            <div class="row align-items-center regervation_content">
+                <div class="col-md-12">
+                    <div class="regervation_part_iner">
+                        <br>
+                        <form>
+                            <h2>Stock</h2>
+                            <div class="label label-success" id="errorlogin"></div>
+                            <div class="form-row">
+                                
+                            </div>
+                            
+                        </form>
+                    </div>
+                    <div class="card-box">
+                       
+                        <ul class="nav nav-tabs nav-tabs-solid nav-tabs-rounded nav-justified">
+                            <li class="nav-item"><a class="nav-link btn-primary active" href="#solid-rounded-justified-tab6" data-toggle="tab">Manufacturer</a></li>
+                            <li class="nav-item"><a class="nav-link btn-primary" href="#solid-rounded-justified-tab7" data-toggle="tab">Supplier</a></li>
+                            <li class="nav-item"><a class="nav-link btn-primary" href="#solid-rounded-justified-tab3" data-toggle="tab">StockType</a></li> 
+                            <li class="nav-item"><a class="nav-link btn-primary" href="#solid-rounded-justified-tab4" data-toggle="tab">Location</a></li>
+                            <li class="nav-item"><a class="nav-link btn-primary" href="#solid-rounded-justified-tab8" data-toggle="tab">Packaging</a></li>
+                            <li class="nav-item"><a class="nav-link btn-primary" href="#solid-rounded-justified-tab9" data-toggle="tab">Organization</a></li>
+                            <!-- <li class="nav-item dropdown">
+                                <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Stocking Setup</a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item" href="#solid-rounded-justified-tab2" data-toggle="tab">Route of Administration</a>
+                                    <a class="dropdown-item" href="#solid-rounded-justified-tab3" data-toggle="tab">Category of Importance</a>
+                                    <a class="dropdown-item" href="#solid-rounded-justified-tab4" data-toggle="tab">Stock Location</a>
+                                    <a class="dropdown-item" href="#solid-rounded-justified-tab5" data-toggle="tab">Physical Position</a> 
+                                </div>
+                            </li> -->
+                            <!-- <li class="nav-item"><a class="nav-link" href="#solid-rounded-justified-tab3" data-toggle="tab">Department Item Group</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#solid-rounded-justified-tab4" data-toggle="tab">Generic Name</a></li> -->
+                            <!-- <li class="nav-item"><a class="nav-link" href="#solid-rounded-justified-tab5" data-toggle="tab">State</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#solid-rounded-justified-tab6" data-toggle="tab">Default Strength</a></li> -->
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane" id="solid-rounded-justified-tab1">
+                                <br>
+                                <h3>Stock Item Setup</h3>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            
+                                            <form action="controllers/index.php" class="form-signin">
+                                                <h2>Add Stock Item</h2>
+                                                <div class="label label-success" id="stockitem-status"></div>
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-12">
+                                                        Search Generic Name:<br>
+                                                        <input type="text" name="searchgenericname" id="searchgenericname" class="form-control" required>
+
+                                                    </div>
+                                                    <div class="form-group col-md-12">
+                                                        Select Generic Name:<br>
+                                                        <select name="selectgenericname" id="selectgenericname" class="form-control" required>
+
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group col-md-2">
+                                                        <input type="checkbox" name="checkcombinedgenericname" id="checkcombinedgenericname" class="form-control">
+                                                       </div>
+                                                       <div class="form-group col-md-10">
+                                                        Combined Generic Name
+                   
+                                                        
+                                                    </div>
+                                                    <div class="form-group col-md-12" id="combinedgenericform">
+                                                        Combined Generic Name:<br>
+                                                        <select name="combinedgenericname" id="combinedgenericname" class="form-control select" multiple>
+
+                                                        </select><br>
+                                                        
+                                                    </div> <div class="form-group col-md-12">
+                                                        Select Department Item Group:<br>
+                                                        <select name="selectdepartmentitemgroup" id="selectdepartmentitemgroup" class="form-control" required>
+
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group col-md-12">
+                                                        Select Department:<br>
+                                                        <select name="selectdepartment" id="selectdepartment" class="form-control" required>
+
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group col-md-12">
+                                                        Select Sub-Department:<br>
+                                                        <select name="selectsubdepartment" id="selectsubdepartment" class="form-control" required>
+
+                                                        </select>
+                                                    </div>
+
+                                                    <div class="form-group col-md-12">
+                                                        Select Form:<br>
+                                                        <select name="selectform" id="selectform" class="form-control" required>
+
+                                                        </select>
+                                                    </div>
+                                                   
+                                                    <div class="form-group col-md-12">
+                                                        Select State:<br>
+                                                        <select name="selectstate" id="selectstate" class="form-control" required>
+
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group col-md-12">
+                                                        Select Stock Type:<br>
+                                                        <select name="selectstocktype" id="selectstocktype" class="form-control" required>
+
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group col-md-2">
+                                                        <input type="checkbox" name="checkcombinedstrength" id="checkcombinedstrength" class="form-control">
+                                                       </div>
+                                                       <div class="form-group col-md-10">
+                                                        Combined Item Strength
+                   
+                                                        
+                                                    </div>
+                                                    <div class="form-group col-md-12">
+                                                        <!--Solid-->
+                                                        
+                                                        <div id="solidstrength">
+                                                            <div class="row">
+                                                                <div class="col-1">
+                                                                    Value<br>
+                                                                    <span id="solidstrengthvalue"></span>
+                                                                </div>
+                                                                <div class="col-1">
+                                                                    Wt<br>
+                                                                    <select name="selectsolidweightunit" id="selectsolidweightunit" style="margin-top:5px;">
+
+                                                                    </select>
+                                                                </div>
+                                                                <div class="col-1" style="padding-left:25px;padding-top:10px;font-size: xx-large;">&nbsp;/</div>
+                                                                <div class="col-1">
+                                                                    Form<br>
+                                                                    <select name="selectsolidform" id="selectsolidform" style="margin-top:5px;">
+
+                                                                    </select>
+                                                                </div>
+                                                                <div class="col-2">
+                                                                    Container<br>
+                                                                    <select name="selectsolidcontainer" id="selectsolidcontainer" style="margin-top:5px;">
+
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            
+                                                        </div>
+                                                        <!--Liquid-->
+                                                        <div id="liquidstrength">
+                                                            <div class="row">
+                                                                <div class="col-1">
+                                                                    Value<br>
+                                                                    <span id="liquidstrengthvalue"></span>
+                                                                </div>
+                                                                <div class="col-1">
+                                                                    Wt<br>
+                                                                    <select name="selectliquidweightunit" id="selectliquidweightunit" style="margin-top:5px;">
+
+                                                                    </select>
+                                                                </div>
+                                                                <div class="col-1" style="padding-left:25px;padding-top:10px;font-size: xx-large;">&nbsp;/</div>
+                                                                <div class="col-1">
+                                                                    Value<br>
+                                                                    <input type="text" class="liquidvolumevalue" id="liquidvolumevalue" style="width:40px">
+                                                                    
+                                                                </div>
+                                                                <div class="col-1">
+                                                                    Vol<br>
+                                                                    <select name="selectliquidvolumeunit" id="selectliquidvolumeunit" style="margin-top:5px;">
+
+                                                                    </select> 
+                                                                </div>
+                                                                <div class="col-1" style="padding-left:25px;padding-top:10px;font-size: xx-large;">&nbsp;in</div>
+                                                                <div class="col-1">
+                                                                    Value<br>
+                                                                    <input type="text" class="liquidcontainervolumevalue" id="liquidcontainervolumevalue" style="width:40px">
+                                                                    
+                                                                </div>
+                                                                <div class="col-1">
+                                                                    Vol<br>
+                                                                    <select name="selectliquidcontainervolumeunit" id="selectliquidcontainervolumeunit" style="margin-top:5px;">
+
+                                                                    </select> 
+                                                                </div>
+                                                                <div class="col-2">
+                                                                    Container<br>
+                                                                    <select name="selectliquidcontainer" id="selectliquidcontainer" style="margin-top:5px;">
+
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!--Gas-->
+                                                        <div id="gasstrength">
+                                                            <div class="row">
+                                                                <div class="col-1">
+                                                                    Value<br>
+                                                                    <span id="gasstrengthvalue"></span>
+                                                                </div>
+                                                                <div class="col-1">
+                                                                    Wt<br>
+                                                                    <select name="selectgasweightunit" id="selectgasweightunit" style="margin-top:5px;">
+
+                                                                    </select>
+                                                                </div>
+                                                                <div class="col-1" style="padding-left:25px;padding-top:10px;font-size: xx-large;">&nbsp;:</div>
+                                                                <div class="col-1">
+                                                                    Value<br>
+                                                                    <input type="text" class="gasvolumevalue" id="gasvolumevalue" style="width:40px">
+                                                                    
+                                                                </div>
+                                                                <div class="col-1">
+                                                                    Vol<br>
+                                                                    <select name="selectgasvolumeunit" id="selectgasvolumeunit" style="margin-top:5px;">
+
+                                                                    </select> 
+                                                                </div>
+                                                                <div class="col-1" style="padding-left:25px;padding-top:10px;font-size: xx-large;">&nbsp;/</div>
+                                                                <div class="col-1">
+                                                                    Value<br>
+                                                                    <input type="text" class="gastimevalue" id="gastimevalue" style="width:40px">
+                                                                    
+                                                                </div>
+                                                                <div class="col-2">
+                                                                    Time<br>
+                                                                    <select name="selectgastimevalue" id="selectgastimevalue" style="margin-top:5px;">
+                                                                        <option value="Hr">Hours</option>
+                                                                        <option value="Mins">Minutes</option>
+                                                                        <option value="Sec">Seconds</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="col-1" style="padding-left:15px;padding-top:10px;font-size: xx-large;">via</div>
+                                                                <div class="col-1">
+                                                                    Route<br>
+                                                                    <select name="selectgasroute" id="selectgasroute" style="margin-top:5px;">
+
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!--Service-->
+                                                        <div id="servicestrength">
+                                                            <div class="row">
+                                                                <div class="col-1">
+                                                                    Value:<br>
+                                                                    <span id="servicevalue"></span>
+                                                                </div>
+                                                                <div class="col-4">
+                                                                    Service<br>
+                                                                    <input type="text" name="serviceitem" id="serviceitem">
+                                                                </div>
+                                                                <div class="col-1" style="padding-left:25px;padding-top:10px;font-size: xx-large;">&nbsp;/</div>
+                                                                <div class="col-1">
+                                                                    Route<br>
+                                                                    
+                                                                    <select name="selectserviceroute" id="selectserviceroute" style="margin-top:5px;">
+
+                                                                    </select>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                        <!-- Enter Strength: <span id="statevalue">Weight</span><br>
+                                                        <input type="text" name="itemweight" id="itemweight" placeholder="Enter Value">
+                                                        <select name="selectweightunit" id="selectweightunit">
+
+                                                        </select>
+                                                        /
+                                                        <select name="selectweightformulation" id="selectweightformulation">
+
+                                                        </select>
+                                                        <span id="selectitemweightform"></span> -->
+                                                    </div>
+                                                    <!-- <div class="form-group col-md-12">
+                                                        Enter Strength: <span id="statevalue">Volume</span><br>
+                                                        <input type="text" name="itemvolume" id="itemvolume" placeholder="Enter Value">
+                                                        <select name="selectvolumeunit" id="selectvolumeunit">
+
+                                                        </select>
+                                                        /
+                                                        <select name="selectvolumeformulation" id="selectvolumeformulation">
+
+                                                        </select>
+                                                        <span id="selectitemvolumeform"></span>
+                                                    </div>
+                                                    <div class="form-group col-md-2">
+                                                        <input type="checkbox" name="checkcombinedstrength" id="checkcombinedstrength" class="form-control">
+                                                       </div>
+                                                       <div class="form-group col-md-10">
+                                                        Combined Item Strength
+                   
+                                                        
+                                                    </div>
+                                                    <div id="combineditemstrengthform">
+                                                        <div class="form-group col-md-12"> 
+                                                            Enter Combined Strength: <span id="statevalue">Weight</span><br>
+                                                            <div id="combinedweight"></div>
+                                                             <input type="text" name="itemweight1" id="itemweight1" placeholder="Item 1"> 
+                                                             <input type="text" name="itemweight2" id="itemweight2" placeholder="Item 2"> 
+                                                            <select name="selectweightunit" id="selectweightunit">
+    
+                                                            </select>
+                                                            /
+                                                            <select name="selectweightformulation" id="selectweightformulation">
+    
+                                                            </select>
+                                                            <span id="selectitemweightform"></span>
+                                                        </div>
+                                                        <div class="form-group col-md-12">
+                                                            Enter Combined Strength: <span id="statevalue">Volume</span><br>
+                                                            <input type="text" name="itemvolume1" id="itemvolume1" placeholder="Item 1">
+                                                            <input type="text" name="itemvolume2" id="itemvolume2" placeholder="Item 2">
+                                                            <select name="selectvolumeunit" id="selectvolumeunit">
+    
+                                                            </select>
+                                                            /
+                                                            <select name="selectvolumeformulation" id="selectvolumeformulation">
+    
+                                                            </select>
+                                                            <span id="selectitemvolumeform"></span>
+                                                        </div>
+                                                    </div> -->
+                                                    <div class="form-group col-md-12">
+                                                        Select Usage Group:<br>
+                                                        <select name="selectusagegroup" id="selectusagegroup" class="form-control" required>
+
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group col-md-12">
+                                                        Select Usage Class:<br>
+                                                        <select name="selectusageclass" id="selectusageclass" class="form-control" required>
+
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group col-md-12">
+                                                        Select Usage SubClass:<br>
+                                                        <select name="selectusagesubclass" id="selectusagesubclass" class="form-control" required>
+
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group col-md-12">
+                                                        Select Manufacturer Name:<br>
+                                                        <select name="selectmanufacturername" id="selectmanufacturername" class="form-control" required>
+
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group col-md-10">
+                                                        Add Manufacturer<br>
+                                                        <input type="text" name="addmanufacturer" class="form-control" id="addmanufacturer">
+                                                    </div>
+                                                    <div class="form-group col-md-2">
+                                                        <br>
+                                                        <!-- <button class="genric-btn primary" id="add-manufacturer-button">Add</button> -->
+                                                    </div>
+                                                    <div class="form-group col-md-12">
+                                                        <input type="text" name="manufacturertradename" class="form-control" id="manufacturertradename" placeholder="Trade Name" required>
+                                                    </div>
+                                                    
+                                                    <!-- <div class="form-group col-md-6">
+                                                        <input type="text" name="formabbreviation" class="form-control" id="formabbreviation"
+                                                            placeholder="Form Abbreviation">
+                                                    </div> -->
+                                                    <div class="form-edit-stockitem"></div>
+                                                    
+                                                </div>
+                                                <div class="regerv_btn">
+                                                    <button type="submit" class="genric-btn primary" id="add-stockitem-button">Generate Stock Item</button>
+                                                    <button type="submit" class="genric-btn warning" id="edit-stockitem-button">Edit Stock Item</button>
+                                                    <button type="submit" class="genric-btn danger" id="delete-stockitem-button">Confirm Deletion</button>
+                                                </div>
+                                            </form>
+                                            
+                                        </div>
+                                        <div class="col-6">
+                                            
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    <h4 class="card-title d-inline-block">View Stock Items</h4>  <p class="btn btn-primary float-right" id="view-stockitem-count"></p>
+                                                    <div class="form-group col-md-12">
+                                                        Search Stock Item:<br>
+                                                        <input type="text" name="searchgenericname" id="searchgenericname" class="form-control">
+
+                                                    </div>
+                                                </div>
+                                                <div class="card-body p-0">
+                                                    <div class="table-responsive scrollable">
+                                                        <table class="table mb-0">
+                                                            <thead class="d-none">
+                                                                <tr>
+                                                                    <th>Stock Item</th>
+                                                                    <th>Trade Name</th>
+                                                                    <!-- <th>Department Item Group</th> -->
+                                                                    <th class="text-right">Action</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody id="view-stockitem-list">
+                                                                
+                                                                
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="solid-rounded-justified-tab2">
+                                <br>
+                                <h3>Route of Administration</h3>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            
+                                            <form action="controllers/index.php" class="form-signin">
+                                                <h2>Add Route of Administration</h2>
+                                                <div class="label label-success" id="routeofadministration-status"></div>
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-12">
+                                                        <input type="text" name="routeofadministration" class="form-control" id="routeofadministration" placeholder="Route of Administration" required>
+                                                    </div>
+                                                    <div class="form-group col-md-12">
+                                                        <input type="text" name="routeabbreviation" class="form-control" id="routeabbreviation"
+                                                            placeholder="Route Abbreviation">
+                                                    </div>
+                                                    
+                                                    <div class="form-edit-routeofadministration"></div>
+                                                    
+                                                </div>
+                                                <div class="regerv_btn">
+                                                    <button type="submit" class="genric-btn primary" id="add-routeofadministration-button">Add Route of Administration</button>
+                                                    <button type="submit" class="genric-btn warning" id="edit-routeofadministration-button">Edit Route of Administration</button>
+                                                    <button type="submit" class="genric-btn danger" id="delete-routeofadministration-button">Confirm Deletion</button>
+                                                </div>
+                                            </form>
+                                            
+                                        </div>
+                                        <div class="col-6">
+                                            
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    <h4 class="card-title d-inline-block">View Route of Administration</h4>  <p class="btn btn-primary float-right" id="view-routeofadministration-count"></p>
+                                                </div>
+                                                <div class="card-body p-0">
+                                                    <div class="table-responsive scrollable">
+                                                        <table class="table mb-0">
+                                                            <thead class="d-none">
+                                                                <tr>
+                                                                    <th>Route of Administration</th>
+                                                                    <th>Abbreviation</th>
+                                                                    
+                                                                    <th class="text-right">Action</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody id="view-routeofadministration-list">
+                                                                
+                                                                
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane show active" id="solid-rounded-justified-tab6">
+                                <br>
+                                <h3>Manufacturers</h3>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            
+                                            <form action="controllers/index.php" class="form-signin">
+                                                <h2>Add Manufacturers</h2>
+                                                <div class="label label-success" id="manufacturer-status"></div>
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-6">
+                                                        <input type="text" name="manufacturer" class="form-control" id="manufacturer" placeholder="Manufacturer" required>
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                        <input type="text" name="manufacturercode" class="form-control" id="manufacturercode"
+                                                            placeholder="Manufacturer Code">
+                                                    </div>
+                                                    
+                                                    <div class="form-edit-manufacturer"></div>
+                                                    
+                                                </div>
+                                                <div class="regerv_btn">
+                                                    <button type="submit" class="genric-btn primary" id="add-manufacturer-button" style="font-size: 24px;border-radius: 8px;">Add Manufacturer</button>
+                                                    <button type="submit" class="genric-btn primary" id="cancel-manufacturer-button" style="font-size: 24px;border-radius: 8px;">Cancel</button>
+                                                    <button type="submit" class="genric-btn success" id="edit-manufacturer-button" style="font-size: 24px;border-radius: 8px;">Edit Manufacturer</button>
+                                                    <button type="submit" class="genric-btn danger" id="delete-manufacturer-button" style="font-size: 24px;border-radius: 8px;">Confirm Deletion</button>
+                                                </div>
+                                            </form>
+                                            
+                                        </div>
+                                        <div class="col-12">
+                                            
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    <h4 class="card-title d-inline-block">View Manufacturers</h4>  <p class="btn btn-primary float-right" id="view-manufacturer-count"></p>
+                                                    <p class="float-right"><input type="text" id="searchmanufacturer" name="searchmanufacturer" placeholder="Search Manufacturer" style="font-size: 18px;"></p>
+                                                </div>
+                                                <div class="card-body p-0">
+                                                    <div class="table-responsive scrollable">
+                                                        <table class="table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Manufacturer</th>
+                                                                    <th>Code</th>
+                                                                    
+                                                                    <th>Action</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody id="view-manufacturer-list">
+                                                                
+                                                                
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="solid-rounded-justified-tab7">
+                                <br>
+                                <h3>Suppliers</h3>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            
+                                            <form action="controllers/index.php" class="form-signin">
+                                                <h2>Add  Suppliers</h2>
+                                                <div class="label label-success" id="supplier-status"></div>
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-6">
+                                                        <input type="text" name="supplier" class="form-control" id="supplier" placeholder="supplier" required>
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                        <input type="text" name="suppliercode" class="form-control" id="suppliercode"
+                                                            placeholder="Supplier Code">
+                                                    </div>
+                                                    
+                                                    <div class="form-edit-supplier"></div>
+                                                    
+                                                </div>
+                                                <div class="regerv_btn">
+                                                    <button type="submit" class="genric-btn primary" id="add-supplier-button" style="font-size: 24px;border-radius: 8px;">Add Supplier</button>
+                                                    <button type="submit" class="genric-btn primary" id="cancel-supplier-button" style="font-size: 24px;border-radius: 8px;">Cancel</button>
+                                                    <button type="submit" class="genric-btn success" id="edit-supplier-button" style="font-size: 24px;border-radius: 8px;">Edit Supplier</button>
+                                                    <button type="submit" class="genric-btn danger" id="delete-supplier-button" style="font-size: 24px;border-radius: 8px;">Confirm Deletion</button>
+                                                </div>
+                                            </form>
+                                            
+                                        </div>
+                                        <div class="col-12">
+                                            
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    <h4 class="card-title d-inline-block">View Suppliers</h4>  <p class="btn btn-primary float-right" id="view-supplier-count"></p>
+                                                    <p class="float-right"><input type="text" id="searchsupplier" name="searchsupplier" placeholder="Search Supplier" style="font-size: 18px;"></p>
+                                                </div>
+                                                <div class="card-body p-0">
+                                                    <div class="table-responsive scrollable">
+                                                        <table class="table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Supplier</th>
+                                                                    <th>Code</th>
+                                                                    
+                                                                    <th>Action</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody id="view-supplier-list">
+                                                                
+                                                                
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="solid-rounded-justified-tab8">
+                                <br>
+                                <h3>Packaging</h3>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            
+                                            <form action="controllers/index.php" class="form-signin">
+                                                <h2>Add Packagings</h2>
+                                                <div class="label label-success" id="packaging-status"></div>
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-6">
+                                                        <input type="text" name="packaging" class="form-control" id="packaging" placeholder="Packaging" required>
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                        <input type="text" name="packagingcode" class="form-control" id="packagingcode"
+                                                            placeholder="Packaging Code">
+                                                    </div>
+                                                    
+                                                    <div class="form-edit-packaging"></div>
+                                                    
+                                                </div>
+                                                <div class="regerv_btn">
+                                                    <button type="submit" class="genric-btn primary" id="add-packaging-button" style="font-size: 24px;border-radius: 8px;">Add Packaging</button>
+                                                    <button type="submit" class="genric-btn primary" id="cancel-packaging-button" style="font-size: 24px;border-radius: 8px;">Cancel</button>
+                                                    <button type="submit" class="genric-btn success" id="edit-packaging-button" style="font-size: 24px;border-radius: 8px;">Edit Packaging</button>
+                                                    <button type="submit" class="genric-btn danger" id="delete-packaging-button" style="font-size: 24px;border-radius: 8px;">Confirm Deletion</button>
+                                                </div>
+                                            </form>
+                                            
+                                        </div>
+                                        <div class="col-12">
+                                            
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    <h4 class="card-title d-inline-block">View Packagings</h4>  <p class="btn btn-primary float-right" id="view-packaging-count"></p>
+                                                    <p class="float-right"><input type="text" id="searchpackaging" name="searchpackaging" placeholder="Search Packaging" style="font-size: 18px;"></p>
+                                                </div>
+                                                <div class="card-body p-0">
+                                                    <div class="table-responsive scrollable">
+                                                        <table class="table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Packaging</th>
+                                                                    <th>Code</th>
+                                                                    
+                                                                    <th>Action</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody id="view-packaging-list">
+                                                                
+                                                                
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="solid-rounded-justified-tab9">
+                                <br>
+                                <h3>Organization</h3>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            
+                                            <form action="controllers/index.php" class="form-signin">
+                                                <h2>Add Organization</h2>
+                                                <div class="label label-success" id="organization-status"></div>
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-6">
+                                                        <input type="text" name="organization" class="form-control" id="organization" placeholder="Organization" required>
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                        <input type="text" name="organizationdiscount" class="form-control" id="organizationdiscount"
+                                                            placeholder="Organization Discount">
+                                                    </div>
+                                                    
+                                                    <div class="form-edit-organization"></div>
+                                                    
+                                                </div>
+                                                <div class="regerv_btn">
+                                                    <button type="submit" class="genric-btn primary" id="add-organization-button" style="font-size: 24px;border-radius: 8px;">Add Organization</button>
+                                                    <button type="submit" class="genric-btn primary" id="cancel-organization-button" style="font-size: 24px;border-radius: 8px;">Cancel</button>
+                                                    <button type="submit" class="genric-btn success" id="edit-organization-button" style="font-size: 24px;border-radius: 8px;">Edit Organization</button>
+                                                    <button type="submit" class="genric-btn danger" id="delete-organization-button" style="font-size: 24px;border-radius: 8px;">Confirm Deletion</button>
+                                                </div>
+                                            </form>
+                                            
+                                        </div>
+                                        <div class="col-12">
+                                            
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    <h4 class="card-title d-inline-block">View Organizations</h4>  <p class="btn btn-primary float-right" id="view-organization-count"></p>
+                                                    <p class="float-right"><input type="text" id="searchorganization" name="searchorganization" placeholder="Search Organization" style="font-size: 18px;"></p>
+                                                </div>
+                                                <div class="card-body p-0">
+                                                    <div class="table-responsive scrollable">
+                                                        <table class="table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Organization</th>
+                                                                    <th>Discount</th>
+                                                                    
+                                                                    <th>Action</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody id="view-organization-list">
+                                                                
+                                                                
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="solid-rounded-justified-tab3">
+                                <br>
+                                <h3>Stock Type</h3>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            
+                                            <form action="controllers/index.php" class="form-signin">
+                                                <h2>Add Stock Type</h2>
+                                                <div class="label label-success" id="stocktype-status"></div>
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-6">
+                                                        <input type="text" name="stocktype" class="form-control" id="stocktype" placeholder="Stock Type" required>
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                        <input type="text" name="stocktypeabbreviation" class="form-control" id="stocktypeabbreviation"
+                                                            placeholder="Stock Type Abbreviation">
+                                                    </div>
+                                                    
+                                                    <div class="form-edit-stocktype"></div>
+                                                    
+                                                </div>
+                                                <div class="regerv_btn">
+                                                    <button type="submit" class="genric-btn primary" style="font-size: 24px;border-radius: 8px;" id="add-stocktype-button">Add Stock Type</button>
+                                                    <button type="submit" class="genric-btn primary" style="font-size: 24px;border-radius: 8px;" id="cancel-stocktype-button">Cancel</button>
+                                                    <button type="submit" class="genric-btn success" style="font-size: 24px;border-radius: 8px;" id="edit-stocktype-button">Edit Stock Type</button>
+                                                    <button type="submit" class="genric-btn danger" style="font-size: 24px;border-radius: 8px;" id="delete-stocktype-button">Confirm Deletion</button>
+                                                </div>
+                                            </form>
+                                            
+                                        </div>
+                                        <div class="col-12">
+                                            
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    <h4 class="card-title d-inline-block">View Stock Type</h4>  <p class="btn btn-primary float-right" id="view-stocktype-count"></p>
+                                                    <p class="float-right"><input type="text" id="searchstocktype" name="searchstocktype" placeholder="Search Stock Type" style="font-size: 18px;"></p>
+                                                </div>
+                                                <div class="card-body p-0">
+                                                    <div class="table-responsive scrollable">
+                                                        <table class="table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Stock Type</th>
+                                                                    <th>Abbreviation</th>
+                                                                    
+                                                                    <th>Action</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody id="view-stocktype-list">
+                                                                
+                                                                
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="tab-pane" id="solid-rounded-justified-tab4">
+                                <br>
+                                <h3>Stock Location</h3>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            
+                                            <form action="controllers/index.php" class="form-signin">
+                                                <h2>Add Locations</h2>
+                                                <div class="label label-success" id="location-status"></div>
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-6">
+                                                        <input type="text" name="location" class="form-control" id="location" placeholder="Location" required>
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                        <input type="text" name="locationcode" class="form-control" id="locationcode"
+                                                            placeholder="Location Code">
+                                                    </div>
+                                                    
+                                                    <div class="form-edit-location"></div>
+                                                    
+                                                </div>
+                                                <div class="regerv_btn">
+                                                    <button type="submit" class="genric-btn primary" id="add-location-button" style="font-size: 24px;border-radius: 8px;">Add Location</button>
+                                                    <button type="submit" class="genric-btn primary" id="cancel-location-button" style="font-size: 24px;border-radius: 8px;">Cancel</button>
+                                                    <button type="submit" class="genric-btn success" id="edit-location-button" style="font-size: 24px;border-radius: 8px;">Edit Location</button>
+                                                    <button type="submit" class="genric-btn danger" id="delete-location-button" style="font-size: 24px;border-radius: 8px;">Confirm Deletion</button>
+                                                </div>
+                                            </form>
+                                            
+                                        </div>
+                                        <div class="col-12">
+                                            
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    <h4 class="card-title d-inline-block">View Locations</h4>  <p class="btn btn-primary float-right" id="view-location-count"></p>
+                                                    <p class="float-right"><input type="text" id="searchlocation" name="searchlocation" placeholder="Search Location" style="font-size: 18px;"></p>
+                                                </div>
+                                                <div class="card-body p-0">
+                                                    <div class="table-responsive scrollable">
+                                                        <table class="table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Location</th>
+                                                                    <th>Code</th>
+                                                                    
+                                                                    <th>Action</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody id="view-location-list">
+                                                                
+                                                                
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="solid-rounded-justified-tab5">
+                                <br>
+                                <h3>Physical Position</h3>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            
+                                            <form action="controllers/index.php" class="form-signin">
+                                                <h2>Add Physical Position</h2>
+                                                <div class="label label-success" id="physicalposition-status"></div>
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-12">
+                                                        <select name="selectstocklocation" class="form-control" id="selectstocklocation" required></select>
+                                                    </div>
+                                                    <div class="form-group col-md-12">
+                                                        <input type="text" name="physicalposition" class="form-control" id="physicalposition"
+                                                            placeholder="Physical Position">
+                                                    </div>
+                                                    
+                                                    <div class="form-edit-physicalposition"></div>
+                                                    
+                                                </div>
+                                                <div class="regerv_btn">
+                                                    <button type="submit" class="genric-btn primary" id="add-physicalposition-button">Add Physical Position</button>
+                                                    <button type="submit" class="genric-btn warning" id="edit-physicalposition-button">Edit Physical Position</button>
+                                                    <button type="submit" class="genric-btn danger" id="delete-physicalposition-button">Confirm Deletion</button>
+                                                </div>
+                                            </form>
+                                            
+                                        </div>
+                                        <div class="col-6">
+                                            
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    <h4 class="card-title d-inline-block">View Physical Position</h4>  <p class="btn btn-primary float-right" id="view-physicalposition-count"></p>
+                                                </div>
+                                                <div class="card-body p-0">
+                                                    <div class="table-responsive scrollable">
+                                                        <table class="table mb-0">
+                                                            <thead class="d-none">
+                                                                <tr>
+                                                                    <th>Physical Position</th>
+                                                                    <th>Stock Location</th>
+                                                                    
+                                                                    <th class="text-right">Action</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody id="view-physicalposition-list">
+                                                                
+                                                                
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-5 col-md-6">
+                    <div class="reservation_img">
+                        <img src="img/loginphoto.jpg" alt="">
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <!--::regervation_part end::-->
+
+    
+    <!-- footer part start-->
+    <footer class="footer-area">
+
+        <div class="copyright_part">
+            
+        </div>
+    </footer>
+
+    <!-- footer part end-->
+
+    <!-- jquery plugins here-->
+
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <!-- popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- easing js -->
+    <script src="js/jquery.magnific-popup.js"></script>
+    <!-- swiper js -->
+    <script src="js/swiper.min.js"></script>
+    <!-- swiper js -->
+    <script src="js/masonry.pkgd.js"></script>
+    <!-- particles js -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- <script src="js/jquery.nice-select.min.js"></script> -->
+    <!-- swiper js -->
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <!-- contact js -->
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <script src="js/contact.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+    <script src="views/masterpage.js"></script>
+    <script src="views/combo-setup.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/moment.min.js"></script>
+    <!--<script src="views/corpse-list.js"></script> -->
+    <script>
+        $(document).ready(function(){
+                // Select 2
+                if($('.select').length > 0) {
+                    $('.select').select2({
+                        minimumResultsForSearch: -1,
+                        width: '100%'
+                    });
+                }
+                $("#combinedgenericform").hide()
+                $("#combineditemstrengthform").hide()
+
+                $("#checkcombinedgenericname").change(function(){
+                    if($("#checkcombinedgenericname").is(":checked")){
+                        $("#combinedgenericform").show()
+                        
+                    } else {
+                        $("#combinedgenericform").hide()
+                    }
+                })
+                $("#servicestrength").hide()
+                $("#gasstrength").hide()
+                $("#liquidstrength").hide()
+                $("#solidstrength").show()
+
+                let selectedstate = "Solid"
+                $("#selectstate").change(function(){
+                    selectedstate = $("#selectstate").val()
+                    if(selectedstate=="Liquid"){
+                        $("#servicestrength").hide()
+                        $("#gasstrength").hide()
+                        $("#liquidstrength").show()
+                        $("#solidstrength").hide()
+                    } else if(selectedstate=="Solid"){
+                        $("#servicestrength").hide()
+                        $("#gasstrength").hide()
+                        $("#liquidstrength").hide()
+                        $("#solidstrength").show()
+                    } else if(selectedstate=="Gas"){
+                        $("#servicestrength").hide()
+                        $("#gasstrength").show()
+                        $("#liquidstrength").hide()
+                        $("#solidstrength").hide()
+                    } else if(selectedstate=="Service"){
+                        $("#servicestrength").show()
+                        $("#gasstrength").hide()
+                        $("#liquidstrength").hide()
+                        $("#solidstrength").hide()
+                    }
+                    getStrengthValues()
+                })
+                getStrengthValues()
+
+                function getStrengthValues(){
+                    if($("#checkcombinedstrength").is(":checked")){
+                        $("#combineditemstrengthform").show()
+                        let combinedarray = $("#combinedgenericname").val()
+                        let i =0
+                        let solidinputweights = ``
+                        let liquidinputweights = ``
+                        let gasinputweights = ``
+                        let serviceinputweights = ``
+                        combinedarray.forEach(val => {
+                            i++
+                            solidinputweights += `<input type="text" id="solid_weight_` + i + `" name="solid_weight_` + i + `" style="width:40px" placeholder="` + val + ` value">` 
+                            liquidinputweights += `<input type="text" id="liquid_weight_` + i + `" name="liquid_weight_` + i + `" style="width:40px" placeholder="` + val + ` value">` 
+                            gasinputweights += `<input type="text" id="gas_weight_` + i + `" name="gas_weight_` + i + `" style="width:40px" placeholder="` + val + ` value">` 
+                            serviceinputweights += `<input type="text" id="service_weight_` + i + `" name="service_weight_` + i + `" style="width:40px" placeholder="` + val + ` value">` 
+                            console.log(val)
+                        });
+                        $("#solidstrengthvalue").html(solidinputweights)
+                        $("#liquidstrengthvalue").html(liquidinputweights)
+                        $("#gasstrengthvalue").html(gasinputweights)
+                        $("#servicevalue").html(serviceinputweights)
+                        //console.log($("#combinedgenericname").val())
+                    } else {
+                        let value=$("#selectgenericname").val()
+                        $("#solidstrengthvalue").html(`<input type="text" id="solid_weight_0" name="solid_weight_0" style="width:40px" placeholder="` + value + ` value">`)
+                        $("#liquidstrengthvalue").html(`<input type="text" id="liquid_weight_0" name="liquid_weight_0" style="width:40px" placeholder="` + value + ` value">`)
+                        $("#gasstrengthvalue").html(`<input type="text" id="gas_weight_0" name="gas_weight_0" style="width:40px" placeholder="` + value + ` value">`)
+                        $("#servicevalue").html(`<input type="text" id="service_weight_0" name="service_weight_0" style="width:40px" placeholder="` + value + ` value">`)
+
+
+
+                        //$("#combineditemstrengthform").hide()
+                    }
+                }
+
+                $("#checkcombinedstrength").change(function(){
+                    getStrengthValues()
+                })
+
+                // $("#add-manufacturer-button").on("click", function(evt){
+                //     evt.preventDefault()
+                //     let manufacturer = $("#addmanufacturer").val()
+                //     if(manufacturer!=""){
+                //         let insertManufacturer = "insertManufacturer"
+                //         $.post("controllers/combo-setup.php", {manufacturer:manufacturer,insertManufacturer:insertManufacturer},function(data){
+                //             //let manufacturerlist = ``
+                //             let getManufacturer = "getManufacturer"
+                //             $.post("controllers/combo-setup.php",{getManufacturer: getManufacturer},function(formdata){
+
+                //             if(formdata!="No Record Found"){
+                                
+                //                 let data=JSON.parse(formdata)
+                //                 let manufactureroptions = ``
+                //                 $.each(data.records, function(key, val) {
+                                
+                //                     manufactureroptions += `
+                //                     <option value="` + val.manufacturer + `">` + val.manufacturer + `</option>
+                //                 `
+                //                 })
+                //                 //manufacturerlist = manufactureroptions
+                //                 $("#selectmanufacturername").html(manufactureroptions)
+                //             }
+                //             $("#addmanufacturer").val("")
+                //         })
+                //     })
+                //     }
+                // })
+                
+
+               //Stock Item Function
+               function GetStockItemFunction(){
+                $("#edit-stockitem-button").hide()
+                $("#delete-stockitem-button").hide()
+                $(".form-edit-stockitem").html("")
+                let genericnamelist = ``
+                //get list of groups
+                let getGenericName = "getGenericName"
+                let searchItem = ""
+                $.post("controllers/combo-setup.php",{searchItem:searchItem, getGenericName: getGenericName},function(formdata){
+                    //console.log("itemGroup: ",data)
+                    if(formdata!="No Record Found"){
+                        console.log(formdata)
+                        let data=JSON.parse(formdata)
+                        let genericnameoptions = ``
+                        $.each(data.records, function(key, val) {
+                           
+                            genericnameoptions += `
+                            <option value="` + val.genericname + `">` + val.genericname + `</option>
+                          `
+                        })
+                        genericnamelist = genericnameoptions
+                        $("#selectgenericname").html(genericnameoptions)
+                        $("#combinedgenericname").html(genericnameoptions)
+                    }
+                    let departmentlist = ``
+                    //get list of groups
+                    let getDepartment = "getDepartment"
+                    let searchItem = ""
+                    $.post("controllers/combo-setup.php",{searchItem:searchItem,getDepartment: getDepartment},function(formdata){
+                        //console.log("itemGroup: ",data)
+                        if(formdata!="No Record Found"){
+                            
+                            let data=JSON.parse(formdata)
+                            let departmentoptions = ``
+                            $.each(data.records, function(key, val) {
+                            
+                                departmentoptions += `
+                                <option value="` + val.department + `">` + val.department + `</option>
+                            `
+                            })
+                            departmentlist = departmentoptions
+                            $("#selectdepartment").html(departmentoptions)
+                        }
+                    let subdepartmentlist = ``
+                    let searchItem = ""
+                    let getSubDepartment = "getSubDepartment"
+                    $.post("controllers/combo-setup.php",{searchItem:searchItem,getSubDepartment: getSubDepartment},function(formdata){
+                    //console.log("itemGroup: ",data)
+                    if(formdata!="No Record Found"){
+                        
+                        let data=JSON.parse(formdata)
+                        let subdepartmentoptions = ``
+                        $.each(data.records, function(key, val) {
+                           
+                            subdepartmentoptions += `
+                            <option value="` + val.subdepartment + `">` + val.subdepartment + `</option>
+                          `
+                        })
+                        subdepartmentlist = subdepartmentoptions
+                        $("#selectsubdepartment").html(subdepartmentoptions)
+                    }
+
+
+                    let departmentitemgrouplist = ``
+                    let searchItem = ""
+                    let getDepartmentItemGroup = "getDepartmentItemGroup"
+                $.post("controllers/combo-setup.php",{searchItem:searchItem,getDepartmentItemGroup: getDepartmentItemGroup},function(formdata){
+
+                    if(formdata!="No Record Found"){
+                        
+                        let data=JSON.parse(formdata)
+                        let departmentitemgroupoptions = ``
+                        $.each(data.records, function(key, val) {
+                           
+                            departmentitemgroupoptions += `
+                            <option value="` + val.departmentitemgroup + `">` + val.departmentitemgroup + `</option>
+                          `
+                        })
+                        departmentitemgrouplist = departmentitemgroupoptions
+                        $("#selectdepartmentitemgroup").html(departmentitemgroupoptions)
+                    }
+
+
+                    let itemformlist = ``
+                    let getItemForm = "getItemForm"
+                    let searchItem = ""
+                    $.post("controllers/combo-setup.php",{searchformItem:searchItem,getItemForm: getItemForm},function(formdata){
+
+                        if(formdata!="No Record Found"){
+                            
+                            let data=JSON.parse(formdata)
+                            let itemformoptions = ``
+                            $.each(data.records, function(key, val) {
+                            
+                                itemformoptions += `
+                                <option value="` + val.itemcode + `,` + val.itemform + `">` + val.itemform + `</option>
+                            `
+                            })
+                            itemformlist = itemformoptions
+                            $("#selectform").html(itemformoptions)
+                        }
+
+                        let stocktypelist = ``
+                    let getStockType = "getStockType"
+                    let searchItem = ""
+                    $.post("controllers/combo-setup.php",{searchItem:searchItem,getStockType: getStockType},function(formdata){
+
+                        if(formdata!="No Record Found"){
+                            
+                            let data=JSON.parse(formdata)
+                            let stocktypeoptions = ``
+                            $.each(data.records, function(key, val) {
+                            
+                                stocktypeoptions += `
+                                <option value="` + val.stocktype + `">` + val.stocktype + `</option>
+                            `
+                            })
+                            stocktypelist = stocktypeoptions
+                            $("#selectstocktype").html(stocktypeoptions)
+                        }
+
+                    let itemstatelist = ``
+                    let searchItem = ""
+                    let getItemState = "getItemState"
+
+                    $.post("controllers/combo-setup.php",{searchItem:searchItem,getItemState: getItemState},function(formdata){
+
+                        if(formdata!="No Record Found"){
+                            
+                            let data=JSON.parse(formdata)
+                            let itemstateoptions = ``
+                            $.each(data.records, function(key, val) {
+                            
+                                itemstateoptions += `
+                                <option value="` + val.itemstate + `">` + val.itemstate + `</option>
+                            `
+                            })
+                            itemstatelist = itemstateoptions
+                            $("#selectstate").html(itemstateoptions)
+                        }
+
+
+                        let itemweightlist = ``
+                        let getItemWeight = "getItemWeight"
+                        let searchItem = ""
+                        $.post("controllers/combo-setup.php",{searchItem:searchItem,getItemWeight: getItemWeight},function(formdata){
+
+                            if(formdata!="No Record Found"){
+                                
+                                let data=JSON.parse(formdata)
+                                let itemweightoptions = ``
+                                $.each(data.records, function(key, val) {
+                                
+                                    itemweightoptions += `
+                                    <option value="` + val.abbreviation + `">` + val.abbreviation + `</option>
+                                `
+                                })
+                                itemweightlist = itemweightoptions
+                                //$("#selectweightunit").html(itemweightoptions)
+                                $("#selectsolidweightunit").html(itemweightoptions)
+                                $("#selectliquidweightunit").html(itemweightoptions)
+                                $("#selectgasweightunit").html(itemweightoptions)
+                            }
+
+                            let itemweightformlist = ``
+                            let getItemForm = "getItemForm"
+                            $.post("controllers/combo-setup.php",{searchformItem:itemweightformlist,getItemForm: getItemForm},function(formdata){
+                                
+                                if(formdata!="No Record Found"){
+                                    
+                                    let data=JSON.parse(formdata)
+                                    let itemformoptions = ``
+                                    $.each(data.records, function(key, val) {
+                                    
+                                        itemformoptions += `
+                                        <option value="` + val.itemcode + `,` + val.abbreviation + `">` + val.abbreviation + `</option>
+                                    `
+                                    })
+                                    itemweightformlist = itemformoptions
+                                    //$("#selectweightformulation").html(itemformoptions)
+                                    $("#selectform").html(itemformoptions)
+                                    $("#selectsolidform").html(itemformoptions)
+                                    $("#selectliquidform").html(itemformoptions)
+                                }
+                            
+                            
+                                let itemvolumeformlist = ``
+                            let getItemForm = "getItemForm"
+                            $.post("controllers/combo-setup.php",{searchformItem:itemvolumeformlist,getItemForm: getItemForm},function(formdata){
+
+                                if(formdata!="No Record Found"){
+                                    
+                                    let data=JSON.parse(formdata)
+                                    let itemformoptions = ``
+                                    $.each(data.records, function(key, val) {
+                                    
+                                        itemformoptions += `
+                                        <option value="` + val.abbreviation + `">` + val.abbreviation + `</option>
+                                    `
+                                    })
+                                    itemvolumeformlist = itemformoptions
+                                    //$("#selectweightformulation").html(itemformoptions)
+                                    //$("#selectvolumeformulation").html(itemformoptions)
+                                }
+
+
+                                let itemvolumelist = ``
+                                let getItemVolume = "getItemVolume"
+                                $.post("controllers/combo-setup.php",{searchVolume:itemvolumelist,getItemVolume: getItemVolume},function(formdata){
+
+                                    if(formdata!="No Record Found"){
+                                        
+                                        let data=JSON.parse(formdata)
+                                        let itemvolumeoptions = ``
+                                        $.each(data.records, function(key, val) {
+                                        
+                                            itemvolumeoptions += `
+                                            <option value="` + val.abbreviation + `">` + val.abbreviation + `</option>
+                                        `
+                                        })
+                                        itemweightlist = itemvolumeoptions
+                                        //$("#selectvolumeunit").html(itemvolumeoptions)
+                                        $("#selectliquidvolumeunit").html(itemvolumeoptions)
+                                        $("#selectliquidcontainervolumeunit").html(itemvolumeoptions)
+                                        $("#selectgasvolumeunit").html(itemvolumeoptions)
+                                    }
+
+                                    let itemcontainerlist = ``
+                                    let getContainer = "getContainer"
+                                    $.post("controllers/combo-setup.php",{searchContainer:itemcontainerlist,getContainer: getContainer},function(formdata){
+
+                                    if(formdata!="No Record Found"){
+                                        
+                                        let data=JSON.parse(formdata)
+                                        let itemcontaineroptions = ``
+                                        $.each(data.records, function(key, val) {
+                                        
+                                            itemcontaineroptions += `
+                                            <option value="` + val.container + `">` + val.container + `</option>
+                                        `
+                                        })
+                                        itemcontainerlist = itemcontaineroptions
+                                        $("#selectsolidcontainer").html(itemcontaineroptions)
+                                        $("#selectliquidcontainer").html(itemcontaineroptions)
+                                    }
+
+                                    
+                                    let gasroutelist = ``
+                                    let getGasUsageRoute = "getGasUsageRoute"
+                                    $.post("controllers/combo-setup.php",{getGasUsageRoute: getGasUsageRoute},function(formdata){
+
+                                    if(formdata!="No Record Found"){
+                                        
+                                        let data=JSON.parse(formdata)
+                                        let gasrouteoptions = ``
+                                        $.each(data.records, function(key, val) {
+                                        
+                                            gasrouteoptions += `
+                                            <option value="` + val.gasusageroute + `">` + val.gasusageroute + `</option>
+                                        `
+                                        })
+                                        gasroutelist = gasrouteoptions
+                                        $("#selectgasroute").html(gasrouteoptions)
+                                    }
+
+                                    let serviceroutelist = ``
+                                    let getServiceRoute = "getServiceRoute"
+                                    $.post("controllers/combo-setup.php",{getServiceRoute: getServiceRoute},function(formdata){
+
+                                    if(formdata!="No Record Found"){
+                                        
+                                        let data=JSON.parse(formdata)
+                                        let servicerouteoptions = ``
+                                        $.each(data.records, function(key, val) {
+                                        
+                                            servicerouteoptions += `
+                                            <option value="` + val.serviceroute + `">` + val.serviceroute + `</option>
+                                        `
+                                        })
+                                        serviceroutelist = servicerouteoptions
+                                        $("#selectserviceroute").html(servicerouteoptions)
+                                    }
+
+
+                                let itemgrouplist = ``
+                                let getItemGroup = "getItemGroup"
+                                let searchItem = ""
+                                $.post("controllers/combo-setup.php",{searchItem:searchItem,getItemGroup: getItemGroup},function(formdata){
+
+                                if(formdata!="No Record Found"){
+                                    console.log(formdata)
+                                    let data=JSON.parse(formdata)
+                                    let itemgroupoptions = ``
+                                    $.each(data.records, function(key, val) {
+                                    
+                                        itemgroupoptions += `
+                                        <option value="` + val.itemgroup + `">` + val.itemgroup + `</option>
+                                    `
+                                    })
+                                    itemgrouplist = itemgroupoptions
+                                    $("#selectusagegroup").html(itemgroupoptions)
+                                }
+
+
+                                   
+                                let itemclasslist = ``
+                                let getItemClass = "getItemClass"
+                                $.post("controllers/combo-setup.php",{getItemClass: getItemClass},function(formdata){
+
+                                if(formdata!="No Record Found"){
+                                    
+                                    let data=JSON.parse(formdata)
+                                    let itemclassoptions = ``
+                                    $.each(data.records, function(key, val) {
+                                    
+                                        itemclassoptions += `
+                                        <option value="` + val.itemclass + `">` + val.itemclass + `</option>
+                                    `
+                                    })
+                                    itemclasslist = itemclassoptions
+                                    $("#selectusageclass").html(itemclassoptions)
+                                }
+
+                                
+                                   
+                                let itemsubclasslist = ``
+                                let getSubClass = "getSubClass"
+                                $.post("controllers/combo-setup.php",{getSubClass: getSubClass},function(formdata){
+
+                                if(formdata!="No Record Found"){
+                                    
+                                    let data=JSON.parse(formdata)
+                                    let itemsubclassoptions = ``
+                                    $.each(data.records, function(key, val) {
+                                    
+                                        itemsubclassoptions += `
+                                        <option value="` + val.itemsubclass + `">` + val.itemsubclass + `</option>
+                                    `
+                                    })
+                                    itemsubclasslist = itemsubclassoptions
+                                    $("#selectusagesubclass").html(itemsubclassoptions)
+                                }
+                                
+                                
+                                   
+                                let manufacturerlist = ``
+                                let getManufacturer = "getManufacturer"
+                                $.post("controllers/combo-setup.php",{getManufacturer: getManufacturer},function(formdata){
+
+                                if(formdata!="No Record Found"){
+                                    
+                                    let data=JSON.parse(formdata)
+                                    let manufactureroptions = ``
+                                    $.each(data.records, function(key, val) {
+                                    
+                                        manufactureroptions += `
+                                        <option value="` + val.manufacturer + `">` + val.manufacturer + `</option>
+                                    `
+                                    })
+                                    manufacturerlist = manufactureroptions
+                                    $("#selectmanufacturername").html(manufactureroptions)
+                                }
+                                
+                $("#manufacturertradename").val("")
+
+
+                let getStockItem = "getStockItem"
+                $.post("controllers/combo-setup.php",{getStockItem: getStockItem},function(formdata){
+                    //console.log(data)
+                    if(formdata=="No Record Found"){
+                        $("#view-stockitem-count").html(formdata)
+                    }else{
+                        console.log(formdata)
+                        console.log(typeof(formdata))
+                        let data=JSON.parse(formdata)
+                        console.log(data)
+                        let count = 0
+                            
+                        let totalrecord = ``
+                        $.each(data.records, function(key, val) {
+                            count++
+                          totalrecord += `
+                            <tr>
+                                <td style="min-width: 200px;">
+                                    
+                                    <h2><a href="#">` + val.itemcode + `</span></a></h2>
+                                </td>                 
+                                <td>
+                                    
+                                    <p>` + val.tradename + `[` + val.itemstrength + `]</p>
+                                </td>
+                                
+                                
+                                <td class="text-right">
+                                    <a href="#" data-id="` + val.id + `" class="btn btn-outline-success take-btn edit-stockitem">Edit</a>
+                                    <a href="#" data-id="` + val.id + `" class="btn btn-outline-danger take-btn delete-stockitem">Delete</a>
+                                </td>
+                            </tr>
+                          `
+                        })
+                        $("#view-stockitem-count").html(count + " Record(s) Found")
+                        $("#view-stockitem-list").html(totalrecord)
+                    }
+
+                    $(".edit-stockitem").on("click", function(evt){
+                            evt.preventDefault()
+                            let id = $(this).attr("data-id")
+                            let getStockItemById = "getStockItemById"
+                            $.post("controllers/combo-setup.php", {id:id, getGenericNameById: getGenericNameById}, function(data){
+                                console.log(data)
+                                formdata=JSON.parse(data)
+                                //$("#subclass").val(formdata.itemsubclass)
+                                //$("#itemclass").val(formdata.itemclass)
+                                $("#selectgenericname").html(`<option value="` + formdata.genericname + `" selected>` + formdata.genericname +`</option>` +  genericnamelist)
+                                $("#selectdepartment").html(`<option value="` + formdata.department + `" selected>` + formdata.department +`</option>` +  departmentlist)
+                                $("#selectsubdepartment").html(`<option value="` + formdata.subdepartment + `" selected>` + formdata.subdepartment +`</option>` +  subdepartmentlist)
+                                $("#selectdepartmentitemgroup").html(`<option value="` + formdata.departmentitemgroup + `" selected>` + formdata.departmentitemgroup +`</option>` +  departmentitemgrouplist)
+                                $("#selectstate").html(`<option value="` + formdata.itemstate + `" selected>` + formdata.itemstate +`</option>` +  itemstatelist)
+                                if(formdata.itemstate=="Solid"){
+                                    $("#selectweightunit").html(`<option value="` + formdata.itemweightunit + `" selected>` + formdata.itemweightunit +`</option>` +  itemweightlist)
+                                    $("#selectitemweightform").html(formdata.itemweightform)
+                                    $("#itemweight").val(formdata.itemweight)
+                                } else {
+                                    $("#selectvolumeunit").html(`<option value="` + formdata.itemvolumeunit + `" selected>` + formdata.itemvolumeunit +`</option>` +  itemvolumelist)
+                                    $("#selectitemvolumeform").html(formdata.itemvolumeform)
+                                    $("#itemvolume").val(formdata.itemvolume)
+                                }
+                                $("#selectusagegroup").html(`<option value="` + formdata.itemgroup + `" selected>` + formdata.itemgroup +`</option>` +  itemgrouplist)
+                                $("#selectusageclass").html(`<option value="` + formdata.itemclass + `" selected>` + formdata.itemclass +`</option>` +  itemclasslist)
+                                $("#selectusagesubclass").html(`<option value="` + formdata.itemsubclass + `" selected>` + formdata.itemsubclass +`</option>` +  itemsubclasslist)                                
+                                $("#selectmanufacturername").html(`<option value="` + formdata.itemmanufacturer + `" selected>` + formdata.itemmanufacturer +`</option>` +  manufacturerlist)                                
+                                 $("#searchgenericname").val(formdata.genericname)
+                                $("#manufacturertradename").val(formdata.tradename)
+                                $(".form-edit-stockitem").html(`<input type="hidden" name="stockitemid" id="stockitemid" value="` + id + `">`)
+                            
+                                $("#edit-stockitem-button").show()
+                            })
+                            
+                           
+                        })
+                    $(".delete-stockitem").on("click", function(evt){
+                        evt.preventDefault()
+                            let id = $(this).attr("data-id")
+                            let getStockItemById = "getStockItemById"
+                            $.post("controllers/combo-setup.php", {id:id, getStockItemById: getStockItemById}, function(data){
+                                console.log(data)
+                                formdata=JSON.parse(data)
+                                //console.log(selectedsubclassgroup)
+                                $("#selectgenericname").html(`<option value="` + formdata.genericname + `" selected>` + formdata.genericname +`</option>` +  genericnamelist)
+                                $("#selectdepartment").html(`<option value="` + formdata.department + `" selected>` + formdata.department +`</option>` +  departmentlist)
+                                $("#selectsubdepartment").html(`<option value="` + formdata.subdepartment + `" selected>` + formdata.subdepartment +`</option>` +  subdepartmentlist)
+                                $("#selectdepartmentitemgroup").html(`<option value="` + formdata.departmentitemgroup + `" selected>` + formdata.departmentitemgroup +`</option>` +  departmentitemgrouplist)
+                                $("#selectstate").html(`<option value="` + formdata.itemstate + `" selected>` + formdata.itemstate +`</option>` +  itemstatelist)
+                                if(formdata.itemstate=="Solid"){
+                                    $("#selectweightunit").html(`<option value="` + formdata.itemweightunit + `" selected>` + formdata.itemweightunit +`</option>` +  itemweightlist)
+                                    $("#selectweightformulation").html(`<option value="` + formdata.itemweightform + `" selected>` + formdata.itemweightform +`</option>` +  itemweightformlist)
+                                    $("#itemweight").val(formdata.itemweight)
+                                } else {
+                                    $("#selectvolumeunit").html(`<option value="` + formdata.itemvolumeunit + `" selected>` + formdata.itemvolumeunit +`</option>` +  itemvolumelist)
+                                    $("#selectvolumeformulation").html(`<option value="` + formdata.itemvolumeform + `" selected>` + formdata.itemvolumeform +`</option>` +  itemvolumeformlist)
+                                    $("#itemvolume").val(formdata.itemvolume)
+                                }
+                                $("#selectusagegroup").html(`<option value="` + formdata.itemgroup + `" selected>` + formdata.itemgroup +`</option>` +  itemgrouplist)
+                                $("#selectusageclass").html(`<option value="` + formdata.itemclass + `" selected>` + formdata.itemclass +`</option>` +  itemclasslist)
+                                $("#selectusagesubclass").html(`<option value="` + formdata.itemsubclass + `" selected>` + formdata.itemsubclass +`</option>` +  itemsubclasslist)                                
+                                $("#selectmanufacturername").html(`<option value="` + formdata.itemmanufacturer + `" selected>` + formdata.itemmanufacturer +`</option>` +  manufacturerlist)                                
+                                 
+                                $("#searchgenericname").val(formdata.genericname)
+                                $("#manufacturertradename").val(formdata.tradename)
+                                $(".form-edit-stockitem").html(`<input type="hidden" name="stockitemid" id="stockitemid" value="` + id + `">`)
+                            
+                                $("#delete-stockitem-button").show()
+                    })
+                            
+                    })
+                    })
+                                })
+                                })
+                                })
+                                })
+                                })
+                                })
+                                })
+                            })
+                            })
+                })
+                })
+                })
+                })
+                })
+                })
+                })
+                })
+                })
+               
+            }
+
+            GetStockItemFunction()
+            
+
+            $("#add-stockitem-button").on("click", function(evt){
+                evt.preventDefault();
+                console.log("click")
+                let genericname = $("#selectgenericname").val()
+                let departmentitemgroup = $("#selectdepartmentitemgroup").val()
+                let subdepartment = $("#selectsubdepartment").val()
+                let department = $("#selectdepartment").val()
+                let itemstate = $("#selectstate").val()
+                // let itemweight = $("#itemweight").val()
+                // let itemweightunit = $("#selectweightunit").val()
+                // let itemweightform = $("#selectweightformulation").val()
+                // let itemvolume = $("#itemvolume").val()
+                // let itemvolumeunit = $("#selectvolumeunit").val()
+                // let itemvolumeform = $("#selectvolumeformulation").val()
+                let itemgroup = $("#selectusagegroup").val()
+                let itemclass = $("#selectusageclass").val()
+                let itemsubclass = $("#selectusagesubclass").val()
+                let itemmanufacturer = $("#selectmanufacturername").val()
+                let tradename = $("#manufacturertradename").val()
+                let stocktype = $("#selectstocktype").val()
+
+                //get item strength value
+                let itemstrengthvalue = ""
+                //check itemstate
+
+                let itemstrength = ``
+                let itemgenericname = ``
+                if(itemstate=="Solid"){
+                    if($("#checkcombinedstrength").is(":checked")){
+                       // $("#combineditemstrengthform").show()
+                       
+
+                        let combinedarray = $("#combinedgenericname").val()
+                        let i =0
+                        
+                        
+                        let itemcount = combinedarray.length
+                        combinedarray.forEach(val => {
+                            i++
+                            let input_weight_id="#solid_weight_" + i 
+                            let item = val.substring(0,3)
+                            if(i=itemcount){
+                                itemstrength += $(input_weight_id).val()
+                                itemgenericname += item 
+                            } else{
+                                itemstrength += $(input_weight_id).val() + "."
+                                itemgenericname += item + "."
+                            }
+                            
+                           // serviceinputweights += `<input type="text" id="service_weight_` + i + `" name="service_weight_` + i + `" style="width:40px" placeholder="` + val + ` value">` 
+                            console.log(val)
+                        });
+                        
+                        console.log(itemgenericname, itemstrength)
+                       
+                        //console.log($("#combinedgenericname").val())
+                    } else {
+           
+                        let value=$("#selectgenericname").val()
+                        let item = value.substring(0,3)
+                        itemstrength += $("#solid_weight_0").val()
+                        itemgenericname = item 
+
+            
+                        console.log(itemgenericname, itemstrength)
+
+
+                        //$("#combineditemstrengthform").hide()
+                    }
+                    itemstrength += $("#selectsolidweightunit").val() + "/" + $("#selectsolidform").val() + $("#selectsolidcontainer").val()
+                    console.log(itemstrength)
+                } else if(itemstate=="Liquid"){
+                    if($("#checkcombinedstrength").is(":checked")){
+                        //$("#combineditemstrengthform").show()
+                        let combinedarray = $("#combinedgenericname").val()
+                        let i =0
+                        
+                        
+                        let itemcount = combinedarray.length
+                        combinedarray.forEach(val => {
+                            i++
+                            let input_weight_id="#liquid_weight_" + i 
+                            let item = val.substring(0,3)
+                            if(i=itemcount){
+                                itemstrength += $(input_weight_id).val()
+                                itemgenericname += item 
+                            } else{
+                                itemstrength += $(input_weight_id).val() + "."
+                                itemgenericname += item + "."
+                            }
+                            
+                           // serviceinputweights += `<input type="text" id="service_weight_` + i + `" name="service_weight_` + i + `" style="width:40px" placeholder="` + val + ` value">` 
+                            console.log(val)
+                        });
+                        
+                        console.log(itemgenericname, itemstrength)
+                       
+                        //console.log($("#combinedgenericname").val())
+                    } else {
+                        
+                        let value=$("#selectgenericname").val()
+                        let item = value.substring(0,3)
+                        itemstrength += $("#liquid_weight_0").val()
+                        itemgenericname = item 
+
+            
+                        console.log(itemgenericname, itemstrength)
+                        //$("#combineditemstrengthform").hide()
+                    }
+                    itemstrength += $("#selectliquidweightunit").val() + "/" + $("#liquidvolumevalue").val() + $("#selectliquidvolumeunit").val() + "in" + $("#liquidcontainervolumevalue").val() + $("#selectliquidcontainervolumeunit").val() + $("#selectliquidcontainer").val()
+                    console.log(itemstrength)
+                } else if(itemstate=="Gas"){
+                    if($("#checkcombinedstrength").is(":checked")){
+                        //$("#combineditemstrengthform").show()
+                        let combinedarray = $("#combinedgenericname").val()
+                        let i =0
+                        
+                        
+                        let itemcount = combinedarray.length
+                        combinedarray.forEach(val => {
+                            i++
+                            let input_weight_id="#gas_weight_" + i 
+                            let item = val.substring(0,3)
+                            if(i=itemcount){
+                                itemstrength += $(input_weight_id).val()
+                                itemgenericname += item 
+                            } else{
+                                itemstrength += $(input_weight_id).val() + "."
+                                itemgenericname += item + "."
+                            }
+                            
+                           // serviceinputweights += `<input type="text" id="service_weight_` + i + `" name="service_weight_` + i + `" style="width:40px" placeholder="` + val + ` value">` 
+                            console.log(val)
+                        });
+                        
+                        console.log(itemgenericname, itemstrength)
+                        //console.log($("#combinedgenericname").val())
+                    } else {
+                        
+                        let value=$("#selectgenericname").val()
+                        let item = value.substring(0,3)
+                        itemstrength += $("#gas_weight_0").val()
+                        itemgenericname = item 
+
+            
+                        console.log(itemgenericname, itemstrength)
+
+                        //$("#combineditemstrengthform").hide()
+                    }
+                    itemstrength += $("#selectgasweightunit").val() + ":" + $("#gasvolumevalue").val() + $("#selectgasvolumeunit").val() + "/" + $("#gastimevalue").val() + $("#selectgastimevalue").val() + "via" + $("#selectgasroute").val()
+                    console.log(itemstrength)
+                } else if(itemstate=="Service"){
+                    if($("#checkcombinedstrength").is(":checked")){
+                        //$("#combineditemstrengthform").show()
+                        let combinedarray = $("#combinedgenericname").val()
+                        let i =0
+                        
+                    
+                        let itemcount = combinedarray.length
+                        combinedarray.forEach(val => {
+                            i++
+                            let input_weight_id="#service_weight_" + i 
+                            let item = val.substring(0,3)
+                            if(i=itemcount){
+                                itemstrength += $(input_weight_id).val()
+                                itemgenericname += item 
+                            } else{
+                                itemstrength += $(input_weight_id).val() + "."
+                                itemgenericname += item + "."
+                            }
+                            
+                           // serviceinputweights += `<input type="text" id="service_weight_` + i + `" name="service_weight_` + i + `" style="width:40px" placeholder="` + val + ` value">` 
+                            console.log(val)
+                        });
+                        
+                        console.log(itemgenericname, itemstrength)
+                    } else {
+                        let value=$("#selectgenericname").val()
+                        let item = value.substring(0,3)
+                        itemstrength += $("#service_weight_0").val()
+                        itemgenericname = item 
+
+            
+                        console.log(itemgenericname, itemstrength)
+                    }
+                    itemstrength += $("#serviceitem").val() + "/" + $("#selectserviceroute").val() 
+                }
+
+                let insertStockItemForm = "insertStockItemForm"
+                $.post("controllers/combo-setup.php", {department:department, 
+                                                        subdepartment:subdepartment,
+                                                        departmentitemgroup:departmentitemgroup,
+                                                        genericname:genericname,
+                                                        itemstate:itemstate,
+                                                        itemweight:itemweight,
+                                                        itemweightunit:itemweightunit,
+                                                        itemweightform:itemweightform,
+                                                        itemvolume:itemvolume,
+                                                        itemvolumeunit:itemvolumeunit,
+                                                        itemvolumeform:itemvolumeform,
+                                                        itemgroup:itemgroup,
+                                                        itemclass:itemclass,
+                                                        itemsubclass:itemsubclass,
+                                                        itemmanufacturer:itemmanufacturer,
+                                                        tradename:tradename,
+                                                        stocktype:stocktype,
+                                                        insertStockItemForm:insertStockItemForm},function(data){
+                    $("#stockitem-status").html(data)
+                    GetStockItemFunction()
+                })
+               
+            })
+
+            $("#selectgenericname").on("change", function(evt){
+                evt.preventDefault()
+                let selectedgenericname = $("#selectgenericname").val()
+                let getDepartmentItemGroupByGenericName = "getDepartmentItemGroupByGenericName"
+                $.post("controllers/combo-setup.php",{genericname:selectedgenericname, getDepartmentItemGroupByGenericName:getDepartmentItemGroupByGenericName},function(formdata){
+                    console.log(formdata)
+                        let data=JSON.parse(formdata)
+                        console.log(formdata)
+                        let selectsubdepartmentoptions = ``
+                        $.each(data.records, function(key, val) {
+                           
+                            selectsubdepartmentoptions += `
+                            <option value="` + val.subdepartment + `">` + val.subdepartment + `</option>
+                          `
+                          //console.log(val.subdepartment)
+                        })
+                        //subdepartmentlist = subdepartmentoptions
+                        $("#selectdepartmentitemgroup").html(selectsubdepartmentoptions)
+                 
+                })
+                let departmentitemgroup = data.records[0].departmentitemgroup
+                
+                //let selecteddepartmentitemgroup = $("#selectdepartmentitemgroup").val()
+                let getSubDepartmentByDepartmentItemGroup = "getSubDepartmentByDepartmentItemGroup"
+                $.post("controllers/combo-setup.php",{departmentitemgroup:departmentitemgroup, getSubDepartmentByDepartmentItemGroup:getSubDepartmentByDepartmentItemGroup},function(formdata){
+                    console.log(formdata)
+                        let data=JSON.parse(formdata)
+                        console.log(formdata)
+                        let selectsubdepartmentoptions = ``
+                        $.each(data.records, function(key, val) {
+                           
+                            selectsubdepartmentoptions += `
+                            <option value="` + val.subdepartment + `">` + val.subdepartment + `</option>
+                          `
+                          //console.log(val.subdepartment)
+                        })
+                        //subdepartmentlist = subdepartmentoptions
+                        $("#selectsubdepartment").html(selectsubdepartmentoptions)
+                        let subdepartment = data.records[0].subdepartment
+                        if(subdepartment != "No Sub Department"){
+                            let getDepartmentBySubDepartment = "getDepartmentBySubDepartment"
+                            $.post("controllers/combo-setup.php",{subdepartment:subdepartment, getDepartmentBySubDepartment:getDepartmentBySubDepartment},function(formdata){
+                                console.log(formdata)
+                                    let data=JSON.parse(formdata)
+                                    //console.log(formdata)
+                                    let selectdepartmentitemoptions = ``
+                                    $.each(data.records, function(key, val) {
+                                    
+                                        selectdepartmentitemoptions += `
+                                        <option value="` + val.departmentitemgroup + `">` + val.departmentitemgroup + `</option>
+                                    `
+                                    //console.log(val.subdepartment)
+                                    })
+                                    //subdepartmentlist = subdepartmentoptions
+                                    $("#selectdepartment").html(selectdepartmentitemoptions)
+                                    
+                            
+                            })
+                        }
+                 
+                })
+                
+        
+                
+            })
+
+            $("#selectgenericnamedepartment").on("change", function(evt){
+                evt.preventDefault()
+                let selecteddepartment = $("#selectgenericnamedepartment").val()
+                let getSubDepartmentByDepartment = "getSubDepartmentByDepartment"
+                $.post("controllers/combo-setup.php",{department:selecteddepartment, getSubDepartmentByDepartment:getSubDepartmentByDepartment},function(formdata){
+                    console.log(formdata)
+                        let data=JSON.parse(formdata)
+                        console.log(formdata)
+                        let selectsubdepartmentoptions = ``
+                        $.each(data.records, function(key, val) {
+                           
+                            selectsubdepartmentoptions += `
+                            <option value="` + val.subdepartment + `">` + val.subdepartment + `</option>
+                          `
+                          //console.log(val.subdepartment)
+                        })
+                        //subdepartmentlist = subdepartmentoptions
+                        $("#selectgenericnamesubdepartment").html(selectsubdepartmentoptions)
+                        let subdepartment = data.records[0].subdepartment
+                        if(subdepartment != "No Sub Department"){
+                            let getDepartmentItemGroupBySubDepartment = "getDepartmentItemGroupBySubDepartment"
+                            $.post("controllers/combo-setup.php",{department:selecteddepartment,subdepartment:subdepartment, getDepartmentItemGroupBySubDepartment:getDepartmentItemGroupBySubDepartment},function(formdata){
+                                console.log(formdata)
+                                    let data=JSON.parse(formdata)
+                                    //console.log(formdata)
+                                    let selectdepartmentitemoptions = ``
+                                    $.each(data.records, function(key, val) {
+                                    
+                                        selectdepartmentitemoptions += `
+                                        <option value="` + val.departmentitemgroup + `">` + val.departmentitemgroup + `</option>
+                                    `
+                                    //console.log(val.subdepartment)
+                                    })
+                                    //subdepartmentlist = subdepartmentoptions
+                                    $("#selectdepartmentitemgroup").html(selectdepartmentitemoptions)
+                                    
+                            
+                            })
+                        }
+                 
+                })
+                
+            })
+
+
+
+            $("#selectgenericnamesubdepartment").on("change", function(evt){
+                evt.preventDefault()
+                let selectedsubdepartment = $("#selectgenericnamesubdepartment").val()
+                let selecteddepartment = $("#selectgenericnamedepartment").val()
+                let getDepartmentItemGroupBySubDepartment = "getDepartmentItemGroupBySubDepartment"
+                $.post("controllers/combo-setup.php",{department:selecteddepartment,subdepartment:selectedsubdepartment, getDepartmentItemGroupBySubDepartment:getDepartmentItemGroupBySubDepartment},function(formdata){
+                    console.log(formdata)
+                        let data=JSON.parse(formdata)
+                        //console.log(formdata)
+                        let selectdepartmentitemoptions = ``
+                        $.each(data.records, function(key, val) {
+                           
+                            selectdepartmentitemoptions += `
+                            <option value="` + val.departmentitemgroup + `">` + val.departmentitemgroup + `</option>
+                          `
+                          //console.log(val.subdepartment)
+                        })
+                        //subdepartmentlist = subdepartmentoptions
+                        $("#selectdepartmentitemgroup").html(selectdepartmentitemoptions)
+                        
+                 
+                })
+                
+            })
+
+            $("#edit-genericname-button").on("click", function(evt){
+                evt.preventDefault();
+                let id = $("#genericnameid").val()
+                let department = $("#selectgenericnamedepartment").val()
+                let subdepartment = $("#selectgenericnamesubdepartment").val()
+                let departmentitemgroup = $("#selectdepartmentitemgroup").val()
+                let genericname = $("#genericname").val()
+                 let editGenericName = "editGenericName"
+                $.post("controllers/combo-setup.php", {id:id, department:department, subdepartment:subdepartment,departmentitemgroup:departmentitemgroup,genericname:genericname,editGenericName:editGenericName},function(data){
+                    $("#genericname-status").html(data)
+                    GetGenericNameFunction()
+                })
+            })
+
+            $("#delete-genericname-button").on("click",function(evt){
+                evt.preventDefault();
+                let id = $("#genericnameid").val()
+                
+                let deleteGenericName = "deleteGenericName"
+                $.post("controllers/combo-setup.php", {id:id, deleteGenericName:deleteGenericName},function(data){
+                    $("#genericname-status").html(data)
+                    GetGenericNameFunction()
+                })
+            })
+
+
+
+
+
+            //Manufacturers
+            //Search for Manufacturers
+            
+            function GetManufacturersFunction(){
+                $("#edit-manufacturer-button").hide()
+                $("#delete-manufacturer-button").hide()
+                $("#cancel-manufacturer-button").hide()
+                $("#add-manufacturer-button").show()
+                $(".form-edit-manufacturer").html("")
+                $("#manufacturer").val("")
+                $("#manufacturercode").val("")
+                //$("#formabbreviation").val("")
+                let getManufacturer = "getManufacturer"
+                let searchItem = $("#searchmanufacturer").val()
+                $.post("controllers/combo-setup.php",{searchItem:searchItem,getManufacturer: getManufacturer},function(formdata){
+                    //console.log(data)
+                    if(formdata=="No Record Found"){
+                        $("#view-manufacturer-count").html(formdata)
+                    }else{
+                        console.log(formdata)
+                        console.log(typeof(formdata))
+                        let data=JSON.parse(formdata)
+                        console.log(data)
+                        let count = 0
+                            
+                        let totalrecord = ``
+                        $.each(data.records, function(key, val) {
+                            count++
+                          totalrecord += `
+                            <tr>
+                                <td>
+                                    
+                                    <a href="#" data-id="` + val.id + `" style="" class="btn btn-outline-default take-btn manufacturername"><h3 style="color:blue;">` + val.manufacturer + `</h3></a>
+                                </td>                 
+                                <td>
+                                    
+                                    <p style="font-size:18px;font-weight:bold;">` + val.code + `</p>
+                                </td>
+                                
+                                <td>
+                                    <a href="#" data-id="` + val.id + `" class="btn btn-outline-success take-btn edit-manufacturer">Edit</a>
+                                    <a href="#" data-id="` + val.id + `" class="btn btn-outline-danger take-btn delete-manufacturer">Delete</a>
+                                </td>
+                            </tr>
+                          `
+                        })
+                        $("#view-manufacturer-count").html(count + " Record(s) Found")
+                        $("#view-manufacturer-list").html(totalrecord)
+                    }
+                    $(".edit-manufacturer").on("click", function(evt){
+                            evt.preventDefault()
+                            let id = $(this).attr("data-id")
+                            let getManufacturerById = "getManufacturerById"
+                            $.post("controllers/combo-setup.php", {id:id, getManufacturerById: getManufacturerById}, function(data){
+                                console.log(data)
+                                formdata=JSON.parse(data)
+                                $("#manufacturer").val(formdata.manufacturer)
+                                $("#manufacturercode").val(formdata.code)
+                                //$("#formabbreviation").val(formdata.abbreviation)
+                                $(".form-edit-manufacturer").html(`<input type="hidden" name="manufacturerid" id="manufacturerid" value="` + id + `">`)
+                            
+                                $("#edit-manufacturer-button").show()
+                                $("#cancel-manufacturer-button").show()
+                                $("#add-manufacturer-button").hide()
+                            })
+                            
+                           
+                        })
+
+                        $(".manufacturername").on("click", function(evt){
+                            evt.preventDefault()
+                            let id = $(this).attr("data-id")
+                            let getManufacturerById = "getManufacturerById"
+                            $.post("controllers/combo-setup.php", {id:id, getManufacturerById: getManufacturerById}, function(data){
+                                console.log(data)
+                                formdata=JSON.parse(data)
+                                $("#manufacturer").val(formdata.manufacturer)
+                                $("#manufacturercode").val(formdata.code)
+                                //$("#formabbreviation").val(formdata.abbreviation)
+                                $(".form-edit-manufacturer").html(`<input type="hidden" name="manufacturerid" id="manufacturerid" value="` + id + `">`)
+                            
+                                $("#edit-manufacturer-button").show()
+                                $("#delete-manufacturer-button").show()
+                                $("#cancel-manufacturer-button").show()
+                                $("#add-manufacturer-button").hide()
+                            })
+                            
+                           
+                        })
+                    
+                    $(".delete-manufacturer").on("click", function(evt){
+                        evt.preventDefault()
+                            let id = $(this).attr("data-id")
+                            let getManufacturerById = "getManufacturerById"
+                            $.post("controllers/combo-setup.php", {id:id, getManufacturerById: getManufacturerById}, function(data){
+                                console.log(data)
+                                formdata=JSON.parse(data)
+                                $("#manufacturer").val(formdata.manufacturer)
+                                $("#manufacturercode").val(formdata.code)
+                                //$("#formabbreviation").val(formdata.abbreviation)
+                                $(".form-edit-manufacturer").html(`<input type="hidden" name="manufacturerid" id="manufacturerid" value="` + id + `">`)
+                            
+                                $("#delete-manufacturer-button").show()
+                                $("#cancel-manufacturer-button").show()
+                                $("#add-manufacturer-button").hide()
+                            })
+                            
+                    })
+                })
+
+               
+            }
+
+            GetManufacturersFunction()
+            $("#searchmanufacturer").on('change keyup paste', function () {
+                ApplyFilterManufacturer();
+            });
+
+            function ApplyFilterManufacturer() {
+                var searchmanufacturer = $("#searchmanufacturer").val();
+                console.log("GetManufacturersFunction")
+                GetManufacturersFunction()
+            }
+
+            $("#add-manufacturer-button").on("click", function(evt){
+                evt.preventDefault();
+                console.log("click")
+                let manufacturer = $("#manufacturer").val()
+                let manufacturercode = $("#manufacturercode").val()
+                //let formabbreviation = $("#formabbreviation").val()
+                if(manufacturer!="" && manufacturercode!=""){
+                    let insertManufacturer = "insertManufacturer"
+                    $.post("controllers/combo-setup.php", {manufacturer:manufacturer,manufacturercode:manufacturercode,insertManufacturer:insertManufacturer},function(data){
+                        $("#manufacturer-status").html(data)
+                        GetManufacturersFunction()
+                    })
+                } else {
+                    $("#manufacturer-status").html("Please enter values for manufacturer name and code")
+                }
+                
+               
+            })
+
+            $("#edit-manufacturer-button").on("click", function(evt){
+                evt.preventDefault();
+                let id = $("#manufacturerid").val()
+                let manufacturercode = $("#manufacturercode").val()
+                let manufacturer = $("#manufacturer").val()
+                //let formabbreviation = $("#formabbreviation").val()
+                let editManufacturer = "editManufacturer"
+                $.post("controllers/combo-setup.php", {id:id, manufacturer:manufacturer,manufacturercode:manufacturercode,editManufacturer:editManufacturer},function(data){
+                    $("#manufacturer-status").html(data)
+                    GetManufacturersFunction()
+                })
+            })
+
+            $("#delete-manufacturer-button").on("click",function(evt){
+                evt.preventDefault();
+                let id = $("#manufacturerid").val()
+                
+                let deleteManufacturer = "deleteManufacturer"
+                $.post("controllers/combo-setup.php", {id:id, deleteManufacturer:deleteManufacturer},function(data){
+                    $("#manufacturer-status").html(data)
+                    GetManufacturersFunction()
+                })
+            })
+
+            $("#cancel-manufacturer-button").on("click", function(evt){
+                evt.preventDefault()
+                GetManufacturersFunction()
+            })
+
+            //Stock Type
+            //Search for Stock Type
+            
+            function GetStockTypeFunction(){
+                $("#edit-stocktype-button").hide()
+                $("#delete-stocktype-button").hide()
+                $("#cancel-stocktype-button").hide()
+                $("#add-stocktype-button").show()
+                $(".form-edit-stocktype").html("")
+                $("#stocktype").val("")
+                $("#stocktypeabbreviation").val("")
+                //$("#formabbreviation").val("")
+                let getStockType = "getStockType"
+                let searchItem = $("#searchstocktype").val()
+                $.post("controllers/combo-setup.php",{searchItem:searchItem,getStockType: getStockType},function(formdata){
+                    //console.log(data)
+                    if(formdata=="No Record Found"){
+                        $("#view-stocktype-count").html(formdata)
+                    }else{
+                        console.log(formdata)
+                        console.log(typeof(formdata))
+                        let data=JSON.parse(formdata)
+                        console.log(data)
+                        let count = 0
+                            
+                        let totalrecord = ``
+                        $.each(data.records, function(key, val) {
+                            count++
+                          totalrecord += `
+                            <tr>
+                                <td>
+                                    
+                                    <a href="#" data-id="` + val.id + `" style="" class="btn btn-outline-default take-btn stocktypename"><h3 style="color:blue;">` + val.stocktype + `</h3></a>
+                                </td>                 
+                                <td>
+                                    
+                                    <p style="font-size:18px;font-weight:bold;">` + val.abbreviation + `</p>
+                                </td>
+                                
+                                <td>
+                                    <a href="#" data-id="` + val.id + `" class="btn btn-outline-success take-btn edit-stocktype">Edit</a>
+                                    <a href="#" data-id="` + val.id + `" class="btn btn-outline-danger take-btn delete-stocktype">Delete</a>
+                                </td>
+                            </tr>
+                          `
+                        })
+                        $("#view-stocktype-count").html(count + " Record(s) Found")
+                        $("#view-stocktype-list").html(totalrecord)
+                    }
+                    $(".edit-stocktype").on("click", function(evt){
+                            evt.preventDefault()
+                            let id = $(this).attr("data-id")
+                            let getStockTypeById = "getStockTypeById"
+                            $.post("controllers/combo-setup.php", {id:id, getStockTypeById: getStockTypeById}, function(data){
+                                console.log(data)
+                                formdata=JSON.parse(data)
+                                $("#stocktype").val(formdata.stocktype)
+                                $("#stocktypeabbreviation").val(formdata.abbreviation)
+                                //$("#formabbreviation").val(formdata.abbreviation)
+                                $(".form-edit-stocktype").html(`<input type="hidden" name="stocktypeid" id="stocktypeid" value="` + id + `">`)
+                            
+                                $("#edit-stocktype-button").show()
+                                $("#cancel-stocktype-button").show()
+                                $("#add-stocktype-button").hide()
+                            })
+                            
+                           
+                        })
+
+                        $(".stocktypename").on("click", function(evt){
+                            evt.preventDefault()
+                            let id = $(this).attr("data-id")
+                            let getStockTypeById = "getStockTypeById"
+                            $.post("controllers/combo-setup.php", {id:id, getStockTypeById: getStockTypeById}, function(data){
+                                console.log(data)
+                                formdata=JSON.parse(data)
+                                $("#stocktype").val(formdata.stocktype)
+                                $("#stocktypeabbreviation").val(formdata.abbreviation)
+                                //$("#formabbreviation").val(formdata.abbreviation)
+                                $(".form-edit-stocktype").html(`<input type="hidden" name="stocktypeid" id="stocktypeid" value="` + id + `">`)
+                            
+                                $("#edit-stocktype-button").show()
+                                $("#delete-stocktype-button").show()
+                                $("#cancel-stocktype-button").show()
+                                $("#add-stocktype-button").hide()
+                            })
+                            
+                           
+                        })
+                    
+                    $(".delete-stocktype").on("click", function(evt){
+                        evt.preventDefault()
+                            let id = $(this).attr("data-id")
+                            let getStockTypeById = "getStockTypeById"
+                            $.post("controllers/combo-setup.php", {id:id, getStockTypeById: getStockTypeById}, function(data){
+                                console.log(data)
+                                formdata=JSON.parse(data)
+                                $("#stocktype").val(formdata.stocktype)
+                                $("#stocktypeabbreviation").val(formdata.abbreviation)
+                                //$("#formabbreviation").val(formdata.abbreviation)
+                                $(".form-edit-stocktype").html(`<input type="hidden" name="stocktypeid" id="stocktypeid" value="` + id + `">`)
+                            
+                                $("#delete-stocktype-button").show()
+                                $("#cancel-stocktype-button").show()
+                                $("#add-stocktype-button").hide()
+                            })
+                            
+                    })
+                })
+
+               
+            }
+
+            GetStockTypeFunction()
+            $("#searchstocktype").on('change keyup paste', function () {
+                ApplyFilterStockType();
+            });
+
+            function ApplyFilterStockType() {
+                var searchstocktype = $("#searchstocktype").val();
+                console.log("GetStockTypeFunction")
+                GetStockTypeFunction()
+            }
+
+            $("#add-stocktype-button").on("click", function(evt){
+                evt.preventDefault();
+                console.log("click")
+                let stocktype = $("#stocktype").val()
+                let stocktypeabbreviation = $("#stocktypeabbreviation").val()
+                //let formabbreviation = $("#formabbreviation").val()
+                if(stocktype!=""){
+                    let insertStockTypeForm = "insertStockTypeForm"
+                    $.post("controllers/combo-setup.php", {stocktype:stocktype,stocktypeabbreviation:stocktypeabbreviation,insertStockTypeForm:insertStockTypeForm},function(data){
+                        $("#stocktype-status").html(data)
+                        GetStockTypeFunction()
+                    })
+                } else {
+                    $("#stocktype-status").html("Please enter values for Stock Type")
+                }
+                
+               
+            })
+
+            $("#edit-stocktype-button").on("click", function(evt){
+                evt.preventDefault();
+                let id = $("#stocktypeid").val()
+                let stocktypeabbreviation = $("#stocktypeabbreviation").val()
+                let stocktype = $("#stocktype").val()
+                //let formabbreviation = $("#formabbreviation").val()
+                let editStockType = "editStockType"
+                $.post("controllers/combo-setup.php", {id:id, stocktype:stocktype,stocktypeabbreviation:stocktypeabbreviation,editStockType:editStockType},function(data){
+                    $("#stocktype-status").html(data)
+                    GetStockTypeFunction()
+                })
+            })
+
+            $("#delete-stocktype-button").on("click",function(evt){
+                evt.preventDefault();
+                let id = $("#stocktypeid").val()
+                
+                let deleteStockType = "deleteStockType"
+                $.post("controllers/combo-setup.php", {id:id, deleteStockType:deleteStockType},function(data){
+                    $("#stocktype-status").html(data)
+                    GetStockTypeFunction()
+                })
+            })
+
+            $("#cancel-stocktype-button").on("click", function(evt){
+                evt.preventDefault()
+                GetStockTypeFunction()
+            })
+
+
+            //Suppliers
+            //Search for Suppliers
+            
+            function GetSuppliersFunction(){
+                $("#edit-supplier-button").hide()
+                $("#delete-supplier-button").hide()
+                $("#cancel-supplier-button").hide()
+                $("#add-supplier-button").show()
+                $(".form-edit-supplier").html("")
+                $("#supplier").val("")
+                $("#suppliercode").val("")
+                //$("#formabbreviation").val("")
+                let getSupplier = "getSupplier"
+                let searchItem = $("#searchsupplier").val()
+                $.post("controllers/combo-setup.php",{searchItem:searchItem,getSupplier: getSupplier},function(formdata){
+                    //console.log(data)
+                    if(formdata=="No Record Found"){
+                        $("#view-supplier-count").html(formdata)
+                    }else{
+                        console.log(formdata)
+                        console.log(typeof(formdata))
+                        let data=JSON.parse(formdata)
+                        console.log(data)
+                        let count = 0
+                            
+                        let totalrecord = ``
+                        $.each(data.records, function(key, val) {
+                            count++
+                          totalrecord += `
+                            <tr>
+                                <td>
+                                    
+                                    <a href="#" data-id="` + val.id + `" style="" class="btn btn-outline-default take-btn suppliername"><h3 style="color:blue;">` + val.supplier + `</h3></a>
+                                </td>                 
+                                <td>
+                                    
+                                    <p style="font-size:18px;font-weight:bold;">` + val.code + `</p>
+                                </td>
+                                
+                                <td>
+                                    <a href="#" data-id="` + val.id + `" class="btn btn-outline-success take-btn edit-supplier">Edit</a>
+                                    <a href="#" data-id="` + val.id + `" class="btn btn-outline-danger take-btn delete-supplier">Delete</a>
+                                </td>
+                            </tr>
+                          `
+                        })
+                        $("#view-supplier-count").html(count + " Record(s) Found")
+                        $("#view-supplier-list").html(totalrecord)
+                    }
+                    $(".edit-supplier").on("click", function(evt){
+                            evt.preventDefault()
+                            let id = $(this).attr("data-id")
+                            let getSupplierById = "getSupplierById"
+                            $.post("controllers/combo-setup.php", {id:id, getSupplierById: getSupplierById}, function(data){
+                                console.log(data)
+                                formdata=JSON.parse(data)
+                                $("#supplier").val(formdata.supplier)
+                                $("#suppliercode").val(formdata.code)
+                                //$("#formabbreviation").val(formdata.abbreviation)
+                                $(".form-edit-supplier").html(`<input type="hidden" name="supplierid" id="supplierid" value="` + id + `">`)
+                            
+                                $("#edit-supplier-button").show()
+                                $("#cancel-supplier-button").show()
+                                $("#add-supplier-button").hide()
+                            })
+                            
+                           
+                        })
+
+                        $(".suppliername").on("click", function(evt){
+                            evt.preventDefault()
+                            let id = $(this).attr("data-id")
+                            let getSupplierById = "getSupplierById"
+                            $.post("controllers/combo-setup.php", {id:id, getSupplierById: getSupplierById}, function(data){
+                                console.log(data)
+                                formdata=JSON.parse(data)
+                                $("#supplier").val(formdata.supplier)
+                                $("#suppliercode").val(formdata.code)
+                                //$("#formabbreviation").val(formdata.abbreviation)
+                                $(".form-edit-supplier").html(`<input type="hidden" name="supplierid" id="supplierid" value="` + id + `">`)
+                            
+                                $("#edit-supplier-button").show()
+                                $("#delete-supplier-button").show()
+                                $("#cancel-supplier-button").show()
+                                $("#add-supplier-button").hide()
+                            })
+                            
+                           
+                        })
+                    
+                    $(".delete-supplier").on("click", function(evt){
+                        evt.preventDefault()
+                            let id = $(this).attr("data-id")
+                            let getSupplierById = "getSupplierById"
+                            $.post("controllers/combo-setup.php", {id:id, getSupplierById: getSupplierById}, function(data){
+                                console.log(data)
+                                formdata=JSON.parse(data)
+                                $("#supplier").val(formdata.supplier)
+                                $("#suppliercode").val(formdata.code)
+                                //$("#formabbreviation").val(formdata.abbreviation)
+                                $(".form-edit-supplier").html(`<input type="hidden" name="supplierid" id="supplierid" value="` + id + `">`)
+                            
+                                $("#delete-supplier-button").show()
+                                $("#cancel-supplier-button").show()
+                                $("#add-supplier-button").hide()
+                            })
+                            
+                    })
+                })
+
+               
+            }
+
+            GetSuppliersFunction()
+            $("#searchsupplier").on('change keyup paste', function () {
+                ApplyFilterSupplier();
+            });
+
+            function ApplyFilterSupplier() {
+                var searchsupplier = $("#searchsupplier").val();
+                console.log("GetSuppliersFunction")
+                GetSuppliersFunction()
+            }
+
+            $("#add-supplier-button").on("click", function(evt){
+                evt.preventDefault();
+                console.log("click")
+                let supplier = $("#supplier").val()
+                let suppliercode = $("#suppliercode").val()
+                //let formabbreviation = $("#formabbreviation").val()
+                if(supplier!="" && suppliercode!=""){
+                    let insertSupplier = "insertSupplier"
+                    $.post("controllers/combo-setup.php", {supplier:supplier,suppliercode:suppliercode,insertSupplier:insertSupplier},function(data){
+                        $("#supplier-status").html(data)
+                        GetSuppliersFunction()
+                    })
+                } else {
+                    $("#supplier-status").html("Please enter values for supplier name and code")
+                }
+                
+               
+            })
+
+            $("#edit-supplier-button").on("click", function(evt){
+                evt.preventDefault();
+                let id = $("#supplierid").val()
+                let suppliercode = $("#suppliercode").val()
+                let supplier = $("#supplier").val()
+                //let formabbreviation = $("#formabbreviation").val()
+                let editSupplier = "editSupplier"
+                $.post("controllers/combo-setup.php", {id:id, supplier:supplier,suppliercode:suppliercode,editSupplier:editSupplier},function(data){
+                    $("#supplier-status").html(data)
+                    GetSuppliersFunction()
+                })
+            })
+
+            $("#delete-supplier-button").on("click",function(evt){
+                evt.preventDefault();
+                let id = $("#supplierid").val()
+                
+                let deleteSupplier = "deleteSupplier"
+                $.post("controllers/combo-setup.php", {id:id, deleteSupplier:deleteSupplier},function(data){
+                    $("#supplier-status").html(data)
+                    GetSuppliersFunction()
+                })
+            })
+
+            $("#cancel-supplier-button").on("click", function(evt){
+                evt.preventDefault()
+                GetSuppliersFunction()
+            })
+            
+
+            //Locations
+            //Search for Locations
+            
+            function GetLocationsFunction(){
+                $("#edit-location-button").hide()
+                $("#delete-location-button").hide()
+                $("#cancel-location-button").hide()
+                $("#add-location-button").show()
+                $(".form-edit-location").html("")
+                $("#location").val("")
+                $("#locationcode").val("")
+                //$("#formabbreviation").val("")
+                let getLocation = "getLocation"
+                let searchItem = $("#searchlocation").val()
+                $.post("controllers/combo-setup.php",{searchItem:searchItem,getLocation: getLocation},function(formdata){
+                    //console.log(data)
+                    if(formdata=="No Record Found"){
+                        $("#view-location-count").html(formdata)
+                    }else{
+                        console.log(formdata)
+                        console.log(typeof(formdata))
+                        let data=JSON.parse(formdata)
+                        console.log(data)
+                        let count = 0
+                            
+                        let totalrecord = ``
+                        $.each(data.records, function(key, val) {
+                            count++
+                          totalrecord += `
+                            <tr>
+                                <td>
+                                    
+                                    <a href="#" data-id="` + val.id + `" style="" class="btn btn-outline-default take-btn locationname"><h3 style="color:blue;">` + val.location + `</h3></a>
+                                </td>                 
+                                <td>
+                                    
+                                    <p style="font-size:18px;font-weight:bold;">` + val.code + `</p>
+                                </td>
+                                
+                                <td>
+                                    <a href="#" data-id="` + val.id + `" class="btn btn-outline-success take-btn edit-location">Edit</a>
+                                    <a href="#" data-id="` + val.id + `" class="btn btn-outline-danger take-btn delete-location">Delete</a>
+                                </td>
+                            </tr>
+                          `
+                        })
+                        $("#view-location-count").html(count + " Record(s) Found")
+                        $("#view-location-list").html(totalrecord)
+                    }
+                    $(".edit-location").on("click", function(evt){
+                            evt.preventDefault()
+                            let id = $(this).attr("data-id")
+                            let getLocationById = "getLocationById"
+                            $.post("controllers/combo-setup.php", {id:id, getLocationById: getLocationById}, function(data){
+                                console.log(data)
+                                formdata=JSON.parse(data)
+                                $("#location").val(formdata.location)
+                                $("#locationcode").val(formdata.code)
+                                //$("#formabbreviation").val(formdata.abbreviation)
+                                $(".form-edit-location").html(`<input type="hidden" name="locationid" id="locationid" value="` + id + `">`)
+                            
+                                $("#edit-location-button").show()
+                                $("#cancel-location-button").show()
+                                $("#add-location-button").hide()
+                            })
+                            
+                           
+                        })
+
+                        $(".locationname").on("click", function(evt){
+                            evt.preventDefault()
+                            let id = $(this).attr("data-id")
+                            let getLocationById = "getLocationById"
+                            $.post("controllers/combo-setup.php", {id:id, getLocationById: getLocationById}, function(data){
+                                console.log(data)
+                                formdata=JSON.parse(data)
+                                $("#location").val(formdata.location)
+                                $("#locationcode").val(formdata.code)
+                                //$("#formabbreviation").val(formdata.abbreviation)
+                                $(".form-edit-location").html(`<input type="hidden" name="locationid" id="locationid" value="` + id + `">`)
+                            
+                                $("#edit-location-button").show()
+                                $("#delete-location-button").show()
+                                $("#cancel-location-button").show()
+                                $("#add-location-button").hide()
+                            })
+                            
+                           
+                        })
+                    
+                    $(".delete-location").on("click", function(evt){
+                        evt.preventDefault()
+                            let id = $(this).attr("data-id")
+                            let getLocationById = "getLocationById"
+                            $.post("controllers/combo-setup.php", {id:id, getLocationById: getLocationById}, function(data){
+                                console.log(data)
+                                formdata=JSON.parse(data)
+                                $("#location").val(formdata.location)
+                                $("#locationcode").val(formdata.code)
+                                //$("#formabbreviation").val(formdata.abbreviation)
+                                $(".form-edit-location").html(`<input type="hidden" name="locationid" id="locationid" value="` + id + `">`)
+                            
+                                $("#delete-location-button").show()
+                                $("#cancel-location-button").show()
+                                $("#add-location-button").hide()
+                            })
+                            
+                    })
+                })
+
+               
+            }
+
+            GetLocationsFunction()
+            $("#searchlocation").on('change keyup paste', function () {
+                ApplyFilterLocation();
+            });
+
+            function ApplyFilterLocation() {
+                var searchlocation = $("#searchlocation").val();
+                console.log("GetLocationsFunction")
+                GetLocationsFunction()
+            }
+
+            $("#add-location-button").on("click", function(evt){
+                evt.preventDefault();
+                console.log("click")
+                let location = $("#location").val()
+                let locationcode = $("#locationcode").val()
+                //let formabbreviation = $("#formabbreviation").val()
+                if(location!=""){
+                    let insertLocation = "insertLocation"
+                    $.post("controllers/combo-setup.php", {location:location,locationcode:locationcode,insertLocation:insertLocation},function(data){
+                        $("#location-status").html(data)
+                        GetLocationsFunction()
+                    })
+                } else {
+                    $("#location-status").html("Please enter values for location name and code")
+                }
+                
+               
+            })
+
+            $("#edit-location-button").on("click", function(evt){
+                evt.preventDefault();
+                let id = $("#locationid").val()
+                let locationcode = $("#locationcode").val()
+                let location = $("#location").val()
+                //let formabbreviation = $("#formabbreviation").val()
+                let editLocation = "editLocation"
+                $.post("controllers/combo-setup.php", {id:id, location:location,locationcode:locationcode,editLocation:editLocation},function(data){
+                    $("#location-status").html(data)
+                    GetLocationsFunction()
+                })
+            })
+
+            $("#delete-location-button").on("click",function(evt){
+                evt.preventDefault();
+                let id = $("#locationid").val()
+                
+                let deleteLocation = "deleteLocation"
+                $.post("controllers/combo-setup.php", {id:id, deleteLocation:deleteLocation},function(data){
+                    $("#location-status").html(data)
+                    GetLocationsFunction()
+                })
+            })
+
+            $("#cancel-location-button").on("click", function(evt){
+                evt.preventDefault()
+                GetLocationsFunction()
+            })
+
+
+            //Packagings
+            //Search for Packagings
+            
+            function GetPackagingsFunction(){
+                $("#edit-packaging-button").hide()
+                $("#delete-packaging-button").hide()
+                $("#cancel-packaging-button").hide()
+                $("#add-packaging-button").show()
+                $(".form-edit-packaging").html("")
+                $("#packaging").val("")
+                $("#packagingcode").val("")
+                //$("#formabbreviation").val("")
+                let getPackaging = "getPackaging"
+                let searchItem = $("#searchpackaging").val()
+                $.post("controllers/combo-setup.php",{searchItem:searchItem,getPackaging: getPackaging},function(formdata){
+                    //console.log(data)
+                    if(formdata=="No Record Found"){
+                        $("#view-packaging-count").html(formdata)
+                    }else{
+                        console.log(formdata)
+                        console.log(typeof(formdata))
+                        let data=JSON.parse(formdata)
+                        console.log(data)
+                        let count = 0
+                            
+                        let totalrecord = ``
+                        $.each(data.records, function(key, val) {
+                            count++
+                          totalrecord += `
+                            <tr>
+                                <td>
+                                    
+                                    <a href="#" data-id="` + val.id + `" style="" class="btn btn-outline-default take-btn packagingname"><h3 style="color:blue;">` + val.packaging + `</h3></a>
+                                </td>                 
+                                <td>
+                                    
+                                    <p style="font-size:18px;font-weight:bold;">` + val.code + `</p>
+                                </td>
+                                
+                                <td>
+                                    <a href="#" data-id="` + val.id + `" class="btn btn-outline-success take-btn edit-packaging">Edit</a>
+                                    <a href="#" data-id="` + val.id + `" class="btn btn-outline-danger take-btn delete-packaging">Delete</a>
+                                </td>
+                            </tr>
+                          `
+                        })
+                        $("#view-packaging-count").html(count + " Record(s) Found")
+                        $("#view-packaging-list").html(totalrecord)
+                    }
+                    $(".edit-packaging").on("click", function(evt){
+                            evt.preventDefault()
+                            let id = $(this).attr("data-id")
+                            let getPackagingById = "getPackagingById"
+                            $.post("controllers/combo-setup.php", {id:id, getPackagingById: getPackagingById}, function(data){
+                                console.log(data)
+                                formdata=JSON.parse(data)
+                                $("#packaging").val(formdata.packaging)
+                                $("#packagingcode").val(formdata.code)
+                                //$("#formabbreviation").val(formdata.abbreviation)
+                                $(".form-edit-packaging").html(`<input type="hidden" name="packagingid" id="packagingid" value="` + id + `">`)
+                            
+                                $("#edit-packaging-button").show()
+                                $("#cancel-packaging-button").show()
+                                $("#add-packaging-button").hide()
+                            })
+                            
+                           
+                        })
+
+                        $(".packagingname").on("click", function(evt){
+                            evt.preventDefault()
+                            let id = $(this).attr("data-id")
+                            let getPackagingById = "getPackagingById"
+                            $.post("controllers/combo-setup.php", {id:id, getPackagingById: getPackagingById}, function(data){
+                                console.log(data)
+                                formdata=JSON.parse(data)
+                                $("#packaging").val(formdata.packaging)
+                                $("#packagingcode").val(formdata.code)
+                                //$("#formabbreviation").val(formdata.abbreviation)
+                                $(".form-edit-packaging").html(`<input type="hidden" name="packagingid" id="packagingid" value="` + id + `">`)
+                            
+                                $("#edit-packaging-button").show()
+                                $("#delete-packaging-button").show()
+                                $("#cancel-packaging-button").show()
+                                $("#add-packaging-button").hide()
+                            })
+                            
+                           
+                        })
+                    
+                    $(".delete-packaging").on("click", function(evt){
+                        evt.preventDefault()
+                            let id = $(this).attr("data-id")
+                            let getPackagingById = "getPackagingById"
+                            $.post("controllers/combo-setup.php", {id:id, getPackagingById: getPackagingById}, function(data){
+                                console.log(data)
+                                formdata=JSON.parse(data)
+                                $("#packaging").val(formdata.packaging)
+                                $("#packagingcode").val(formdata.code)
+                                //$("#formabbreviation").val(formdata.abbreviation)
+                                $(".form-edit-packaging").html(`<input type="hidden" name="packagingid" id="packagingid" value="` + id + `">`)
+                            
+                                $("#delete-packaging-button").show()
+                                $("#cancel-packaging-button").show()
+                                $("#add-packaging-button").hide()
+                            })
+                            
+                    })
+                })
+
+               
+            }
+
+            GetPackagingsFunction()
+            $("#searchpackaging").on('change keyup paste', function () {
+                ApplyFilterPackaging();
+            });
+
+            function ApplyFilterPackaging() {
+                var searchpackaging = $("#searchpackaging").val();
+                console.log("GetPackagingsFunction")
+                GetPackagingsFunction()
+            }
+
+            $("#add-packaging-button").on("click", function(evt){
+                evt.preventDefault();
+                console.log("click")
+                let packaging = $("#packaging").val()
+                let packagingcode = $("#packagingcode").val()
+                //let formabbreviation = $("#formabbreviation").val()
+                if(packaging!=""){
+                    let insertPackaging = "insertPackaging"
+                    $.post("controllers/combo-setup.php", {packaging:packaging,packagingcode:packagingcode,insertPackaging:insertPackaging},function(data){
+                        $("#packaging-status").html(data)
+                        GetPackagingsFunction()
+                    })
+                } else {
+                    $("#packaging-status").html("Please enter values for packaging name and code")
+                }
+                
+               
+            })
+
+            $("#edit-packaging-button").on("click", function(evt){
+                evt.preventDefault();
+                let id = $("#packagingid").val()
+                let packagingcode = $("#packagingcode").val()
+                let packaging = $("#packaging").val()
+                //let formabbreviation = $("#formabbreviation").val()
+                let editPackaging = "editPackaging"
+                $.post("controllers/combo-setup.php", {id:id, packaging:packaging,packagingcode:packagingcode,editPackaging:editPackaging},function(data){
+                    $("#packaging-status").html(data)
+                    GetPackagingsFunction()
+                })
+            })
+
+            $("#delete-packaging-button").on("click",function(evt){
+                evt.preventDefault();
+                let id = $("#packagingid").val()
+                
+                let deletePackaging = "deletePackaging"
+                $.post("controllers/combo-setup.php", {id:id, deletePackaging:deletePackaging},function(data){
+                    $("#packaging-status").html(data)
+                    GetPackagingsFunction()
+                })
+            })
+
+            $("#cancel-packaging-button").on("click", function(evt){
+                evt.preventDefault()
+                GetPackagingsFunction()
+            })
+
+            //Organizations
+            //Search for Organizations
+            
+            function GetOrganizationsFunction(){
+                $("#edit-organization-button").hide()
+                $("#delete-organization-button").hide()
+                $("#cancel-organization-button").hide()
+                $("#add-organization-button").show()
+                $(".form-edit-organization").html("")
+                $("#organization").val("")
+                $("#organizationdiscount").val("")
+                //$("#formabbreviation").val("")
+                let getOrganization = "getOrganization"
+                let searchItem = $("#searchorganization").val()
+                $.post("controllers/combo-setup.php",{searchItem:searchItem,getOrganization: getOrganization},function(formdata){
+                    //console.log(data)
+                    if(formdata=="No Record Found"){
+                        $("#view-organization-count").html(formdata)
+                    }else{
+                        console.log(formdata)
+                        console.log(typeof(formdata))
+                        let data=JSON.parse(formdata)
+                        console.log(data)
+                        let count = 0
+                            
+                        let totalrecord = ``
+                        $.each(data.records, function(key, val) {
+                            count++
+                          totalrecord += `
+                            <tr>
+                                <td>
+                                    
+                                    <a href="#" data-id="` + val.id + `" style="" class="btn btn-outline-default take-btn organizationname"><h3 style="color:blue;">` + val.organization + `</h3></a>
+                                </td>                 
+                                <td>
+                                    
+                                    <p style="font-size:18px;font-weight:bold;">` + val.discount + `</p>
+                                </td>
+                                
+                                <td>
+                                    <a href="#" data-id="` + val.id + `" class="btn btn-outline-success take-btn edit-organization">Edit</a>
+                                    <a href="#" data-id="` + val.id + `" class="btn btn-outline-danger take-btn delete-organization">Delete</a>
+                                </td>
+                            </tr>
+                          `
+                        })
+                        $("#view-organization-count").html(count + " Record(s) Found")
+                        $("#view-organization-list").html(totalrecord)
+                    }
+                    $(".edit-organization").on("click", function(evt){
+                            evt.preventDefault()
+                            let id = $(this).attr("data-id")
+                            let getOrganizationById = "getOrganizationById"
+                            $.post("controllers/combo-setup.php", {id:id, getOrganizationById: getOrganizationById}, function(data){
+                                console.log(data)
+                                formdata=JSON.parse(data)
+                                $("#organization").val(formdata.organization)
+                                $("#organizationdiscount").val(formdata.discount)
+                                //$("#formabbreviation").val(formdata.abbreviation)
+                                $(".form-edit-organization").html(`<input type="hidden" name="organizationid" id="organizationid" value="` + id + `">`)
+                            
+                                $("#edit-organization-button").show()
+                                $("#cancel-organization-button").show()
+                                $("#add-organization-button").hide()
+                            })
+                            
+                           
+                        })
+
+                        $(".organizationname").on("click", function(evt){
+                            evt.preventDefault()
+                            let id = $(this).attr("data-id")
+                            let getOrganizationById = "getOrganizationById"
+                            $.post("controllers/combo-setup.php", {id:id, getOrganizationById: getOrganizationById}, function(data){
+                                console.log(data)
+                                formdata=JSON.parse(data)
+                                $("#organization").val(formdata.organization)
+                                $("#organizationdiscount").val(formdata.discount)
+                                //$("#formabbreviation").val(formdata.abbreviation)
+                                $(".form-edit-organization").html(`<input type="hidden" name="organizationid" id="organizationid" value="` + id + `">`)
+                            
+                                $("#edit-organization-button").show()
+                                $("#delete-organization-button").show()
+                                $("#cancel-organization-button").show()
+                                $("#add-organization-button").hide()
+                            })
+                            
+                           
+                        })
+                    
+                    $(".delete-organization").on("click", function(evt){
+                        evt.preventDefault()
+                            let id = $(this).attr("data-id")
+                            let getOrganizationById = "getOrganizationById"
+                            $.post("controllers/combo-setup.php", {id:id, getOrganizationById: getOrganizationById}, function(data){
+                                console.log(data)
+                                formdata=JSON.parse(data)
+                                $("#organization").val(formdata.organization)
+                                $("#organizationdiscount").val(formdata.discount)
+                                //$("#formabbreviation").val(formdata.abbreviation)
+                                $(".form-edit-organization").html(`<input type="hidden" name="organizationid" id="organizationid" value="` + id + `">`)
+                            
+                                $("#delete-organization-button").show()
+                                $("#cancel-organization-button").show()
+                                $("#add-organization-button").hide()
+                            })
+                            
+                    })
+                })
+
+               
+            }
+
+            GetOrganizationsFunction()
+            $("#searchorganization").on('change keyup paste', function () {
+                ApplyFilterOrganization();
+            });
+
+            function ApplyFilterOrganization() {
+                var searchorganization = $("#searchorganization").val();
+                console.log("GetPackagingsFunction")
+                GetOrganizationsFunction()
+            }
+
+            $("#add-organization-button").on("click", function(evt){
+                evt.preventDefault();
+                console.log("click")
+                let organization = $("#organization").val()
+                let discount = $("#organizationdiscount").val()
+                //let formabbreviation = $("#formabbreviation").val()
+                if(organization!=""){
+                    let insertOrganization = "insertOrganization"
+                    $.post("controllers/combo-setup.php", {organization:organization,discount:discount,insertOrganization:insertOrganization},function(data){
+                        $("#organization-status").html(data)
+                        GetOrganizationsFunction()
+                    })
+                } else {
+                    $("#organization-status").html("Please enter values for organization name and code")
+                }
+                
+               
+            })
+
+            $("#edit-organization-button").on("click", function(evt){
+                evt.preventDefault();
+                let id = $("#organizationid").val()
+                let discount = $("#organizationdiscount").val()
+                let organization = $("#organization").val()
+                //let formabbreviation = $("#formabbreviation").val()
+                let editOrganization = "editOrganization"
+                $.post("controllers/combo-setup.php", {id:id, organization:organization,discount:discount,editOrganization:editOrganization},function(data){
+                    $("#organization-status").html(data)
+                    GetOrganizationsFunction()
+                })
+            })
+
+            $("#delete-organization-button").on("click",function(evt){
+                evt.preventDefault();
+                let id = $("#organizationid").val()
+                
+                let deleteOrganization = "deleteOrganization"
+                $.post("controllers/combo-setup.php", {id:id, deleteOrganization:deleteOrganization},function(data){
+                    $("#organization-status").html(data)
+                    GetOrganizationsFunction()
+                })
+            })
+
+            $("#cancel-organization-button").on("click", function(evt){
+                evt.preventDefault()
+                GetOrganizationsFunction()
+            })
+
+           
+        })
+    </script>
+</body>
+
+</html>

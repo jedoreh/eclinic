@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suyi Corpse Code</title>
+    <link rel="icon" href="img/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- themify CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <!-- flaticon CSS -->
+    <link rel="stylesheet" href="css/flaticon.css">
+    <!-- magnific popup CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- nice select CSS -->
+    <!-- <link rel="stylesheet" href="css/nice-select.css"> -->
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <!-- style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+
+
+   <div class="container">
+       <div class="form-row">
+           <div class="col-md-6">
+
+            <br>
+            <br>
+            <div id="card" style="width: 300px; height:250px; border-radius: 10px; background-color:antiquewhite;">
+                <h1>SUYI HOSPITAL</h1>
+           
+                <div id="GFG" style="font-size: smaller;">
+                    
+                    <div class="details"></div>
+                </div>
+                
+                <br /><br />
+                
+                
+            </div>
+           
+
+            <div>
+                <input type="button" href="#" class="btn btn-primary" value="Print" onclick="printDiv()">
+                <a href="morgue-tracking.html" class="btn btn-success">Go Back</a>
+            </div>
+           </div>
+       </div>
+   </div>
+    <script src="js/jquery-1.12.1.min.js"></script>
+    
+    
+    <script>
+        function printDiv() {
+            var divContents = document.getElementById("GFG").innerHTML;
+            var a = window.open('', '', 'height=500, width=500');
+            a.document.write('<html>');
+            let body_text = `
+            <h3>SUYI HOSPITAL</h3>
+            
+
+            `
+            a.document.write('<body >' + body_text);
+            a.document.write(divContents);
+            a.document.write('</body></html>');
+            a.document.close();
+            a.print();
+        }
+    </script>
+    <script>
+        $(document).ready(function(){
+             // get patient info
+             let getPrintCorpseCode = "getPrintCorpseCode"
+            $.post("controllers/patient-record.php",{getPrintCorpseCode:getPrintCorpseCode}, function(formdata){
+                console.log(formdata)
+                let data = JSON.parse(formdata)
+                console.log(data)
+
+                let getuserdetails = "getuserdetails"
+                $.post("controllers/masterpage.php", {getuserdetails:getuserdetails}, function(fdata){
+                    if(fdata=="Not Logged In"){
+                        window.open("index.html")
+                    } else {
+                        let persondata = JSON.parse(fdata)
+                        console.log(persondata)
+                        const d = new Date()
+                        let totalamount = 0
+                        // + d.getDate() + ` - ` + d.getMonth() + ` - ` + d.getFullYear()
+                        //
+                       
+
+                                let details = `
+                                
+                                <h5><b>Corpse No</b> - ` + data.corpsenumber + `  <b>Tally No</b> - ` + data.tallynumber + `<br>
+                                <b>Corpse Name:</b> ` + data.corpsename + `<br>
+                                <b>Embalment/Maintenance Code: </b></h5><h2 style="text-align:centre">` + data.corpsecode + `</h2>
+                                
+                            <h5>Please take this note to records for invoice<br>
+                                </h5>
+
+                            `
+                            $(".details").html(details)
+                    
+                        
+                    }
+                })
+            })
+        })
+    </script>
+    
+</body>
+</html>

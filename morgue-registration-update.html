@@ -1,0 +1,1698 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>medical</title>
+    <link rel="icon" href="img/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- themify CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <!-- flaticon CSS -->
+    <link rel="stylesheet" href="css/flaticon.css">
+    <!-- magnific popup CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- nice select CSS -->
+    <!-- <link rel="stylesheet" href="css/nice-select.css"> -->
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="css/slick.css">
+    <!-- style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!--::header part start::-->
+    <header class="main_menu">
+            
+    </header>
+    <!-- Header part end-->
+   
+    <!-- breadcrumb start-->
+    <section class="breadcrumb breadcrumb_bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb_iner">
+                        <div class="form-row">
+                            <div class="form-group col-md-2">
+                                <span id="username" style="color:#F1F1F1;font-size: 17px;"></span>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <span id="pagetitle" style="color:#F1F1F1;font-size: 20px;font-weight: bolder;">Morgue Registration Update</span>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <span id="sysdate" style="color:#F1F1F1"></span>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <span id="systime" style="color:#F1F1F1"></span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- breadcrumb start-->
+
+    
+
+    <!--::regervation_part start::-->
+    <section class="regervation_part padding_bottom" style="margin-top:30px;">
+        <div class="container">
+            <div class="row align-items-center regervation_content">
+                <div class="col-md-12">
+                    <div class="regervation_part_iner">
+                        <br>
+                        <form action="controllers/add-staff.php" class="frmaddperson">
+                            <!-- <h2>Morgue Registration Update</h2> -->
+                            <div class="label label-success" id="errorlogin"></div>
+                            <div class="form-row">
+                                
+                            </div>
+                            
+                        </form>
+                    </div>
+                    <div class="card-box">
+                        <ul class="nav nav-tabs nav-tabs-solid nav-tabs-rounded nav-justified">
+                            <!-- <li class="nav-item"><a class="nav-link btn-primary active" href="#solid-rounded-justified-tab6" data-toggle="tab">Sex</a></li> -->
+                            <!-- <li class="nav-item"><a class="nav-link btn-primary" href="#solid-rounded-justified-tab3" data-toggle="tab">Age Range</a></li> 
+                            <li class="nav-item"><a class="nav-link btn-primary" href="#solid-rounded-justified-tab7" data-toggle="tab">Weight</a></li> -->
+                            <!-- <li class="nav-item"><a class="nav-link btn-primary active" href="#solid-rounded-justified-tab8" data-toggle="tab">Morgue Registration Update</a></li> -->
+                            <!-- <li class="nav-item"><a class="nav-link btn-primary" href="#solid-rounded-justified-tab4" data-toggle="tab">Duration</a></li>
+                            
+                            <li class="nav-item"><a class="nav-link btn-primary" href="#solid-rounded-justified-tab9" data-toggle="tab">Dosage Unit</a></li>
+                             <li class="nav-item dropdown"> 
+                                <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Stocking Setup</a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item" href="#solid-rounded-justified-tab2" data-toggle="tab">Route of Administration</a>
+                                    <a class="dropdown-item" href="#solid-rounded-justified-tab3" data-toggle="tab">Category of Importance</a>
+                                    <a class="dropdown-item" href="#solid-rounded-justified-tab4" data-toggle="tab">Stock Location</a>
+                                    <a class="dropdown-item" href="#solid-rounded-justified-tab5" data-toggle="tab">Physical Position</a> 
+                                </div>
+                            </li> 
+                            <li class="nav-item"><a class="nav-link" href="#solid-rounded-justified-tab3" data-toggle="tab">Department Item Group</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#solid-rounded-justified-tab4" data-toggle="tab">Generic Name</a></li> -->
+                            <!-- <li class="nav-item"><a class="nav-link" href="#solid-rounded-justified-tab5" data-toggle="tab">State</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#solid-rounded-justified-tab6" data-toggle="tab">Default Strength</a></li> -->
+                        </ul>
+                        <div class="tab-content">
+                           
+                            <div class="tab-pane show active" id="solid-rounded-justified-tab8">
+                                <br>
+                                <!-- <h3>Morgue Registration Update</h3> -->
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            
+                                            <form action="controllers/index.php" class="form-signin">
+                                                <h2>Search Registered Corpse</h2>
+                                                <div class="label label-success" id="patient-status"></div>
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-12">
+                                                        <div id="patientcardtotal"></div>
+                                                    </div>
+                                                    <div class="form-group col-md-3">
+                                                        Search for Corpse:<br>
+                                                        <input type="text" name="searchpatient" class="form-control" id="searchpatient" placeholder="Name or Number" required>
+                                                    </div>
+                                                    <div class="form-group col-md-9">
+                                                        Select Corpse:<br>
+                                                        <select name="selectpatient" id="selectpatient" class="form-control" required>
+
+                                                        </select>
+                                                    </div>
+                                                   
+                                                    
+                                                    <div class="form-group col-md-4" id="form-edit-patient"></div>
+                                                    <div class="form-group col-md-4" id="form-view-patientstatus"></div>
+                                                    <div class="form-group col-md-4" id="form-view-patient"></div>
+                                                    <div class="form-group col-md-12" id="form-view-invoices"></div>
+                                                    <div class="form-group col-md-6" style="font-weight:bold;font-size:16px;" id="form-view-nextofkin"></div>
+                                                    <div class="form-group col-md-3" style="font-weight:bold;font-size:16px;" id="form-view-revenue"></div>
+                                                    <div class="form-group col-md-3" style="font-weight:bold;font-size:16px;" id="form-view-hospitalbill"></div>
+
+                                                    <div class="form-group col-md-4">
+                                                        Surname:<br>
+                                                        <input type="text" name="lastname" class="form-control" id="lastname" placeholder="Last Name" required>
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        Other Names:<br>
+                                                        <input type="text" name="firstname" class="form-control" id="firstname" placeholder="First Name" required>
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        Tally Number:<br>
+                                                        <input name="tallynumber" class="form-control" id="tallynumber" disabled>
+                                                    </div>
+                                                    <div class="form-group col-md-2">
+                                                        House No.<br>
+                                                        <input type="text" name="addressno" class="form-control" id="addressno" placeholder="No." required>
+                                                    </div>
+                                                    <div class="form-group col-md-3">
+                                                        Street<br>
+                                                        <input type="text" name="addressstreet" class="form-control" id="addressstreet" placeholder="Street" required>
+                                                    </div>
+                                                    <div class="form-group col-md-2">
+                                                        Select<br>
+                                                        <select name="addressstreetselect" class="form-control" id="addressstreetselect">
+                                                            <option value="">Select Street</option>
+                                                            <option value="Street">Street</option>
+                                                            <option value="Road">Road</option>
+                                                            <option value="Lane">Lane</option>
+                                                            <option value="Close">Close</option>
+                                                            <option value="Way">Way</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group col-md-3">
+                                                        off<br>
+                                                        <input type="text" name="addressoff" class="form-control" id="addressoff" placeholder="Off" required>
+                                                    </div>
+                                                    <div class="form-group col-md-2">
+                                                        Select<br>
+                                                        <select name="addressoffselect" class="form-control" id="addressoffselect">
+                                                            <option value="">Select Street</option>
+                                                            <option value="Street">Street</option>
+                                                            <option value="Road">Road</option>
+                                                            <option value="Lane">Lane</option>
+                                                            <option value="Close">Close</option>
+                                                            <option value="Way">Way</option>
+                                                        </select>
+                                                    </div>
+                                                    <!-- <div class="form-group col-md-3">
+                                                        Quarter<br>
+                                                        <input type="text" name="addressquarter" class="form-control" id="addressquarter" placeholder="Quarter" required>
+
+                                                    </div> -->
+                                                    <!-- <div class="form-group col-md-2">
+                                                        Town<br>
+                                                        <input type="text" name="addresstown" class="form-control" id="addresstown" placeholder="Town" required>
+
+                                                    </div> -->
+                                                    <div class="form-group col-md-3">
+                                                        Quarter:<br>
+                                                        <select name="addressquarter" id="addressquarter" class="form-control" required>
+
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group col-md-2">
+                                                        Add Quarter:<br>
+                                                        <input type="text" name="addquarter" class="form-control" id="addquarter" placeholder="Add Quarter" required>
+                                                    </div>
+                                                    <div class="form-group col-md-1">
+                                                        <br>
+                                                        <button class="genric-btn primary" id="add-quarter-button">Add</button> 
+                                                    </div>
+                                                    <div class="form-group col-md-3">
+                                                        Town:<br>
+                                                        <select name="addresstown" id="addresstown" class="form-control" required>
+
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group col-md-2">
+                                                        Add Town:<br>
+                                                        <input type="text" name="addtown" class="form-control" id="addtown" placeholder="Add Town" required>
+                                                    </div>
+                                                    <div class="form-group col-md-1">
+                                                        <br>
+                                                        <button class="genric-btn primary" id="add-town-button">Add</button> 
+                                                    </div>
+                                                    <div class="form-group col-md-12">
+                                                        Address:<br>
+                                                        <textarea name="address" class="form-control" id="address" placeholder="ResidentialAddress"></textarea>
+                                                    </div>
+                                                    
+                                                    <div class="form-group col-md-2">
+                                                        Gender:<br>
+                                                        <select name="gender" class="form-control" id="gender"></select>
+                                                    </div>
+                                                    
+                                                    
+                                                    <!-- <div class="form-group col-md-5">
+                                                        Place of Death:<br>
+                                                        <input type="text" name="placeofdeath" class="form-control" id="placeofdeath" placeholder="Place of Death" required>
+                                                    </div> -->
+                                                    
+                                                    <div class="form-group col-md-3">
+                                                        Date of Death:<br>
+                                                        <input type="date" name="dateofdeath" class="form-control" id="dateofdeath" required>
+                                                    </div>
+                                                    <div class="form-group col-md-2">
+                                                        Age:<br>
+                                                        <input type="text" name="age" class="form-control" id="age">
+                                                    </div>
+                                                    <div class="form-group col-md-2">
+                                                        Place of Death:<br>
+                                                         <select name="placeofdeath" class="form-control" id="placeofdeath">
+                                                             
+                                                         </select>
+                                                     </div>
+                                                     <div class="form-group col-md-2">
+                                                         Add Place of Death:<br>
+                                                         <input type="text" name="addplaceofdeath" class="form-control" id="addplaceofdeath" placeholder="Add Place of Death" required>
+                                                     </div>
+                                                     <div class="form-group col-md-1">
+                                                         <br>
+                                                         <button class="genric-btn primary" id="add-placeofdeath-button">Add</button> 
+                                                     </div>
+                                                    <div class="form-group col-md-3">
+                                                       Corpse Type:<br>
+                                                        <select name="corpsetype" class="form-control" id="corpsetype">
+                                                            
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group col-md-2">
+                                                        Add Corpse Type:<br>
+                                                        <input type="text" name="addcorpsetype" class="form-control" id="addcorpsetype" placeholder="Add Corpse Death" required>
+                                                    </div>
+                                                    <div class="form-group col-md-1">
+                                                        <br>
+                                                        <button class="genric-btn primary" id="add-corpsetype-button">Add</button> 
+                                                    </div>
+                                                    <div class="form-group col-md-3">
+                                                        Cause of Death:<br>
+                                                         <select name="causeofdeath" class="form-control" id="causeofdeath">
+                                                             
+                                                         </select>
+                                                     </div>
+                                                     <div class="form-group col-md-2">
+                                                         Add Cause of Death:<br>
+                                                         <input type="text" name="addcauseofdeath" class="form-control" id="addcauseofdeath" placeholder="Add Cause of Death" required>
+                                                     </div>
+                                                     <div class="form-group col-md-1">
+                                                         <br>
+                                                         <button class="genric-btn primary" id="add-causeofdeath-button">Add</button> 
+                                                     </div>
+                                                    <div class="form-group col-md-8">
+                                                        Source of Corpse:<br>
+                                                        <input type="radio" class="corpsesource" name="corpsesource" style="font-size: 24px;" value="IN-PATIENT">&nbsp;<span style="font-size: 24px;">IN-PATIENT</span> 
+                                                        <input type="radio" class="corpsesource" name="corpsesource" style="font-size: 24px;" value="OUTSIDE CORPSE">&nbsp;<span style="font-size: 24px;">OUTSIDE CORPSE</span> 
+                                                   
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        Hospital Bill Brought Forward:<br>
+                                                        <input type="number" min="0" max="10000000" class="form-control" id="hospitalbill" name="hospitalbill" style="font-size: 24px;" value="0">
+                                                        <!-- <input type="radio" class="corpsesource" name="corpsesource" style="font-size: 24px;" value="OUTSIDE CORPSE">&nbsp;<span style="font-size: 24px;">OUTSIDE CORPSE</span>  -->
+                                                   
+                                                    </div>
+                                                    <div class="form-group col-md-3">
+                                                        Nationality:<br>
+                                                         <select name="nationality" class="form-control" id="nationality">
+                                                             
+                                                         </select>
+                                                     </div>
+                                                     <div class="form-group col-md-3">
+                                                        State of Origin:<br>
+                                                         <select name="stateoforigin" class="form-control" id="stateoforigin">
+                                                             
+                                                         </select>
+                                                     </div>
+                                                     <div class="form-group col-md-3">
+                                                        LGA of Origin:<br>
+
+                                                         <select name="lgaoforigin" class="form-control" id="lgaoforigin">
+                                                             
+                                                         </select>
+                                                     </div>
+                                                     <div class="form-group col-md-3">
+                                                        Religion:<br>
+                                                        <select name="religion" class="form-control" id="religion"></select>
+                                                    </div>
+                                                    <div class="form-group col-md-3">
+                                                        Tribe:<br>
+                                                         <select name="tribe" class="form-control" id="tribe">
+                                                             
+                                                         </select>
+                                                     </div>
+                                                     <div class="form-group col-md-2">
+                                                         Add Tribe:<br>
+                                                         <input type="text" name="addtribe" class="form-control" id="addtribe" placeholder="Add Tribe" required>
+                                                     </div>
+                                                     <div class="form-group col-md-1">
+                                                         <br>
+                                                         <button class="genric-btn primary" id="add-tribe-button">Add</button> 
+                                                     </div>
+                                                    <!-- <div class="form-group col-md-4">
+                                                        Occupation:<br>
+                                                        <input type="text" name="occupation" class="form-control" id="occupation" placeholder="Occupation" required>
+                                                    </div> -->
+                                                    <div class="form-group col-md-3">
+                                                        Occupation:<br>
+                                                         <select name="occupation" class="form-control" id="occupation">
+                                                             
+                                                         </select>
+                                                     </div>
+                                                     <div class="form-group col-md-2">
+                                                         Add Occupation:<br>
+                                                         <input type="text" name="addoccupation" class="form-control" id="addoccupation" placeholder="Add Occupation" required>
+                                                     </div>
+                                                     <div class="form-group col-md-1">
+                                                         <br>
+                                                         <button class="genric-btn primary" id="add-occupation-button">Add</button> 
+                                                     </div>
+                                                    
+                                                    <div class="form-group col-md-4">
+                                                        Remark:<br>
+                                                         <select name="remark" class="form-control" id="remark">
+                                                             
+                                                         </select>
+                                                     </div>
+                                                     <div class="form-group col-md-4">
+                                                         Add Remark:<br>
+                                                         <input type="text" name="addremark" class="form-control" id="addremark" placeholder="Add Remark" required>
+                                                     </div>
+                                                     <div class="form-group col-md-1">
+                                                         <br>
+                                                         <button class="genric-btn primary" id="add-remark-button">Add</button> 
+                                                     </div>
+                                                    <input type="hidden" id="personid" value="0"> 
+                                                    <input type="hidden" id="cardid" value="0"> 
+                                                    <input type="hidden" id="cardnumber" value="0"> 
+                                                    <input type="hidden" id="corpseregistrationnumber" value="0"> 
+                                                    <input type="hidden" id="person" value="0"> 
+                                                    <input type="hidden" id="agegroup" value="0"> 
+                                                    <input type="hidden" id="paid" value="">
+                                                    <input type="hidden" id="selectpatientnumber" value="">
+                                                </div>
+                                                <div class="regerv_btn">
+                                                    <!-- <button type="submit" class="genric-btn primary" id="add-patient-button" style="font-size: 24px;border-radius: 8px;">Add Patient</button> -->
+                                                    <!-- <button type="submit" class="genric-btn primary" id="cancel-patient-button" style="font-size: 24px;border-radius: 8px;">Cancel</button> -->
+                                                    <button type="submit" class="genric-btn success" id="update-patient-button" style="font-size: 24px;border-radius: 8px;">Update Corpse</button>
+                                                    <button type="submit" class="genric-btn success" id="print-update-patient-button" style="font-size: 24px;border-radius: 8px;">Print Corpse Update Card</button>
+                                                </div>
+                                            </form>
+                                            
+                                        </div>
+                                        <!-- <div class="col-12">
+                                            
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    <h4 class="card-title d-inline-block">View Patients</h4>  <p class="btn btn-primary float-right" id="view-patient-count"></p>
+                                                    <p class="float-right"><input type="text" id="searchpatient" name="searchpatient" placeholder="Search Patient" style="font-size: 18px;"></p>
+                                                </div>
+                                                <div class="card-body p-0">
+                                                    <div class="table-responsive scrollable">
+                                                        <table class="table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Card Number</th>
+                                                                    <th>Patient</th>
+                                                                    <th>Status</th>
+                                                                    <th>Date</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody id="view-patient-list">
+                                                                
+                                                                
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-5 col-md-6">
+                    <div class="reservation_img">
+                        <img src="img/loginphoto.jpg" alt="">
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <!--::regervation_part end::-->
+
+    
+    <!-- footer part start-->
+    <footer class="footer-area">
+
+        <div class="copyright_part">
+            
+        </div>
+    </footer>
+
+    <!-- footer part end-->
+
+    <!-- jquery plugins here-->
+
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <!-- popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- easing js -->
+    <script src="js/jquery.magnific-popup.js"></script>
+    <!-- swiper js -->
+    <script src="js/swiper.min.js"></script>
+    <!-- swiper js -->
+    <script src="js/masonry.pkgd.js"></script>
+    <!-- particles js -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- <script src="js/jquery.nice-select.min.js"></script> -->
+    <!-- swiper js -->
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <!-- contact js -->
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <script src="js/contact.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+    <script src="views/masterpage.js"></script>
+    <script src="views/records.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/bootstrap-datetimepicker.min.js"></script>
+    <script>
+        $(function () {
+            $('#dateofbirth1').datetimepicker({
+                format: 'LT'
+            });
+            // $('#datetimepicker4').datetimepicker({
+            //     format: 'LT'
+            // });
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+              //get tallynumber
+              let tallynumberlist = ``
+
+                let assignedtallies = []
+              //get all tallies
+              let getALlTallies = "getALlTallies"
+              $.post("controllers/patient-record.php",{getALlTallies:getALlTallies},function(data){
+
+                  console.log(data)
+                  if(data!="No Record Found"){
+                    assignedtallies = JSON.parse(data)
+                  }
+
+                  
+              })
+
+              let tallies = []
+            //get all tallies
+            let getTallies = "getTallies"
+            $.post("controllers/patient-record.php",{getTallies:getTallies},function(data){
+
+                console.log(data)
+                if(data!="No Record Found"){
+                    tallies = JSON.parse(data)
+                }
+
+                getRecordsItems()
+            })
+           
+            function getRecordsItems(){
+                let searchItem = "MORGUE"
+                let getStockItemCorpseAccomodationList = "getStockItemCorpseAccomodationList"
+                $.post("controllers/patient-record.php",{searchItem:searchItem, getStockItemCorpseAccomodationList:getStockItemCorpseAccomodationList},function(formdata){
+                    console.log(formdata)
+                    if(formdata!="No Record Found"){
+                        
+                        let data=JSON.parse(formdata)
+                        let itemgenericnameoptions = ``
+                        console.log(assignedtallies)
+                        console.log(data)
+                        $.each(data.records, function(key, val) {
+                            let insert = "Yes"
+
+                            tallies.records.forEach(element => {
+                                
+                                if(val.itemgenericname.includes(element.tallynumber)){
+                                    insert = "No"
+                                }
+                            });
+                            assignedtallies.records.forEach(element => {
+                                let splitelement = element.tallynumber.split(",")
+                                if(val.itemgenericname.includes(splitelement[0])){
+                                    insert = "Yes"
+                                }
+                            });
+
+                            if(insert=="No"){
+                                itemgenericnameoptions += `
+                                    <option value="` + val.itemgenericname + `,` + val.itemid + `">` + val.itemgenericname + ` =N=` + val.sellingprice + `</option>
+                                `
+                            }
+                           
+                            
+                        })
+                        tallynumberlist = itemgenericnameoptions
+                        // $("#tallynumber").html(itemgenericnameoptions)
+                    } else {
+                        // $("#tallynumber").html("<option value='No Record'>No Record</option>")
+                    }
+                })
+            }
+
+            
+            getCountries()
+            let countrylist = ``
+            let statelist = ``
+            let lgalist = ``
+            function getCountries(){
+               
+                let getCountries = "getCountries"
+                $.post("controllers/patient-record.php",{getCountries:getCountries},function(formdata){
+                    console.log(formdata)
+                    if(formdata!="No Record Found"){
+                        
+                        let data=JSON.parse(formdata)
+                        let itemgenericnameoptions = ``
+                        let nigeria = `<option value="None,0">Select Country</option>`
+                        $.each(data.records, function(key, val) {
+                           
+                            itemgenericnameoptions += `
+                            <option value="` + val.name + `,` + val.id + `">` + val.name + `</option>
+                          `
+                          if(val.name=="Nigeria"){
+                            nigeria = `<option value="` + val.name + `,` + val.id + `">` + val.name + `</option>`
+                          }
+                        })
+                        countrylist = itemgenericnameoptions
+                        $("#nationality").html(nigeria + itemgenericnameoptions)
+                        
+                        let splitcountry = $("#nationality").val().split(",")
+                        let countryid = splitcountry[1]
+                        let getStateByCountryId = "getStateByCountryId"
+                        $.post("controllers/patient-record.php",{id:countryid,getStateByCountryId:getStateByCountryId},function(formdata){
+                            console.log(formdata)
+                            if(formdata!="No Record Found"){
+                                
+                                let data=JSON.parse(formdata)
+                                let itemgenericnameoptions = ``
+                                
+                                $.each(data.records, function(key, val) {
+                                
+                                    itemgenericnameoptions += `
+                                    <option value="` + val.name + `,` + val.id + `">` + val.name + `</option>
+                                `
+                                
+                                })
+                                statelist = itemgenericnameoptions
+                                $("#stateoforigin").html(itemgenericnameoptions)
+
+                                let splitstate = $("#stateoforigin").val().split(",")
+                                let stateid = splitstate[1]
+                                let getLGAByStateId = "getLGAByStateId"
+                                $.post("controllers/patient-record.php",{id:stateid,getLGAByStateId:getLGAByStateId},function(formdata){
+                                    console.log(formdata)
+                                    if(formdata!="No Record Found"){
+                                        
+                                        let data=JSON.parse(formdata)
+                                        let itemgenericnameoptions = ``
+                                        
+                                        $.each(data.records, function(key, val) {
+                                        
+                                            itemgenericnameoptions += `
+                                            <option value="` + val.name + `,` + val.id + `">` + val.name + `</option>
+                                        `
+                                        
+                                        })
+                                        lgalist = itemgenericnameoptions
+                                        $("#lgaoforigin").html(itemgenericnameoptions)
+                                    } else {
+                                        $("#lgaoforigin").html("<option value='No Record'>No Record</option>")
+                                    }
+                                })
+                            } else {
+                                        $("#stateoforigin").html("<option value='No Record'>No Record</option>")
+                                    }
+                        })
+
+
+                    } else {
+                        $("#nationality").html("<option value='No Record'>No Record</option>")
+                    }
+                })
+            }
+
+            $("#nationality").on("change", function(){
+                let splitcountry = $("#nationality").val().split(",")
+                        let countryid = splitcountry[1]
+                        let getStateByCountryId = "getStateByCountryId"
+                        $.post("controllers/patient-record.php",{id:countryid,getStateByCountryId:getStateByCountryId},function(formdata){
+                            console.log(formdata)
+                            if(formdata!="No Record Found"){
+                                
+                                let data=JSON.parse(formdata)
+                                let itemgenericnameoptions = ``
+                                
+                                $.each(data.records, function(key, val) {
+                                
+                                    itemgenericnameoptions += `
+                                    <option value="` + val.name + `,` + val.id + `">` + val.name + `</option>
+                                `
+                                
+                                })
+                                statelist = itemgenericnameoptions
+                                $("#stateoforigin").html(itemgenericnameoptions)
+
+                                let splitstate = $("#stateoforigin").val().split(",")
+                                let stateid = splitstate[1]
+                                let getLGAByStateId = "getLGAByStateId"
+                                $.post("controllers/patient-record.php",{id:stateid,getLGAByStateId:getLGAByStateId},function(formdata){
+                                    console.log(formdata)
+                                    if(formdata!="No Record Found"){
+                                        
+                                        let data=JSON.parse(formdata)
+                                        let itemgenericnameoptions = ``
+                                        
+                                        $.each(data.records, function(key, val) {
+                                        
+                                            itemgenericnameoptions += `
+                                            <option value="` + val.name + `,` + val.id + `">` + val.name + `</option>
+                                        `
+                                        
+                                        })
+                                        lgalist = itemgenericnameoptions
+                                        $("#lgaoforigin").html(itemgenericnameoptions)
+                                    } else {
+                                        $("#lgaoforigin").html("<option value='No Record'>No Record</option>")
+                                    }
+                                })
+                            } else {
+                                        $("#stateoforigin").html("<option value='No Record'>No Record</option>")
+                                    }
+                        })
+
+            })
+
+            $("#stateoforigin").on("change", function(){
+                let splitstate = $("#stateoforigin").val().split(",")
+                    let stateid = splitstate[1]
+                    let getLGAByStateId = "getLGAByStateId"
+                    $.post("controllers/patient-record.php",{id:stateid,getLGAByStateId:getLGAByStateId},function(formdata){
+                        console.log(formdata)
+                        if(formdata!="No Record Found"){
+                            
+                            let data=JSON.parse(formdata)
+                            let itemgenericnameoptions = ``
+                            
+                            $.each(data.records, function(key, val) {
+                            
+                                itemgenericnameoptions += `
+                                <option value="` + val.name + `,` + val.id + `">` + val.name + `</option>
+                            `
+                            
+                            })
+                            lgalist = itemgenericnameoptions
+                            $("#lgaoforigin").html(itemgenericnameoptions)
+                        } else {
+                            $("#lgaoforigin").html("<option value='No Record'>No Record</option>")
+                        }
+                    })
+
+                    let getTribe = "getTribe"
+                    let searchItem = ""
+                    let stateoforigin = $("#stateoforigin").val()
+                    
+                    $.post("controllers/combo-setup.php",{stateoforigin:stateoforigin,searchItem:searchItem,getTribe: getTribe},function(formdata){
+
+                    if(formdata!="No Record Found"){
+                        console.log(formdata)
+                        let data=JSON.parse(formdata)
+                        let relationshipoptions = ``
+                        $.each(data.records, function(key, val) {
+                            
+                                relationshipoptions += `
+                                <option value="` + val.tribe + `">` + val.tribe + `</option>
+                            `
+                            })
+                            tribelist = relationshipoptions
+                            $("#tribe").html(relationshipoptions)
+                        } else {
+                            $("#tribe").html(`<option value="None">None</option>`)
+                        }
+                        // $("#addsupplier").val("")
+                    })
+            })
+
+            let corpsetypelist = ``
+            $("#add-corpsetype-button").on("click", function(evt){
+                    evt.preventDefault()
+                    let corpsetype = $("#addcorpsetype").val()
+                    if(corpsetype!=""){
+                        let insertCorpseType = "insertCorpseType"
+                        
+                        $.post("controllers/combo-setup.php", {corpsetype:corpsetype,insertCorpseType:insertCorpseType},function(data){
+                            
+                            let getCorpseType = "getCorpseType"
+                            let searchItem = ""
+                            $.post("controllers/combo-setup.php",{searchItem:searchItem,getCorpseType: getCorpseType},function(formdata){
+
+                            if(formdata!="No Record Found"){
+                                console.log(formdata)
+                                let data=JSON.parse(formdata)
+                                let relationshipoptions = ``
+                                $.each(data.records, function(key, val) {
+                                
+                                    relationshipoptions += `
+                                    <option value="` + val.corpsetype + `">` + val.corpsetype + `</option>
+                                `
+                                })
+                                corpsetypelist = relationshipoptions
+                                $("#corpsetype").html(relationshipoptions)
+                            } else {
+                                $("#corpsetype").html(`<option value="None">None</option>`)
+                            }
+                            // $("#addsupplier").val("")
+                        })
+                    })
+                    }
+                })
+
+                let occupationlist = ``
+            $("#add-occupation-button").on("click", function(evt){
+                    evt.preventDefault()
+                    let occupation = $("#addoccupation").val()
+                    if(occupation!=""){
+                        let insertOccupation = "insertOccupation"
+                        
+                        $.post("controllers/combo-setup.php", {occupation:occupation,insertOccupation:insertOccupation},function(data){
+                            
+                            let getOccupation = "getOccupation"
+                            let searchItem = ""
+                            $.post("controllers/combo-setup.php",{searchItem:searchItem,getOccupation: getOccupation},function(formdata){
+
+                            if(formdata!="No Record Found"){
+                                console.log(formdata)
+                                let data=JSON.parse(formdata)
+                                let relationshipoptions = ``
+                                $.each(data.records, function(key, val) {
+                                
+                                    relationshipoptions += `
+                                    <option value="` + val.occupation + `">` + val.occupation + `</option>
+                                `
+                                })
+                                occupationlist = relationshipoptions
+                                $("#occupation").html(relationshipoptions)
+                            } else {
+                                $("#occupation").html(`<option value="None">None</option>`)
+                            }
+                            // $("#addsupplier").val("")
+                        })
+                    })
+                    }
+                })
+
+                let placeofdeathlist = ``
+            $("#add-placeofdeath-button").on("click", function(evt){
+                    evt.preventDefault()
+                    let corpsetype = $("#addplaceofdeath").val()
+                    if(corpsetype!=""){
+                        let insertPlaceofDeath = "insertPlaceofDeath"
+                        
+                        $.post("controllers/combo-setup.php", {placeofdeath:corpsetype,insertPlaceofDeath:insertPlaceofDeath},function(data){
+                            
+                            let getPlaceofDeath = "getPlaceofDeath"
+                            let searchItem = ""
+                            $.post("controllers/combo-setup.php",{searchItem:searchItem,getPlaceofDeath: getPlaceofDeath},function(formdata){
+
+                            if(formdata!="No Record Found"){
+                                console.log(formdata)
+                                let data=JSON.parse(formdata)
+                                let relationshipoptions = ``
+                                $.each(data.records, function(key, val) {
+                                
+                                    relationshipoptions += `
+                                    <option value="` + val.placeofdeath + `">` + val.placeofdeath + `</option>
+                                `
+                                })
+                                placeofdeathlist = relationshipoptions
+                                $("#placeofdeath").html(relationshipoptions)
+                            } else {
+                                $("#placeofdeath").html(`<option value="None">None</option>`)
+                            }
+                            // $("#addsupplier").val("")
+                        })
+                    })
+                    }
+                })
+
+                let tribelist = ``
+            $("#add-tribe-button").on("click", function(evt){
+                    evt.preventDefault()
+                    let corpsetype = $("#addtribe").val()
+                    let stateoforigin = $("#stateoforigin").val()
+                    if(corpsetype!=""){
+                        let insertTribe = "insertTribe"
+                        
+                        $.post("controllers/combo-setup.php", {tribe:corpsetype,stateoforigin:stateoforigin,insertTribe:insertTribe},function(data){
+                            
+                            let getTribe = "getTribe"
+                            let searchItem = ""
+                            // let stateoforigin = 
+                            
+                            $.post("controllers/combo-setup.php",{stateoforigin:stateoforigin,searchItem:searchItem,getTribe: getTribe},function(formdata){
+
+                            if(formdata!="No Record Found"){
+                                console.log(formdata)
+                                let data=JSON.parse(formdata)
+                                let relationshipoptions = ``
+                                $.each(data.records, function(key, val) {
+                                
+                                    relationshipoptions += `
+                                    <option value="` + val.tribe + `">` + val.tribe + `</option>
+                                `
+                                })
+                                tribelist = relationshipoptions
+                                $("#tribe").html(relationshipoptions)
+                            } else {
+                                $("#tribe").html(`<option value="None">None</option>`)
+                            }
+                            // $("#addsupplier").val("")
+                        })
+                    })
+                    }
+                })
+                let causeofdeathlist = ``
+                $("#add-causeofdeath-button").on("click", function(evt){
+                    evt.preventDefault()
+                    console.log("function")
+                    let causeofdeath = $("#addcauseofdeath").val()
+                    if(causeofdeath!=""){
+                        let insertCauseofDeath = "insertCauseofDeath"
+                        
+                        $.post("controllers/combo-setup.php", {causeofdeath:causeofdeath,insertCauseofDeath:insertCauseofDeath},function(data){
+                            console.log(data,causeofdeath)
+                            let getCauseofDeath = "getCauseofDeath"
+                            let searchItem = ""
+                            $.post("controllers/combo-setup.php",{searchItem:searchItem,getCauseofDeath: getCauseofDeath},function(formdata){
+
+                            if(formdata!="No Record Found"){
+                                console.log(formdata)
+                                let data=JSON.parse(formdata)
+                                let relationshipoptions = ``
+                                $.each(data.records, function(key, val) {
+                                
+                                    relationshipoptions += `
+                                    <option value="` + val.causeofdeath + `">` + val.causeofdeath + `</option>
+                                `
+                                })
+                                //manufacturerlist = manufactureroptions
+                                causeofdeathlist = relationshipoptions
+                                $("#causeofdeath").html(relationshipoptions)
+                            } else {
+                                $("#causeofdeath").html(`<option value="None">None</option>`)
+                            }
+                            // $("#addsupplier").val("")
+                        })
+                    })
+                    }
+                })
+                let remarklist = ``
+                $("#add-remark-button").on("click", function(evt){
+                    evt.preventDefault()
+                    let remark = $("#addremark").val()
+                    if(remark!=""){
+                        let insertRemark = "insertRemark"
+                        
+                        $.post("controllers/combo-setup.php", {remark:remark,insertRemark:insertRemark},function(data){
+                            
+                            let getRemark = "getRemark"
+                            let searchItem = ""
+                            $.post("controllers/combo-setup.php",{searchItem:searchItem,getRemark: getRemark},function(formdata){
+
+                            if(formdata!="No Record Found"){
+                                console.log(formdata)
+                                let data=JSON.parse(formdata)
+                                let relationshipoptions = ``
+                                $.each(data.records, function(key, val) {
+                                
+                                    relationshipoptions += `
+                                    <option value="` + val.remark + `">` + val.remark + `</option>
+                                `
+                                })
+                                remarklist = relationshipoptions
+                                $("#remark").html(relationshipoptions)
+                            } else {
+                                $("#remark").html(`<option value="None">None</option>`)
+                            }
+                            // $("#addsupplier").val("")
+                        })
+                    })
+                    }
+                })
+
+                let getTribe = "getTribe"
+                let searchItem = ""
+                let stateoforigin = $("#stateoforigin").val()
+                
+                $.post("controllers/combo-setup.php",{stateoforigin:stateoforigin,searchItem:searchItem,getTribe: getTribe},function(formdata){
+
+                if(formdata!="No Record Found"){
+                    console.log(formdata)
+                    let data=JSON.parse(formdata)
+                    let relationshipoptions = ``
+                    $.each(data.records, function(key, val) {
+                        
+                            relationshipoptions += `
+                            <option value="` + val.tribe + `">` + val.tribe + `</option>
+                        `
+                        })
+                        tribelist = relationshipoptions
+                        $("#tribe").html(relationshipoptions)
+                    } else {
+                        $("#tribe").html(`<option value="None">None</option>`)
+                    }
+                    // $("#addsupplier").val("")
+                })
+                
+                let getCorpseType = "getCorpseType"
+                    searchItem = ""
+                    $.post("controllers/combo-setup.php",{searchItem:searchItem,getCorpseType: getCorpseType},function(formdata){
+
+                    if(formdata!="No Record Found"){
+                        console.log(formdata)
+                        let data=JSON.parse(formdata)
+                        let relationshipoptions = ``
+                        $.each(data.records, function(key, val) {
+                        
+                            relationshipoptions += `
+                            <option value="` + val.corpsetype + `">` + val.corpsetype + `</option>
+                        `
+                        })
+                        //manufacturerlist = manufactureroptions
+                        $("#corpsetype").html(relationshipoptions)
+                    } else {
+                        $("#corpsetype").html(`<option value="None">None</option>`)
+                    }
+                    })
+
+                    let getOccupation = "getOccupation"
+                        // let searchItem = ""
+                        $.post("controllers/combo-setup.php",{searchItem:searchItem,getOccupation: getOccupation},function(formdata){
+
+                        if(formdata!="No Record Found"){
+                            console.log(formdata)
+                            let data=JSON.parse(formdata)
+                            let relationshipoptions = ``
+                            $.each(data.records, function(key, val) {
+                            
+                                relationshipoptions += `
+                                <option value="` + val.occupation + `">` + val.occupation + `</option>
+                            `
+                            })
+                            occupationlist = relationshipoptions
+                            $("#occupation").html(relationshipoptions)
+                        } else {
+                            $("#occupation").html(`<option value="None">None</option>`)
+                        }
+                        // $("#addsupplier").val("")
+                    })
+
+                    let getPlaceofDeath = "getPlaceofDeath"
+                    // let searchItem = ""
+                    $.post("controllers/combo-setup.php",{searchItem:searchItem,getPlaceofDeath: getPlaceofDeath},function(formdata){
+
+                    if(formdata!="No Record Found"){
+                        console.log(formdata)
+                        let data=JSON.parse(formdata)
+                        let relationshipoptions = ``
+                        $.each(data.records, function(key, val) {
+                        
+                            relationshipoptions += `
+                            <option value="` + val.placeofdeath + `">` + val.placeofdeath + `</option>
+                        `
+                        })
+                        placeofdeathlist = relationshipoptions
+                        $("#placeofdeath").html(relationshipoptions)
+                    } else {
+                        $("#placeofdeath").html(`<option value="None">None</option>`)
+                    }
+                    })
+
+                let getCauseofDeath = "getCauseofDeath"
+                    // let searchItem = ""
+                    $.post("controllers/combo-setup.php",{searchItem:searchItem,getCauseofDeath: getCauseofDeath},function(formdata){
+
+                    if(formdata!="No Record Found"){
+                        console.log(formdata)
+                        let data=JSON.parse(formdata)
+                        let relationshipoptions = ``
+                        $.each(data.records, function(key, val) {
+                        
+                            relationshipoptions += `
+                            <option value="` + val.causeofdeath + `">` + val.causeofdeath + `</option>
+                        `
+                        })
+                        //manufacturerlist = manufactureroptions
+                        causeofdeathlist = relationshipoptions
+                        $("#causeofdeath").html(relationshipoptions)
+                    } else {
+                        $("#causeofdeath").html(`<option value="None">None</option>`)
+                    }
+                    })
+
+                    let getRemark = "getRemark"
+                    searchItem = ""
+                    $.post("controllers/combo-setup.php",{searchItem:searchItem,getRemark: getRemark},function(formdata){
+
+                    if(formdata!="No Record Found"){
+                        console.log(formdata)
+                        let data=JSON.parse(formdata)
+                        let relationshipoptions = ``
+                        $.each(data.records, function(key, val) {
+                        
+                            relationshipoptions += `
+                            <option value="` + val.remark + `">` + val.remark + `</option>
+                        `
+                        })
+                        remarklist = relationshipoptions
+                        $("#remark").html(relationshipoptions)
+                    } else {
+                        $("#remark").html(`<option value="None">None</option>`)
+                    }
+                    })
+
+            function loadPatientCards(){
+                let loadCorpsePards = "loadCorpsePards"
+                $.post("controllers/patient-record.php",{loadCorpsePards: loadCorpsePards},function(formdata){
+                        // console.log("prescription: ",formdata)
+                        if(formdata=="No Record Found"){
+                            $("#view-item-order-count").html(formdata)
+                        }else{
+                            data = JSON.parse(formdata)
+                            allpatientcards = data.records
+                            totalnumbercards = allpatientcards.length
+                            totalfoundcards = totalnumbercards
+                            let patientcardlist = `<option value='0'>Select Corpse</option>`
+                            let count = 0
+                            console.log()
+                            for(i=0;i<allpatientcards.length;i++){
+                               
+                                    count++
+                                    patientcardlist += `
+                                        <option value="` + allpatientcards[i].patientnumber + `">` + allpatientcards[i].person + ` [` + allpatientcards[i].status + `: ` + allpatientcards[i].cardnumber + `]</option>
+                                    `
+
+                                    // $("#paid").val(allpatientcards[i].status)
+                            }
+                                
+                            totalfoundcards = count
+                            $("#selectpatient").html(patientcardlist)
+                            $("#patientcardtotal").html("Found " + totalfoundcards + " Cards Out of " + totalnumbercards + " Cards")
+                            
+                        }
+
+                    })
+            }
+
+
+            let allpatientcards = []
+            let totalnumbercards = 0
+            let totalfoundcards = 0
+            loadPatientCards()
+
+            $("#searchpatient").on('change keyup paste', function () {
+                ApplyFilterGetItem();
+            });
+
+            function ApplyFilterGetItem() {
+                var searchitemservice = $("#searchpatient").val();
+                console.log("getPatientCards")
+                getPatientCards()
+            }
+
+            let genderlist = `
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+            `
+            $("#gender").html(genderlist)
+            let maritalstatuslist = `
+                <option value="Single">Single</option>
+                <option value="Married">Married</option>
+                <option value="Separated">Separated</option>
+                <option value="Divorced">Divorced</option>
+                <option value="Widowed">Widowed</option>
+
+            `
+            $("#maritalstatus").html(maritalstatuslist)
+
+            let bloodgrouplist = `
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+
+            `
+            $("#bloodgroup").html(bloodgrouplist)
+            let religionlist = `
+                <option value="Christianity">Christianity</option>
+                <option value="Islam">Islam</option>
+                <option value="Traditional">Traditional</option>
+                <option value="Oriental Religion">Oriental Religion</option>
+                <option value="Prefer Not to Say">Prefer Not to Say</option>
+                <option value="Atheist">Atheist</option>
+                
+
+            `
+            $("#religion").html(religionlist)
+            
+            function getPatientCards(){
+                    
+                    // $("#viewrevenueordernumber").html("New Prescription Order")
+                    let searchItem = $("#searchpatient").val()
+                    
+                    let count = 0
+                    $("#selectpatient").html("")
+                    $("#form-edit-patient").html("")
+                    $("#form-view-patientstatus").html("")
+                    $("#form-view-patient").html("")
+
+                    let patientcardlist = `<option value='0'>Select Corpse</option>`
+                    for(i=0;i<allpatientcards.length;i++){
+                        console.log(allpatientcards[i].person, allpatientcards[i].status)
+                        
+                        if(allpatientcards[i].person.includes(searchItem) || allpatientcards[i].cardnumber.includes(searchItem) || allpatientcards[i].patientnumber.includes(searchItem)||allpatientcards[i].tallynumber.includes(searchItem)){
+                            count++
+                            patientcardlist += `
+                                <option value="` + allpatientcards[i].patientnumber + `" selected>` + allpatientcards[i].person + ` [` + allpatientcards[i].status + `: ` + allpatientcards[i].cardnumber + `]</option>
+                            `
+                            $("#paid").val(allpatientcards[i].status)
+
+                        }
+                    }
+                    
+                    totalfoundcards = count
+                    $("#selectpatient").html(patientcardlist)
+                    $("#patientcardtotal").html("Found " + totalfoundcards + " Cards Out of " + totalnumbercards + " Cards")
+                    let id = $("#selectpatient").val()
+                    getPatientCardId(id)
+                }
+
+                let addressno = ""
+                $("#addressno").on('change keyup paste', function () {
+                    $("#address").val("No. " + $("#addressno").val() + ", " + $("#addressstreet").val() + " " + $("#addressstreetselect").val() + ", " + $("#addressoff").val() + " " + $("#addressoffselect").val() + ", " + $("#addressquarter").val() + "" + ", " + $("#addresstown").val() + "")
+                    addressno = $("#address").val()
+                });
+                let addressstreet = ""
+                $("#addressstreet").on('change keyup paste', function () {
+                    $("#address").val("No. " + $("#addressno").val() + ", " + $("#addressstreet").val() + " " + $("#addressstreetselect").val() + ", off " + $("#addressoff").val() + " " + $("#addressoffselect").val() + ", " + $("#addressquarter").val() + "" + ", " + $("#addresstown").val() + "")
+                    addressstreet = $("#address").val()
+                });
+                let addressoff = ""
+                $("#addressoff").on('change keyup paste', function () {
+                    $("#address").val("No. " + $("#addressno").val() + ", " + $("#addressstreet").val() + " " + $("#addressstreetselect").val() + ", off " + $("#addressoff").val() + " " + $("#addressoffselect").val() + ", " + $("#addressquarter").val() + "" + ", " + $("#addresstown").val() + "")
+                    addressoff = $("#address").val()
+                });
+
+                let addressquarter = ""
+                $("#addressquarter").on('change', function () {
+                    $("#address").val("No. " + $("#addressno").val() + ", " + $("#addressstreet").val() + " " + $("#addressstreetselect").val() + ", off " + $("#addressoff").val() + " " + $("#addressoffselect").val() + ", " + $("#addressquarter").val() + "" + ", " + $("#addresstown").val() + "")
+                    addressquarter = $("#address").val()
+                });
+                let addresstown = ""
+                $("#addresstown").on('change', function () {
+                    $("#address").val("No. " + $("#addressno").val() + ", " + $("#addressstreet").val() + " " + $("#addressstreetselect").val() + ", off " + $("#addressoff").val() + " " + $("#addressoffselect").val() + ", " + $("#addressquarter").val() + "" + ", " + $("#addresstown").val() + "")
+                    addresstown = $("#address").val()
+                });
+
+                $("#addressstreetselect").on("change", function(){
+                    addressstreet = addressno + ", " + $("#addressstreet").val() + " " + $("#addressstreetselect").val()
+                    $("#address").val("No. " + $("#addressno").val() + ", " + $("#addressstreet").val() + " " + $("#addressstreetselect").val() + ", off " + $("#addressoff").val() + " " + $("#addressoffselect").val() + ", " + $("#addressquarter").val() + "" + ", " + $("#addresstown").val() + "")
+                    // $("#address").val(addressno + addressstreet + addressoff + addressquarter + addresstown)
+                })
+                $("#addressoffselect").on("change", function(){
+                    addressoff = addressstreet + ", " + $("#addressoff").val() + " " + $("#addressoffselect").val()
+                    $("#address").val("No. " + $("#addressno").val() + ", " + $("#addressstreet").val() + " " + $("#addressstreetselect").val() + ", off " + $("#addressoff").val() + " " + $("#addressoffselect").val() + ", " + $("#addressquarter").val() + "" + ", " + $("#addresstown").val() + "")
+                    // $("#address").val(addressno + addressstreet + addressoff + addressquarter + addresstown)
+                })
+
+                $("#print-update-patient-button").hide()
+                function getPatientCardId(id){
+                    
+                    let getCorpseinfoByCorpseRegistrationNumber = "getCorpseinfoByCorpseRegistrationNumber"
+                    $.post("controllers/patient-record.php",{id:id,getCorpseinfoByCorpseRegistrationNumber: getCorpseinfoByCorpseRegistrationNumber},function(formdata){
+                        console.log(formdata)
+                       
+                       
+                        let data = JSON.parse(formdata)
+                        let status = data.paystatus
+                        if(status=="PAID"){
+                            $("#paid").val("PAID")
+                        } else {
+                            $("#paid").val("NOT PAID")
+                        }
+
+                        $("#print-update-patient-button").hide()
+                        if(data.comments=="PAID AND REGISTERED"){
+                            let record = data.tallynumber + "|" + data.firstname + "|" + data.lastname + "|" + data.nextofkin + "|" + data.corpseregistrationnumber
+                            $("#print-update-patient-button").attr("data-id",record)
+                            $("#print-update-patient-button").show()
+                        }
+                        
+
+
+
+                        $("#form-edit-patient").html("Patient Number: " + id + "<br>Card Number: " + data.cardnumber + "<br>Card Type: " + data.cardtype)
+                        $("#form-view-patientstatus").html("Patient Type: " + data.patienttype + "<br>Patient Status: " + data.comments)
+                        $("#form-view-patient").html("Registered: " + data.entereddate + "<br>By: " + data.enteredby + "<br>Updated: " + data.updateddate)
+                        $("#form-view-nextofkin").html("Next of Kin: " + data.nextofkin + " - " + data.phonenumber)
+                        let personid = data.patientid
+                        $("#selectpatientnumber").val(id)
+                        $("#personid").val(personid)
+                        $("#cardid").val(data.id)
+                        $("#tallynumber").val(data.tallynumber)
+                        $("#person").val(data.person)
+                        $("#cardnumber").val(data.cardnumber)
+                        $("#corpseregistrationnumber").val(data.corpseregistrationnumber)
+                        $("#firstname").val(data.firstname)
+                        $("#address").val(data.address)
+                        $("#lastname").val(data.lastname)
+                        // $("#weight").val(data.weight)
+                        // $("#height").val(data.height)
+                        $("#phonenumber").val(data.phonenumber)
+                        $("#age").val(data.age)
+                        // $("#agegroup").val(data.agegroup)
+                        $("#occupation").html(`<option value="` + data.occupation + `">` + data.occupation + `</option>` + occupationlist)
+                        $("#gender").html(`<option value="` + data.gender + `">` + data.gender + `</option>` + genderlist)
+                        $("#maritalstatus").html(`<option value="` + data.maritalstatus + `">` + data.maritalstatus + `</option>` + maritalstatuslist)
+                        // $("#dateofbirth").val(data.dateofbirth)
+                        $("#age").val(data.age)
+                        let tallyname = "None"
+                        console.log(data.tallynumber)
+                        if(data.tallynumber!=null){
+                            let splittallynumber = data.tallynumber.split(",")
+                            tallyname = splittallynumber[0]
+                        }
+                        
+                        $("#tallynumber").val(tallyname)
+                        $("#remark").html(`<option value="` + data.remark + `">` + data.remark + `</option>` + remarklist)
+                        $("#religion").html(`<option value="` + data.religion + `">` + data.religion + `</option>` + religionlist)
+                        $("#bloodgroup").html(`<option value="` + data.bloodgroup + `">` + data.bloodgroup + `</option>` + bloodgrouplist)
+
+
+                        $("#placeofdeath").html(`<option value="` + data.placeofdeath + `">` + data.placeofdeath + `</option>` + placeofdeathlist)
+                        $("#corpsetype").html(`<option value="` + data.corpsetype + `">` + data.corpsetype + `</option>` + corpsetypelist)
+                        $("#causeofdeath").html(`<option value="` + data.causeofdeath + `">` + data.causeofdeath + `</option>` + causeofdeathlist)
+                        $("#nationality").html(`<option value="` + data.nationality + `">` + data.nationality + `</option>` + countrylist)
+                        $("#stateoforigin").html(`<option value="` + data.stateoforigin + `">` + data.stateoforigin + `</option>` + statelist)
+                        $("#lgaoforigin").html(`<option value="` + data.lgaoforigin + `">` + data.lgaoforigin + `</option>` + lgalist)
+                        $("#tribe").html(`<option value="` + data.tribe + `">` + data.tribe + `</option>` + tribelist)
+                        //get All invoices
+
+                        //Accomodation
+
+                        //Embalment
+
+                        //Maintenance
+                        let getRevenueOrderByHospitalNumber = "getRevenueOrderByHospitalNumber"
+                        $.post("controllers/finance-record.php",{searchItem:id,getRevenueOrderByHospitalNumber:getRevenueOrderByHospitalNumber}, function(rdata){
+                            console.log(rdata)
+                            if(rdata=="No Record Found"){
+                                $("#form-view-invoices").html("No Invoices Found")
+
+                            } else {
+                                let data = JSON.parse(rdata)
+                                let content = ``
+                                data.records.forEach(val => {
+                                    console.log(val.revenueordernumber)
+                                    content += `
+
+
+                                    <a href="#" data-id="` + val.id + `" class="btn btn-outline-primary take-btn revenue-order-corpse">` + val.revenueordernumber + ` - ` + val.status + `</a>
+
+
+                                    `
+                                });
+
+                                $("#form-view-invoices").html(content)
+
+                                $(".revenue-order-corpse").on("click", function(evt){
+                                            evt.preventDefault()
+                                            let id = $(this).attr("data-id")
+                                            
+                                                    // let cardnumber = val.cardnumber
+                                                    let getPatientCardPaymentById = "getPatientCardPaymentById"
+                                                    $.post("controllers/finance-record.php", {id:id, getPatientCardPaymentById: getPatientCardPaymentById}, function(data){
+                                                        console.log(data)
+                                                        window.open("patient-invoice.html")
+                                                        
+                                                    })
+                                                
+                                            
+
+                                            
+                                                
+
+                                        })
+
+                            }
+
+                        })
+
+
+                    })
+                }
+
+
+                $("#print-update-patient-button").on("click", function(evt){
+                        evt.preventDefault()
+                        let id = $(this).attr("data-id")
+                        
+                        // let cardnumber = val.cardnumber
+                        
+                            window.open("corpse-update.html?id=" + id)
+                            
+                       
+                            
+                        
+
+                        
+                            
+
+                    })
+
+                $("#selectpatient").on("change", function(evt){
+                    evt.preventDefault()
+                    let id = $(this).val()
+                    console.log(id)
+                    
+                    
+                    getPatientCardId(id)
+                })
+
+              
+                function getTallyNumber() {
+                    let GetTallyNumber = "GetTallyNumber"
+                    $.post("controllers/patient-record.php",{GetTallyNumber: GetTallyNumber},function(data){
+                        console.log(data)
+                        let tallylist = ``
+                        for(i=1;i<121;i++){
+                            if(data.includes(i)){
+                                //do nothing
+                                console.log(i)
+                            } else {
+                                //console.log(i)
+                                tallylist += `<option value="` + i + `">Tally ` + i +`</option>`
+                            }
+                            
+                        }
+                        // tallynumberlist = tallylist
+                        // $("#tallynumber").html(tallylist)
+                    })
+                }
+
+                $("#dateofbirth").on('change paste', function () {
+                    let dob = $(this).val()
+                    let current = new Date()
+                    dob = new Date(dob)
+                    let diff = current.getTime() - dob.getTime()
+                    let diffindays = diff / (1000 * 3600 * 24)
+                    let numberofdays = diffindays.toFixed(0)
+                    console.log(diffindays)
+                    let agegroup = ""
+                    if(numberofdays<7){
+                        $("#age").val(numberofdays + " days")
+                        agegroup = "NEONATES"
+                    } else if(numberofdays>360){
+                        diffindays = diffindays / 360
+                        numberofdays = diffindays.toFixed(0)
+                        $("#age").val(numberofdays + " year(s)")
+                        if(numberofdays>75){
+                            agegroup = "GERIATIC"
+                        } else if(numberofdays>65){
+                            agegroup = "ELDERLY"
+                        } else if(numberofdays>20){
+                            agegroup = "ADULTS"
+                        } else if(numberofdays>13){
+                            agegroup = "ADOLESCENT(TEEN)"
+                        } else if(numberofdays>6){
+                            agegroup = "SCHOOL AGE"
+                        } else if(numberofdays>2){
+                            agegroup = "PRE-SCHOOL"
+                        } else if(numberofdays>1){
+                            agegroup = "TODDLER"
+                        }
+                    } else if(numberofdays>30){
+                        diffindays = diffindays / 30
+                        numberofdays = diffindays.toFixed(0)
+                        $("#age").val(numberofdays + " month(s)")
+                        agegroup = "INFANTS"
+                    } else if(numberofdays>7){
+                        diffindays = diffindays / 7
+                        numberofdays = diffindays.toFixed(0)
+                        $("#age").val(numberofdays + " week(s)")
+                        agegroup = "NEONATES"
+                    } 
+                    // $("#agegroup").val(agegroup)
+                });
+                
+                getTallyNumber()
+
+                $("#update-patient-button").on("click", function(evt){
+                    evt.preventDefault()
+
+                    let personid=$("#personid").val()
+                    let firstname=$("#firstname").val()
+                    // let middlename=$("#middlename").val()
+                    let lastname=$("#lastname").val()
+                    let person = $("#person").val()
+                    let gender=$("#gender").val()
+                    // let maritalstatus=$("#maritalstatus").val()
+                    let dateofbirth=$("#dateofbirth").val()
+                    let age=$("#age").val()
+                    let nationality = $("#nationality").val()
+                    // age = parseFloat(splitage[0])
+                    
+                    let occupation=$("#occupation").val()
+                    let religion=$("#religion").val()
+                    let dateofdeath = $("#dateofdeath").val()
+                    let lgaoforigin=$("#lgaoforigin").val()
+                    let tribe = $("#tribe").val()
+                    let address = $("#address").val()
+                    let placeofdeath = $("#placeofdeath").val()
+                    let tallynumber = $("#tallynumber").val()
+                    
+                    let corpsetype = $("#corpsetype").val()
+                    let causeofdeath = $("#causeofdeath").val()
+                    let remark = $("#remark").val()
+                    let corpsesource = $('input[name="corpsesource"]:checked').val()
+
+                    let patientnumber = $("#selectpatientnumber").val()
+                    let stateoforigin = $("#stateoforigin").val()
+                    let editCorpseRegistration = "editCorpseRegistration"
+                    let paid = $("#paid").val()
+                    console.log($("#paid").val())
+                    if(paid=="PAID"){
+                         $.post("controllers/patient-record.php",{id:personid,patientnumber:patientnumber,firstname:firstname,
+                            tallynumber:tallynumber,lastname:lastname,dateofdeath:dateofdeath,
+                            gender:gender,nationality:nationality,address:address,
+                            placeofdeath:placeofdeath,causeofdeath:causeofdeath,remark:remark,corpsesource:corpsesource,
+                            stateoforigin:stateoforigin,corpsetype:corpsetype,age:age,
+                        occupation:occupation,religion:religion,paid:paid,tribe:tribe,
+                        lgaoforigin:lgaoforigin,editCorpseRegistration:editCorpseRegistration}, function(formdata){
+
+                            $("#patient-status").html(formdata)
+                            let id = $("#selectpatient").val()
+                            console.log(id)
+                            
+                            
+                            getPatientCardId(id)
+                            
+                            let hospitalbill = parseFloat($("#hospitalbill").val())
+                            if(hospitalbill>0){
+                                // let selectitem = $("#visitationfee").val()
+                                // let splititem = selectitem.split(",")
+
+                                let itemgenericname = "Hospital Bill BF"
+                                let itemid = 0
+                                let department = ""
+                                let departmentitemgroup = ""
+                                let revenueorderlist = []
+
+
+                                //Get all the pieces
+                                let totalpreviousquantity = 0
+                                    
+                                    let sellingprice = hospitalbill
+                                    let sellingpriceperpiece = hospitalbill
+                                    let sellingpriceperweight = 0
+                                    let sellingpricepervolume = 0
+                                    let reorderlevel = 0
+                                    let reorderlevelunit = ""
+                                    
+                                    let unittype = ""
+                                
+                                    
+                                        itemid = 0
+                                        totalpreviousquantity = 0
+                                       
+                                    
+                                          
+                                    
+                                            department = "Record Department"
+                                            departmentitemgroup = "Hospital Bill"
+                                
+                                    
+                                    
+                                
+                                
+                                    let revenueorderitem = {"genericname":itemgenericname,
+                                                            "department":department,
+                                                            "departmentitemgroup":departmentitemgroup,
+                                                            "sellingprice":sellingprice,
+                                                            "reorderlevel":reorderlevel,
+                                                            "unittype":"pieces",
+                                                            "itemid":itemid,
+                                                            "quantity":1}
+                                    revenueorderlist.push(revenueorderitem)
+                                    console.log(revenueorderlist)
+                                    let insertRevenueOrderCorpse = "insertRevenueOrderCorpse"
+                                    let list = JSON.stringify(revenueorderlist)
+                                    let price = parseFloat(sellingprice).toFixed(2)
+                                    let totalrevenueorderitems = 1
+                                    let patientid = $("#personid").val()
+                                    let cardid=$("#cardid").val()
+                                    let cardnumber = $("#cardnumber").val()
+                                    let corpseregistrationnumber = $("#corpseregistrationnumber").val()
+                                    // console.log(insertRevenueOrder)
+                                    $.post("controllers/finance-record.php", {department:department,patientname:person,patientid:cardid,personid:patientid,cardnumber:cardnumber,hospitalnumber:corpseregistrationnumber,price:price,items:totalrevenueorderitems,list:list,insertRevenueOrderCorpse:insertRevenueOrderCorpse}, function(data){
+                                        console.log(data)
+                                        let splitrevenue = data.split(",")
+                                        $("#form-view-hospitalbill").html(`<a href="#" data-id="` + splitrevenue[0] + `" class="btn btn-outline-primary take-btn revenue-order-hospitalbill">` + splitrevenue[1] + `</a>`)
+                    //                     $("#nextofkinfirstname").val("")
+                    //                     $("#nextofkinmiddlename").val("")
+                    //                     $("#nextofkinsurname").val("")
+                    // 
+                    //                     $("#nextofkinphonenumber").val("")
+                    //                     $("#corpsefirstname").val("")
+                    //                     $("#corpsesurname").val("")
+                                        
+                                        $(".revenue-order-hospitalbill").on("click", function(evt){
+                                                evt.preventDefault()
+                                                let id = $(this).attr("data-id")
+                                                
+                                                        // let cardnumber = val.cardnumber
+                                                        let getPatientCardPaymentById = "getPatientCardPaymentById"
+                                                        $.post("controllers/finance-record.php", {id:id, getPatientCardPaymentById: getPatientCardPaymentById}, function(data){
+                                                            console.log(data)
+                                                            window.open("patient-invoice.html")
+                                                            
+                                                        })
+                                                    
+                                                
+
+                                                
+                                                    
+
+                                            })
+                    
+                                    }) 
+                            }
+                            
+                           
+
+                        })
+                    } else {
+                        $("#patient-status").html("Patient has not yet paid")
+                    }
+                   
+                })
+
+                getQuarters()
+                getTown()
+
+
+            
+            
+                function getQuarters(){
+                // let searchItem = "MORGUE"
+                let getQuarters = "getQuarters"
+                $.post("controllers/patient-record.php",{getQuarters:getQuarters},function(formdata){
+                    console.log(formdata)
+                    if(formdata!="No Record Found"){
+                        
+                        let data=JSON.parse(formdata)
+                        let itemgenericnameoptions = `<option value="">Select Quarter</option>`
+                        $.each(data.records, function(key, val) {
+                           
+                            itemgenericnameoptions += `
+                            <option value="` + val.quarters + `">` + val.quarters + `</option>
+                          `
+                        })
+                        // nextofkinrelationshiplist = itemgenericnameoptions
+                        $("#addressquarter").html(itemgenericnameoptions)
+                    } else {
+                        $("#addressquarter").html("<option value=''>No Record</option>")
+                    }
+                })
+            }
+            function getTown(){
+                // let searchItem = "MORGUE"
+                let getTown = "getTown"
+                $.post("controllers/patient-record.php",{getTown:getTown},function(formdata){
+                    console.log(formdata)
+                    if(formdata!="No Record Found"){
+                        
+                        let data=JSON.parse(formdata)
+                        let itemgenericnameoptions = `<option value="">Select Town</option>`
+                        $.each(data.records, function(key, val) {
+                           
+                            itemgenericnameoptions += `
+                            <option value="` + val.town + `">` + val.town + `</option>
+                          `
+                        })
+                        // nextofkinrelationshiplist = itemgenericnameoptions
+                        $("#addresstown").html(itemgenericnameoptions)
+                    } else {
+                        $("#addresstown").html("<option value=''>No Record</option>")
+                    }
+                })
+            }
+
+            $("#add-quarter-button").on("click", function(evt){
+                    evt.preventDefault()
+                    let quarter = $("#addquarter").val()
+                    if(quarter!=""){
+                        let insertQuarter = "insertQuarter"
+                        
+                        $.post("controllers/combo-setup.php", {quarter:quarter,insertQuarter:insertQuarter},function(data){
+                            
+                            getQuarters()
+                        })
+                    
+                    }
+                })
+
+                $("#add-town-button").on("click", function(evt){
+                    evt.preventDefault()
+                    let town = $("#addtown").val()
+                    if(town!=""){
+                        let insertTown = "insertTown"
+                        
+                        $.post("controllers/combo-setup.php", {town:town,insertTown:insertTown},function(data){
+                            
+                            getTown()
+                        })
+                    
+                    }
+                })
+
+               
+        })
+    </script>
+</body>
+
+</html>
